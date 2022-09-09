@@ -26,3 +26,5 @@ and more
 ## Mac
 
 zsh
+brew
+nix
