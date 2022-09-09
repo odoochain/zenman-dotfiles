@@ -1,0 +1,36 @@
+files:
+  - url: ""
+    time: 1646191935297.yml
+    name: config.yaml
+    selected: []
+  - url: ""
+    time: 1646191958714.yml
+    name: alpha_013.yaml
+    selected:
+      - name: GLOBAL
+        now: DIRECT
+      - name: 🔰 节点选择
+        now: ZZ_3089
+      - name: 🎥 NETFLIX
+        now: 🔰 节点选择
+      - name: ⛔️ 广告拦截
+        now: 🛑 全球拦截
+      - name: 🚫 运营劫持
+        now: 🛑 全球拦截
+      - name: 🌍 国外媒体
+        now: 🔰 节点选择
+      - name: 🌏 国内媒体
+        now: 🎯 全球直连
+      - name: Ⓜ️ 微软服务
+        now: 🎯 全球直连
+      - name: 📲 电报信息
+        now: 🔰 节点选择
+      - name: 🍎 苹果服务
+        now: 🔰 节点选择
+      - name: 🎯 全球直连
+        now: DIRECT
+      - name: 🛑 全球拦截
+        now: REJECT
+      - name: 🐟 漏网之鱼
+        now: 🔰 节点选择
+index: 1
