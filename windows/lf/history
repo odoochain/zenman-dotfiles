@@ -1,0 +1,7 @@
+: q
+: wq
+: q
+: vim
+: nvim
+: tag
+$ rm hello.txt

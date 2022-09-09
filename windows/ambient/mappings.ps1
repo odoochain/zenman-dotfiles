@@ -7,6 +7,7 @@ New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$e
 
 # powershell
 New-Item -Path "C:$env:HOMEPATH\Documents\PowerShell\Microsoft.PowerShell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.profile.ps1" -Force
+New-Item -Path "C:$env:HOMEPATH\Documents\PowerShell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.codeprofile.ps1" -Force
 
 # windows terminal
 New-Item -Path "C:$env:HOMEPATH\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.wterm.json" -Force
