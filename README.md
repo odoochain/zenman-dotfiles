@@ -23,3 +23,6 @@ powerlevel10k
 neovim
 and more
 
+## Mac
+
+zsh
