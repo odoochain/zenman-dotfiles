@@ -5,13 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# Launch Zsh
-# if [ -t 1 ]; then
-# exec zsh
-# fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -29,19 +22,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-
-
-# alias
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-alias py="python"
-alias ahk="autohotkey"
-alias cc="clear"
-alias :q="exit"
-
-
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,11 +78,16 @@ alias :q="exit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    history-substring-search
-    vi-mode
+	git
+	zsh-syntax-highlighting
+	# fast-syntax-highlighting
+	zsh-autosuggestions
+	history
+	command-not-found
+	# autojump
+	extract
+	vi-mode
+	history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -121,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='nvim'
+export VISUAL='nvim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -132,10 +119,49 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cls="clear"
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+alias py="python"
+
+alias ls="lsd -a"
+alias ll="lsd -lah"
+alias zrc="$EDITOR ~/.zshrc"
+
+alias cc="clear"
+alias :q="exit"
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
+# zoxide, magical cd command
+eval "$(zoxide init zsh)"
+
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-# eval "$('/c/ProgramData/Anaconda3/Scripts/conda.exe' 'shell.zsh' 'hook')"
+__conda_setup="$('/home/mino29/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mino29/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mino29/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mino29/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
 # <<< conda initialize <<<
+
+
+# pnpm
+export PNPM_HOME="/home/mino29/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
