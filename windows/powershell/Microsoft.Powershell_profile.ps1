@@ -7,9 +7,15 @@ Clear-Host
 #------------------------------- Startup settings END -------------------------
 
 # Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-	Import-Module "$ChocolateyProfile"
+Try {
+    $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+    if (Test-Path($ChocolateyProfile)) {
+        Import-Module "$ChocolateyProfile"
+    }
+}
+Catch {
+    # install chocolatey
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
 
@@ -30,18 +36,40 @@ if (Test-Path($ChocolateyProfile)) {
 # 引入 oh-my-posh
 # 设置 PowerShell 主题
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\peru.omp.json" | Invoke-Expression
-oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
+Try {
+    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
+}
+Catch {
+    scoop install oh-my-posh
+}
+
 # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
 
 # 引入 posh-git
-Import-Module posh-git
+Try {
+    Import-Module posh-git
+}
+Catch {
+    Install-Module posh-git -Scope CurrentUser -AllowClobber -Force  ## posh-git git美化管理包
+}
+
 
 # 引入 ps-read-line
-Import-Module PSReadLine
+Try {
+    Import-Module PSReadLine
+}
+Catch {
+    Install-Module PSReadLine -Scope CurrentUser -AllowPrerelease - SkipPublisherChecke -Force  ## posh-git git美化管理包
+}
 
 # 引入terminal-icons
-Import-Module -Name Terminal-Icons
+Try {
+    Import-Module -Name Terminal-Icons
+}
+Catch {
+    Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
+}
 
 # 引入Zlocation (powerful cd)
 # full command-let is invoke-Zlocation, z for short
@@ -50,7 +78,12 @@ Import-Module -Name Terminal-Icons
 
 
 # 引入PSWindowsUpdate
-Import-Module PSWindowsUpdate
+Try {
+    Import-Module PSWindowsUpdate
+}
+Catch {
+    Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
+}
 
 
 # 设置 bash style tab completion
@@ -105,55 +138,55 @@ $env:PATHEXT += ";.py"
 
 # 更新系统组件
 function Update-Packages {
-	# update conda packages (avoid conflit)
-	Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
+    # update conda packages (avoid conflit)
+    Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
     
-	# update pip (comment out this if you use conda)
-	Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
-	# $a = pip list --outdated
-	# $num_package = $a.Length - 2
-	# for ($i = 0; $i -lt $num_package; $i++) {
-	# 	$tmp = ($a[2 + $i].Split(" "))[0]
-	# 	pip install -U $tmp
-	# }
-    pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+    # update pip (comment out this if you use conda)
+    Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
+    # $a = pip list --outdated
+    # $num_package = $a.Length - 2
+    # for ($i = 0; $i -lt $num_package; $i++) {
+    # 	$tmp = ($a[2 + $i].Split(" "))[0]
+    # 	pip install -U $tmp
+    # }
+    pip freeze | % { $_.split('==')[0] } | % { pip install --upgrade $_ }
 
-	# update TeX Live
-	$CurrentYear = Get-Date -Format yyyy
-	Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
-	tlmgr update --self
-	tlmgr update --all
+    # update TeX Live
+    $CurrentYear = Get-Date -Format yyyy
+    Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
+    tlmgr update --self
+    tlmgr update --all
 
-	# update Chocolotey
-Write-Host "Step 4: Update Chocolatey" -ForegroundColor White -BackgroundColor Cyan
-	choco outdated
+    # update Chocolotey
+    Write-Host "Step 4: Update Chocolatey" -ForegroundColor White -BackgroundColor Cyan
+    choco outdated
     choco upgrade all
 
-	# update Scoop
-	Write-Host "Step 5: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
+    # update Scoop
+    Write-Host "Step 5: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
     scoop update
     scoop update --all
 
-	# update winget
-Write-Host "Step 6: Update Winget" -ForegroundColor White -BackgroundColor Cyan
+    # update winget
+    Write-Host "Step 6: Update Winget" -ForegroundColor White -BackgroundColor Cyan
     winget upgrade
     winget upgrade --all
 
 
-	# update Powershell Modules
-Write-Host "Step 7: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
+    # update Powershell Modules
+    Write-Host "Step 7: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
     Update-Module -Force
 
-	# update Windows
-Write-Host "Step 8: Update Windows" -ForegroundColor White -BackgroundColor Cyan
+    # update Windows
+    Write-Host "Step 8: Update Windows" -ForegroundColor White -BackgroundColor Cyan
     Install-WindowsUpdate -AcceptAll -Install -AutoReboot
 
 
-	# update Windows
-Write-Host "Step 9: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
-	nvim +PlugUpdate +qa!
-	nvim +CocUpdate +qa!
+    # update Windows
+    Write-Host "Step 9: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
+    nvim +PlugUpdate +qa!
+    nvim +CocUpdate +qa!
 
 }
 
@@ -167,7 +200,7 @@ Write-Host "Step 9: Update (neo)vim" -ForegroundColor White -BackgroundColor Cya
 #-------------------------------   Set Alias BEGIN    -------------------------------
 # 1. 编译函数 make
 function MakeThings {
-	nmake.exe $args -nologo
+    nmake.exe $args -nologo
 }
 Set-Alias -Name make -Value MakeThings
 
@@ -192,13 +225,13 @@ Set-Alias -Name os-update -Value Update-Packages
 function ListItem {
     Write-Host("")
     lsd -a
-	Write-Host("")
+    Write-Host("")
 }
 
 function ListDirectory {
     Write-Host("")
     lsd -la
-	Write-Host("")
+    Write-Host("")
 }
 
 Set-Alias -Name ls -Value ListItem -Option AllScope
@@ -214,15 +247,16 @@ Set-Alias -Name ne -Value winfetch
 # Set-Alias -Name ll -Value 'lsd -la' -Option AllScope
 
 # auto ls after each cd, not replacing cd, but use cdd
-function Set-LocationWithGCI{
+function Set-LocationWithGCI {
     param(
-            $path
-         )
-    if(Test-Path $path){
+        $path
+    )
+    if (Test-Path $path) {
         $path = Resolve-Path $path
         Set-Location $path
         Get-ChildItem $path
-    }else{
+    }
+    else {
         "Could not find path $path"
     }
 }
@@ -230,14 +264,14 @@ Set-Alias cdd Set-LocationWithGCI -Force
 
 # 4. 打开当前工作目录
 function OpenCurrentFolder {
-	param
-	(
-		# 输入要打开的路径
-		# 用法示例：open C:\
-		# 默认路径：当前工作文件夹
-		$Path = '.'
-	)
-	Invoke-Item $Path
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    Invoke-Item $Path
 }
 Set-Alias -Name open -Value OpenCurrentFolder
 
@@ -262,19 +296,19 @@ Set-Alias -Name cat -Value bat -Option AllScope
 #-------------------------------   Set Network BEGIN    -------------------------------
 # 1. 获取所有 Network Interface
 function Get-AllNic {
-	Get-NetAdapter | Sort-Object -Property MacAddress
+    Get-NetAdapter | Sort-Object -Property MacAddress
 }
 Set-Alias -Name getnic -Value Get-AllNic
 
 # 2. 获取 IPv4 关键路由
 function Get-IPv4Routes {
-	Get-NetRoute -AddressFamily IPv4 | Where-Object -FilterScript { $_.NextHop -ne '0.0.0.0' }
+    Get-NetRoute -AddressFamily IPv4 | Where-Object -FilterScript { $_.NextHop -ne '0.0.0.0' }
 }
 Set-Alias -Name getip -Value Get-IPv4Routes
 
 # 3. 获取 IPv6 关键路由
 function Get-IPv6Routes {
-	Get-NetRoute -AddressFamily IPv6 | Where-Object -FilterScript { $_.NextHop -ne '::' }
+    Get-NetRoute -AddressFamily IPv6 | Where-Object -FilterScript { $_.NextHop -ne '::' }
 }
 Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------    Set Network END     -------------------------------
@@ -292,10 +326,15 @@ Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------   Set zoxide BEGIN    -------------------------------
 
 # For zoxide v0.8.0+
-Invoke-Expression (& {
-    $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+Try {
+    Invoke-Expression (& {
+            $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell | Out-String)
-})
+        })
+}
+Catch {
+    scoop install zoxide
+}
 
 #-------------------------------    Set zoxide END     -------------------------------
 
@@ -330,76 +369,66 @@ Invoke-Expression (& {
 #>
 
 
-function Set-NetProxy
-    {
-        [CmdletBinding()]
-        Param(
+function Set-NetProxy {
+    [CmdletBinding()]
+    Param(
            
-            [Parameter(Mandatory=$True,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true)]
-            [String[]]$Proxy,
+        [Parameter(Mandatory = $True, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
+        [String[]]$Proxy,
 
-            [Parameter(Mandatory=$False,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true)]
-            [AllowEmptyString()]
-            [String[]]$acs
+        [Parameter(Mandatory = $False, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
+        [AllowEmptyString()]
+        [String[]]$acs
                    
-        )
+    )
 
-        Begin
-        {
+    Begin {
 
-                $regKey="HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
            
-        }
+    }
        
-        Process
-        {
+    Process {
            
-            Set-ItemProperty -path $regKey ProxyEnable -value 1
+        Set-ItemProperty -path $regKey ProxyEnable -value 1
 
-            Set-ItemProperty -path $regKey ProxyServer -value $proxy
+        Set-ItemProperty -path $regKey ProxyServer -value $proxy
                                
-            if($acs)
-            {         
+        if ($acs) {         
                
-                     Set-ItemProperty -path $regKey AutoConfigURL -Value $acs       
-            }
+            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs       
+        }
+
+    }
+       
+    End {
+
+        Write-Output "Proxy is now enabled"
+
+        Write-Output "Proxy Server : $proxy"
+
+        if ($acs) {
+               
+            Write-Output "Automatic Configuration Script : $acs"
 
         }
-       
-        End
-        {
-
-            Write-Output "Proxy is now enabled"
-
-            Write-Output "Proxy Server : $proxy"
-
-            if ($acs)
-            {
+        else {
                
-                Write-Output "Automatic Configuration Script : $acs"
+            Write-Output "Automatic Configuration Script : Not Defined"
 
-            }
-            else
-            {
-               
-                Write-Output "Automatic Configuration Script : Not Defined"
-
-            }
         }
     }
+}
 
 
-function Disable-NetProxy
-{
-  Begin
-    {
+function Disable-NetProxy {
+    Begin {
 
-            $regKey="HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
        
     }
    
-    Process
-    {
+    Process {
        
         Set-ItemProperty -path $regKey ProxyEnable -value 0 -ErrorAction Stop
 
@@ -409,8 +438,7 @@ function Disable-NetProxy
       
     }
    
-    End
-    {
+    End {
 
         Write-Output "Proxy is now Disabled"
 
@@ -423,58 +451,54 @@ function Disable-NetProxy
 # more advanced functions based on the functions above
 
 
-function Cfw
-{
-	# open "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-	# & "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-	& "$HOME\scoop\apps\clash-verge\current\Clash Verge.exe"
-	Set-NetProxy -proxy "127.0.0.1:7890"
-	Start-Sleep 2
-	git config --global http.proxy 'http://127.0.0.1:7890'
-	git config --global https.proxy 'http://127.0.0.1:7890'
-	echo "git proxy set"
-	git config --global --get http.proxy
-	start "https://www.youtube.com"
-	start "https://www.google.com"
-	start "https://web.telegram.org/z/"
-	cp ~/pip/pip.ini.old ~/pip/pip.ini
+function Cfw {
+    # open "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
+    # & "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
+    & "$HOME\scoop\apps\clash-verge\current\Clash Verge.exe"
+    Set-NetProxy -proxy "127.0.0.1:7890"
+    Start-Sleep 2
+    git config --global http.proxy 'http://127.0.0.1:7890'
+    git config --global https.proxy 'http://127.0.0.1:7890'
+    echo "git proxy set"
+    git config --global --get http.proxy
+    start "https://www.youtube.com"
+    start "https://www.google.com"
+    start "https://web.telegram.org/z/"
+    cp ~/pip/pip.ini.old ~/pip/pip.ini
 }
 
 
-function Disable-Cfw
-{
-	# $ClashApp = "Clash for Windows"
-	$ClashApp = "Clash Verge"
+function Disable-Cfw {
+    # $ClashApp = "Clash for Windows"
+    $ClashApp = "Clash Verge"
 
-	Disable-NetProxy
-	git config --global --unset http.proxy
-	git config --global --unset https.proxy
-	rm ~/pip/pip.ini
+    Disable-NetProxy
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+    rm ~/pip/pip.ini
 
-	if((get-process $ClashApp -ea SilentlyContinue) -eq $Null){ 
+    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) { 
         Write-Host "Not Running" 
-		}
+    }
 
-	else{ 
-		Write-Host "$ClashApp is Running"
-		Stop-Process -processname $ClashApp
-		Write-Host "$ClashApp has been closed"
-		git config --global --unset http.proxy
-		git config --global --unset https.proxy
-		Write-Host "git proxy unset"
-	 }
+    else { 
+        Write-Host "$ClashApp is Running"
+        Stop-Process -processname $ClashApp
+        Write-Host "$ClashApp has been closed"
+        git config --global --unset http.proxy
+        git config --global --unset https.proxy
+        Write-Host "git proxy unset"
+    }
 }
 
-function Reboot
-{
-	Disable-Cfw
-	shutdown -r -t 0
+function Reboot {
+    Disable-Cfw
+    shutdown -r -t 0
 }
 
-function PowerOff
-{
-	Disable-Cfw
-	shutdown -p
+function PowerOff {
+    Disable-Cfw
+    shutdown -p
 }
 
 # Clear-Host
@@ -496,7 +520,7 @@ $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
 # Utilities
 function which ($command) {
-  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 # -------------------------------   Set test END    -------------------------------

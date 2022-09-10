@@ -6,6 +6,9 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
   Break
 }
 
+# Make sure this can install PS modules
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 # git
 New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\git\gitconfig" -Force
 Write-host ".gitconfig has been linked to .dotfiles\common\git\gitconfig"
