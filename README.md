@@ -8,23 +8,23 @@ Here are my dotfiles.
 
 ## Windows
 
-windows terminal
-powershell profile
-winfetch
-scoop config
-neovim
+- windows terminal
+- powershell profile
+- winfetch
+- scoop config
+- neovim
 and more
 
 
 ## Linux
 
-zsh
-powerlevel10k
-neovim
+- zsh
+- powerlevel10k
+- neovim
 and more
 
 ## Mac
 
-zsh
-brew
-nix
+- zsh
+- brew
+- nix
