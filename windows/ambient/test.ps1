@@ -15,7 +15,7 @@ New-Item -Path "C:$env:HOMEPATH\pip" -ItemType SymbolicLink -Target "C:$env:HOME
 Write-host "~\pip has been linked to .dotfiles\windows\pip"
 
 # neovim
-New-Item -Path "C:$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nvim" -Force
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nvim" -Force
 Write-host "nvim has been linked to .dotfiles\common\nvim"
 
 
@@ -48,6 +48,10 @@ Write-host "z.lua has been linked to .dotfiles\windows\cmd\z.lua"
 
 New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\z.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\z.cmd" -Force
 Write-host "z.cmd has been linked to .dotfiles\windows\cmd\z.cmd"
+
+# lf
+New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\lf" -Force
+Write-host "~\lf has been linked to .dotfiles\windows\lf"
 
 # Questions:
 # what is symboliclink?
