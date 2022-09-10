@@ -31,6 +31,7 @@ if (Test-Path($ChocolateyProfile)) {
 # 设置 PowerShell 主题
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\peru.omp.json" | Invoke-Expression
 oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
 
 # 引入 posh-git

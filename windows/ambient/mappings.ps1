@@ -7,8 +7,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 # git
-New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\.gitconfig" -Force
-Write-host ".gitconfig has been linked to .dotfiles\common\.gitconfig"
+New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\git\gitconfig" -Force
+Write-host ".gitconfig has been linked to .dotfiles\common\git\gitconfig"
 
 # Window-Terminal
 
