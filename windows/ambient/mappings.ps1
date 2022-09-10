@@ -1,32 +1,71 @@
-# This is the script to automatically install all the configs that I used for setting up a windows environment
-
-# link various profiles to $home\.config\<program profiles>
+# This make sure you run as Administrator
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
+{  
+  $arguments = "& '" +$myinvocation.mycommand.definition + "'"
+  Start-Process powershell -Verb runAs -ArgumentList $arguments
+  Break
+}
 
 # git
-New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.gitconfig" -Force
-
-# powershell
-New-Item -Path "C:$env:HOMEPATH\Documents\PowerShell\Microsoft.PowerShell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.profile.ps1" -Force
-New-Item -Path "C:$env:HOMEPATH\Documents\PowerShell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.codeprofile.ps1" -Force
-
-# windows terminal
-New-Item -Path "C:$env:HOMEPATH\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows-terminal\settings.json" -Force
-
-# neovim
-New-Item -Path "C:$env:HOMEPATH\AppData\Local\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\nvim" -Force
-
-# oh-my-posh
-New-Item -Path "C:$env:HOMEPATH\Programs\oh-my-posh\themes\my_schema1.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.posh.json" -Force
-
-# Winfetch
-New-Item -Path "~\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "~\.dotfiles\.winf.ps1" -Force
+New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\.gitconfig" -Force
+Write-host ".gitconfig has been linked to .dotfiles\common\.gitconfig"
 
 # Python/pip
-New-Item -Path "~\pip\pip.ini" -ItemType SymbolicLink -Target "~\.dotfiles\pip\pip.ini" -Force
+New-Item -Path "C:$env:HOMEPATH\pip" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\pip" -Force
+Write-host "~\pip has been linked to .dotfiles\windows\pip"
 
-# $winTerminalSettingsPath = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
-# copy-item windows-terminal\settings.json $winTerminalSettingsPath\settings.json
+# neovim
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nvim" -Force
+Write-host "nvim has been linked to .dotfiles\common\nvim"
 
-# # neovim
-# git clone https://github.com/Lunarvim/Lunarvim.git "$env:LOCALAPPDATA\nvim"
-# nvim +PackerSync +qa!
+
+# Winfetch
+New-Item -Path "C:$env:HOMEPATH\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\winfetch\config.ps1" -Force
+Write-host "winfetch config has been linked to .dotfiles\windows\winfetch\config.ps1"
+
+# windows powershell(5.1)
+New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+
+# powershell7
+New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+
+# cmd/clink
+
+New-Item -Path "C:$env:HOMEPATH\alias.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\alias.cmd" -Force
+Write-host "alias.cmd has been linked to .dotfiles\windows\cmd\alias.cmd"
+
+
+New-Item -Path "C:\Users\Public\init.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\init.cmd" -Force
+Write-host "init.cmd has been linked to .dotfiles\windows\cmd\init.cmd"
+
+New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\oh-my-posh.lua" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\oh-my-posh.lua" -Force
+Write-host "oh-my-posh.lua has been linked to .dotfiles\windows\cmd\oh-my-posh.lua"
+
+New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\z.lua" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\z.lua" -Force
+Write-host "z.lua has been linked to .dotfiles\windows\cmd\z.lua"
+
+New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\z.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\z.cmd" -Force
+Write-host "z.cmd has been linked to .dotfiles\windows\cmd\z.cmd"
+
+# lf
+New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\lf" -Force
+Write-host "~\lf has been linked to .dotfiles\windows\lf"
+
+
+
+# Window-Terminal
+
+New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\windows-terminal\settings.json" -Force
+Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
+
+
+
+# Questions:
+# what is symboliclink?
+# what can symbolicklink do?
+# Can symbolickLink be delete and restore?
+# Can symbolickLink be updated?
+# Can you symlink a whole directory?
+# Which space does the linked file(s) occupy?
