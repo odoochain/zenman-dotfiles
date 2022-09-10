@@ -6,6 +6,11 @@ I'm primarily a Windows user, I've used Mac for about 10 years then moved to win
 
 Here are my dotfiles.
 
+
+## Theme
+
+My systems generally have Nord based themes, so if you are a big fan of Nord, you may find these configs helpful.
+
 ## Windows
 
 - windows terminal
@@ -13,6 +18,8 @@ Here are my dotfiles.
 - winfetch
 - scoop config
 - neovim
+- JPEGView
+- lf
 and more
 
 

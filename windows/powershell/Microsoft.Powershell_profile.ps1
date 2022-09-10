@@ -206,6 +206,8 @@ Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
 
+Set-Alias -Name neofetch -Value winfetch
+Set-Alias -Name ne -Value winfetch
 
 # Set-Alias -Name ls -Value "lsd -a" -Option AllScope
 # Set-Alias -Name ll -Value 'lsd -la' -Option AllScope
@@ -498,4 +500,4 @@ function which ($command) {
 }
 # -------------------------------   Set test END    -------------------------------
 
-winfetch
+# winfetch

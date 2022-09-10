@@ -10,6 +10,22 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\.gitconfig" -Force
 Write-host ".gitconfig has been linked to .dotfiles\common\.gitconfig"
 
+# Window-Terminal
+
+New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\windows-terminal\settings.json" -Force
+Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
+
+# windows powershell(5.1)
+New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+
+# powershell7
+New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
+Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+
+
 # Python/pip
 New-Item -Path "C:$env:HOMEPATH\pip" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\pip" -Force
 Write-host "~\pip has been linked to .dotfiles\windows\pip"
@@ -26,19 +42,10 @@ Write-host ".vimrc has been linked to .dotfiles\common\vim\.vimrc"
 New-Item -Path "C:$env:HOMEPATH\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\winfetch\config.ps1" -Force
 Write-host "winfetch config has been linked to .dotfiles\windows\winfetch\config.ps1"
 
-# windows powershell(5.1)
-New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
-
-# powershell7
-New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
-
 # cmd/clink
 
 New-Item -Path "C:$env:HOMEPATH\alias.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\alias.cmd" -Force
 Write-host "alias.cmd has been linked to .dotfiles\windows\cmd\alias.cmd"
-
 
 New-Item -Path "C:\Users\Public\init.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\init.cmd" -Force
 Write-host "init.cmd has been linked to .dotfiles\windows\cmd\init.cmd"
@@ -56,13 +63,10 @@ Write-host "z.cmd has been linked to .dotfiles\windows\cmd\z.cmd"
 New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\lf" -Force
 Write-host "~\lf has been linked to .dotfiles\windows\lf"
 
+# JPEGView
 
-
-# Window-Terminal
-
-New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\windows-terminal\settings.json" -Force
-Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
-
+New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\JPEGView" -Force
+Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 
 
 # Questions:
