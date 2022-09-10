@@ -25,6 +25,9 @@ New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.Powershell_profil
 New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
 Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
 
+# starship
+New-Item -Path "C:$env:HOMEPATH\.starship" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\.starship" -Force
+Write-host "~\.starship has been linked to .dotfiles\common\.starship"
 
 # Python/pip
 New-Item -Path "C:$env:HOMEPATH\pip" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\pip" -Force
