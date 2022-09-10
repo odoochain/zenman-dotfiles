@@ -74,6 +74,10 @@ Write-host "~\lf has been linked to .dotfiles\windows\lf"
 New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\JPEGView" -Force
 Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 
+# Everything
+
+New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\Everything" -Force
+Write-host "Everything has been linked to .dotfiles\windows\Everything"
 
 # Questions:
 # what is symboliclink?
