@@ -4,16 +4,16 @@
     "actions": 
     [
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         },
         {
             "command": "find",
@@ -57,20 +57,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{f6c6ca8e-e620-5ac4-ab6c-52a22bb994e6}",
-                "hidden": true,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\commandprompt.png",
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{af00996e-9128-5339-954c-3d8bbc4b8935}",
-                "hidden": true,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\powershell-old.png",
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
                 "commandline": "%USERPROFILE%/scoop/apps/git/current/usr/bin/bash.exe -l -i",
                 "guid": "{00000000-0000-0000-ba54-000000000002}",
                 "hidden": false,
@@ -108,11 +94,10 @@
                 "name": "Arch"
             },
             {
-                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "guid": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
                 "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\anonymous.png",
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
+                "name": "PowerShell (scoop)",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },

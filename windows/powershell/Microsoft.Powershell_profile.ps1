@@ -29,21 +29,29 @@ Catch {
  * Copyright: No copyright. You can use this code for anything with no warranty.
 #>
 
+#-------------------------------   Set starship BEGIN    -------------------------------
+
+<#
+$ENV:STARSHIP_CONFIG = "$HOME\.dotfiles\common\.starship\starship.toml"
+# $ENV:STARSHIP_DISTRO = " 者 x 💀 "
+Invoke-Expression (&starship init powershell)
+#>
+
+#-------------------------------   Set starship END    -------------------------------
 
 #------------------------------- Import Modules BEGIN -------------------------
 
 
 # 引入 oh-my-posh
 # 设置 PowerShell 主题
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\peru.omp.json" | Invoke-Expression
+
 Try {
+    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\peru.omp.json" | Invoke-Expression
     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
 }
 Catch {
     scoop install oh-my-posh
 }
-
-# oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
 
 # 引入 posh-git
@@ -243,6 +251,8 @@ Set-Alias -Name py -Value python
 Set-Alias -Name neofetch -Value winfetch
 Set-Alias -Name ne -Value winfetch
 
+Set-Alias -Name btop -Value btop4win
+
 # Set-Alias -Name ls -Value "lsd -a" -Option AllScope
 # Set-Alias -Name ll -Value 'lsd -la' -Option AllScope
 
@@ -338,13 +348,6 @@ Catch {
 
 #-------------------------------    Set zoxide END     -------------------------------
 
-#-------------------------------   Set starship BEGIN    -------------------------------
-
-# $ENV:STARSHIP_CONFIG = "$HOME\.starship\starship.toml"
-# # $ENV:STARSHIP_DISTRO = " 者 x 💀 "
-# Invoke-Expression (&starship init powershell)
-
-#-------------------------------   Set starship END    -------------------------------
 
 
 
