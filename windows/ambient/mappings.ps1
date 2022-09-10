@@ -18,6 +18,9 @@ Write-host "~\pip has been linked to .dotfiles\windows\pip"
 New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nvim" -Force
 Write-host "nvim has been linked to .dotfiles\common\nvim"
 
+# vim
+New-Item -Path "$home\.vimrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\vim\.vimrc" -Force
+Write-host ".vimrc has been linked to .dotfiles\common\vim\.vimrc"
 
 # Winfetch
 New-Item -Path "C:$env:HOMEPATH\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\winfetch\config.ps1" -Force
