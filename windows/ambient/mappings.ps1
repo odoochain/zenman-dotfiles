@@ -79,6 +79,13 @@ Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\Everything" -Force
 Write-host "Everything has been linked to .dotfiles\windows\Everything"
 
+
+# workspacer
+New-Item -Path "C:$env:HOMEPATH\.workspacer" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\.workspacer" -Force
+Write-host "~\.workspacer has been linked to .dotfiles\windows\.workspacer"
+
+
+
 # Questions:
 # what is symboliclink?
 # what can symbolicklink do?
