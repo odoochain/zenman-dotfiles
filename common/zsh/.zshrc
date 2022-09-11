@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -15,7 +16,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -80,7 +81,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(
     git
     zsh-autosuggestions
-    fast-syntax-highlighting
+    zsh-syntax-highlighting
     command-not-found
     z
 )
@@ -124,12 +125,20 @@ alias ls="lsd -a"
 alias ll="lsd -la"
 alias l="lsd -la"
 
+alias grep="rg"
+alias cat="bat"
+
+# This is for zsh on windows
+alias btop="btop4win"
+
+alias ne="winfetch"
+alias neofetch="winfetch"
+alias fetch="winfetch"
+
 
 # eval "$(lua /c/Users/mino29/z.lua/z.lua --init zsh)"
 eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
 

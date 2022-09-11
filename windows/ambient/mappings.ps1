@@ -59,6 +59,7 @@ Write-host "init.cmd has been linked to .dotfiles\windows\cmd\init.cmd"
 New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\oh-my-posh.lua" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\oh-my-posh.lua" -Force
 Write-host "oh-my-posh.lua has been linked to .dotfiles\windows\cmd\oh-my-posh.lua"
 
+# z.lua for cmd/clink
 New-Item -Path "C:$env:HOMEPATH\scoop\apps\clink\current\z.lua" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\z.lua" -Force
 Write-host "z.lua has been linked to .dotfiles\windows\cmd\z.lua"
 
@@ -84,7 +85,21 @@ Write-host "Everything has been linked to .dotfiles\windows\Everything"
 New-Item -Path "C:$env:HOMEPATH\.workspacer" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\.workspacer" -Force
 Write-host "~\.workspacer has been linked to .dotfiles\windows\.workspacer"
 
+# git-bash, zsh and p10k
+New-Item -Path "C:$env:HOMEPATH\.bashrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\bash\.bashrc" -Force
+Write-host "~\.bashrc has been linked to .dotfiles\windows\bash\.bashrc"
 
+New-Item -Path "C:$env:HOMEPATH\.bash_profile" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\bash\.bashrc" -Force
+Write-host "~\.bashrc has been linked to .dotfiles\windows\bash\.bashrc"
+
+#zsh
+New-Item -Path "C:$env:HOMEPATH\.zshrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\zsh\.zshrc" -Force
+Write-host "~\.zshrc has been linked to .dotfiles\windows\zsh\.zshrc"
+
+
+#p10k/powerlevel10k
+New-Item -Path "C:$env:HOMEPATH\.p10k.zsh" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\zsh\.p10k.zsh" -Force
+Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
 
 # Questions:
 # what is symboliclink?
