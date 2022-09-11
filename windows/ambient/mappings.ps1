@@ -23,14 +23,12 @@ New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bb
 Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
 
 # windows powershell(5.1)
-New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+New-Item -Path "C:$env:HOMEPATH\Documents\WindowsPowershell" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell" -Force
+Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\"
 
 # powershell7
-New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.Powershell_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-New-Item -Path "C:$env:HOMEPATH\Documents\Powershell\Microsoft.VSCode_profile.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1" -Force
-Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\Microsoft.Powershell_profile.ps1"
+New-Item -Path "C:$env:HOMEPATH\Documents\Powershell" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\powershell" -Force
+Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\"
 
 # starship
 New-Item -Path "C:$env:HOMEPATH\.starship" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\.starship" -Force
