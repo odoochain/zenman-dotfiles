@@ -131,10 +131,6 @@ alias cat="bat"
 # This is for zsh on windows
 alias btop="btop4win"
 
-alias ne="winfetch"
-alias neofetch="winfetch"
-alias fetch="winfetch"
-
 
 # eval "$(lua /c/Users/mino29/z.lua/z.lua --init zsh)"
 eval "$(zoxide init zsh)"
