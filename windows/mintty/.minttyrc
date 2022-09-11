@@ -1,0 +1,8 @@
+ThemeFile=nord
+Font=Hack NF
+FontHeight=11
+Transparency=off
+Columns=110
+Rows=59
+RewrapOnResize=yes
+Scrollbar=none

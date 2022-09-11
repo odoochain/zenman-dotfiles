@@ -130,6 +130,7 @@ alias cat="bat"
 
 # This is for zsh on windows
 alias btop="btop4win"
+alias open="explorer.exe ."
 
 
 # eval "$(lua /c/Users/mino29/z.lua/z.lua --init zsh)"

@@ -13,6 +13,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 New-Item -Path "C:$env:HOMEPATH\.gitconfig" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\git\gitconfig" -Force
 Write-host ".gitconfig has been linked to .dotfiles\common\git\gitconfig"
 
+# mintty-terminal(that comes with git-bash)
+New-Item -Path "C:$env:HOMEPATH\.minttyrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\mintty\.minttyrc" -Force
+Write-host ".minttyrc has been linked to .dotfiles\windows\mintty\.minttyrc"
+
 # Window-Terminal
 
 New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\windows-terminal\settings.json" -Force
@@ -36,6 +40,15 @@ Write-host "~\.starship has been linked to .dotfiles\common\.starship"
 New-Item -Path "C:$env:HOMEPATH\pip" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\pip" -Force
 Write-host "~\pip has been linked to .dotfiles\windows\pip"
 
+# conda
+New-Item -Path "C:$env:HOMEPATH\.condarc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\conda\.condarc" -Force
+Write-host "~\.condarc has been linked to .dotfiles\common\conda\.condarc"
+
+# npm
+New-Item -Path "C:$env:HOMEPATH\.npmrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\npm\.npmrc" -Force
+Write-host "~\.npmrc has been linked to .dotfiles\common\npm\.npmrc"
+
+
 # neovim
 New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nvim" -Force
 Write-host "nvim has been linked to .dotfiles\common\nvim"
@@ -43,6 +56,10 @@ Write-host "nvim has been linked to .dotfiles\common\nvim"
 # vim
 New-Item -Path "$home\.vimrc" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\vim\.vimrc" -Force
 Write-host ".vimrc has been linked to .dotfiles\common\vim\.vimrc"
+
+# ideavim
+New-Item -Path "$home\.ideavimrc\" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\ideam\.ideavimrc" -Force
+Write-host "~\.ideavimrc has been linked to .dotfiles\common\ideam\.ideavimrc"
 
 # Winfetch
 New-Item -Path "C:$env:HOMEPATH\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\winfetch\config.ps1" -Force
@@ -71,15 +88,12 @@ New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "C:$env:HOM
 Write-host "~\lf has been linked to .dotfiles\windows\lf"
 
 # JPEGView
-
 New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\JPEGView" -Force
 Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 
 # Everything
-
 New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\Everything" -Force
 Write-host "Everything has been linked to .dotfiles\windows\Everything"
-
 
 # workspacer
 New-Item -Path "C:$env:HOMEPATH\.workspacer" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\.workspacer" -Force
@@ -100,6 +114,16 @@ Write-host "~\.zshrc has been linked to .dotfiles\windows\zsh\.zshrc"
 #p10k/powerlevel10k
 New-Item -Path "C:$env:HOMEPATH\.p10k.zsh" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\zsh\.p10k.zsh" -Force
 Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
+
+
+
+
+
+
+
+
+
+
 
 # Questions:
 # what is symboliclink?

@@ -72,12 +72,12 @@ Catch {
 }
 
 # 引入terminal-icons
-# Try {
-#     Import-Module -Name Terminal-Icons
-# }
-# Catch {
-#     Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
-# }
+Try {
+    Import-Module -Name Terminal-Icons
+}
+Catch {
+    Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
+}
 
 # 引入Zlocation (powerful cd)
 # full command-let is invoke-Zlocation, z for short
