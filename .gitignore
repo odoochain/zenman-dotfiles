@@ -1,4 +1,8 @@
 *.exe
 /common/nvim
-/windows/everything/Run History-1.5a.csv
-/windows/everything/Search History-1.5a.csv
+.bash_history
+.zsh_history
+.python_history
+/common/zsh/.oh-my-zsh
+windows/everything/Run History-1.5a.csv
+windows/everything/Search History-1.5a.csv

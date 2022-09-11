@@ -1,7 +1,7 @@
 set colors
 set preview true
 set hidden true
-set drawbox true
+set drawbox false
 set icons true
 set ignorecase true
 
