@@ -517,8 +517,8 @@ alias v = nvim
 alias vi = nvim
 alias vim = nvim
 
-alias ls = lsd -a
-alias ll = lsd -al
+# alias ls = lsd -a
+# alias ll = lsd -al
 
 alias cat = bat
 
