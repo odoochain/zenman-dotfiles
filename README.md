@@ -16,7 +16,9 @@ The wallpaper included is what I made using Photoshop for like 5 minutes. Feel f
 ### Cross-platform programs
 
 I use cross-platform programs whenever possible, so I don't get locked up in a specific ecosystem.
-In the common folder are thoese programs configs that shared the same config files across different oses. 
+In the common folder are thoese programs configs that shared the same config files across different OSes. 
+
+- nushell (blazing fast shell, not supporting conda ATM is a bummer though)
 
 
 ## Windows

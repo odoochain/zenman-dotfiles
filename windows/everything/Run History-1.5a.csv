@@ -1,8 +1,18 @@
 Filename,Run Count,Last Run Date
+<<<<<<< HEAD
 "E:\ns_code_project\simple_hkd_claim.py",1,133074674983527103
 "C:\Program Files (x86)\AliWangWang\AliIM.exe",1,133074668512143795
 "C:\Users\mino29\scoop\apps\oh-my-posh\9.0.0\bin\oh-my-posh.exe",1,133074627675505065
 "D:\Download\Steelrising [FitGirl Repack]",1,133074384189667869
+||||||| 8f403c8
+"D:\win11\python\install-poetry.ps1",1,133074574292128748
+"C:\Users\mino29\AppData\Local\pypoetry\Cache\virtualenvs\switchmaster-s5RBCEq4-py3.10\Scripts\python.exe",1,133074570235022451
+=======
+"C:\Users\mino29\scoop\apps\oh-my-posh\9.0.0\oh-my-posh.exe",1,133074627168732974
+"C:\Users\mino29\AppData\Roaming\nushell",1,133074603535694042
+"D:\win11\python\install-poetry.ps1",1,133074574292128748
+"C:\Users\mino29\AppData\Local\pypoetry\Cache\virtualenvs\switchmaster-s5RBCEq4-py3.10\Scripts\python.exe",1,133074570235022451
+>>>>>>> 0d80be9e41d353efd88135eb999f6121b629ae8b
 "D:\Download\Programs\nord-4circles-vertical.png",1,133073891844839368
 "E:\clash_profiles\alpha_101.yaml",1,133073881455711680
 "C:\Users\mino29\Downloads\Programs\android\F-Droid.apk",1,133073879986505778
