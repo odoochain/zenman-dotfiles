@@ -251,7 +251,7 @@ Set-Alias -Name py -Value python
 Set-Alias -Name neofetch -Value winfetch
 Set-Alias -Name ne -Value winfetch
 
-Set-Alias -Name btop -Value btop4win
+# Set-Alias -Name btop -Value btop4win
 
 # Set-Alias -Name ls -Value "lsd -a" -Option AllScope
 # Set-Alias -Name ll -Value 'lsd -la' -Option AllScope
