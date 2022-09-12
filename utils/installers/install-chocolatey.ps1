@@ -8,8 +8,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 Try{
-  poetry --version
-  Write-host "poetry is installed on your system."
+  choco --version
+  Write-host "choco is installed on your system."
 }
 Catch
 {
@@ -17,10 +17,10 @@ Catch
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Install poetry from official script
-(Invoke-WebRequest -Uri https://install.python-poetry.org/ -UseBasicParsing).Content | python -
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-$Env:PATH = "C:\Users\mino29\AppData\Roaming\Python\Scripts\;$Env:PATH"
-Write-host "Poetry has been add to path. You can run `poetry --version` to test it out."
+Write-host "Choco has been add to path. You can run `choco --version` to test it out."
+
 }
 
 

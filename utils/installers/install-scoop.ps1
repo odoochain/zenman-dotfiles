@@ -8,19 +8,18 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 Try{
-  poetry --version
-  Write-host "poetry is installed on your system."
+  scoop --version
+  Write-host "scoop is installed on your system."
 }
 Catch
 {
 # Make sure this can install PS modules
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# Install poetry from official script
-(Invoke-WebRequest -Uri https://install.python-poetry.org/ -UseBasicParsing).Content | python -
+# Install scoop from official script
+irm get.scoop.sh | iex
 
-$Env:PATH = "C:\Users\mino29\AppData\Roaming\Python\Scripts\;$Env:PATH"
-Write-host "Poetry has been add to path. You can run `poetry --version` to test it out."
+Write-host "scoop has been add to path. You can run `scoop --version` to test it out."
 }
 
 
