@@ -8,7 +8,7 @@ let-env PROMPT_COMMAND_RIGHT = {''}
 let-env NU_VERSION = (version | get version)
 
 # PROMPTS
-let-env PROMPT_MULTILINE_INDICATOR = (^"C:/Users/mino29/scoop/apps/oh-my-posh/current/oh-my-posh.exe" print secondary $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.NU_VERSION)")
+let-env PROMPT_MULTILINE_INDICATOR = (^"C:/Users/mino29/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe" print secondary $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.NU_VERSION)")
 
 let-env PROMPT_COMMAND = {
     # We have to do this because the initial value of `$env.CMD_DURATION_MS` is always `0823`,
@@ -17,5 +17,5 @@ let-env PROMPT_COMMAND = {
     let cmd_duration = if $env.CMD_DURATION_MS == "0823" { 0 } else { $env.CMD_DURATION_MS }
 
     let width = (term size -c | get columns | into string)
-    ^"C:/Users/mino29/scoop/apps/oh-my-posh/current/oh-my-posh.exe" print primary $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.NU_VERSION)" $"--execution-time=($cmd_duration)" $"--error=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
+    ^"C:/Users/mino29/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe" print primary $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.NU_VERSION)" $"--execution-time=($cmd_duration)" $"--error=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
 }

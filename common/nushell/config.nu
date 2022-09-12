@@ -523,8 +523,4 @@ alias ll = lsd -al
 
 source ~/.dotfiles/common/nushell/.oh-my-posh.nu
 
-
-
-
-
 source ~/.zoxide.nu
