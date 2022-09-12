@@ -18,7 +18,6 @@ New-Item -Path "C:$env:HOMEPATH\.minttyrc" -ItemType SymbolicLink -Target "C:$en
 Write-host ".minttyrc has been linked to .dotfiles\windows\mintty\.minttyrc"
 
 # Window-Terminal
-
 New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\windows-terminal\settings.json" -Force
 Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
 
@@ -64,7 +63,6 @@ New-Item -Path "C:$env:HOMEPATH\.config\winfetch\config.ps1" -ItemType SymbolicL
 Write-host "winfetch config has been linked to .dotfiles\windows\winfetch\config.ps1"
 
 # cmd/clink
-
 New-Item -Path "C:$env:HOMEPATH\alias.cmd" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\windows\cmd\alias.cmd" -Force
 Write-host "alias.cmd has been linked to .dotfiles\windows\cmd\alias.cmd"
 
@@ -114,12 +112,9 @@ New-Item -Path "C:$env:HOMEPATH\.p10k.zsh" -ItemType SymbolicLink -Target "C:$en
 Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
 
 
-
-
-
-
-
-
+#nushell
+New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\common\nushell" -Force
+Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
 

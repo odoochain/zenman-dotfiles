@@ -4,6 +4,8 @@
 .zsh_history
 .python_history
 /common/zsh/.oh-my-zsh
-windows/everything/Everything-1.5a.ini
-windows/everything/Run History-1.5a.csv
-windows/everything/Search History-1.5a.csv
+/windows/everything/Run History-1.5a.csv
+/windows/everything/everything-1.5a.ini
+/windows/everything/search history-1.5a.csv
+/common/nushell/history.txt
+
