@@ -76,7 +76,7 @@ Try {
     Import-Module -Name Terminal-Icons
 }
 Catch {
-    Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
+    Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser -Force # oh-my-posh 基础美化工具包
 }
 
 # 引入Zlocation (powerful cd)
@@ -90,7 +90,7 @@ Try {
     Import-Module PSWindowsUpdate
 }
 Catch {
-    Install-Module Terminal-Icons -Scope CurrentUser -Force  ## oh-my-posh 基础美化工具包
+    Install-Module PSWindowsUpdate -Scope CurrentUser -Force  ## PSwindowsUpdates
 }
 
 
