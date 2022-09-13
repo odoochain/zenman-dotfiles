@@ -8,4 +8,7 @@
 "windows/everything/search history-1.5a.csv"
 windows/everything/everything-1.5a.ini
 /common/nushell/history.txt
+*.zip
+*.nupkg
+*.msixbundle
 
