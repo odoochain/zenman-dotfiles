@@ -7,7 +7,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 # Make sure this can install PS modules
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # git
 New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\gitconfig" -Force
@@ -56,7 +56,7 @@ Write-host ".vimrc has been linked to .dotfiles\common\vim\.vimrc"
 
 # ideavim
 New-Item -Path "$env:USERPROFILE\.ideavimrc\" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\ideavim\.ideavimrc" -Force
-Write-host "~\.ideavimrc has been linked to .dotfiles\common\ideam\.ideavimrc"
+Write-host "~\.ideavimrc has been linked to .dotfiles\common\ideavim\.ideavimrc"
 
 # Winfetch
 New-Item -Path "$env:USERPROFILE\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\winfetch\config.ps1" -Force
