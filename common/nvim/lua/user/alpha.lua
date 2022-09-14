@@ -5,17 +5,24 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-    [[                        ,-.       _,---._ __  / \               ]],
-    [[                       /  )    .-'       `./ /   \              ]],
-    [[                      (  (   ,'            `/    /|             ]],
-    [[                       \  `-"             \'\   / |             ]],
-    [[                        `.              ,  \ \ /  |             ]],
-    [[                         /`.          ,'-`----Y   |             ]],
-    [[                        (            ;        |   '             ]],
-    [[                        |  ,-.    ,-'         |  /              ]],
-    [[                        |  | (   |            | /               ]],
-    [[                        )  |  \  `.___________|/                ]],
-    [[                        `--'   `--'                             ]],
+    [[                                                                ]],
+    [[                                                                ]],
+    [[                                                                ]],
+    [[                                                                ]],
+    [[                      ,-.       _,---._ __  / \                 ]],
+    [[                     /  )    .-'       `./ /   \                ]],
+    [[                    (  (   ,'            `/    /|               ]],
+    [[                     \  `-"             \'\   / |               ]],
+    [[                      `.              ,  \ \ /  |               ]],
+    [[                       /`.          ,'-`----Y   |               ]],
+    [[                      (            ;        |   '               ]],
+    [[                      |  ,-.    ,-'         |  /                ]],
+    [[                      |  | (   |            | /                 ]],
+    [[                      )  |  \  `.___________|/                  ]],
+    [[                      `--'   `--'                               ]],
+    [[                                                                ]],
+    [[                                                                ]],
+    [[                                                                ]],
 }
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
@@ -24,7 +31,6 @@ dashboard.section.buttons.val = {
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", "  Configuration", ":e $MYVIMRC<CR>"),
-	-- dashboard.button("c", "  Configuration", ":e ~/AppData/Local/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
