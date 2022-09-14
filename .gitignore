@@ -3,8 +3,8 @@
 .zsh_history
 .python_history
 /common/zsh/.oh-my-zsh
-"windows/everything/Run History-1.5a.csv"
-"windows/everything/search history-1.5a.csv"
+"/windows/everything/Run History-1.5a.csv"
+"/windows/everything/search history-1.5a.csv"
 windows/everything/everything-1.5a.ini
 /common/nushell/history.txt
 *.zip
