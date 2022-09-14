@@ -1,5 +1,4 @@
 *.exe
-/common/nvim
 .bash_history
 .zsh_history
 .python_history
