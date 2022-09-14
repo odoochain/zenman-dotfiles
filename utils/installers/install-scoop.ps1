@@ -20,6 +20,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
 Write-host "scoop has been add to path. You can run `scoop --version` to test it out."
+
+#TODO: add more buckets
+#TODO: test the buckets added successfully
+#TODO: install a bunch of apps from scoop
+
 }
 
 

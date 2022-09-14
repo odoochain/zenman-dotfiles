@@ -22,8 +22,5 @@ Write-host "Choco has been add to path. You can run `choco --version` to test it
 
 }
 
-# Install choco
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
 # Install a bunch of programs that only listed in choco repo
 # choco install roboform
