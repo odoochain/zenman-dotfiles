@@ -118,8 +118,7 @@ keymap('n', 'sv', ':vsplit<Return><C-w>w', opts)
 -- keymap('n', '<C-w><up>', '<C-w>+', opts)
 -- keymap('n', '<C-w><down>', '<C-w>-', opts)
 
---ctrl+c to escape
-keymap('n', '<C-c>', 'Esc', opts)
+
 
 -- map 0 to the first non-white space character
 keymap('', '0', '^', opts)

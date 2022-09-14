@@ -1,3 +1,0 @@
-[submodule "common/nvim"]
-	path = common/nvim
-	url = https://github.com/mino29/meovim.git
