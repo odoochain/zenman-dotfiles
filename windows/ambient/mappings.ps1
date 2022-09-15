@@ -87,6 +87,9 @@ Write-host "~\lf has been linked to .dotfiles\windows\lf"
 New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView" -Force
 Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 
+New-Item -Path "C:\Program Files (x86)\JPEGView\KeyMap.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView\KeyMap.txt" -Force
+Write-host "JPEGView KeyMap.txt has been linked to .dotfiles\windows\JPEGView\KeyMap.txt"
+
 # Everything
 New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\Everything" -Force
 Write-host "Everything has been linked to .dotfiles\windows\Everything"
