@@ -37,6 +37,7 @@ DOSKEY cc=cls
 DOSKEY cs=cowsay $*
 DOSKEY ne=winfetch
 DOSKEY neofetch=winfetch
+DOSKEY open=explorer
 
 :: These are for my lazy ass
 
