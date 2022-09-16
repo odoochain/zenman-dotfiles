@@ -10,8 +10,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # git
-New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\gitconfig" -Force
-Write-host ".gitconfig has been linked to .dotfiles\common\git\gitconfig"
+New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\.gitconfig" -Force
+Write-host ".gitconfig has been linked to .dotfiles\common\git\.gitconfig"
 
 # mintty-terminal(that comes with git-bash)
 New-Item -Path "$env:USERPROFILE\.minttyrc" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\mintty\.minttyrc" -Force
