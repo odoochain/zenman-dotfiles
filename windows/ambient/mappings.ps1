@@ -10,8 +10,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # git
-New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\gitconfig" -Force
-Write-host ".gitconfig has been linked to .dotfiles\common\git\gitconfig"
+New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\.gitconfig" -Force
+Write-host ".gitconfig has been linked to .dotfiles\common\git\.gitconfig"
 
 # mintty-terminal(that comes with git-bash)
 New-Item -Path "$env:USERPROFILE\.minttyrc" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\mintty\.minttyrc" -Force
@@ -86,6 +86,9 @@ Write-host "~\lf has been linked to .dotfiles\windows\lf"
 # JPEGView
 New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView" -Force
 Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
+
+New-Item -Path "C:\Program Files (x86)\JPEGView\KeyMap.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView\KeyMap.txt" -Force
+Write-host "JPEGView KeyMap.txt has been linked to .dotfiles\windows\JPEGView\KeyMap.txt"
 
 # Everything
 New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\Everything" -Force
