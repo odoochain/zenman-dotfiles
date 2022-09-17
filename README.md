@@ -36,7 +36,19 @@ In the common folder are thoese programs configs that shared the same config fil
 
 ## Windows
 
+**windows terminal**
+
 ![](https://s2.loli.net/2022/09/17/js3MVBAFxCO2rcP.png)
+
+
+**btop**
+
+![](https://s2.loli.net/2022/09/17/AvoV4OX8tD5UQy3.png)
+
+**lf**
+
+![](https://s2.loli.net/2022/09/17/iky2GgSawBOouKf.png)
+
 
 <details>
 
@@ -74,6 +86,7 @@ sometimes use Arch for WSL2.
 ![](https://s2.loli.net/2022/09/17/vPTntKW2ZsJEMwz.png)
 
 <details>
+
 - zsh
 - oh-my-zsh
 - powerlevel10k
@@ -81,6 +94,7 @@ sometimes use Arch for WSL2.
 - pfetch
 - neovim
 - nix
+
 </details>
 
 and more
