@@ -1,24 +1,30 @@
 <div align="right">
-<a href="#macos">macOS</a> · <a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#scripts">Scripts</a>
+<a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#macos">macOS</a> · <a href="#scripts">Scripts</a>
 </div>
 
 # 🚯 Dotfiles
 
+![](https://flat.badgen.net/badge/platform/macOS,Windows,Linux?list=|)
 
 ## Overview
 
-I'm primarily a Windows user, I've used Mac for about 10 years then moved to windows and occasionally used linux(arch and fedora). 
+🔺 NOTICE: I'm primarily a Windows user, I've used Mac for about 10 years then moved to windows and occasionally used linux(arch and fedora). 
 
-Here are my dotfiles.
+Here are my dotfiles. There's no one line install, still working on it.
 
 ## Common
 
-- neovim
+- neovim [Meovim](https://github.com/mino29/meovim)
 
 ### Theme
 
-I used nord theme wherever possible, if it's too much hassle, I often use dracula instead.
+🔺 NOTICE: I used nord theme wherever possible, if it's too much hassle, I often use dracula instead.
 The wallpaper included is what I made using Photoshop for like 5 minutes. Feel free to use it.
+
+
+#### Wallpaper
+
+![](https://s2.loli.net/2022/09/17/9kiLVhj4ogAyaSN.png)
 
 ### Cross-platform programs
 
@@ -29,6 +35,21 @@ In the common folder are thoese programs configs that shared the same config fil
 - font: Hack NF
 
 ## Windows
+
+
+![](https://s2.loli.net/2022/09/17/VJRHSE382FrjzQI.png)
+
+<details>
+
+windows terminal theme: nord
+oh-my-posh theme: nord(I tweaked some color from peru)
+font: [Hack NF](https://github.com/ryanoasis/nerd-fonts)
+terminal icons: lsd (available on linux )
+task manager: btop4win (available on linux as btop)
+file explore: lf (available on linux)
+
+
+</details>
 
 - windows terminal
 - powershell profile
@@ -41,16 +62,19 @@ In the common folder are thoese programs configs that shared the same config fil
 - bat
 - btop4win
 - lf
-- bash
-- zsh on windows (without WSL2)
 - cmd(using clink)
 - zoxide
 - z.lua
+- bash
+- zsh on windows (without WSL2)
 
 and more
 
-
 ## Linux
+
+🔺 NOTICE: I use [Arch Linux with GUI installer](https://archlinuxgui.in/), I
+know, heresy right? Sometimes Fedora. Mostly with gnome desktop. Haven't
+figured out how to use tilling window manager yet.
 
 - zsh
 - oh-my-zsh
@@ -60,7 +84,9 @@ and more
 
 and more
 
-## Mac
+## macOS
+
+🔺 NOTICE: I don't really use mac these days, might come back to it later.
 
 - zsh
 - oh-my-zsh
@@ -68,7 +94,6 @@ and more
 - brew
 - nix
 - neovim
-
 
 ---
 
