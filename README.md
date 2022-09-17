@@ -36,8 +36,7 @@ In the common folder are thoese programs configs that shared the same config fil
 
 ## Windows
 
-
-![](https://s2.loli.net/2022/09/17/VJRHSE382FrjzQI.png)
+![](https://s2.loli.net/2022/09/17/js3MVBAFxCO2rcP.png)
 
 <details>
 
@@ -47,18 +46,10 @@ In the common folder are thoese programs configs that shared the same config fil
 - terminal icons: lsd (available on linux )
 - task manager: btop4win (available on linux as btop)
 - file explore: lf (available on linux)
-
-
-</details>
-
-- windows terminal
-- powershell profile
 - winfetch
-- scoop config
 - neovim
 - everything
 - JPEGView
-- lsd
 - bat
 - btop4win
 - lf
@@ -68,19 +59,29 @@ In the common folder are thoese programs configs that shared the same config fil
 - bash
 - zsh on windows (without WSL2)
 
+</details>
+
+
 and more
 
 ## Linux
 
 🔺 NOTICE: I use [Arch Linux with GUI installer](https://archlinuxgui.in/), I
 know, heresy right? Sometimes Fedora. Mostly with gnome desktop. Haven't
-figured out how to use tilling window manager yet.
+figured out how to use tilling window manager yet. If I'm on windows machine, I
+sometimes use Arch for WSL2.
 
+![](https://s2.loli.net/2022/09/17/vPTntKW2ZsJEMwz.png)
+
+<details>
 - zsh
 - oh-my-zsh
 - powerlevel10k
+- neofetch
+- pfetch
 - neovim
 - nix
+</details>
 
 and more
 
@@ -91,6 +92,7 @@ and more
 - zsh
 - oh-my-zsh
 - powerlevel10k
+- neofetch
 - brew
 - nix
 - neovim
