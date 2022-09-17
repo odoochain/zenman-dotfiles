@@ -15,6 +15,7 @@ Catch
 {
 # Make sure this can install PS modules
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # Install scoop from official script
 irm get.scoop.sh | iex
@@ -29,3 +30,18 @@ Write-host "scoop has been add to path. You can run `scoop --version` to test it
 
 
 # $Env:PATH = "C:\Users\mino29\AppData\Roaming\Python\Python39\Scripts;$Env:PATH"
+#
+
+Try{
+    scoop checkup
+    }
+Catch{
+    scoop install git
+    }
+
+Try{
+    git --version
+    }
+Catch{
+    scoop install git
+    }

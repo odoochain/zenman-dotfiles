@@ -1,4 +1,9 @@
-# My Dotfiles
+<div align="right">
+<a href="#macos">macOS</a> · <a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#scripts">Scripts</a>
+</div>
+
+# 🚯 Dotfiles
+
 
 ## Overview
 
@@ -7,6 +12,8 @@ I'm primarily a Windows user, I've used Mac for about 10 years then moved to win
 Here are my dotfiles.
 
 ## Common
+
+- neovim
 
 ### Theme
 
@@ -19,7 +26,7 @@ I use cross-platform programs whenever possible, so I don't get locked up in a s
 In the common folder are thoese programs configs that shared the same config files across different OSes. 
 
 - nushell (blazing fast shell, not supporting conda ATM is a bummer though)
-
+- font: Hack NF
 
 ## Windows
 
@@ -61,3 +68,13 @@ and more
 - brew
 - nix
 - neovim
+
+
+---
+
+🚯 **Dotfiles** ©Mino Woo. Released under the MIT License.
+
+Authored and maintained by Mino Woo.
+
+[@GitHub](https://github.com/mino29)
+
