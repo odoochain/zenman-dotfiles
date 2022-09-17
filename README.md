@@ -41,12 +41,12 @@ In the common folder are thoese programs configs that shared the same config fil
 
 <details>
 
-windows terminal theme: nord
-oh-my-posh theme: nord(I tweaked some color from peru)
-font: [Hack NF](https://github.com/ryanoasis/nerd-fonts)
-terminal icons: lsd (available on linux )
-task manager: btop4win (available on linux as btop)
-file explore: lf (available on linux)
+- windows terminal theme: nord
+- oh-my-posh theme: nord(I tweaked some color from peru)
+- font: [Hack NF](https://github.com/ryanoasis/nerd-fonts)
+- terminal icons: lsd (available on linux )
+- task manager: btop4win (available on linux as btop)
+- file explore: lf (available on linux)
 
 
 </details>
