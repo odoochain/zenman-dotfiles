@@ -1,12 +1,12 @@
 set colors
 set preview true
 set hidden true
-set drawbox false
+#set drawbox false
 set icons true
 set ignorecase true
 
 # interpreter for shell commands
-set shell powershell
+set shell cmd
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -45,7 +45,7 @@ map O $mimeopen --ask $f
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
     case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
+        text/*) vi $fx;;
         *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
@@ -121,7 +121,7 @@ map e
 map f
 
 # File Openers
-map ee $$EDITOR "$f"
+map ee $$nvim "$f"
 map u $view "$f"
 
 # Archive Mappings

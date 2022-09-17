@@ -504,6 +504,16 @@ function PowerOff {
     shutdown -p
 }
 
+
+
+# npm i -g empty-trash
+
+function emptytrash{
+        empty-trash.cmd
+        Write-Host "Yay, everything is shiny now!"
+    }
+
+
 # Clear-Host
 # set PowerShell to UTF-8
 # [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
