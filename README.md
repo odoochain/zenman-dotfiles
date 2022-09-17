@@ -111,6 +111,15 @@ and more
 - nix
 - neovim
 
+
+## Special Thanks
+
+- [elenapan/dotfiles](https://github.com/elenapan/dotfiles)
+- [spencerwooo/dotfiles](https://github.com/spencerwooo/dotfiles)
+- [craftzdog/dotfiles-public/](https://github.com/craftzdog/dotfiles-public/)
+- [reddit/r/unixporn](https://www.reddit.com/r/unixporn/)
+
+
 ---
 
 🚯 **Dotfiles** ©Mino Woo. Released under the MIT License.
