@@ -2,7 +2,7 @@
 #------------------------------- Startup settings BEGIN -----------------------
 
 # Remove those annoying startup powershell info when possible
-Clear-Host
+# Clear-Host
 
 #------------------------------- Startup settings END -------------------------
 
