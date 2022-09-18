@@ -47,6 +47,7 @@ function getNewestLink($match) {
 $wingetUrl = getNewestLink("msixbundle")
 $wingetLicenseUrl = getNewestLink("License1.xml")
 
+
 function section($text) {
 	<#
         .SYNOPSIS

@@ -1,7 +1,8 @@
+# runas /trustlevel:0x20000 "powershell.exe -command 'hostname'"
 
 # This make sure you run as Administrator
-if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
-{  
+ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
+ {  
   $arguments = "& '" +$myinvocation.mycommand.definition + "'"
   Start-Process powershell -Verb runAs -ArgumentList $arguments
   Break
@@ -18,7 +19,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # Install scoop from official script
-irm get.scoop.sh | iex
+# irm get.scoop.sh | iex
+iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 
 Write-host "scoop has been add to path. You can run `scoop --version` to test it out."
 
@@ -32,16 +34,8 @@ Write-host "scoop has been add to path. You can run `scoop --version` to test it
 # $Env:PATH = "C:\Users\mino29\AppData\Roaming\Python\Python39\Scripts;$Env:PATH"
 #
 
-Try{
-    scoop checkup
-    }
-Catch{
-    scoop install git
-    }
+scoop install 7zip sudo aria2
+scoop config aria2-enabled false
+scoop install git dark innounp lessmsi
+Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
-Try{
-    git --version
-    }
-Catch{
-    scoop install git
-    }
