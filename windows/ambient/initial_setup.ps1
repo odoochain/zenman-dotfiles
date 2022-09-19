@@ -20,7 +20,7 @@ Try{
     winget --version
     }
 Catch{
-Invoke-WebRequest https://raw.githubusercontent.com/mino29/dotfiles/master/utils/installers/install-winget.ps1 -UseBasicParsing | Invoke-Expression
+    Invoke-WebRequest https://raw.githubusercontent.com/mino29/dotfiles/master/utils/installers/install-winget.ps1 -UseBasicParsing | Invoke-Expression
 }
 
 winget install Microsoft.WindowsTerminal
