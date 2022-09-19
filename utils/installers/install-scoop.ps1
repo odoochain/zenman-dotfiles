@@ -67,34 +67,3 @@ scoop config aria2-enabled false
 scoop install git dark innounp lessmsi
 Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
-<<<<<<< HEAD
-Try{
-    git --version
-    }
-Catch{
-    scoop install git
-    }
-
-Try{
-    7z
-    }
-Catch{
-    scoop install 7zip
-    }
-
-Try{
-    aria2c --version
-    }
-Catch{
-    scoop install aria2
-    }
-
-||||||| 3d3e49a
-Try{
-    git --version
-    }
-Catch{
-    scoop install git
-    }
-=======
->>>>>>> 4f0fb1189574ad1bb63be0db99e37328dd382303

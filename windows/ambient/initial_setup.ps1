@@ -16,7 +16,12 @@ What needs to be done:
 
 #>
 
-Invoke-WebRequest https://raw.githubusercontent.com/mino29/dotfiles/master/utils/installers/install-winget.ps1 -UseBasicParsing | Invoke-Expression
+Try{
+    winget --version
+    }
+Catch{
+    Invoke-WebRequest https://raw.githubusercontent.com/mino29/dotfiles/master/utils/installers/install-winget.ps1 -UseBasicParsing | Invoke-Expression
+}
 
 winget install Microsoft.WindowsTerminal
 winget install git.git
@@ -28,6 +33,7 @@ winget install GyDi.ClashVerge
 winget insatll RandyRants.SharpKeys
 winget install Anaconda.Anaconda3
 winget install voidtools.Everything.Alpha
+
 # setup a usable profile
 
-Invoke-WebRequest https://raw.githubusercontent.com/mino29/minimal_vim/master/utils/install.ps1 -UseBasicParsing | Invoke-Expression
+# Invoke-WebRequest https://raw.githubusercontent.com/mino29/minimal_vim/master/utils/install.ps1 -UseBasicParsing | Invoke-Expression
