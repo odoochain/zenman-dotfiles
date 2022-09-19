@@ -2,6 +2,15 @@ Filename,Run Count,Last Run Date
 "E:\.dotfiles\windows\aria2c_configs\Aria2\Aria2c启动器.exe",4,133076535993559929
 "C:\Program Files\Everything 1.5a\Everything-1.5a.ini",3,133080386048953099
 "D:\win11\wsl\wsl-arch-linux",3,133078174632106881
+<<<<<<< HEAD
+"C:\Program Files (x86)\JPEGView\JPEGView.ini",2,133078909046999796
+"D:\win11\advanced_renamer",1,133078928133219599
+"C:\Users\mino29\AppData\Roaming\JPEGView\JPEGView.ini",1,133078909840202724
+"C:\Users\mino29\.dotfiles\windows\JPEGView\JPEGView.ini",1,133078909139739248
+"C:\Users\mino29\Downloads\Nobara-36-GNOME-2022-09-03.iso",1,133078773494894908
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",1,133078271118168496
+||||||| 5fc21f0
+=======
 "C:\Program Files (x86)\JPEGView\KeyMap.txt",3,133076956338953764
 "C:\Program Files (x86)\AliWangWang\AliIM.exe",2,133079228131299866
 "D:\Download\Steelrising [FitGirl Repack]",2,133079156925590500
@@ -15,6 +24,7 @@ Filename,Run Count,Last Run Date
 "D:\Download\Programs\绘画素材库专用SAI2-2020终极版.exe",1,133078772707119596
 "C:\Users\mino29\.ssh",1,133078109000954065
 "C:\Users\mino29\~\.emacs.d",1,133077928381893098
+>>>>>>> 9c7e87dabba372181a4d86d697a5668508af128f
 "C:\Users\mino29\AppData\Local\lf\lfrc",1,133077777611475603
 "C:\Users\mino29\scoop\apps\emacs\28.1\bin\emacs.exe",1,133077351621126075
 "C:\Users\mino29\scoop\shims\emacs.exe",1,133077351588751536
@@ -45,7 +55,6 @@ Filename,Run Count,Last Run Date
 "C:\Users\mino29\scoop\apps\btop\1.0.3\btop.exe",1,133073875706188932
 "E:\[GigaCourse.Com] Udemy - The Complete 2022 Web Development Bootcamp\01 - Front-End Web Development\008 What You'll Need to Get Started - Setup Your Local Web Development Environment.mp4",1,133073801536920785
 "C:\Users\mino29\anaconda3",1,133073773939631900
-"C:\Program Files (x86)\JPEGView\JPEGView.ini",1,133073726996982387
 "C:\Users\mino29\Downloads\Programs\win11\lfrc",1,133073342274772210
 "E:\Coding_setup\git-bash\zsh-5.8-5-x86_64.pkg\usr\share\man\man1\zshcontrib.1.gz",1,133073330388161332
 "D:\win11\everything-alpha\Everything-1.5a.ini",1,133073094659431377

@@ -84,6 +84,7 @@ New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "$env:USERP
 Write-host "~\lf has been linked to .dotfiles\windows\lf"
 
 # JPEGView
+Remove-Item -Path "$env:APPDATA\JPEGView" -Recurse -Force
 New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView" -Force
 Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
 

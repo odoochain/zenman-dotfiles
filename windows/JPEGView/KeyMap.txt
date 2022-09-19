@@ -135,6 +135,7 @@ Left                    IDM_PREV
 PgUp                    IDM_PREV
 D                       IDM_NEXT
 A                       IDM_PREV
+F                       IDM_FULL_SCREEN_MODE
 Ctrl+Left               IDM_TOGGLE
 Ctrl+Right              IDM_TOGGLE
 Home                    IDM_FIRST
