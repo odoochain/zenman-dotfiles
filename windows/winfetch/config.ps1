@@ -66,13 +66,13 @@ $batterystyle = 'textbar'
     "os"
     "computer"
     # "kernel"
-    "motherboard"
+    # "motherboard"
     # "custom_time"  # use custom info line
     "uptime"
     # "ps_pkgs"  # takes some time
     "pkgs"
     "pwsh"
-    "resolution"
+    # "resolution"
     "terminal"
     # "theme"
     "cpu"

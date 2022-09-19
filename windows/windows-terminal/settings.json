@@ -92,13 +92,6 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
-                "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\nushell.png",
-                "name": "Nushell",
-                "source": "nu"
             }
         ]
     },

@@ -2,7 +2,7 @@
 #------------------------------- Startup settings BEGIN -----------------------
 
 # Remove those annoying startup powershell info when possible
-Clear-Host
+# Clear-Host
 
 #------------------------------- Startup settings END -------------------------
 
@@ -50,7 +50,7 @@ Try {
     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
 }
 Catch {
-    scoop install oh-my-posh
+    winget install JanDeDobbeleer.OhMyPosh
 }
 
 
@@ -93,6 +93,13 @@ Catch {
     Install-Module PSWindowsUpdate -Scope CurrentUser -Force  ## PSwindowsUpdates
 }
 
+# 引入git-aliases
+Try{
+    Import-Module git-aliases -DisableNameChecking
+}
+Catch{
+    scoop install git-aliases
+}
 
 # 设置 bash style tab completion
 Set-PSReadLineKeyHandler -Key Tab -Function Complete

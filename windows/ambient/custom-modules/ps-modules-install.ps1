@@ -21,3 +21,9 @@ Import-Module posh-git
 Install-Module -Name posh-git -Scope CurrentUser -Force
     }
 
+# PSwindowsUpdate
+try{
+Import-Module PSWindowsUpdate
+  }catch{
+Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
+    }

@@ -175,8 +175,8 @@ Ctrl+F12                IDM_TOGGLE_MONITOR
 Space                   IDM_TOGGLE_FIT_TO_SCREEN_100_PERCENTS
 Return                  IDM_FIT_TO_SCREEN
 Ctrl+Return             IDM_FILL_WITH_CROP
-E                       IDM_ROTATE_90
-Q                       IDM_ROTATE_270
+Down                    IDM_ROTATE_90
+Up                      IDM_ROTATE_270
 Shift+Up                IDM_PAN_UP
 Shift+Down              IDM_PAN_DOWN
 Shift+Left              IDM_PAN_LEFT
@@ -195,6 +195,7 @@ Z                       IDM_SORT_RANDOM
 Ctrl+S                  IDM_SAVE_ALLOW_NO_PROMPT
 Ctrl+Shift+S            IDM_SAVE_SCREEN
 S                       IDM_SAVE_PARAM_DB
+D                       IDM_CLEAR_PARAM_DB
 Ctrl+Shift+E            IDM_TOUCH_IMAGE_EXIF
 Ctrl+O                  IDM_OPEN
 Ctrl+P                  IDM_PRINT

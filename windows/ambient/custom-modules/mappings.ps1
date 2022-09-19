@@ -93,6 +93,7 @@ Write-host "JPEGView KeyMap.txt has been linked to .dotfiles\windows\JPEGView\Ke
 
 # Everything
 New-Item -Path "$env:APPDATA\Everything" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\Everything" -Force
+New-Item -Path "$env:ProgramFiles\Everything 1.5a\Everything-1.5a.ini" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\Everything\everything-1.5a.ini" -Force
 Write-host "Everything has been linked to .dotfiles\windows\Everything"
 
 # workspacer
