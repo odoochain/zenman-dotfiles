@@ -1,7 +1,223 @@
-2022-09-21 16:19:55 INFO log.py: Yasb - Yet Another Status Bar
-2022-09-21 16:19:58 INFO bar_manager.py: Starting KomorebiEventListener...
-2022-09-21 16:19:58 INFO bar_manager.py: Starting SystemEventListener...
-2022-09-21 16:19:58 INFO event_listener.py: Created named pipe yasb-2e271d0b-3986-11ed-bfa4-e45e3700db69
-2022-09-21 16:19:58 INFO watcher.py: Created file watcher for path C:\Users\mino29\.yasb
-2022-09-21 16:19:58 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-2e271d0b-3986-11ed-bfa4-e45e3700db69
-2022-09-21 16:19:58 INFO event_listener.py: Komorebi connected to named pipe: yasb-2e271d0b-3986-11ed-bfa4-e45e3700db69
+2022-09-21 17:14:44 INFO log.py: Yasb - Yet Another Status Bar
+2022-09-21 17:14:46 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:14:47 INFO bar_manager.py: Starting KomorebiEventListener...
+2022-09-21 17:14:47 INFO bar_manager.py: Starting SystemEventListener...
+2022-09-21 17:14:47 INFO event_listener.py: Created named pipe yasb-d6e01909-398d-11ed-a71c-8cb87e52cdc5
+2022-09-21 17:14:47 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-d6e01909-398d-11ed-a71c-8cb87e52cdc5
+2022-09-21 17:14:47 INFO watcher.py: Created file watcher for path C:\Users\mino29\.yasb
+2022-09-21 17:14:48 INFO event_listener.py: Komorebi connected to named pipe: yasb-d6e01909-398d-11ed-a71c-8cb87e52cdc5
+2022-09-21 17:14:51 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:14:56 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:01 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:06 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:11 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:16 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:21 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:26 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:31 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:36 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:41 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:46 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:51 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:15:56 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:01 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:06 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:11 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:16 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:21 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:26 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:31 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:36 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
+2022-09-21 17:16:41 ERROR base.py: Failed to execute callback of type 'update_label' with args: []
+Traceback (most recent call last):
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\base.py", line 84, in _run_callback
+    self.callbacks[callback_type](*callback_args)
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 123, in _update_label
+    threshold = self._get_battery_threshold()
+  File "C:\Users\mino29\.local\share\yasb\src\core\widgets\yasb\battery.py", line 86, in _get_battery_threshold
+    percent = self._battery_state.percent
+AttributeError: 'NoneType' object has no attribute 'percent'
