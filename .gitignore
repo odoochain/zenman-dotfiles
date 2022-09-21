@@ -12,4 +12,6 @@ everything-1.5a.ini
 *.msixbundle
 todo.md
 *.sock
+*.log
+fancywm.log
 

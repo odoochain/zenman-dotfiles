@@ -123,14 +123,23 @@ Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
 # yasb
-Remove-Item -recurse -force "$env:USERPROFILE\.yasb"
+# Remove-Item -recurse -force "$env:USERPROFILE\.yasb"
 New-Item -Path "$env:USERPROFILE\.yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\.yasb" -Force
 Write-host "~\.local\share\yasb has been linked to .dotfiles\windows\yasb"
 
 # komorebi
-Remove-Item -recurse -force "$env:USERPROFILE\.config\komorebi"
+# Remove-Item -recurse -force "$env:USERPROFILE\.config\komorebi"
 New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
 Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
+
+# FancyWM
+
+$fancywmConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
+New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
+Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
+
+
+
 
 # all third party repos should be stored in ~\.local\share\
 
