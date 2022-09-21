@@ -55,8 +55,8 @@
 [core]
 	autocrlf = true
 	editor = nvim
-  excludesfile = ~/.gitignore_global
-  pager = delta
+    excludesfile = ~/.gitignore_global
+    pager = delta
 	quotepath = false
 [user]
 	email = 42552577+mino29@users.noreply.github.com
