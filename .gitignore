@@ -12,4 +12,12 @@ everything-1.5a.ini
 *.msixbundle
 todo.md
 *.sock
+<<<<<<< HEAD
+*.log
+fancywm.log
+
+||||||| a37947f
+
+=======
 yasb.log
+>>>>>>> 5e6dbf4c441d3a35be2347875b42a5dce0c60cec
