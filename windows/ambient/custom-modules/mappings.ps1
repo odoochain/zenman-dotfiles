@@ -123,15 +123,16 @@ Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
 # yasb
-New-Item -Path "$env:USERPROFILE\.local\share\yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\yasb" -Force
+Remove-Item -recurse -force "$env:USERPROFILE\.yasb"
+New-Item -Path "$env:USERPROFILE\.yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\.yasb" -Force
 Write-host "~\.local\share\yasb has been linked to .dotfiles\windows\yasb"
 
-
 # komorebi
+Remove-Item -recurse -force "$env:USERPROFILE\.config\komorebi"
 New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
 Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
 
-
+# all third party repos should be stored in ~\.local\share\
 
 # Questions:
 # what is symboliclink?
