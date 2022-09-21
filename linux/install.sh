@@ -66,7 +66,7 @@ git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.gi
 rm -rf brew-install
 
 # 也可从 GitHub 获取官方安装脚本安装 Homebrew / Linuxbrew
-/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
 
 
 # ..

@@ -11,4 +11,5 @@ everything-1.5a.ini
 *.nupkg
 *.msixbundle
 todo.md
+*.sock
 

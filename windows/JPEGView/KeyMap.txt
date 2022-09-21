@@ -130,9 +130,9 @@
 // Uncomment the following line if you want to exit JPEGView with the Esc key immediatly when playing an animation or a slideshow
 // Esc                    IDM_EXIT
 PgDn                    IDM_NEXT
+PgUp                    IDM_PREV
 Right                   IDM_NEXT
 Left                    IDM_PREV
-PgUp                    IDM_PREV
 D                       IDM_NEXT
 A                       IDM_PREV
 F                       IDM_FULL_SCREEN_MODE
@@ -175,8 +175,8 @@ Ctrl+F12                IDM_TOGGLE_MONITOR
 Space                   IDM_TOGGLE_FIT_TO_SCREEN_100_PERCENTS
 Return                  IDM_FIT_TO_SCREEN
 Ctrl+Return             IDM_FILL_WITH_CROP
-Down                    IDM_ROTATE_90
-Up                      IDM_ROTATE_270
+Q                       IDM_ROTATE_270
+E                       IDM_ROTATE_90
 Shift+Up                IDM_PAN_UP
 Shift+Down              IDM_PAN_DOWN
 Shift+Left              IDM_PAN_LEFT
@@ -194,8 +194,6 @@ M                       IDM_SORT_MOD_DATE
 Z                       IDM_SORT_RANDOM
 Ctrl+S                  IDM_SAVE_ALLOW_NO_PROMPT
 Ctrl+Shift+S            IDM_SAVE_SCREEN
-S                       IDM_SAVE_PARAM_DB
-D                       IDM_CLEAR_PARAM_DB
 Ctrl+Shift+E            IDM_TOUCH_IMAGE_EXIF
 Ctrl+O                  IDM_OPEN
 Ctrl+P                  IDM_PRINT
@@ -204,6 +202,4 @@ Alt+R                   IDM_SLIDESHOW_RESUME
 Ctrl+X                  IDM_COPY_FULL
 Ctrl+V                  IDM_PASTE
 Ctrl+L                  IDM_LANDSCAPE_MODE
-R                       IDM_ROTATE_90_LOSSLESS_CONFIRM
-T                       IDM_ROTATE_270_LOSSLESS_CONFIRM
-W                       IDM_EXPLORE
+O                       IDM_EXPLORE
