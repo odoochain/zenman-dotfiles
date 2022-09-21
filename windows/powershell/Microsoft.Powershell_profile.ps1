@@ -223,20 +223,23 @@ Set-Alias -Name make -Value MakeThings
 Set-Alias -Name os-update -Value Update-Packages
 
 # 3. 查看目录 ls & ll
-#
-# old ones
-#
-# function ListDirectory {
-#     Write-Host("")
-# 	(Get-ChildItem).Name
-# 	Write-Host("")
-# }
 
-# Set-Alias -Name ls -Value ListDirectory -Option AllScope
-# Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
+# option-1 
+# true to powershell
 
-# experimental
+function ListDirectory {
+     Write-Host("")
+ 	(Get-ChildItem).Name
+ 	Write-Host("")
+}
+
+Set-Alias -Name ls -Value ListDirectory -Option AllScope
+Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
+
+<#
+# option-2
 # below requires you to downloads lsd to work
+
 function ListItem {
     Write-Host("")
     lsd -a
@@ -251,6 +254,8 @@ function ListDirectory {
 
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
+#>
+
 Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
@@ -258,10 +263,6 @@ Set-Alias -Name py -Value python
 Set-Alias -Name neofetch -Value winfetch
 Set-Alias -Name ne -Value winfetch
 
-# Set-Alias -Name btop -Value btop4win
-
-# Set-Alias -Name ls -Value "lsd -a" -Option AllScope
-# Set-Alias -Name ll -Value 'lsd -la' -Option AllScope
 
 # auto ls after each cd, not replacing cd, but use cdd
 function Set-LocationWithGCI {
