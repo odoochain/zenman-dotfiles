@@ -122,6 +122,16 @@ New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "$env:USERP
 Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
+# yasb
+New-Item -Path "$env:USERPROFILE\.local\share\yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\yasb" -Force
+Write-host "~\.local\share\yasb has been linked to .dotfiles\windows\yasb"
+
+
+# komorebi
+New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
+Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
+
+
 
 # Questions:
 # what is symboliclink?

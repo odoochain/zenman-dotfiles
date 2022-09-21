@@ -1,6 +1,54 @@
 Filename,Run Count,Last Run Date
+"D:\win11\wsl\wsl-arch-linux",4,133081615384122535
 "E:\.dotfiles\windows\aria2c_configs\Aria2\Aria2c启动器.exe",4,133076535993559929
+<<<<<<< HEAD
 "D:\win11\wsl\wsl-arch-linux",3,133078174632106881
+||||||| edce4c9
+"C:\Program Files\Everything 1.5a\Everything-1.5a.ini",3,133080386048953099
+"D:\win11\wsl\wsl-arch-linux",3,133078174632106881
+<<<<<<< HEAD
+"C:\Program Files (x86)\JPEGView\JPEGView.ini",2,133078909046999796
+"D:\win11\advanced_renamer",1,133078928133219599
+"C:\Users\mino29\AppData\Roaming\JPEGView\JPEGView.ini",1,133078909840202724
+"C:\Users\mino29\.dotfiles\windows\JPEGView\JPEGView.ini",1,133078909139739248
+"C:\Users\mino29\Downloads\Nobara-36-GNOME-2022-09-03.iso",1,133078773494894908
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",1,133078271118168496
+||||||| 5fc21f0
+=======
+=======
+"C:\Program Files\Everything 1.5a\Everything-1.5a.ini",3,133080386048953099
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",3,133076956338953764
+"C:\Program Files (x86)\AliWangWang\AliIM.exe",2,133079228131299866
+"D:\Download\Steelrising [FitGirl Repack]",2,133079156925590500
+"C:\Program Files (x86)\JPEGView\JPEGView.ini",2,133078909046999796
+"D:\Games\Fatal Frame - Maiden of Black Water\FATAL_FRAME_MOBW.exe",2,133077249192231830
+"C:\Program Files(x86)\KeyMap.txt",2,133076958602908780
+"C:\Users\mino29\.config\komorebi\komorebi.ahk",1,133081091500419166
+"C:\tools\chfsgui.exe",1,133079429045697726
+"C:\Users\mino29\Documents\Steelrising",1,133079115190211018
+"C:\Users\mino29\Downloads\wallpapers-wip\nord-4circles.png",1,133078991508574574
+"D:\win11\advanced_renamer",1,133078928133219599
+"C:\Users\mino29\AppData\Roaming\JPEGView\JPEGView.ini",1,133078909840202724
+"C:\Users\mino29\.dotfiles\windows\JPEGView\JPEGView.ini",1,133078909139739248
+"C:\Users\mino29\Downloads\Nobara-36-GNOME-2022-09-03.iso",1,133078773494894908
+<<<<<<< HEAD
+||||||| 18d21e6
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",1,133078271118168496
+||||||| 5fc21f0
+=======
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",3,133076956338953764
+"C:\Program Files (x86)\AliWangWang\AliIM.exe",2,133079228131299866
+"D:\Download\Steelrising [FitGirl Repack]",2,133079156925590500
+"D:\Games\Fatal Frame - Maiden of Black Water\FATAL_FRAME_MOBW.exe",2,133077249192231830
+"C:\Program Files(x86)\KeyMap.txt",2,133076958602908780
+"C:\tools\chfsgui.exe",1,133079429045697726
+"C:\Users\mino29\Documents\Steelrising",1,133079115190211018
+"C:\Users\mino29\Downloads\wallpapers-wip\nord-4circles.png",1,133078991508574574
+=======
+"C:\Program Files (x86)\JPEGView\KeyMap.txt",1,133078271118168496
+||||||| 5fc21f0
+=======
+>>>>>>> cc27e40cb4d2d3126d851e588f917336b6e84c69
 "C:\Program Files (x86)\JPEGView\KeyMap.txt",3,133076956338953764
 "C:\Program Files (x86)\AliWangWang\AliIM.exe",2,133079228131299866
 "D:\Download\Steelrising [FitGirl Repack]",2,133079156925590500
@@ -18,6 +66,7 @@ Filename,Run Count,Last Run Date
 "C:\tools\chfsgui.exe",1,133079429045697726
 "C:\Users\mino29\Documents\Steelrising",1,133079115190211018
 "C:\Users\mino29\Downloads\wallpapers-wip\nord-4circles.png",1,133078991508574574
+>>>>>>> edce4c9985a4ed555584c2adfa3724a460f63da4
 "D:\Download\Programs\绘画素材库专用SAI2-2020终极版.exe",1,133078772707119596
 "C:\Users\mino29\.ssh",1,133078109000954065
 "C:\Users\mino29\~\.emacs.d",1,133077928381893098

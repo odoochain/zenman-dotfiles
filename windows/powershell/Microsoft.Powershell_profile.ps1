@@ -558,3 +558,15 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 
 
 # winfetch
+
+
+# -------------------------------   Set Komorebi END    -------------------------------
+
+# $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
+
+# -------------------------------   Set Komorebi END    -------------------------------
+
+
+
+
