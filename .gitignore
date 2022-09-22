@@ -16,3 +16,4 @@ todo.md
 fancywm.log
 yasb.log
 *.dat
+/windows/powershell/help

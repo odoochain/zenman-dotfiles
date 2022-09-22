@@ -19,4 +19,3 @@ else {
 # $fancywmConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
 # New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
 # Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
-
