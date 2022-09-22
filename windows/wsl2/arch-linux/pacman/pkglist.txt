@@ -1,4 +1,3 @@
-arch-install-scripts
 archlinuxcn-keyring
 aria2
 autoconf
@@ -16,7 +15,6 @@ cowsay
 curlie
 duf
 exa
-fakeroot
 figlet
 flex
 fzf

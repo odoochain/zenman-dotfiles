@@ -46,8 +46,9 @@ Invoke-Expression (&starship init powershell)
 # 设置 PowerShell 主题
 
 Try {
-    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\peru.omp.json" | Invoke-Expression
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -223,10 +224,12 @@ Set-Alias -Name make -Value MakeThings
 Set-Alias -Name os-update -Value Update-Packages
 
 # 3. 查看目录 ls & ll
+#
+# ----------------------------------------------------------------------------
 
 # option-1 
 # true to powershell
-
+<#
 function ListDirectory {
      Write-Host("")
  	(Get-ChildItem).Name
@@ -235,11 +238,11 @@ function ListDirectory {
 
 Set-Alias -Name ls -Value ListDirectory -Option AllScope
 Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
+#>
 
-<#
+# ----------------------------------------------------------------------------
 # option-2
 # below requires you to downloads lsd to work
-
 function ListItem {
     Write-Host("")
     lsd -a
@@ -254,7 +257,8 @@ function ListDirectory {
 
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
-#>
+
+# ----------------------------------------------------------------------------
 
 Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
