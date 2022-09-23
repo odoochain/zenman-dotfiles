@@ -57,7 +57,7 @@ In the common folder are thoese programs configs that shared the same config fil
 ![](https://s2.loli.net/2022/09/17/iky2GgSawBOouKf.png)
 
 
-<more>
+<details>
 
 - windows terminal theme: nord
 - oh-my-posh theme: polarnord(I tweaked some color from peru)
@@ -79,7 +79,7 @@ In the common folder are thoese programs configs that shared the same config fil
 - bash
 - zsh on windows (without WSL2)
 
-</more>
+</details>
 
 
 ## Linux
@@ -91,7 +91,7 @@ sometimes use Arch for WSL2.
 
 ![](https://s2.loli.net/2022/09/17/vPTntKW2ZsJEMwz.png)
 
-<more>
+<details>
 
 - zsh
 - oh-my-zsh
@@ -101,7 +101,7 @@ sometimes use Arch for WSL2.
 - neovim
 - nix
 
-</more>
+</details>
 
 
 ## macOS
@@ -116,6 +116,19 @@ sometimes use Arch for WSL2.
 - nix
 - neovim
 
+## Todo
+
+**Things I still haven't figure out**
+
+[ ] one line install for each system
+[ ] downsize all files to < 10 MB in total
+[ ] oh-my-posh consistent transient prompt
+[ ] more testing to ensure robustness
+[ ] add gitee repo sync for more download options
+[ ] smarter auto-completion for meovim
+[ ] useful programs that are outside of winget/choco/scoop
+[ ] automatically set accent color, wallpaper, lock screen
+[ ] remap capslock to escape
 
 ## Special Thanks
 
