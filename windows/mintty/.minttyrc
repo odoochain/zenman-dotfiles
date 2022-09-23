@@ -6,3 +6,5 @@ Columns=110
 Rows=59
 RewrapOnResize=yes
 Scrollbar=none
+CursorType=block
+ConfirmExit=no
