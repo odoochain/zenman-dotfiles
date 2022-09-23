@@ -356,9 +356,11 @@
     "c-wakatime-overtime": "#FF8A80"
   },
   "transient_prompt": {
-    "background": "transparent",
-    "foreground": "#eceff4",
-    "template": "{{ if eq \"False\" (title (default \"False\" .Env.DISABLE_SEGMENT_TRANSIENT)) }}<{{ if eq .Code 0 }}p:c-badge-return-success{{ else if or (eq .Code 1) (eq .Code 130) }}p:c-badge-return-fail-term{{ else }}p:c-badge-return-custom{{ end }}></><p:c-badge-text,{{ if eq .Code 0 }}p:c-badge-return-success{{ else if or (eq .Code 1) (eq .Code 130) }}p:c-badge-return-fail-term{{ else }}p:c-badge-return-custom{{ end }}>  {{ if .Segments.Executiontime.Ms }}{{ if eq \"False\" (title (default \"False\" .Env.DISABLE_SEGMENT_TRANSIENT_EXEC_TIME)) }}羽 {{ .Segments.Executiontime.FormattedMs }}  {{ end }}{{ end }}<b>{{ if eq .Code 0 }}OK{{ else if eq .Code 1 }}FAIL{{ else if eq .Code 130 }}TERM{{ else }}Code{{ end }} ({{ .Code }})</b></><{{ if eq .Code 0 }}p:c-badge-return-success{{ else if or (eq .Code 1) (eq .Code 130) }}p:c-badge-return-fail-term{{ else }}p:c-badge-return-custom{{ end }}></> {{ end }}❯ "
+    "foreground": "#B48EAD",
+    "foreground_templates": [
+      "{{ if gt .Code 0 }}#BF616A{{ end }}"
+    ],
+    "template": "❯ "
   },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,

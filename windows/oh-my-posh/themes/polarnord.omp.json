@@ -113,5 +113,13 @@
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{if .Root}}(Admin){{end}} {{.PWD}}",
+  "transient_prompt": {
+    "foreground": "#B48EAD",
+    "foreground_templates": [
+      "{{ if gt .Code 0 }}#BF616A{{ end }}"
+    ],
+    "template": "❯ "
+  },
   "version": 2
 }

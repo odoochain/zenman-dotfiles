@@ -46,7 +46,7 @@ Invoke-Expression (&starship init powershell)
 # 设置 PowerShell 主题
 
 Try {
-    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
 }
