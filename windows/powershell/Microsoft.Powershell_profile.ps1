@@ -48,7 +48,7 @@ Invoke-Expression (&starship init powershell)
 Try {
     # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_rainbow.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\nord.omp.json" | Invoke-Expression
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
