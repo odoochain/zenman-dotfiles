@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#d3d7cf",
+          "background": "#ffffff",
           "foreground": "#000000",
           "leading_diamond": "╭─",
           "style": "diamond",
@@ -25,8 +25,10 @@
           "foreground": "#e4e4e4",
           "powerline_symbol": "",
           "properties": {
+            "folder_separator_icon": "/",
             "home_icon": "~",
-            "style": "full"
+            "max_depth": 2,
+            "style": "letter"
           },
           "style": "powerline",
           "template": "  {{ .Path }} ",
@@ -186,7 +188,7 @@
           "type": "battery"
         },
         {
-          "background": "#d3d7cf",
+          "background": "#ffffff",
           "foreground": "#000000",
           "invert_powerline": true,
           "style": "diamond",
@@ -202,7 +204,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#d3d7cf",
+          "foreground": "#ffffff",
           "style": "plain",
           "template": "╰─",
           "type": "text"
@@ -213,7 +215,7 @@
     {
       "segments": [
         {
-          "foreground": "#d3d7cf",
+          "foreground": "#ffffff",
           "style": "plain",
           "template": "─╯",
           "type": "text"
@@ -223,10 +225,10 @@
     }
   ],
   "transient_prompt": {
-        "background": "transparent",
-        "foreground": "#ffffff",
-        "template": "{{ .Shell }}> "
-    },
+    "background": "transparent",
+    "foreground": "#ffffff",
+    "template": "{{ .Shell }}> "
+  },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
   "version": 2
