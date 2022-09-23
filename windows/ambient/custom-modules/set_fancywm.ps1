@@ -1,6 +1,5 @@
-# Test-Path -Path "C:\New\complex"
-# $fancyWMConfigPath = "C:\Users\mino29\AppData\Local\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
 $fancyWMConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
+$dotfancyWMConfigPath="$env:USERPROFILE\.dotfiles\windows\fancyWM"
 
 if (Test-Path -Path $fancyWMConfigPath){
     Write-Host "The given folder exists."
@@ -16,6 +15,4 @@ else {
 }
 
 
-# $fancywmConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
-# New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
-# Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
+New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
