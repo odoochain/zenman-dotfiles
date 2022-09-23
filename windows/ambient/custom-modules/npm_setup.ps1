@@ -25,9 +25,9 @@ function check_fnm{
 function npm_g_install {
         Write-Host -ForegroundColor Green "Installing npm pkgs"
         Foreach ($app in $apps){
-                npm install --global $app
+                npm install --global $app.name
                 if ($LASTEXITCODE -eq 0) {
-                        Write-Host -ForgroundColor Green $app.name "successfully installed."
+                        Write-Host -ForegroundColor Green $app.name "successfully installed."
                     }
             }
     }
@@ -48,4 +48,5 @@ function get_list {
 # ----------------------- execute
 
 check_fnm
+npm_g_install
 get_list
