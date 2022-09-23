@@ -42,10 +42,10 @@ In the common folder are thoese programs configs that shared the same config fil
 
 **oh-my-posh**
 
-[**polarnord**]()
+[**polarnord**](https://github.com/mino29/dotfiles/blob/master/windows/oh-my-posh/themes/polarnord.omp.json)
 ![2022_09_23_20_25_477.png](https://s2.loli.net/2022/09/23/QULRrtF4KkV2lnC.png)
 
-[**pwsh10k_norse**]()
+[**pwsh10k_norse**](https://github.com/mino29/dotfiles/blob/master/windows/oh-my-posh/themes/pwsh10k_norse.omp.json)
 ![image.png](https://s2.loli.net/2022/09/23/lkXoYs5fAhiaIV3.png)
 
 **btop**
@@ -132,5 +132,5 @@ sometimes use Arch for WSL2.
 Authored and maintained by Mino Woo.
 
 [@GitHub](https://github.com/mino29)
-[@Gitee](https://gitee.com/wookinkling)
+[@Gitee](https://gitee.com/wooinkling)
 
