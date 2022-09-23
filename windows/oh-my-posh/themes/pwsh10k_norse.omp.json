@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#ffffff",
-          "foreground": "#000000",
+          "background": "#eceff4",
+          "foreground": "#3B4252",
           "leading_diamond": "╭─",
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
@@ -14,7 +14,7 @@
         },
         {
           "background": "#a3be8c",
-          "foreground": "#000000",
+          "foreground": "#3B4252",
           "powerline_symbol": "",
           "style": "powerline",
           "template": "  ",
@@ -22,7 +22,7 @@
         },
         {
           "background": "#81a1c1",
-          "foreground": "#e4e4e4",
+          "foreground": "#3B4252",
           "powerline_symbol": "",
           "properties": {
             "folder_separator_icon": "/",
@@ -42,7 +42,7 @@
             "{{ if gt .Ahead 0 }}#89d1dc{{ end }}",
             "{{ if gt .Behind 0 }}#A3BE8C{{ end }}"
           ],
-          "foreground": "#000000",
+          "foreground": "#3B4252",
           "powerline_symbol": "",
           "properties": {
             "branch_icon": " ",
@@ -77,7 +77,7 @@
         },
         {
           "background": "#ebcb8b",
-          "foreground": "#000000",
+          "foreground": "#3B4252",
           "invert_powerline": true,
           "powerline_symbol": "",
           "style": "powerline",
@@ -86,7 +86,7 @@
         },
         {
           "background": "#689f63",
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "invert_powerline": true,
           "powerline_symbol": "",
           "properties": {
@@ -136,14 +136,14 @@
           "background": "#4063D8",
           "foreground": "#ec2729",
           "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
+          "template": "<#eceff4>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "type": "java"
         },
         {
           "background": "#4063D8",
           "foreground": "#0d6da8",
           "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Unsupported }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
+          "template": "<#eceff4>(</>{{ if .Unsupported }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "type": "dotnet"
         },
         {
@@ -177,33 +177,33 @@
           "background": "#4063D8",
           "foreground": "#055b9c",
           "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
+          "template": "  <#eceff4>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "type": "dart"
         },
         {
           "background": "#4063D8",
           "foreground": "#ce092f",
           "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
+          "template": " ﮽ <#eceff4>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "type": "angular"
         },
         {
           "background": "#81a1c1",
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "style": "plain",
-          "template": "<#1e293b>(</>{{ if .Error }}{{ .Error }}{{ else }}Nx {{ .Full }}{{ end }}<#1e293b>)</>",
+          "template": "<#1e293b>(</>{{ if .Error }}{{ .Error }}{{ else }}Nx {{ .Full }}{{ end }}<#1e293b>)</>",
           "type": "nx"
         },
         {
           "background": "#81a1c1",
           "foreground": "#316ce4",
           "style": "plain",
-          "template": "<#ffffff>(</>{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}<#ffffff>)</>",
+          "template": "<#eceff4>(</>{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}<#ffffff>)</>",
           "type": "kubectl"
         },
         {
           "background": "#AE1401",
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "invert_powerline": true,
           "powerline_symbol": "",
           "properties": {
@@ -216,7 +216,7 @@
         },
         {
           "background": "#FEAC19",
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "invert_powerline": true,
           "powerline_symbol": "",
           "properties": {
@@ -232,7 +232,7 @@
             "{{if contains \"default\" .Profile}}#FFA400{{end}}",
             "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
           ],
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "invert_powerline": true,
           "powerline_symbol": "",
           "properties": {
@@ -243,7 +243,7 @@
           "type": "aws"
         },
         {
-          "background": "#1DB954",
+          "background": "#A3BE8C",
           "foreground": "#011627",
           "invert_powerline": true,
           "powerline_symbol": "",
@@ -262,7 +262,7 @@
             "{{if eq \"Discharging\" .State.String}}#EBCB8B{{end}}",
             "{{if eq \"Full\" .State.String}}#8FBCBB{{end}}"
           ],
-          "foreground": "#000000",
+          "foreground": "#3B4252",
           "invert_powerline": true,
           "powerline_symbol": "",
           "style": "powerline",
@@ -270,8 +270,8 @@
           "type": "battery"
         },
         {
-          "background": "#ffffff",
-          "foreground": "#000000",
+          "background": "#eceff4",
+          "foreground": "#3B4252",
           "invert_powerline": true,
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }}  ",
@@ -286,7 +286,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "style": "plain",
           "template": "╰─",
           "type": "text"
@@ -297,7 +297,7 @@
     {
       "segments": [
         {
-          "foreground": "#ffffff",
+          "foreground": "#eceff4",
           "style": "plain",
           "template": "─╯",
           "type": "text"
@@ -308,7 +308,7 @@
   ],
   "transient_prompt": {
     "background": "transparent",
-    "foreground": "#ffffff",
+    "foreground": "#eceff4",
     "template": "{{ .Shell }}> "
   },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
