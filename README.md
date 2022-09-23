@@ -42,11 +42,11 @@ In the common folder are thoese programs configs that shared the same config fil
 
 **oh-my-posh**
 
-[**nord**]()
-![]()
+[**polarnord**]()
+![2022_09_23_20_25_477.png](https://s2.loli.net/2022/09/23/QULRrtF4KkV2lnC.png)
 
 [**pwsh10k_norse**]()
-![image.png](https://s2.loli.net/2022/09/23/9Uyv3SMn1ozJZi4.png)
+![image.png](https://s2.loli.net/2022/09/23/lkXoYs5fAhiaIV3.png)
 
 **btop**
 
@@ -60,7 +60,7 @@ In the common folder are thoese programs configs that shared the same config fil
 <more>
 
 - windows terminal theme: nord
-- oh-my-posh theme: nord(I tweaked some color from peru)
+- oh-my-posh theme: polarnord(I tweaked some color from peru)
 - oh-my-posh theme: pwsh10k_norse(Heavily modified powerlevel10k_rainbow)
 - font: [Hack NF](https://github.com/ryanoasis/nerd-fonts)
 - terminal icons: lsd (available on linux )
