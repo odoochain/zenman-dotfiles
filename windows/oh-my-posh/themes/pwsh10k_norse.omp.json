@@ -91,7 +91,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  ",
+          "template": "  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         },
         {
@@ -103,7 +103,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  ",
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "go"
         },
         {
@@ -115,7 +115,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  ",
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "julia"
         },
         {
@@ -140,7 +140,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  ",
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "ruby"
         },
         {
@@ -153,7 +153,7 @@
             "fetch_version": false
           },
           "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "azfunc"
         },
         {
@@ -168,7 +168,7 @@
             "display_default": false
           },
           "style": "powerline",
-          "template": " {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }}  ",
+          "template": "  {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
           "type": "aws"
         },
         {
