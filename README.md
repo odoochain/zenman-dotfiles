@@ -40,6 +40,13 @@ In the common folder are thoese programs configs that shared the same config fil
 
 ![](https://s2.loli.net/2022/09/17/js3MVBAFxCO2rcP.png)
 
+**oh-my-posh**
+
+[**nord**]()
+![]()
+
+[**pwsh10k_norse**]()
+![image.png](https://s2.loli.net/2022/09/23/9Uyv3SMn1ozJZi4.png)
 
 **btop**
 
@@ -50,10 +57,11 @@ In the common folder are thoese programs configs that shared the same config fil
 ![](https://s2.loli.net/2022/09/17/iky2GgSawBOouKf.png)
 
 
-<details>
+<more>
 
 - windows terminal theme: nord
 - oh-my-posh theme: nord(I tweaked some color from peru)
+- oh-my-posh theme: pwsh10k_norse(Heavily modified powerlevel10k_rainbow)
 - font: [Hack NF](https://github.com/ryanoasis/nerd-fonts)
 - terminal icons: lsd (available on linux )
 - task manager: btop4win (available on linux as btop)
@@ -71,10 +79,8 @@ In the common folder are thoese programs configs that shared the same config fil
 - bash
 - zsh on windows (without WSL2)
 
-</details>
+</more>
 
-
-and more
 
 ## Linux
 
@@ -85,7 +91,7 @@ sometimes use Arch for WSL2.
 
 ![](https://s2.loli.net/2022/09/17/vPTntKW2ZsJEMwz.png)
 
-<details>
+<more>
 
 - zsh
 - oh-my-zsh
@@ -95,9 +101,8 @@ sometimes use Arch for WSL2.
 - neovim
 - nix
 
-</details>
+</more>
 
-and more
 
 ## macOS
 
@@ -127,4 +132,5 @@ and more
 Authored and maintained by Mino Woo.
 
 [@GitHub](https://github.com/mino29)
+[@Gitee](https://gitee.com/wookinkling)
 
