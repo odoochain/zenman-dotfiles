@@ -8,8 +8,8 @@
   "PanelHeight": 18,
   "PanelFontSize": 12,
   "ShowFocusDuringAction": true,
-  "OverrideAccentColor": false,
-  "CustomAccentColor": "#0000FFFF",
+  "OverrideAccentColor": true,
+  "CustomAccentColor": "#A3BE8CFF",
   "Keybindings": {
     "ToggleManager": {
       "IsDirectMode": false,
