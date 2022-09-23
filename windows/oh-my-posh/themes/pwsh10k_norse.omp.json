@@ -25,13 +25,12 @@
           "foreground": "#3B4252",
           "powerline_symbol": "",
           "properties": {
-            "folder_separator_icon": "/",
-            "home_icon": "~",
+            "home_icon": " ~",
             "max_depth": 2,
             "style": "letter"
           },
           "style": "powerline",
-          "template": "  {{ .Path }} ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
