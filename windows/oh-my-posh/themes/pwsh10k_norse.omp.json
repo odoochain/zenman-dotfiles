@@ -13,6 +13,14 @@
           "type": "os"
         },
         {
+          "background": "#88C0D0",
+          "foreground": "#000000",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": "  ",
+          "type": "root"
+        },
+        {
           "background": "#81a1c1",
           "foreground": "#e4e4e4",
           "powerline_symbol": "",
@@ -23,14 +31,6 @@
           "style": "powerline",
           "template": "  {{ .Path }} ",
           "type": "path"
-        },
-        {
-          "background": "#d3d7cf",
-          "foreground": "#000000",
-          "powerline_symbol": "",
-          "style": "powerline",
-          "template": "  ",
-          "type": "root"
         },
         {
           "background": "#A3BE8C",
@@ -222,6 +222,11 @@
       "type": "rprompt"
     }
   ],
+  "transient_prompt": {
+        "background": "transparent",
+        "foreground": "#ffffff",
+        "template": "{{ .Shell }}> "
+    },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
   "version": 2
