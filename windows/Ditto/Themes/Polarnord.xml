@@ -1,83 +1,80 @@
-<Ditto_Theme_File Version="2" Author="Yaroslav Kargin" Notes="www.nordtheme.com">
+<Ditto_Theme_File Version="2" Author="Zhongzheng Wu" Notes="Nord Dark Theme">
 	<CaptionLeft>
-		RGB(46, 52, 64)
+		RGB(32,36,45)
 	</CaptionLeft>
 	<CaptionRight>
-		RGB(46, 52, 64)
+		RGB(51,51,51)
 	</CaptionRight>
 	<CaptionLeftTopMost>
-		RGB(46, 52, 64)
+		RGB(32,36,45)
 	</CaptionLeftTopMost>
 	<CaptionRightTopMost>
-		RGB(46, 52, 64)
+		RGB(51,51,51)
 	</CaptionRightTopMost>
 	<CaptionLeftNotConnected>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</CaptionLeftNotConnected>
 	<CaptionRightNotConnected>
-		RGB(49, 55, 66)
+		RGB(51,51,51)
 	</CaptionRightNotConnected>
 	<CaptionTextColor>
-		RGB(160, 197, 146)
+		RGB(229,233,240)
 	</CaptionTextColor>
 	<ListBoxOddRowsBG>
-		RGB(76,86,106)
+		RGB(46,52,64)
 	</ListBoxOddRowsBG>
 	<ListBoxEvenRowsBG>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</ListBoxEvenRowsBG>
 	<ListBoxOddRowsText>
-		RGB(236,239,244)
+		RGB(229,233,240)
 	</ListBoxOddRowsText>
 	<ListBoxEvenRowsText>
-		RGB(236,239,244)
+		RGB(229,233,240)
 	</ListBoxEvenRowsText>
 	<ListBoxSelectedBG>
-		RGB(136,192,208)
+		RGB(143,188,187)
 	</ListBoxSelectedBG>
 	<ListBoxSelectedNoFocusBG>
-		RGB(61, 71, 89)
+		RGB(143,188,187)
 	</ListBoxSelectedNoFocusBG>
 	<ListBoxSelectedText>
-		RGB(214, 221, 232)
+		RGB(238,238,238)
 	</ListBoxSelectedText>
 	<ListBoxSelectedNoFocusText>
-		RGB(214, 220, 231)
+		RGB(220,220,220)
 	</ListBoxSelectedNoFocusText>
 	<Border>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</Border>
 	<BorderTopMost>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</BorderTopMost>
 	<BorderNotConnected>
-		RGB(49, 55, 66)
+		RGB(191,97,106)
 	</BorderNotConnected>
 	<GroupTreeBG>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</GroupTreeBG>
 	<GroupTreeText>
-		RGB(214, 221, 232)
+		RGB(67,76,94)
 	</GroupTreeText>
 	<CaptionSize>
-		18
 	</CaptionSize>
 	<CaptionFontSize>
-		15
 	</CaptionFontSize>
 	<DescriptionWindowBG>
-		RGB(46, 52, 64)
+		RGB(204,204,204)
 	</DescriptionWindowBG>
 	<DescriptionWindowText>
-		RGB(214, 221, 232)
 	</DescriptionWindowText>
 	<MainWindowBG>
-		RGB(49, 55, 66)
+		RGB(32,36,45)
 	</MainWindowBG>
 	<SearchTextBoxFocusBG>
-		RGB(46, 52, 64)
+		RGB(24,24,24)
 	</SearchTextBoxFocusBG>
 	<SearchTextBoxFocusText>
-		RGB(214, 221, 232)
+		RGB(229,233,240)
 	</SearchTextBoxFocusText>
 </Ditto_Theme_File>
