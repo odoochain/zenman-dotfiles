@@ -10,26 +10,6 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 
-function Link-to-Dotfiles ($x, $y){
-if (Test-Path -Path $x){
-    Write-Host "The given folder exists."
-    Write-Host "The folder is going to be deleted"
-    Remove-Item -recurse -force $x
-}
-else {
-    Write-Host "The given folder does not exist."
-    Write-Host "The folder is going to be created."
-    Write-Host "The folder is going to be linked somewhere else."
-}
-    New-Item -Path $x -ItemType SymbolicLink -Target $y -Force
-    Write-host "$x --> $y"
-    }
-
-# hyper
-$hyperOGConfig="$env:APPDATA\Hyper\.hyper.js"
-$dotHyperConfig="$env:USERPROFILE\.dotfiles\windows\hyper\.hyper.js"
-Link-to-Dotfiles $hyperOGConfig $dotHyperConfig
-
 
 # git
 New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\git\.gitconfig" -Force
@@ -161,14 +141,3 @@ New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFI
 Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
 
 
-
-
-# all third party repos should be stored in ~\.local\share\
-
-# Questions:
-# what is symboliclink?
-# what can symbolicklink do?
-# Can symbolickLink be delete and restore?
-# Can symbolickLink be updated?
-# Can you symlink a whole directory?
-# Which space does the linked file(s) occupy?
