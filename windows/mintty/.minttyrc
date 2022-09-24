@@ -1,10 +1,11 @@
 ThemeFile=nord
 Font=Hack NF
 FontHeight=11
-Transparency=off
+Transparency=4
 Columns=110
 Rows=59
 RewrapOnResize=yes
 Scrollbar=none
 CursorType=block
 ConfirmExit=no
+OpaqueWhenFocused=no
