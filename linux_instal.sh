@@ -107,6 +107,36 @@ rm -f ~/.config/pip
 ln -s -f ~/.dotfiles/linux/pip ~/.config/pip
 echo "=>~/.dotfiles/linux/pip/pip.conf"
 
+
+################################################################################
+# install minimal vim
+################################################################################
+
+
+#!/bin/bash
+
+# rmdir ~/.config/nvim
+#[ -d "~/.config/nvim" ] && [ ! -L "~/.config" ] && echo "Directory ~/.config/nvim exists." || echo "Error: Directory ~/.config/nvim exists but point to $(readlink -f ~/.config/nvim)."
+
+# if [ -d "~/.config/nvim" ];
+# then
+    # echo "Directory ~/.config/nvim exists."
+    # echo "Will delete everything in this directory."
+    # rm -rf ~/.config/nvim{*,.*} #this delete also hidden files & directories
+# else
+    # echo "Error: Directory ~/.config/nvim does not exists."
+    # echo "Will create this dir first"
+    # mkdir -p ~/.config/nvim
+# fi
+# 
+# git clone --depth=1 https://github.com/mino29/minimal_vim.git ~/.config/nvim
+# cd ~/.config/nvim
+# sh install.sh
+
+
+
+
+
 ################################################################################
 # define main function
 ################################################################################
