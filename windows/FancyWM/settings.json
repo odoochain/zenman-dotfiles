@@ -420,9 +420,7 @@
       ]
     }
   },
-  "ProcessIgnoreList": [
-    "Taskmgr"
-  ],
+  "ProcessIgnoreList": [],
   "ClassIgnoreList": [
     "OperationStatusWindow"
   ],
