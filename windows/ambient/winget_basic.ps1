@@ -35,6 +35,7 @@ What needs to be done:
     @{name = "9MVZQVXJBQ9V"; source = "msstore" }        # AV1 VideoExtension
     @{name = "9NCTDW2W1BH8"; source = "msstore" }        # Raw-PictureExtension
     @{name = "9N95Q1ZZPMH4"; source = "msstore" }        # MPEG-2-VideoExtension   @{name="voidtools.Everything.Alpha"}
+    @{name = "SumatraPDF.SumatraPDF"}
 );
 
 $bloatware = @(
@@ -80,6 +81,8 @@ $bloatware = @(
     # "Microsoft.XboxGamingOverlay"
     # "Microsoft.XboxIdentityProvider"
     # "Microsoft.XboxSpeechToTextOverlay"
+
+    # "MicrosoftFamily_0.1.28.0_x64__8wekyb3d8bbwe" # Family
 
     # Threshold 2 apps
     "Microsoft.GetHelp"

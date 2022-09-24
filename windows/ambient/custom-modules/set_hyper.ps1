@@ -1,19 +1,21 @@
 function Link-to-Dotfiles ($x, $y){
 if (Test-Path -Path $x){
-    Write-Host "The given folder exists."
-    Write-Host "The folder is going to be deleted"
+    Write-Host "$x exists."
+    Write-Host "deleting $x"
     Remove-Item -recurse -force $x
 }
 else {
-    Write-Host "The given folder does not exist."
-    Write-Host "The folder is going to be created."
-    Write-Host "The folder is going to be linked somewhere else."
+    Write-Host "$x does not exist."
+    Write-Host "Creating $x"
+    Write-Host "redirecting..."
 }
     New-Item -Path $x -ItemType SymbolicLink -Target $y -Force
-    Write-host "$x --> $y"
+    Write-host "$x => $y"
     }
 
 # hyper
 $hyperOGConfig="$env:APPDATA\Hyper\.hyper.js"
 $dotHyperConfig="$env:USERPROFILE\.dotfiles\windows\hyper\.hyper.js"
+
+# call function(s)
 Link-to-Dotfiles $hyperOGConfig $dotHyperConfig
