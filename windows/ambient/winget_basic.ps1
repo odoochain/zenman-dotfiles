@@ -27,6 +27,10 @@ What needs to be done:
     @{name="GyDi.ClashVerge"}
     @{name="winget insatll RandyRants.SharpKeys"}
     @{name="Anaconda.Anaconda3"}
+    @{name = "SumatraPDF.SumatraPDF"}
+    @{name = "TranslucentTB"}
+    @{name = "9PF4KZ2VN4W9"; source = "msstore" }        # TranslucentTB
+    @{name = "9N5W18JC9BG2"; source = "msstore" }        # TranslucentTB CN
     @{name = "9NCBCSZSJRSB"; source = "msstore" }        # Spotify
     @{name = "9NKSQGP7F2NH"; source = "msstore" }        # Whatsapp Desktop
     @{name = "9WZDNCRFJ3TJ"; source = "msstore" }        # Netflix
@@ -35,7 +39,6 @@ What needs to be done:
     @{name = "9MVZQVXJBQ9V"; source = "msstore" }        # AV1 VideoExtension
     @{name = "9NCTDW2W1BH8"; source = "msstore" }        # Raw-PictureExtension
     @{name = "9N95Q1ZZPMH4"; source = "msstore" }        # MPEG-2-VideoExtension   @{name="voidtools.Everything.Alpha"}
-    @{name = "SumatraPDF.SumatraPDF"}
 );
 
 $bloatware = @(
