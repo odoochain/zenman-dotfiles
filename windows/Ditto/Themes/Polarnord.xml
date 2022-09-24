@@ -39,10 +39,10 @@
 		RGB(143,188,187)
 	</ListBoxSelectedNoFocusBG>
 	<ListBoxSelectedText>
-		RGB(238,238,238)
+		RGB(32,36,45)
 	</ListBoxSelectedText>
 	<ListBoxSelectedNoFocusText>
-		RGB(220,220,220)
+		RGB(32,36,45)
 	</ListBoxSelectedNoFocusText>
 	<Border>
 		RGB(32,36,45)
@@ -51,7 +51,7 @@
 		RGB(32,36,45)
 	</BorderTopMost>
 	<BorderNotConnected>
-		RGB(191,97,106)
+		RGB(255, 85, 85)
 	</BorderNotConnected>
 	<GroupTreeBG>
 		RGB(32,36,45)
@@ -72,9 +72,12 @@
 		RGB(32,36,45)
 	</MainWindowBG>
 	<SearchTextBoxFocusBG>
-		RGB(24,24,24)
+		RGB(45,48,57)
 	</SearchTextBoxFocusBG>
 	<SearchTextBoxFocusText>
 		RGB(229,233,240)
 	</SearchTextBoxFocusText>
+	<SearchTextHighlight>
+		RGB(199,69,80)
+	</SearchTextHighlight>
 </Ditto_Theme_File>
