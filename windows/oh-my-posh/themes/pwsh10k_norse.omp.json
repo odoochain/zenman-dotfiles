@@ -26,6 +26,7 @@
           "powerline_symbol": "",
           "properties": {
             "home_icon": " ~",
+            "folder_separator_icon": "/",
             "max_depth": 2,
             "style": "letter"
           },

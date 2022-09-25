@@ -44,10 +44,23 @@ Invoke-Expression (&starship init powershell)
 
 # 引入 oh-my-posh
 # 设置 PowerShell 主题
+# mydesktop--> MARCY (bigger screen, better with pwsh10k_norse)
+# mylaptop--> HILDA (smaller screen, better with polarnord)
+# others--> (use pwsh10k_norse by default)
 
+# $hostname = hostname
 Try {
+    if ($hostname -eq "HILDA") {
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        }
+    elseif ($hostname -eq "MARCY"){
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
+        }
+    else{
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
+        }
     # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
 }
 Catch {

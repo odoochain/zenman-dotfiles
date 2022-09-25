@@ -112,6 +112,7 @@
         {
           "foreground": "#8fbcbb",
           "properties": {
+            "folder_separator_icon": "/",
             "style": "full"
           },
           "style": "plain",
