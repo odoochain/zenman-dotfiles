@@ -99,8 +99,12 @@ echo "=>~/.dotfiles/linux/git/.gitconfig"
 
 # zsh
 rm -f ~/.zshrc
-ln -s -f ~/.dotfiles/linux/zsh/.zshrc ~/.zshrc
-echo "=>~/.dotfiles/linux/zsh/.zshrc"
+ln -s -f ~/.dotfiles/common/zsh/.zshrc ~/.zshrc
+echo "=>~/.dotfiles/common/zsh/.zshrc"
+
+rm -f ~/.p10k.zsh
+ln -s -f ~/.dotfiles/common/zsh/.p10k.zsh ~/.p10k.zsh
+echo "=>~/.dotfiles/common/zsh/.p10k.zsh"
 
 # pip
 rm -f ~/.config/pip

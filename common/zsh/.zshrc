@@ -5,7 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -33,7 +32,7 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -79,11 +78,14 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    command-not-found
-    z
+	git
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	history
+	command-not-found
+	extract
+	vi-mode
+	history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='nvim'
+export VISUAL='nvim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -113,28 +117,54 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias cls="clear"
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
-
-alias cls="clear"
 alias py="python"
 
 alias ls="lsd -a"
-alias ll="lsd -la"
-alias l="lsd -la"
+alias ll="lsd -lah"
+alias zrc="$EDITOR ~/.zshrc"
 
-alias grep="rg"
-alias cat="bat"
+alias cc="clear"
+alias :q="exit"
 
-# This is for zsh on windows
-# alias open="explorer.exe ."
+alias g="git"
 
 
-# eval "$(lua /c/Users/mino29/z.lua/z.lua --init zsh)"
+
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
+# zoxide, magical cd command
 eval "$(zoxide init zsh)"
+
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mino29/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mino29/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mino29/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mino29/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# pnpm
+export PNPM_HOME="/home/mino29/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
