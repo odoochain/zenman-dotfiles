@@ -60,8 +60,6 @@ Try {
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
         }
     # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -131,6 +129,7 @@ Set-PSReadLineOption -PredictionSource History
 # vim binding to powershell, uncoment one or the other
 Set-PSReadlineOption -EditMode vi
 # Set-PSReadLineOption -EditMode Windows
+# Set-PSReadLineOption -EditMode Emacs
 
 # 每次回溯输入历史，光标定位于输入内容末尾
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
@@ -147,7 +146,7 @@ Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo
 # 设置向上键为后向搜索历史记录
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 
-# 设置向下键为前向搜索历史纪录
+# 设置向下键为前向搜索历史记录
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # 设置列表历史选项, F2切换
@@ -214,8 +213,7 @@ function Update-Packages {
 
     # update Windows
     Write-Host "Step 9: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
-    nvim +PlugUpdate +qa!
-    nvim +CocUpdate +qa!
+    nvim +PackerSync +qa!
 
 }
 
@@ -255,7 +253,7 @@ Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
 
 # ----------------------------------------------------------------------------
 # option-2
-# below requires you to downloads lsd to work
+# below requires you to install lsd to work
 function ListItem {
     Write-Host("")
     lsd -a
@@ -574,19 +572,10 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 # -------------------------------   Set fnm END    -------------------------------
 
 
-
-
-
-# winfetch
-
-
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
 $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
-
-
-
 

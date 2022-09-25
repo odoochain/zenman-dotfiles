@@ -53,7 +53,6 @@ DOSKEY cd~=cd "%USERPROFILE%\$*"
 DOSKEY ~=cd "%USERPROFILE%\"
 DOSKEY ~="%USERPROFILE%\"
 :: DOSKEY dropbox=cd "%USERPROFILE%\Dropbox\$*"
-:: DOSKEY nutstore=cd "%USERPROFILE%\Downloads\Win11_personal\12_documents\Nutstore\"
 
 
 :: autojump related
@@ -67,6 +66,6 @@ set PATH=%PATH%;%USERPROFILE%\scoop\apps\clink\current
 :: the correct path of this file
 :: C:\Users\Public\alias.cmd
 :: %USERPROFILE%\alias.cmd
-:: inspiration from stackoverflow:
+:: inspiration from stackoverflow-->
 :: https://stackoverflow.com/questions/20530996/aliases-in-windows-command-prompt
 
