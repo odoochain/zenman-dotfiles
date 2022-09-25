@@ -56,31 +56,31 @@ function detect_platform() {
 
 
 # # set environment variables
-# 
+#
 # export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 # export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 # export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
-# 
+#
 # # china mirror
 # # 从本镜像下载安装脚本并安装 Homebrew / Linuxbrew
 # git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
 # /bin/bash brew-install/install.sh
 # rm -rf brew-install
-# 
+#
 # # 也可从 GitHub 获取官方安装脚本安装 Homebrew / Linuxbrew
 # # /bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
-# 
-# 
+#
+#
 # # ..
 # test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
 # test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
 # test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
 # test -r ~/.zprofile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zprofile
-# 
-# 
+#
+#
 # # ..
-# 
+#
 # export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 # brew tap --custom-remote --force-auto-update homebrew/core https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
 # brew tap --custom-remote --force-auto-update homebrew/command-not-found https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-command-not-found.git
@@ -92,36 +92,44 @@ function detect_platform() {
 
 # symlinks
 
+
+# workflow:
+# see if the file/folder exists, (if doesn't exist, do symlink), (else, remove by force recursively, then do symlink)
+# show prompt the original path --> the new file path
+
 # git
 rm -f ~/.gitconfig
 ln -s -f ~/.dotfiles/linux/git/.gitconfig ~/.gitconfig
-echo "=>~/.dotfiles/linux/git/.gitconfig"
+echo "=> ~/.dotfiles/linux/git/.gitconfig"
 
-# bash
+# bash-->main rc
 rm -f ~/.bashrc
 ln -s -f ~/.dotfiles/common/bash/.bashrc ~/.bashrc
-echo "=>~/.dotfiles/common/bash/.bashrc"
-
+echo "=> ~/.dotfiles/common/bash/.bashrc"
+# bash-->logout
 rm -f ~/.bash_logout
 ln -s -f ~/.dotfiles/common/bash/.bash_logout ~/.bash_logout
-
+# bash-->profile
 rm -f ~/.bash_profile
 ln -s -f ~/.dotfiles/common/bash/.bash_profile ~/.bash_profile
 
 # zsh
 rm -f ~/.zshrc
 ln -s -f ~/.dotfiles/common/zsh/.zshrc ~/.zshrc
-echo "=>~/.dotfiles/common/zsh/.zshrc"
+echo "=> ~/.dotfiles/common/zsh/.zshrc"
 
 rm -f ~/.p10k.zsh
 ln -s -f ~/.dotfiles/common/zsh/.p10k.zsh ~/.p10k.zsh
-echo "=>~/.dotfiles/common/zsh/.p10k.zsh"
+echo "=> ~/.dotfiles/common/zsh/.p10k.zsh"
 
 # pip
 rm -f ~/.config/pip
 ln -s -f ~/.dotfiles/linux/pip ~/.config/pip
-echo "=>~/.dotfiles/linux/pip/pip.conf"
+echo "=> ~/.dotfiles/linux/pip/pip.conf"
 
+# neovim
+rm -f ~/.config/nvim
+ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
 
 ################################################################################
 # install minimal vim
@@ -143,7 +151,7 @@ echo "=>~/.dotfiles/linux/pip/pip.conf"
     # echo "Will create this dir first"
     # mkdir -p ~/.config/nvim
 # fi
-# 
+#
 # git clone --depth=1 https://github.com/mino29/minimal_vim.git ~/.config/nvim
 # cd ~/.config/nvim
 # sh install.sh
