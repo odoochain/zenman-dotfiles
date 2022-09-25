@@ -48,7 +48,7 @@ Invoke-Expression (&starship init powershell)
 # mylaptop--> HILDA (smaller screen, better with polarnord)
 # others--> (use pwsh10k_norse by default)
 
-# $hostname = hostname
+$hostname = hostname
 Try {
     if ($hostname -eq "HILDA") {
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
