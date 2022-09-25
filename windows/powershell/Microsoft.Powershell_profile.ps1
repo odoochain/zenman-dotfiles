@@ -161,7 +161,7 @@ set-psreadlineoption -PredictionViewStyle ListView
 
 #-------------------------------    Functions BEGIN   -------------------------------
 # Python 直接执行
-# This will use you default python interpreter
+# This will use your default python interpreter
 $env:PATHEXT += ";.py"
 
 # 更新系统组件
@@ -239,7 +239,7 @@ Set-Alias -Name os-update -Value Update-Packages
 # ----------------------------------------------------------------------------
 
 # option-1 
-# true to powershell
+# native to powershell
 <#
 function ListDirectory {
      Write-Host("")
@@ -266,8 +266,15 @@ function ListDirectory {
     Write-Host("")
 }
 
+function TreeView {
+    Write-Host("")
+    lsd --tree
+    Write-Host("")
+}
+
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
+Set-Alias -Name tree -Value TreeView -Option AllScope
 
 # ----------------------------------------------------------------------------
 
@@ -275,6 +282,7 @@ Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
 
+# neofetch swag(but with winfetch)
 Set-Alias -Name neofetch -Value winfetch
 Set-Alias -Name ne -Value winfetch
 
@@ -315,7 +323,12 @@ Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
 
 # 6. more "aliases"
-# Set-Alias -Name ":q" -Value "exit"
+
+function exitConsole(){
+        exit
+    }
+
+Set-Alias -Name :q -Value exitConsole # vim like keybinds
 Set-Alias -Name cc -Value clear
 Set-Alias -Name redis -Value redis-cli
 Set-Alias -Name cat -Value bat -Option AllScope

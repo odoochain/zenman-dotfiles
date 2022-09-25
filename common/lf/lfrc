@@ -1,12 +1,26 @@
-set colors
+# comment--> the general ui of lf
+#set drawbox false
+# set color256
 set preview true
 set hidden true
-#set drawbox false
 set icons true
 set ignorecase true
+set smartcase
+set incsearch
+set info size
+set timefmt '2006-01-02 15:04:05 -0700'
+set sortby natural
 
-# interpreter for shell commands
-set shell cmd
+# comment--> interpreter for shell commands
+# set shell cmd
+
+# comment--> vim like
+set number
+set relativenumber
+
+
+# comment--> window ratio
+set ratios '1:2:3'
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -28,7 +42,6 @@ set ifs "\n"
 set scrolloff 10
 
 # use enter for shell commands
-map <enter> shell
 
 # execute current file (must be executable)
 map x $$f
@@ -45,7 +58,7 @@ map O $mimeopen --ask $f
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
     case $(file --mime-type $f -b) in
-        text/*) nvim $fx;;
+        text/*) $EDITOR $fx;;
         *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
@@ -56,6 +69,11 @@ cmd open ${{
 
 # make sure trash folder exists
 # %mkdir -p ~/.trash
+
+set promptfmt "
+\033[38;5;8m\033[48;5;236m %u@%h \033[38;5;236m\033[48;5;234m
+\033[38;5;8m\033[48;5;234m %w/%f \033[0m\033[38;5;234m\033[0m
+"
 
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
@@ -121,7 +139,7 @@ map e
 map f
 
 # File Openers
-map ee $$nvim "$f"
+map ee $$EDITOR "$f"
 map u $view "$f"
 
 # Archive Mappings
