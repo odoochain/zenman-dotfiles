@@ -88,6 +88,10 @@ plugins=(
 	history-substring-search
 )
 
+#clearner home dir
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+#using oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -131,6 +135,7 @@ alias cc="clear"
 alias :q="exit"
 
 alias g="git"
+alias ne="neofetch"
 
 
 
@@ -145,6 +150,9 @@ eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# add python packages to path
+export PATH="/home/mino29/.local/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

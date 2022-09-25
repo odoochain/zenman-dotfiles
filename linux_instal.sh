@@ -97,6 +97,17 @@ rm -f ~/.gitconfig
 ln -s -f ~/.dotfiles/linux/git/.gitconfig ~/.gitconfig
 echo "=>~/.dotfiles/linux/git/.gitconfig"
 
+# bash
+rm -f ~/.bashrc
+ln -s -f ~/.dotfiles/common/bash/.bashrc ~/.bashrc
+echo "=>~/.dotfiles/common/bash/.bashrc"
+
+rm -f ~/.bash_logout
+ln -s -f ~/.dotfiles/common/bash/.bash_logout ~/.bash_logout
+
+rm -f ~/.bash_profile
+ln -s -f ~/.dotfiles/common/bash/.bash_profile ~/.bash_profile
+
 # zsh
 rm -f ~/.zshrc
 ln -s -f ~/.dotfiles/common/zsh/.zshrc ~/.zshrc
