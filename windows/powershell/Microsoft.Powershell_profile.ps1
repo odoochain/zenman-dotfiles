@@ -535,7 +535,9 @@ function PowerOff {
 
 function emptytrash{
         empty-trash.cmd
+        # you need to --> "npm i -g empty-trash-cli"
         Write-Host "Yay, everything is shiny now!"
+        duf
     }
 
 
