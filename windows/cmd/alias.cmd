@@ -38,6 +38,9 @@ DOSKEY cs=cowsay $*
 DOSKEY ne=winfetch
 DOSKEY neofetch=winfetch
 DOSKEY open=explorer
+DOSKEY :q=exit :: --> vim like exprience
+:: DOSKEY g=git :: --> git
+
 
 :: These are for my lazy ass
 

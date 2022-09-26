@@ -80,25 +80,10 @@
                 "name": "Arch"
             },
             {
-                "commandline": "%USERPROFILE%/scoop/apps/git/current/usr/bin/bash.exe -l -i",
-                "guid": "{00000000-0000-0000-ba54-000000000002}",
-                "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\git-bash-white.png",
-                "name": "git-Bash",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
-                "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\nushell.png",
-                "name": "Nushell",
-                "source": "nu"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
