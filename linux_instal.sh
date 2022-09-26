@@ -89,7 +89,6 @@ function detect_platform() {
 
 
 
-
 # symlinks
 
 
@@ -128,8 +127,8 @@ ln -s -f ~/.dotfiles/linux/pip ~/.config/pip
 echo "=> ~/.dotfiles/linux/pip/pip.conf"
 
 # neovim
-rm -f ~/.config/nvim
-ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
+# rm -f ~/.config/nvim
+# ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
 
 ################################################################################
 # install minimal vim
@@ -157,8 +156,17 @@ ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
 # sh install.sh
 
 
+################################################################################
+# arch-linux specific
+################################################################################
 
+#aur cn mirror
+yay --aururl "https://mirrors.aliyun.com/archlinuxcn" --save
 
+sudo pacman -S git-delta --noconfirm
+
+# rust
+rustup default stable
 
 ################################################################################
 # define main function
