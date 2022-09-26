@@ -7,7 +7,7 @@
         {
           "foreground": "#8fbcbb",
           "style": "powerline",
-          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Major }}.{{ .Minor }}{{ end }})",
+          "template": "( {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Major }}.{{ .Minor }}{{ end }})",
           "type": "python"
         },
         {

@@ -50,18 +50,16 @@ Invoke-Expression (&starship init powershell)
 
 $hostname = hostname
 Try {
-    # if ($hostname -eq "HILDA") {
-    #     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-    #     }
-    # elseif ($hostname -eq "MARCY"){
-    #     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-    #     }
-    # else{
-    #     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-    #     }
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minipop.omp.json" | Invoke-Expression
+    if ($hostname -eq "HILDA") {
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        }
+    elseif ($hostname -eq "MARCY"){
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
+        }
+    else{
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minipop.omp.json" | Invoke-Expression
+        }
     # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\huvix.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
