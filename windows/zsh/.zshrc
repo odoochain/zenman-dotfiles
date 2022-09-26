@@ -128,8 +128,9 @@ alias l="lsd -la"
 alias grep="rg"
 alias cat="bat"
 
+alias :q="exit"
+
 # This is for zsh on windows
-alias btop="btop4win"
 alias open="explorer.exe ."
 
 
