@@ -59,7 +59,12 @@
         "D"
       ]
     },
-    "CreateHorizontalPanel": null,
+    "CreateHorizontalPanel": {
+      "IsDirectMode": false,
+      "Keys": [
+        "B"
+      ]
+    },
     "CreateVerticalPanel": {
       "IsDirectMode": false,
       "Keys": [
