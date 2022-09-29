@@ -592,3 +592,12 @@ $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
 
+# -------------------------------   Set lunarvim START    -------------------------------
+
+# Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
+
+$lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
+if (Test-Path -Path $lvimPath){ Set-Alias lvim $lvimPath}
+else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
+# -------------------------------   Set lunarvim END    -------------------------------
+
