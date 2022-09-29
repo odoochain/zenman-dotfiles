@@ -38,6 +38,8 @@ DOSKEY cs=cowsay $*
 DOSKEY ne=winfetch
 DOSKEY neofetch=winfetch
 DOSKEY open=explorer
+DOSKEY :q=exit
+
 
 :: These are for my lazy ass
 

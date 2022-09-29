@@ -99,3 +99,15 @@ $dotDittoConfigPath="$env:USERPROFILE\.dotfiles\windows\Ditto\Themes"
 
 Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath 
 
+# --------------------------->
+# Motrix settings
+$MotrixOGSysConfigPath="$env:APPDATA\Motrix\system.json"
+$dotMotrixSysConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\system.json"
+
+Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath 
+
+$MotrixOGUserConfigPath="$env:APPDATA\Motrix\user.json"
+$dotMotrixUserConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\user.json"
+
+Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath 
+

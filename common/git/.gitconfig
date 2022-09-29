@@ -86,7 +86,6 @@
     conflictstyle = diff3
 [interactive]
     diffFilter = delta --color-only
-[delta]
     line-numbers = true
     syntax-theme = Dracula
     plus-style = "syntax #2A363B"
@@ -97,7 +96,3 @@
     rebase = false
 [init]
     defaultBranch = main
-[http]
-	proxy = http://127.0.0.1:7890
-[https]
-	proxy = http://127.0.0.1:7890
