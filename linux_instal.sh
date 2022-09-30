@@ -126,10 +126,19 @@ ln -s -f ~/.dotfiles/linux/pip ~/.config/pip
 echo "=> ~/.dotfiles/linux/pip/pip.conf"
 
 # neovim
+<<<<<<< HEAD
 rm -f ~/.config/nvim
 ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
 
 # lunarvim
+||||||| d5270e8
+# rm -f ~/.config/nvim
+# ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
+=======
+rm -rf ~/.config/nvim
+ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
+echo "=> ~/.dotfiles/linux/nvim"
+>>>>>>> 94f35e3e01cac7789d260d942d33c43c82330136
 
 ################################################################################
 # install minimal vim
