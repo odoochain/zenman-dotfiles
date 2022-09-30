@@ -46,7 +46,6 @@ function detect_platform() {
 }
 
 
-
 ################################################################################
 # homebrew & nix-env
 ################################################################################
@@ -127,7 +126,7 @@ ln -s -f ~/.dotfiles/linux/pip ~/.config/pip
 echo "=> ~/.dotfiles/linux/pip/pip.conf"
 
 # neovim
-rm -rf ~/.config/nvim
+rm -f ~/.config/nvim
 ln -s -f ~/.dotfiles/common/nvim ~/.config/nvim
 echo "=> ~/.dotfiles/linux/nvim"
 
@@ -161,13 +160,37 @@ echo "=> ~/.dotfiles/linux/nvim"
 # arch-linux specific
 ################################################################################
 
+# arch pacman cn mirror
+
+# /etc/pacman.conf
+# /etc/pacman.d/mirrorlist
+
+sudo pacman -Sy
+sudo pacman -S --needed --noconfirm archlinux-keyring\
+                                    archlinuxcn-keyring\
+                                    reflector\
+                                              git\
+                                              git-delta\
+                                              yay\
+                                              paru\
+                                              neovim\
+
 #aur cn mirror
 yay --aururl "https://mirrors.aliyun.com/archlinuxcn" --save
 
-sudo pacman -S git-delta --noconfirm
 
 # rust
 rustup default stable
+
+################################################################################
+# awesome window manager
+################################################################################
+
+
+
+
+
+
 
 ################################################################################
 # define main function
@@ -178,9 +201,6 @@ function main(){
 detect_platform
 
 }
-
-
-
 
 
 
