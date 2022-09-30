@@ -317,9 +317,9 @@ Set-Alias -Name open -Value OpenCurrentFolder
 
 # 5. neovim aliases/ change nvim to vim if you use vim
 
-Set-Alias -Name v -Value nvim
-Set-Alias -Name vi -Value nvim
-Set-Alias -Name vim -Value nvim
+# Set-Alias -Name v -Value nvim
+# Set-Alias -Name vi -Value nvim
+# Set-Alias -Name vim -Value nvim
 
 # 6. more "aliases"
 
@@ -601,6 +601,9 @@ if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
     Set-Alias lv $lvimPath
+    Set-Alias v $lvimPath
+    Set-Alias vi $lvimPath
+    Set-Alias vim $lvimPath
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
