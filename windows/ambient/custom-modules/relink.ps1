@@ -80,7 +80,7 @@ else {
 # --------------------------->
 # SumatraPDf
 $SumatraPDFOGConfigPath="$env:LOCALAPPDATA\SumatraPDF\SumatraPDF-settings.txt"
-$dotSumatraPDFConfigPath="$env:USERPROFILE\.dotfiles\windows\SumatraPDF"
+$dotSumatraPDFConfigPath="$env:USERPROFILE\.dotfiles\windows\SumatraPDF\SumatraPDF-settings.txt"
 
 Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
 

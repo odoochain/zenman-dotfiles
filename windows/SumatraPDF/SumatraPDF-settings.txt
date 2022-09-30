@@ -1,10 +1,11 @@
 ﻿# For documentation, see https://www.sumatrapdfreader.org/settings/settings3-4-6.html
 FixedPageUI [
-	TextColor = #000000
-	BackgroundColor = #ffffff
-	SelectionColor = #f5fc0c
+	TextColor = #f8f8f2
+	BackgroundColor = #21222c
+	SelectionColor = #44475a
 	WindowMargin = 2 4 2 4
 	PageSpacing = 4 4
+	GradientColors = #0e0f12
 	HideScrollbars = false
 ]
 ComicBookUI [
@@ -30,7 +31,7 @@ PrinterDefaults [
 ForwardSearch [
 	HighlightOffset = 0
 	HighlightWidth = 15
-	HighlightColor = #6581ff
+	HighlightColor = #44475a75
 	HighlightPermanent = false
 ]
 Annotations [
@@ -45,7 +46,7 @@ RememberOpenedFiles = true
 RememberStatePerDocument = true
 RestoreSession = true
 UiLanguage = en
-EnableTeXEnhancements = true
+EnableTeXEnhancements = false
 DefaultDisplayMode = automatic
 DefaultZoom = fit page
 Shortcuts [
@@ -54,7 +55,7 @@ EscToExit = false
 ReuseInstance = false
 ReloadModifiedDocuments = true
 
-MainWindowBackground = #80fff200
+MainWindowBackground = #282a36
 FullPathInTitle = false
 ShowMenubar = true
 ShowToolbar = true
@@ -69,14 +70,14 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 1
-WindowPos = 1 4 1918 1027
+WindowPos = 566 0 788 1020
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Desktop\test.pdf
+		FilePath = C:\Users\mino29\Downloads\(Learn Enough) Michael Hartl - Learn Enough Command Line to Be Dangerous_ A tutorial introduction to the Unix command line (2016).pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -89,7 +90,7 @@ FileStates [
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 1 4 1918 1027
+		WindowPos = 566 0 788 1020
 		ShowToc = false
 		SidebarDx = 0
 		DisplayR2L = false
@@ -102,3 +103,10 @@ TimeOfLastUpdateCheck = 0 0
 OpenCountWeek = 613
 
 # Settings below are not recognized by the current version
+EbookUI [
+	FontName = Georgia
+	FontSize = 12.5
+	TextColor = #f8f8f2
+	BackgroundColor = #21222c
+	UseFixedPageUI = false
+]
