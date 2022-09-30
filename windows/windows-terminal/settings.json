@@ -88,6 +88,20 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "\"C:\\Users\\mino29\\scoop\\apps\\git\\current\\bin\\bash.exe\"",
+                "cursorShape": "bar",
+                "guid": "{95d92901-6e04-4e12-9774-8dc7005f6af0}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\git-bash-white.png",
+                "name": "git-bash",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true
             }
         ]
     },
