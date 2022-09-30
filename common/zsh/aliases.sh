@@ -15,3 +15,5 @@ alias :q="exit"
 alias g="git"
 alias ne="neofetch"
 alias pf="pfetch"
+
+alias lv="lvim"
