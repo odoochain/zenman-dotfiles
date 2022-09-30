@@ -57,9 +57,8 @@ Try {
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
         }
     else{
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minipop.omp.json" | Invoke-Expression
+        oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
         }
-    # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -331,7 +330,7 @@ function exitConsole(){
 Set-Alias -Name :q -Value exitConsole # vim like keybinds
 Set-Alias -Name cc -Value clear
 Set-Alias -Name redis -Value redis-cli
-Set-Alias -Name cat -Value bat -Option AllScope
+Set-Alias -Name cat -Value bat -Option AllScope # use bat whenever possible
 
 #-------------------------------    Set Alias END     -------------------------------
 
@@ -388,7 +387,7 @@ Catch {
 
 
 
-#-------------------------------   Set test BEGIN    -------------------------------
+#-------------------------------   Set clash BEGIN    -------------------------------
 
 
 <#
@@ -574,7 +573,7 @@ function which ($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
-# -------------------------------   Set test END    -------------------------------
+# -------------------------------   Set clash END    -------------------------------
 
 
 
@@ -594,10 +593,15 @@ $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
 
 # -------------------------------   Set lunarvim START    -------------------------------
 
+# auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
 
 $lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
-if (Test-Path -Path $lvimPath){ Set-Alias lvim $lvimPath}
+if (Test-Path -Path $lvimPath)
+{
+    Set-Alias lvim $lvimPath
+    Set-Alias lv $lvimPath
+}
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
 
