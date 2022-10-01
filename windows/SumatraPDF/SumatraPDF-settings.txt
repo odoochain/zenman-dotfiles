@@ -70,7 +70,7 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 1
-WindowPos = 566 0 788 1020
+WindowPos = 1 4 1918 1027
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
@@ -81,8 +81,8 @@ FileStates [
 		Favorites [
 		]
 		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
+		IsMissing = true
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = continuous
 		ScrollPos = -1 -1
