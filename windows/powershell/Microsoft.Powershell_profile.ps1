@@ -50,15 +50,16 @@ Invoke-Expression (&starship init powershell)
 
 $hostname = hostname
 Try {
-    if ($hostname -eq "HILDA") {
+    # if ($hostname -eq "HILDA") {
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        # }
+    # elseif ($hostname -eq "MARCY"){
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
+        # }
+    # else{
+        # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
+        # }
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        }
-    elseif ($hostname -eq "MARCY"){
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-        }
-    else{
-        oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-        }
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -317,9 +318,9 @@ Set-Alias -Name open -Value OpenCurrentFolder
 
 # 5. neovim aliases/ change nvim to vim if you use vim
 
-# Set-Alias -Name v -Value nvim
-# Set-Alias -Name vi -Value nvim
-# Set-Alias -Name vim -Value nvim
+Set-Alias -Name v -Value nvim
+Set-Alias -Name vi -Value nvim
+Set-Alias -Name vim -Value nvim
 
 # 6. more "aliases"
 
@@ -601,9 +602,9 @@ if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
     Set-Alias lv $lvimPath
-    Set-Alias v $lvimPath
-    Set-Alias vi $lvimPath
-    Set-Alias vim $lvimPath
+    # Set-Alias v $lvimPath
+    # Set-Alias vi $lvimPath
+    # Set-Alias vim $lvimPath
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
