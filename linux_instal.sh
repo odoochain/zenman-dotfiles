@@ -163,7 +163,13 @@ echo "=> ~/.dotfiles/linux/nvim"
 # arch pacman cn mirror
 
 # /etc/pacman.conf
+sed -i "/archlinuxcn/d" /etc/pacman.conf
+printf "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch" >> /etc/pacman.conf
+
 # /etc/pacman.d/mirrorlist
+sed -i "/\.cn/s/^#//g" /etc/pacman.d/mirrorlist
+
+# or use reflector
 
 sudo pacman -Sy
 sudo pacman -S --needed --noconfirm archlinux-keyring\
