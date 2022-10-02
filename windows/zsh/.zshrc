@@ -83,7 +83,6 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     command-not-found
-    z
     vi-mode
 )
 
@@ -122,5 +121,5 @@ eval "$(zoxide init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-source ./aliases.sh
+source ~/.dotfiles/windows/zsh/aliases.sh
 
