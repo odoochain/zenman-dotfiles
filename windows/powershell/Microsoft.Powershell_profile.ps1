@@ -169,7 +169,7 @@ function Update-Packages {
     # update conda packages (avoid conflit)
     Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
-    
+
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
     # $a = pip list --outdated
@@ -238,7 +238,7 @@ Set-Alias -Name os-update -Value Update-Packages
 #
 # ----------------------------------------------------------------------------
 
-# option-1 
+# option-1
 # native to powershell
 <#
 function ListDirectory {
@@ -411,35 +411,35 @@ Catch {
 function Set-NetProxy {
     [CmdletBinding()]
     Param(
-           
+
         [Parameter(Mandatory = $True, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
         [String[]]$Proxy,
 
         [Parameter(Mandatory = $False, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
         [AllowEmptyString()]
         [String[]]$acs
-                   
+
     )
 
     Begin {
 
         $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-           
+
     }
-       
+
     Process {
-           
+
         Set-ItemProperty -path $regKey ProxyEnable -value 1
 
         Set-ItemProperty -path $regKey ProxyServer -value $proxy
-                               
-        if ($acs) {         
-               
-            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs       
+
+        if ($acs) {
+
+            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs
         }
 
     }
-       
+
     End {
 
         Write-Output "Proxy is now enabled"
@@ -447,12 +447,12 @@ function Set-NetProxy {
         Write-Output "Proxy Server : $proxy"
 
         if ($acs) {
-               
+
             Write-Output "Automatic Configuration Script : $acs"
 
         }
         else {
-               
+
             Write-Output "Automatic Configuration Script : Not Defined"
 
         }
@@ -464,24 +464,24 @@ function Disable-NetProxy {
     Begin {
 
         $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-       
+
     }
-   
+
     Process {
-       
+
         Set-ItemProperty -path $regKey ProxyEnable -value 0 -ErrorAction Stop
 
         Set-ItemProperty -path $regKey ProxyServer -value "" -ErrorAction Stop
-                           
-        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop       
-      
+
+        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop
+
     }
-   
+
     End {
 
         Write-Output "Proxy is now Disabled"
 
-             
+
     }
 
 }
@@ -516,11 +516,11 @@ function Disable-Cfw {
     git config --global --unset https.proxy
     rm ~/pip/pip.ini
 
-    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) { 
-        Write-Host "Not Running" 
+    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) {
+        Write-Host "Not Running"
     }
 
-    else { 
+    else {
         Write-Host "$ClashApp is Running"
         Stop-Process -processname $ClashApp
         Write-Host "$ClashApp has been closed"
