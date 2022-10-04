@@ -1,30 +1,30 @@
 <Ditto_Theme_File Version="2" Author="Zhongzheng Wu" Notes="Tokyo Night Theme">
 	<CaptionLeft>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</CaptionLeft>
 	<CaptionRight>
-		RGB(0,70,135)
+		RGB(22,27,38)
 	</CaptionRight>
 	<CaptionLeftTopMost>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</CaptionLeftTopMost>
 	<CaptionRightTopMost>
-		RGB(0,70,135)
+		RGB(22,27,38)
 	</CaptionRightTopMost>
 	<CaptionLeftNotConnected>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</CaptionLeftNotConnected>
 	<CaptionRightNotConnected>
-		RGB(0,70,135)
+		RGB(22,27,38)
 	</CaptionRightNotConnected>
 	<CaptionTextColor>
 		RGB(229,233,240)
 	</CaptionTextColor>
 	<ListBoxOddRowsBG>
-		RGB(0,70,135)
+		RGB(22,27,38)
 	</ListBoxOddRowsBG>
 	<ListBoxEvenRowsBG>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</ListBoxEvenRowsBG>
 	<ListBoxOddRowsText>
 		RGB(229,233,240)
@@ -39,22 +39,22 @@
 		RGB(0,255,210)
 	</ListBoxSelectedNoFocusBG>
 	<ListBoxSelectedText>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</ListBoxSelectedText>
 	<ListBoxSelectedNoFocusText>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</ListBoxSelectedNoFocusText>
 	<Border>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</Border>
 	<BorderTopMost>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</BorderTopMost>
 	<BorderNotConnected>
 		RGB(255, 85, 85)
 	</BorderNotConnected>
 	<GroupTreeBG>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</GroupTreeBG>
 	<GroupTreeText>
 		RGB(67,76,94)
@@ -69,7 +69,7 @@
 	<DescriptionWindowText>
 	</DescriptionWindowText>
 	<MainWindowBG>
-		RGB(10,0,71)
+		RGB(22,22,30)
 	</MainWindowBG>
 	<SearchTextBoxFocusBG>
 		RGB(45,48,57)
