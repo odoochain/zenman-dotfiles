@@ -115,13 +115,13 @@
 
 // This section contains the key map. A small number of keys is predefined and cannot be changed:
 // F1 for help, Alt+F4 for exit, 0..9 for slide show
-// The following keys are recognized: 
+// The following keys are recognized:
 // Alt, Ctrl, Shift, Esc, Return, Space, End, Home, Back, Tab, PgDn, PgUp
 // Left, Right, Up, Down, Insert, Del, Plus, Minus, Mul, Div, Comma, Period
 // A .. Z  F1 .. F12
 
 // It is also possible to bind a command to a mouse button. Be aware that you override the default
-// functionality (e.g. to pan with left mouse) when you do so! Mouse buttons can be combined with 
+// functionality (e.g. to pan with left mouse) when you do so! Mouse buttons can be combined with
 // Alt, Ctrl and Shift but not with other keys or other mouse buttons.
 // The following mouse buttons are recognized:
 // MouseL, MouseR, MouseM, MouseX1, MouseX2, MouseDblClk
@@ -131,6 +131,8 @@
 // Esc                    IDM_EXIT
 PgDn                    IDM_NEXT
 PgUp                    IDM_PREV
+W                       IDM_NEXT
+S                       IDM_PREV
 Right                   IDM_NEXT
 Left                    IDM_PREV
 D                       IDM_NEXT
@@ -154,8 +156,7 @@ Ctrl+Alt+Minus          IDM_COLOR_CORRECTION_DEC
 Ctrl+Minus              IDM_CONTRAST_DEC
 Shift+Minus             IDM_GAMMA_DEC
 Alt+Minus               IDM_SHARPEN_DEC
-F2                      IDM_SHOW_FILEINFO
-Ctrl+F2                 IDM_SHOW_FILENAME
+I                      IDM_SHOW_FILEINFO
 F3                      IDM_TOGGLE_RESAMPLING_QUALITY
 F4                      IDM_KEEP_PARAMETERS
 F5                      IDM_AUTO_CORRECTION
@@ -203,3 +204,5 @@ Ctrl+X                  IDM_COPY_FULL
 Ctrl+V                  IDM_PASTE
 Ctrl+L                  IDM_LANDSCAPE_MODE
 O                       IDM_EXPLORE
+F2                      IDM_RENAME
+Ctrl+F2                 IDM_SHOW_FILENAME
