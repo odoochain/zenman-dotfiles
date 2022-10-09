@@ -4,8 +4,8 @@
 
 
 # This make sure you run as Administrator
-if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
-{  
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
+{
   $arguments = "& '" +$myinvocation.mycommand.definition + "'"
   Start-Process powershell -Verb runAs -ArgumentList $arguments
   Break
@@ -19,7 +19,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ################################################################################
-#####################  colorful console message 
+#####################  colorful console message
 ################################################################################
 
 function remindMsg ($word){
@@ -35,7 +35,7 @@ function successMsg ($word){
     }
 
 ################################################################################
-#####################  set environment/global variable  
+#####################  set environment/global variable
 ################################################################################
 
 $tempDir="$env:USERPROFILE\temp"
@@ -50,7 +50,7 @@ else {New-Item -Path $tempDir -ItemType Directory}
 remindMsg("Backup files goes --> $migrationDir")
 
 ################################################################################
-#####################   backup and relink 
+#####################   backup and relink
 ################################################################################
 
 function Link-to-Dotfiles ($x, $y){
@@ -97,17 +97,17 @@ Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
 $DittoOGConfigPath="C:\Program Files\Ditto\Themes"
 $dotDittoConfigPath="$env:USERPROFILE\.dotfiles\windows\Ditto\Themes"
 
-Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath 
+Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath
 
 # --------------------------->
 # Motrix settings
 $MotrixOGSysConfigPath="$env:APPDATA\Motrix\system.json"
 $dotMotrixSysConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\system.json"
 
-Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath 
+Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath
 
 $MotrixOGUserConfigPath="$env:APPDATA\Motrix\user.json"
 $dotMotrixUserConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\user.json"
 
-Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath 
+Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath
 
