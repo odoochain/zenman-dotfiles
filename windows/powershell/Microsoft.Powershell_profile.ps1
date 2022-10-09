@@ -240,20 +240,22 @@ Set-Alias -Name os-update -Value Update-Packages
 
 # option-1
 # native to powershell
-<#
-function ListDirectory {
-     Write-Host("")
+
+function ListItemName {
+    Write-Host("")
  	(Get-ChildItem).Name
- 	Write-Host("")
+    Write-Host("")
 }
 
-Set-Alias -Name ls -Value ListDirectory -Option AllScope
+# if it's directory then grey, else it's just cyan
+
+Set-Alias -Name ls -Value ListItemName -Option AllScope
 Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
-#>
 
 # ----------------------------------------------------------------------------
 # option-2
 # below requires you to install lsd to work
+<#
 function ListItem {
     Write-Host("")
     lsd -a
@@ -275,7 +277,7 @@ function TreeView {
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
 Set-Alias -Name tree -Value TreeView -Option AllScope
-
+#>
 # ----------------------------------------------------------------------------
 
 Set-Alias -Name g -Value git
