@@ -86,7 +86,7 @@
           ],
           "invert_powerline": true,
           "properties": {
-            "charged_icon": " ",
+            "charged_icon": " ",
             "charging_icon": " "
           },
           "style": "powerline",
