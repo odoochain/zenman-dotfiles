@@ -1,14 +1,16 @@
 {
-  "ActivationHotkey": "LWin_LShiftKey",
+  "ActivationHotkey": "LWin_LControlKey",
   "ShowStartupWindow": false,
   "AllocateNewPanelSpace": true,
   "AutoCollapsePanels": true,
   "AnimateWindowMovement": true,
+  "ModifierMoveWindow": true,
+  "ModifierMoveWindowAutoFocus": false,
   "WindowPadding": 4,
   "PanelHeight": 18,
   "PanelFontSize": 12,
   "ShowFocusDuringAction": true,
-  "OverrideAccentColor": true,
+  "OverrideAccentColor": false,
   "CustomAccentColor": "#A3BE8CFF",
   "Keybindings": {
     "ToggleManager": {
