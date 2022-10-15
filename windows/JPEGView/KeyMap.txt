@@ -129,12 +129,8 @@
 
 // Uncomment the following line if you want to exit JPEGView with the Esc key immediatly when playing an animation or a slideshow
 // Esc                    IDM_EXIT
-PgDn                    IDM_NEXT
-PgUp                    IDM_PREV
-W                       IDM_NEXT
-S                       IDM_PREV
-Right                   IDM_NEXT
-Left                    IDM_PREV
+E                       IDM_NEXT
+Q                       IDM_PREV
 D                       IDM_NEXT
 A                       IDM_PREV
 F                       IDM_FULL_SCREEN_MODE
@@ -144,13 +140,13 @@ Home                    IDM_FIRST
 End                     IDM_LAST
 Del                     IDM_MOVE_TO_RECYCLE_BIN
 X                       IDM_MOVE_TO_RECYCLE_BIN
-Plus                    IDM_ZOOM_INC
+W                       IDM_ZOOM_INC
+S                       IDM_ZOOM_DEC
 Ctrl+Shift+Plus         IDM_CONTRAST_CORRECTION_INC
 Ctrl+Alt+Plus           IDM_COLOR_CORRECTION_INC
 Ctrl+Plus               IDM_CONTRAST_INC
 Shift+Plus              IDM_GAMMA_INC
 Alt+Plus                IDM_SHARPEN_INC
-Minus                   IDM_ZOOM_DEC
 Ctrl+Shift+Minus        IDM_CONTRAST_CORRECTION_DEC
 Ctrl+Alt+Minus          IDM_COLOR_CORRECTION_DEC
 Ctrl+Minus              IDM_CONTRAST_DEC
@@ -176,12 +172,12 @@ Ctrl+F12                IDM_TOGGLE_MONITOR
 Space                   IDM_TOGGLE_FIT_TO_SCREEN_100_PERCENTS
 Return                  IDM_FIT_TO_SCREEN
 Ctrl+Return             IDM_FILL_WITH_CROP
-Q                       IDM_ROTATE_270
-E                       IDM_ROTATE_90
-Shift+Up                IDM_PAN_UP
-Shift+Down              IDM_PAN_DOWN
-Shift+Left              IDM_PAN_LEFT
-Shift+Right             IDM_PAN_RIGHT
+[                       IDM_ROTATE_270
+]                       IDM_ROTATE_90
+I                       IDM_PAN_UP
+K                       IDM_PAN_DOWN
+J                       IDM_PAN_LEFT
+L                       IDM_PAN_RIGHT
 Ctrl+Down               IDM_ZOOM_DEC
 Ctrl+Up                 IDM_ZOOM_INC
 Ctrl+A                  IDM_EXCHANGE_PROC_PARAMS
