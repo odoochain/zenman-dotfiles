@@ -170,6 +170,7 @@ function Update-Packages {
     Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
 
+<#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
     # $a = pip list --outdated
@@ -179,7 +180,7 @@ function Update-Packages {
     # 	pip install -U $tmp
     # }
     pip freeze | % { $_.split('==')[0] } | % { pip install --upgrade $_ }
-
+#>
     # update TeX Live
     $CurrentYear = Get-Date -Format yyyy
     Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
