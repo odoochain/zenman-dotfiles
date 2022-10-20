@@ -1,0 +1,26 @@
+Adblock for youtube
+Adblock Plus
+Chrome Sync Helper
+Chrono Download Manager
+Dark Reader
+DeepL translate
+Eagle for chrome
+extmanager
+github
+gnome shell integration
+humble new tab page
+idm integration module
+image assistant batch image downloader
+infy scroll
+json viewer
+proxy switchyomega
+remove youtube suggestions
+return youtube dislike
+roboform password manager
+sponsorblock for youtube
+tampermonkey
+ublock origin
+unhook remove youtube recommendations
+user-agent switcher
+vimium
+video downloader cococut

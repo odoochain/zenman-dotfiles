@@ -1,8 +1,8 @@
 # more aliases for zsh
 alias cls="clear"
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
+# alias v="nvim"
+# alias vi="nvim"
+# alias vim="nvim"
 alias py="python"
 
 alias ls="lsd -a"
