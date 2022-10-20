@@ -68,9 +68,9 @@ export VISUAL='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ./aliases.sh
-source ./python.sh
-source ./omz.sh
+source ~/.dotfiles/common/zsh/aliases.sh
+source ~/.dotfiles/common/zsh/python.sh
+source ~/.dotfiles/common/zsh/omz.sh
 
 # zoxide, magical cd command
 eval "$(zoxide init zsh)"

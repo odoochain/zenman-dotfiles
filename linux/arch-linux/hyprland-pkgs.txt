@@ -1,0 +1,8 @@
+hyprland
+waybar
+rofi
+alacritty
+kitty
+sway
+skippy-xd-git
+dunst
