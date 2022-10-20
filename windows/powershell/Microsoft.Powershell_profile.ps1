@@ -618,3 +618,33 @@ if (Test-Path -Path $lvimPath)
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
 
+
+
+
+
+function potplayer {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    & "C:\Users\mino29\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
+}
+Set-Alias -Name pot -Value potplayer
+
+
+function jpegview {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    & "C:\Program Files (x86)\JPEGView\JPEGView.exe" $Path
+}
+Set-Alias -Name feh -Value jpegview
+
+
