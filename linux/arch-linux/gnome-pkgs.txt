@@ -16,3 +16,4 @@ gnome-shell-extension-gtile
 adapta-gtk-theme
 materia-gtk-theme
 adg-gtk-theme
+dconf-editor
