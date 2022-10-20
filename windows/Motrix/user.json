@@ -9,7 +9,7 @@
 	"keep-seeding": false,
 	"keep-window-state": true,
 	"last-check-update-time": 0,
-	"last-sync-tracker-time": 1666159902360,
+	"last-sync-tracker-time": 1666238057998,
 	"locale": "en-US",
 	"log-path": "C:\\Users\\mino29\\AppData\\Roaming\\Motrix\\Motrix\\logs",
 	"new-task-show-downloading": true,
@@ -34,9 +34,9 @@
 	"use-proxy": false,
 	"window-state": {
 		"index": {
-			"x": 962,
+			"x": 566,
 			"y": 4,
-			"width": 954,
+			"width": 500,
 			"height": 1024
 		}
 	}

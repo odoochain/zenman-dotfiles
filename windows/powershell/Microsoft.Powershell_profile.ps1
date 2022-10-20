@@ -248,10 +248,16 @@ function ListItemName {
     Write-Host("")
 }
 
+function ShowAllItems {
+    Write-Host("")
+ 	Get-ChildItem -force
+    Write-Host("")
+}
+
 # if it's directory then grey, else it's just cyan
 
 Set-Alias -Name ls -Value ListItemName -Option AllScope
-Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
+Set-Alias -Name ll -Value ShowAllItems -Option AllScope
 
 # ----------------------------------------------------------------------------
 # option-2
