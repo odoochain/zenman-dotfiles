@@ -2,6 +2,8 @@ fakeroot
 feh
 lf
 neofetch
+nitch
+pfetch
 git
 vim
 neovim
@@ -53,3 +55,7 @@ tree
 vlc
 wget
 net-tools
+git-delta
+stow
+lua
+stylua

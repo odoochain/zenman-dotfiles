@@ -9,7 +9,6 @@ gnome-shell-extension-x11gestures
 gnome-shell-extension-color-picker
 gnome-shell-extension-appindicator
 gnome-shell-extension-kimpanel-git
-gnome-shell-extension-sound-output-device-chooser
 gnome-shell-extension-clipboard-history
 gnome-shell-extension-no-overview-git
 gnome-shell-extension-proxy-switcher-git

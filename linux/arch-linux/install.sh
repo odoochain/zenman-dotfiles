@@ -10,7 +10,7 @@ paru -S --needed --noconfirm -< gnome-pkgs.txt
 paru -S --needed --noconfirm -< laptop-pkgs.txt
 
 # echo "setting up hyprland"
-# paru -S --needed --noconfirm -< hyprland-pkgs.txt
+paru -S --needed --noconfirm -< hyprland-pkgs.txt
 
 # echo "setting up i3"
 # paru -S --needed --noconfirm -< i3-pkgs.txt
@@ -28,3 +28,13 @@ echo "fcitx5 has been setup, remember to reboot the system to take effect"
 # the usual chrome extensions that I install
 # see -> chrome_extensions.txt
 
+
+# lunarvim
+
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
+
+
+# symlink
+
+ln -s ~/.dotfiles/common/zsh ~/.zshrc
+ln -s ~/.dotfiles//linux/git/.gitconfig ~/.gitconfig
