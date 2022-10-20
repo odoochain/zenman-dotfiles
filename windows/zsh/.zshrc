@@ -83,7 +83,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     command-not-found
-    z
+    vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,29 +114,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-
-alias cls="clear"
-alias py="python"
-
-alias ls="lsd -a"
-alias ll="lsd -la"
-alias l="lsd -la"
-
-alias grep="rg"
-alias cat="bat"
-
-alias :q="exit"
-
-# This is for zsh on windows
-alias open="explorer.exe ."
-
-
 # eval "$(lua /c/Users/mino29/z.lua/z.lua --init zsh)"
 eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+source ~/.dotfiles/windows/zsh/aliases.sh
 

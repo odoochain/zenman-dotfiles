@@ -41,7 +41,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "nord",
+            "colorScheme": "TokyoNight",
             "font": 
             {
                 "face": "Hack NF",
@@ -88,6 +88,20 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "\"C:\\Users\\mino29\\scoop\\apps\\git\\current\\bin\\bash.exe\"",
+                "cursorShape": "bar",
+                "guid": "{95d92901-6e04-4e12-9774-8dc7005f6af0}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\git-bash-white.png",
+                "name": "git-bash",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true
             }
         ]
     },
@@ -299,6 +313,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#16161E",
+            "black": "#363B54",
+            "blue": "#7AA2F7",
+            "brightBlack": "#363B54",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#41A6B5",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#ACB0D0",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#7DCFFF",
+            "foreground": "#787C99",
+            "green": "#41A6B5",
+            "name": "TokyoNight",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#FFFFFF",
+            "white": "#787C99",
+            "yellow": "#E0AF68"
         },
         {
             "background": "#000000",

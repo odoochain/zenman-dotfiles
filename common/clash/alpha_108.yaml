@@ -5,359 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Los Angeles, server: cloud.metalink.cf, port: 9090, type: vmess, uuid: 4cbffc21-d283-4ea9-f978-522cf367175f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cloud.metalink.cf}, udp: true}
-  - {name: US_5601 @WangCai_1, server: 169.197.143.232, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1, server: 169.197.143.232, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_9102 @WangCai_1, server: 169.197.143.232, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_7306 @WangCai_1, server: 169.197.143.232, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8881 @WangCai_1, server: 169.197.143.232, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_5000 @WangCai_1, server: 169.197.143.232, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_0443 @WangCai_1, server: 169.197.143.232, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8009 @WangCai_1, server: 169.197.143.232, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8008 @WangCai_1, server: 169.197.143.232, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7002 @WangCai_1, server: 169.197.143.232, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7307 @WangCai_1, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3306 @WangCai_1, server: 169.197.143.232, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000 @WangCai_1, server: 169.197.143.232, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1, server: 169.197.143.232, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8882 @WangCai_1, server: 169.197.143.232, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6379 @WangCai_1, server: 169.197.143.232, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_5500 @WangCai_1, server: 169.197.143.232, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌🇨🇦CA_04 @WangCai_1, server: 134.195.196.178, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ‌🇨🇦CA_06 @WangCai_1, server: 134.195.196.178, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ‌🇨🇦CA_08 @WangCai_1, server: 134.195.196.178, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ‌🇨🇦CA_09 @WangCai_1, server: 134.195.196.178, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ‌🇨🇦CA_11 @WangCai_1, server: 134.195.196.178, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ‌🇨🇦CA_12 @WangCai_1, server: 134.195.196.178, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CH_01 @WangCai_1, server: 45.12.206.163, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CH_05 @WangCai_1, server: 45.12.206.163, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CH_11 @WangCai_1, server: 45.12.206.163, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CH_01 @WangCai_1 2, server: 45.12.206.164, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CH_04 @WangCai_1, server: 45.12.206.164, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_8881 @WangCai_1 2, server: 38.86.135.34, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_0443 @WangCai_1 2, server: 38.86.135.34, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_4444 @WangCai_1, server: 38.86.135.36, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8009 @WangCai_1 2, server: 38.86.135.36, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8008 @WangCai_1 2, server: 38.86.135.36, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7307 @WangCai_1 2, server: 38.86.135.36, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3306 @WangCai_1 2, server: 38.86.135.36, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000 @WangCai_1 2, server: 38.86.135.36, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1 2, server: 38.86.135.36, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8888 @WangCai_1, server: 38.86.135.36, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8090 @WangCai_1, server: 38.86.135.36, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_6379 @WangCai_1 2, server: 38.86.135.36, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101 @WangCai_1, server: 38.114.114.49, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8091 @WangCai_1, server: 38.114.114.49, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_5500 @WangCai_1 2, server: 38.114.114.49, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5004 @WangCai_1, server: 38.114.114.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375 @WangCai_1, server: 38.114.114.49, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_5500 @WangCai_1 3, server: 38.114.114.67, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1, server: 38.114.114.67, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5004 @WangCai_1 2, server: 38.114.114.67, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375 @WangCai_1 2, server: 38.114.114.67, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_7001 @WangCai_1, server: 38.114.114.67, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_2376 @WangCai_1, server: 38.114.114.67, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_0443 @WangCai_1 3, server: 38.143.66.64, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_0445 @WangCai_1, server: 38.143.66.64, port: 445, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_2375 @WangCai_1 3, server: 38.143.66.64, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2376 @WangCai_1 2, server: 38.143.66.64, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1 3, server: 38.143.66.64, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1, server: 38.143.66.64, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 2, server: 38.143.66.64, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000 @WangCai_1 2, server: 38.143.66.64, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5001 @WangCai_1, server: 38.143.66.64, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1, server: 38.143.66.64, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ‌🇨🇦CA_03 @WangCai_1, server: 134.195.196.178, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_7002 @WangCai_1 2, server: 38.86.135.36, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_5600 @WangCai_1 2, server: 38.114.114.49, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1 2, server: 38.114.114.67, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8881 @WangCai_1 3, server: 38.91.107.72, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CH_9007 @WangCai_1, server: 185.126.116.119, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: US_9102 @WangCai_1 2, server: 38.91.107.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌🇨🇦CA_00 @WangCai_1, server: 134.195.196.178, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_6379 @WangCai_1 3, server: 38.91.107.227, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ‌🇨🇦CA_01 @WangCai_1, server: 134.195.196.178, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_6697 @WangCai_1, server: 38.91.107.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7306 @WangCai_1 2, server: 38.91.107.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_5004 @WangCai_1 3, server: 169.197.143.232, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_8881 @WangCai_1 4, server: 38.91.107.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8008 @WangCai_1 3, server: 38.91.107.227, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8888 @WangCai_1 2, server: 38.86.135.34, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 80, server: 119.91.223.167, port: 80, type: vmess, uuid: 5087e6ea-b650-443e-923f-b754661b8c47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 119.91.223.167}, udp: true}
-  - {name: US_2376 @WangCai_1 3, server: 169.197.143.232, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_0443 @WangCai_1 4, server: 38.91.106.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2375 @WangCai_1 4, server: 169.197.143.232, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_5600 @WangCai_1 3, server: 38.91.106.75, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1 3, server: 169.197.143.232, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_58, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_117, server: 141.94.76.177, port: 443, type: trojan, password: 6e3b4240-38f9-4321-9b3c-bc669a34b848, skip-cert-verify: true, udp: true}
+  - {name: FR_130, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇮🇷IR-🇧🇪BE_234, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /graphql, ws-headers: {Host: mahsaproxychannel.way-of-freedom.com}, udp: true}
+  - {name: FR_189, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider12.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: US_492, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_3, server: ciqnr-1050-v2-0.sjc-d-kcd.ap.cjhh.beauty, port: 888, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: ciqnr-1050-v2-0.sjc-d-kcd.ap.cjhh.beauty}, udp: true}
+  - {name: CN_59, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 121.41.86.94}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -376,90 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -470,269 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -748,90 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Los Angeles
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_5500 @WangCai_1
-      - ‌🇨🇦CA_04 @WangCai_1
-      - ‌🇨🇦CA_06 @WangCai_1
-      - ‌🇨🇦CA_08 @WangCai_1
-      - ‌🇨🇦CA_09 @WangCai_1
-      - ‌🇨🇦CA_11 @WangCai_1
-      - ‌🇨🇦CA_12 @WangCai_1
-      - CH_01 @WangCai_1
-      - CH_05 @WangCai_1
-      - CH_11 @WangCai_1
-      - CH_01 @WangCai_1 2
-      - CH_04 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_4444 @WangCai_1
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5004 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_0443 @WangCai_1 3
-      - US_0445 @WangCai_1
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 2
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1 2
-      - US_5000 @WangCai_1 2
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - ‌🇨🇦CA_03 @WangCai_1
-      - US_7002 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_3389 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - CH_9007 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - ‌🇨🇦CA_00 @WangCai_1
-      - US_6379 @WangCai_1 3
-      - ‌🇨🇦CA_01 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7306 @WangCai_1 2
-      - US_5004 @WangCai_1 3
-      - US_8881 @WangCai_1 4
-      - US_8008 @WangCai_1 3
-      - US_8888 @WangCai_1 2
-      - 80
-      - US_2376 @WangCai_1 3
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 4
-      - US_5600 @WangCai_1 3
-      - US_3389 @WangCai_1 3
+      - CN_58
+      - DE_117
+      - FR_130
+      - Relay_🇮🇷IR-🇧🇪BE_234
+      - FR_189
+      - US_492
+      - _US_美国_3
+      - CN_59
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

@@ -17,3 +17,5 @@ alias ne="neofetch"
 alias pf="pfetch"
 
 alias lv="lvim"
+
+alias tree="lsd --tree"

@@ -5,19 +5,19 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#8fbcbb",
+          "foreground": "#7aa2f7",
           "style": "plain",
           "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
-          "foreground": "#8fbcbb",
+          "foreground": "#7aa2f7",
           "style": "diamond",
           "template": "{{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "foreground": "#a3be8c",
+          "foreground": "#2ac3de",
           "style": "powerline",
           "template": "➜ ({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Major }}.{{ .Minor }}{{ end }}) ",
           "type": "python"
@@ -26,7 +26,7 @@
           "foreground": "#ebcb8b",
           "foreground_templates": [
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
-            "{{ if gt .Ahead 0 }}#a3be8c{{ end }}",
+            "{{ if gt .Ahead 0 }}#2ac3de{{ end }}",
             "{{ if gt .Behind 0 }}#b48ead{{ end }}"
           ],
           "properties": {
@@ -66,7 +66,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": " {{ if gt .Code 0 }}<#bf616a></>{{ else }}<#a3be8c></>{{ end }} ",
+          "template": " {{ if gt .Code 0 }}<#bf616a></>{{ else }}<#2ac3de></>{{ end }} ",
           "type": "exit"
         },
         {
@@ -86,7 +86,7 @@
           ],
           "invert_powerline": true,
           "properties": {
-            "charged_icon": " ",
+            "charged_icon": " ",
             "charging_icon": " "
           },
           "style": "powerline",
@@ -94,7 +94,7 @@
           "type": "battery"
         },
         {
-          "foreground": "#8fbcbb",
+          "foreground": "#7aa2f7",
           "properties": {
             "time_format": "15:04:05"
           },
@@ -110,7 +110,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#8fbcbb",
+          "foreground": "#7aa2f7",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -120,7 +120,7 @@
           "type": "path"
         },
         {
-          "foreground": "#8fbcbb",
+          "foreground": "#7aa2f7",
           "style": "plain",
           "template": "❯ ",
           "type": "text"

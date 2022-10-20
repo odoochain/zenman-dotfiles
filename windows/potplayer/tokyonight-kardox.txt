@@ -1,0 +1,8 @@
+HSB: color theme
+sat: 63
+hue: 168
+
+RGB color theme
+Red: -17 
+Green: -19
+Blue: -11

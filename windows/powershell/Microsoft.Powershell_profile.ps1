@@ -50,15 +50,16 @@ Invoke-Expression (&starship init powershell)
 
 $hostname = hostname
 Try {
-    if ($hostname -eq "HILDA") {
+    # if ($hostname -eq "HILDA") {
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        # }
+    # elseif ($hostname -eq "MARCY"){
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
+        # }
+    # else{
+        # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
+        # }
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        }
-    elseif ($hostname -eq "MARCY"){
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-        }
-    else{
-        oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-        }
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -168,7 +169,8 @@ function Update-Packages {
     # update conda packages (avoid conflit)
     Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
-    
+
+<#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
     # $a = pip list --outdated
@@ -178,7 +180,7 @@ function Update-Packages {
     # 	pip install -U $tmp
     # }
     pip freeze | % { $_.split('==')[0] } | % { pip install --upgrade $_ }
-
+#>
     # update TeX Live
     $CurrentYear = Get-Date -Format yyyy
     Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
@@ -237,22 +239,24 @@ Set-Alias -Name os-update -Value Update-Packages
 #
 # ----------------------------------------------------------------------------
 
-# option-1 
+# option-1
 # native to powershell
-<#
-function ListDirectory {
-     Write-Host("")
+
+function ListItemName {
+    Write-Host("")
  	(Get-ChildItem).Name
- 	Write-Host("")
+    Write-Host("")
 }
 
-Set-Alias -Name ls -Value ListDirectory -Option AllScope
+# if it's directory then grey, else it's just cyan
+
+Set-Alias -Name ls -Value ListItemName -Option AllScope
 Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
-#>
 
 # ----------------------------------------------------------------------------
 # option-2
 # below requires you to install lsd to work
+<#
 function ListItem {
     Write-Host("")
     lsd -a
@@ -274,7 +278,7 @@ function TreeView {
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
 Set-Alias -Name tree -Value TreeView -Option AllScope
-
+#>
 # ----------------------------------------------------------------------------
 
 Set-Alias -Name g -Value git
@@ -410,35 +414,35 @@ Catch {
 function Set-NetProxy {
     [CmdletBinding()]
     Param(
-           
+
         [Parameter(Mandatory = $True, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
         [String[]]$Proxy,
 
         [Parameter(Mandatory = $False, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
         [AllowEmptyString()]
         [String[]]$acs
-                   
+
     )
 
     Begin {
 
         $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-           
+
     }
-       
+
     Process {
-           
+
         Set-ItemProperty -path $regKey ProxyEnable -value 1
 
         Set-ItemProperty -path $regKey ProxyServer -value $proxy
-                               
-        if ($acs) {         
-               
-            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs       
+
+        if ($acs) {
+
+            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs
         }
 
     }
-       
+
     End {
 
         Write-Output "Proxy is now enabled"
@@ -446,12 +450,12 @@ function Set-NetProxy {
         Write-Output "Proxy Server : $proxy"
 
         if ($acs) {
-               
+
             Write-Output "Automatic Configuration Script : $acs"
 
         }
         else {
-               
+
             Write-Output "Automatic Configuration Script : Not Defined"
 
         }
@@ -463,24 +467,24 @@ function Disable-NetProxy {
     Begin {
 
         $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-       
+
     }
-   
+
     Process {
-       
+
         Set-ItemProperty -path $regKey ProxyEnable -value 0 -ErrorAction Stop
 
         Set-ItemProperty -path $regKey ProxyServer -value "" -ErrorAction Stop
-                           
-        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop       
-      
+
+        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop
+
     }
-   
+
     End {
 
         Write-Output "Proxy is now Disabled"
 
-             
+
     }
 
 }
@@ -515,11 +519,11 @@ function Disable-Cfw {
     git config --global --unset https.proxy
     rm ~/pip/pip.ini
 
-    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) { 
-        Write-Host "Not Running" 
+    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) {
+        Write-Host "Not Running"
     }
 
-    else { 
+    else {
         Write-Host "$ClashApp is Running"
         Stop-Process -processname $ClashApp
         Write-Host "$ClashApp has been closed"
@@ -601,6 +605,9 @@ if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
     Set-Alias lv $lvimPath
+    # Set-Alias v $lvimPath
+    # Set-Alias vi $lvimPath
+    # Set-Alias vim $lvimPath
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
