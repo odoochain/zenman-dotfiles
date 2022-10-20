@@ -93,4 +93,5 @@ conda init zsh
 sudo pacman -S --needed --noconfirm nvm nodejs
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 
-
+# gnome remap caps to esc
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
