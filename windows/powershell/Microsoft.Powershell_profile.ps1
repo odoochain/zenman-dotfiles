@@ -170,6 +170,7 @@ function Update-Packages {
     Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
 
+<#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
     # $a = pip list --outdated
@@ -179,7 +180,7 @@ function Update-Packages {
     # 	pip install -U $tmp
     # }
     pip freeze | % { $_.split('==')[0] } | % { pip install --upgrade $_ }
-
+#>
     # update TeX Live
     $CurrentYear = Get-Date -Format yyyy
     Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
@@ -247,10 +248,16 @@ function ListItemName {
     Write-Host("")
 }
 
+function ShowAllItems {
+    Write-Host("")
+ 	Get-ChildItem -force
+    Write-Host("")
+}
+
 # if it's directory then grey, else it's just cyan
 
 Set-Alias -Name ls -Value ListItemName -Option AllScope
-Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
+Set-Alias -Name ll -Value ShowAllItems -Option AllScope
 
 # ----------------------------------------------------------------------------
 # option-2
@@ -610,4 +617,34 @@ if (Test-Path -Path $lvimPath)
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
+
+
+
+
+
+function potplayer {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    & "C:\Users\mino29\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
+}
+Set-Alias -Name pot -Value potplayer
+
+
+function jpegview {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    & "C:\Program Files (x86)\JPEGView\JPEGView.exe" $Path
+}
+Set-Alias -Name feh -Value jpegview
+
 

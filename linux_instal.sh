@@ -10,9 +10,7 @@
 
 
 
-#know what distro is this
-
-function detect_platform() {
+#know what distro is this function detect_platform() {
   OS="$(uname -s)"
   case "$OS" in
     Linux)

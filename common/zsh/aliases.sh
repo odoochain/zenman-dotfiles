@@ -1,12 +1,12 @@
 # more aliases for zsh
 alias cls="clear"
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
+# alias v="nvim"
+# alias vi="nvim"
+# alias vim="nvim"
 alias py="python"
 
-alias ls="lsd -a"
-alias ll="lsd -lah"
+alias ls="lsd -ra"
+alias ll="lsd -rlah"
 alias zrc="$EDITOR ~/.zshrc"
 
 alias cc="clear"
@@ -17,3 +17,5 @@ alias ne="neofetch"
 alias pf="pfetch"
 
 alias lv="lvim"
+
+alias tree="lsd --tree"
