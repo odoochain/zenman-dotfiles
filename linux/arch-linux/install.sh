@@ -41,3 +41,8 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 ln -s ~/.dotfiles/common/zsh ~/.zshrc
 ln -s ~/.dotfiles//linux/git/.gitconfig ~/.gitconfig
+
+
+# enable bluetooth
+
+sudo systemctl start bluetooth.service
