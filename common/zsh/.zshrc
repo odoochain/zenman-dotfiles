@@ -54,8 +54,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 #   export EDITOR='mvim'
 # fi
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='vim'
+export VISUAL='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -71,6 +71,7 @@ export VISUAL='nvim'
 source ~/.dotfiles/common/zsh/aliases.sh
 source ~/.dotfiles/common/zsh/python.sh
 source ~/.dotfiles/common/zsh/omz.sh
+source ~/.dotfiles/common/zsh/fzf.sh
 
 # zoxide, magical cd command
 eval "$(zoxide init zsh)"

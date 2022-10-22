@@ -17,3 +17,4 @@ adapta-gtk-theme
 materia-gtk-theme
 adg-gtk-theme
 dconf-editor
+blueman

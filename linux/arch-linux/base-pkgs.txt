@@ -34,7 +34,6 @@ lrzsz
 ncdu
 tmux
 multitail
-explainshell
 asciinema
 wrk
 httpie
@@ -59,3 +58,4 @@ git-delta
 stow
 lua
 stylua
+rustup

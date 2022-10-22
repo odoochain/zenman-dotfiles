@@ -6,8 +6,12 @@ echo "Capsclock has been remapped to Escape"
 
 paru -S --needed --noconfirm -< base-pkgs.txt
 paru -S --needed --noconfirm -< gui-pkgs.txt
+paru -S --needed --noconfirm -< fonts-pkgs.txt
 paru -S --needed --noconfirm -< gnome-pkgs.txt
 paru -S --needed --noconfirm -< laptop-pkgs.txt
+
+echo "Installing message apps"
+paru -S --needed --noconfirm -< social-pkgs.txt
 
 # echo "setting up dev"
 paru -S --needed --noconfirm -< dev-pkgs.txt
