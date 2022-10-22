@@ -9,6 +9,9 @@ paru -S --needed --noconfirm -< gui-pkgs.txt
 paru -S --needed --noconfirm -< gnome-pkgs.txt
 paru -S --needed --noconfirm -< laptop-pkgs.txt
 
+# echo "setting up dev"
+paru -S --needed --noconfirm -< dev-pkgs.txt
+
 # echo "setting up hyprland"
 paru -S --needed --noconfirm -< hyprland-pkgs.txt
 
@@ -38,3 +41,8 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 ln -s ~/.dotfiles/common/zsh ~/.zshrc
 ln -s ~/.dotfiles//linux/git/.gitconfig ~/.gitconfig
+
+
+# enable bluetooth
+
+sudo systemctl start bluetooth.service
