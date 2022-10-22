@@ -38,6 +38,8 @@ echo "fcitx5 has been setup, remember to reboot the system to take effect"
 # the usual chrome extensions that I install
 # see -> chrome_extensions.txt
 
+# echo "setting up texlive"
+#paru -S --needed --noconfirm -< tex-pkgs.txt
 
 # lunarvim
 
