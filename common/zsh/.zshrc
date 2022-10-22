@@ -76,6 +76,11 @@ source ~/.dotfiles/common/zsh/fzf.sh
 # zoxide, magical cd command
 eval "$(zoxide init zsh)"
 
+
+# doom emacs
+PATH=$PATH:~/.emacs.d/bin
+
+
 # pnpm
 export PNPM_HOME="/home/mino29/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"

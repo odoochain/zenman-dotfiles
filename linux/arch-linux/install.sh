@@ -19,6 +19,9 @@ paru -S --needed --noconfirm -< dev-pkgs.txt
 # echo "setting up hyprland"
 paru -S --needed --noconfirm -< hyprland-pkgs.txt
 
+# echo "setting up emacs"
+paru -S --needed --noconfirm -< emacs-pkgs.txt
+
 # echo "setting up i3"
 # paru -S --needed --noconfirm -< i3-pkgs.txt
 
