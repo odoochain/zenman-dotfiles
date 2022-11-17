@@ -3,6 +3,11 @@ alias cls="clear"
 # alias v="nvim"
 # alias vi="nvim"
 # alias vim="nvim"
+
+
+alias v="vim"
+alias vi="vim"
+alias vim="vim"
 alias py="python"
 
 alias ls="lsd -ra"
