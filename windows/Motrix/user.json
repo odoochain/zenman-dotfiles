@@ -9,11 +9,11 @@
 	"keep-seeding": false,
 	"keep-window-state": true,
 	"last-check-update-time": 0,
-	"last-sync-tracker-time": 1666407088537,
+	"last-sync-tracker-time": 1668586600766,
 	"locale": "en-US",
 	"log-path": "C:\\Users\\mino29\\AppData\\Roaming\\Motrix\\Motrix\\logs",
 	"new-task-show-downloading": true,
-	"no-confirm-before-delete-task": true,
+	"no-confirm-before-delete-task": false,
 	"open-at-login": false,
 	"protocols": {
 		"magnet": true,
@@ -34,10 +34,10 @@
 	"use-proxy": false,
 	"window-state": {
 		"index": {
-			"x": 960,
-			"y": 0,
-			"width": 960,
-			"height": 516
+			"x": 4,
+			"y": 4,
+			"width": 1912,
+			"height": 1024
 		}
 	}
 }

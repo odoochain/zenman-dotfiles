@@ -129,8 +129,7 @@
 
 // Uncomment the following line if you want to exit JPEGView with the Esc key immediatly when playing an animation or a slideshow
 // Esc                    IDM_EXIT
-E                       IDM_NEXT
-Q                       IDM_PREV
+Q                       IDM_EXIT
 D                       IDM_NEXT
 A                       IDM_PREV
 F                       IDM_FULL_SCREEN_MODE
