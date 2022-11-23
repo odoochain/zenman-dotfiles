@@ -19,6 +19,9 @@ paru -S --needed --noconfirm -< dev-pkgs.txt
 # echo "setting up hyprland"
 paru -S --needed --noconfirm -< hyprland-pkgs.txt
 
+# echo "setting up emacs"
+paru -S --needed --noconfirm -< emacs-pkgs.txt
+
 # echo "setting up i3"
 # paru -S --needed --noconfirm -< i3-pkgs.txt
 
@@ -35,6 +38,8 @@ echo "fcitx5 has been setup, remember to reboot the system to take effect"
 # the usual chrome extensions that I install
 # see -> chrome_extensions.txt
 
+# echo "setting up texlive"
+#paru -S --needed --noconfirm -< tex-pkgs.txt
 
 # lunarvim
 

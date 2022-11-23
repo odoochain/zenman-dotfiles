@@ -1,0 +1,13 @@
+texlive
+texlive-core
+texlive-bin
+texlive-langchinese
+texlive-langextra
+texlive-fontsextra
+texlive-formatsextra
+texlive-science
+texlive-humanities
+texlive-
+texlive-
+texlive-
+

@@ -65,8 +65,8 @@ export VISUAL='vim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 
 source ~/.dotfiles/common/zsh/aliases.sh
 source ~/.dotfiles/common/zsh/python.sh
@@ -75,6 +75,12 @@ source ~/.dotfiles/common/zsh/fzf.sh
 
 # zoxide, magical cd command
 eval "$(zoxide init zsh)"
+
+
+# doom emacs
+# PATH=$PATH:~/.emacs.d/bin
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 
 # pnpm
 export PNPM_HOME="/home/mino29/.local/share/pnpm"
