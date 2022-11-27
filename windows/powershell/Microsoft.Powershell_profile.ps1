@@ -663,3 +663,37 @@ function rmrf {
     )
     Remove-Item -Recurse -Force $Target
 }
+
+function flatten {
+
+     <#
+        .DESCRIPTION
+        Move all files in the subfolder(s) into parent folder
+        Deletes the specified file or directory.
+        .PARAMETER target
+        Target Directory to be flattened
+        .NOTES
+        THis currently overwrites and deletes files with the same name
+        #>
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$Target
+        )
+    $Target = "."
+    $exclude_ext = @(".mp4", ".mkv")
+    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
+    Get-ChildItem -Path $path -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
+    #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
+    Get-ChildItem -Path $Target -Recurse | foreach {
+       if($_.Length -eq 0){
+          Write-Output "Removing Empty File $($_.FullName)"
+          $_.FullName | Remove-Item -Force
+       }
+       if( $_.psiscontainer -eq $true){
+          if((gci $_.FullName) -eq $null){
+             Write-Output "Removing Empty folder $($_.FullName)"
+             $_.FullName | Remove-Item -Force
+          }
+        }
+    }
+}

@@ -10,7 +10,7 @@ Run, komorebic.exe window-hiding-behaviour hide, , Hide
 Run, komorebic.exe watch-configuration enable, , Hide
 
 ; Create space for Yasb
-Run, komorebic.exe work-area-offset 0 18 0 18, , Hide
+Run, komorebic.exe work-area-offset 0 12 0 12 , Hide
 
 ; Open Yasb
 Run, python C:\Users\mino29\.local\share\yasb\src\main.py, , Hide
@@ -52,6 +52,7 @@ Run, komorebic.exe ensure-workspaces 1 5, , Hide
 Run, komorebic.exe workspace-rule exe Obsidian.exe 0 1, , Hide
 Run, komorebic.exe workspace-rule exe Discord.exe 0 2, , Hide
 Run, komorebic.exe workspace-rule exe Spotify.exe 0 2, , Hide
+Run, komorebic.exe workspace-rule exe Chrome.exe 0 1, , Hide
 
 ; Always float IntelliJ popups, matching on class
 Run, komorebic.exe float-rule class SunAwtDialog, , Hide
@@ -318,4 +319,8 @@ return
 
 <#Enter::
 Run, wt.exe
+return
+
+<#b::
+Run, chrome.exe, , hide
 return
