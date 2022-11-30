@@ -676,24 +676,45 @@ function flatten {
         THis currently overwrites and deletes files with the same name
         #>
     Param(
-        [Parameter(Mandatory=$true)]
-        [string]$Target
+        [Parameter(Mandatory=$false)]
+        [string]$Target = (Get-Location).Path
         )
-    $Target = "."
-    $exclude_ext = @(".mp4", ".mkv")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
-    Get-ChildItem -Path $path -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
     #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
+       if( $_.psiscontainer -eq $true){
+          if((gci $_.FullName) -eq $null){
+             Write-Output "Removing Empty folder $($_.FullName)"
+             $_.FullName | Remove-Item -Recurse -Force
+          }
+        }
        if($_.Length -eq 0){
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
-       if( $_.psiscontainer -eq $true){
-          if((gci $_.FullName) -eq $null){
-             Write-Output "Removing Empty folder $($_.FullName)"
-             $_.FullName | Remove-Item -Force
-          }
-        }
+       <#
+       .NOTES
+       This delete all files less than 70MB
+       if($_.Length -lt 70000000){
+          Write-Output "Removing small File $($_.FullName)"
+          $_.FullName | Remove-Item -Force
+       }
+       #>
     }
+    # delete files except for the included extensions
+    # Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
 }
+
+function rename {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    & "C:\Users\mino29\scoop\apps\advancedrenamer\current\ARen.exe" $Path
+}
+Set-Alias -Name rn -Value rename
+
