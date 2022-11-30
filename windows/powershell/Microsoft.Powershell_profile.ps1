@@ -694,6 +694,7 @@ function flatten {
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
+    Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
        <#
        .NOTES
        This delete all files less than 70MB
@@ -707,6 +708,15 @@ function flatten {
     # Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
 }
 
+
+# ultimate flatten
+<#
+flatten a directory (files with duplicate names be renamed with number suffix)
+delete empty folders
+delete empty files
+sort files according to their extensions 
+categories: Video, Pictures, Documents, Audio and Others
+#>
 function rename {
     param
     (
