@@ -693,7 +693,7 @@ function flatten {
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
-    Get-ChildItem -Path $path -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
+    Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
        <#
        .NOTES
        This delete all files less than 70MB
