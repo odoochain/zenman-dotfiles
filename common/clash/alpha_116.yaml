@@ -7,80 +7,13 @@ external-controller: :9090
 proxies:
   - {name: US_464, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
   - {name: Relay_🇯🇵JP-🇯🇵JP_263, server: 45.66.134.176, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_274, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs01.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: DE_58, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_231, server: nice-jp03.tiktokcdn.buzz, port: 43857, type: trojan, password: P9qGW38zz7, sni: nice-jp03.tiktokcdn.buzz, skip-cert-verify: true, udp: true}
   - {name: Relay_🇫🇷 FR-🇫🇷FR_112, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: FR_134, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Relay_🇭🇰HK-🇹🇼TW_205, server: az.hk01.paopaocloud.cyou, port: 10035, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: Pool_🇳🇱 NL_255, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_261, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱 NL_278, server: 85.208.108.94, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_283, server: 85.208.108.21, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱 NL_287, server: 85.208.108.94, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_290, server: 213.183.59.214, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: Pool_🇳🇱 NL_291, server: 85.208.108.94, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱 NL_292, server: 85.208.108.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_294, server: 85.208.108.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱 NL_295, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_296, server: 85.208.108.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Pool_🇳🇱 NL_297, server: 85.208.108.20, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱 NL_298, server: 85.208.108.20, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_300, server: 85.208.108.21, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱 NL_302, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_303, server: 85.208.108.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Pool_🇳🇱 NL_304, server: 85.208.108.94, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱 NL_306, server: 85.208.108.94, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_309, server: 85.208.108.20, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_310, server: 85.208.108.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_311, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_312, server: 85.208.108.21, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Pool_🇳🇱 NL_313, server: 85.208.108.20, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱 NL_316, server: 85.208.108.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_318, server: 85.208.108.20, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_321, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_389, server: 172.99.190.61, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_390, server: 172.99.190.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_392, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_393, server: 167.88.61.14, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_914, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_915, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_916, server: 38.114.114.69, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_917, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_918, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_919, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_920, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_921, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_924, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_925, server: 38.114.114.67, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_926, server: 38.75.136.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_927, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_928, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_932, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_933, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_948, server: 38.75.136.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_949, server: 38.86.135.36, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_950, server: 38.114.114.104, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_952, server: 38.114.114.104, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_953, server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_954, server: 152.70.241.18, port: 26676, type: vmess, uuid: ecd274c0-175d-45f7-8276-a3da93786632, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_957, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_958, server: hk1vdf-node.aiqiche123.com, port: 8189, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_960, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus3.0bad.com}, udp: true}
-  - {name: Pool_🇺🇸US_961, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120208301422, ws-headers: {Host: 67.21.72.44}, udp: true}
-  - {name: US_18, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_19, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_20, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_21, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_22, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_23, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_24, server: 172.99.190.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_27, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_28, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱 NL_289, server: 85.208.108.21, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_324, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_951, server: 38.114.114.104, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_26, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_61, server: 14.215.107.22, port: 10443, type: trojan, password: eJ8cHw, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_18, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇫🇷_FR_法国_2, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: powerservice.com}, udp: true}
+  - {name: _HK_香港->🇳🇱_NL_荷兰, server: 119.247.119.212, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /reffs7y26g0ua, ws-headers: {Host: 119.247.119.212}, udp: true}
+  - {name: _FR_法国_4, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: _FR_法国_3, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -89,80 +22,13 @@ proxy-groups:
       - 🎯 全球直连
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -170,80 +36,13 @@ proxy-groups:
     proxies:
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -252,80 +51,13 @@ proxy-groups:
       - 🎯 全球直连
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -346,84 +78,18 @@ proxy-groups:
       - 🎯 全球直连
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _HK_香港->🇳🇱_NL_荷兰
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -432,80 +98,13 @@ proxy-groups:
       - 🔰 节点选择
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -513,80 +112,13 @@ proxy-groups:
       - 🎯 全球直连
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -595,80 +127,13 @@ proxy-groups:
       - ♻️ 自动选择
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -686,80 +151,13 @@ proxy-groups:
       - ♻️ 自动选择
       - US_464
       - Relay_🇯🇵JP-🇯🇵JP_263
-      - Relay_🇯🇵JP-🇯🇵JP_274
-      - DE_58
+      - Relay_🇯🇵 JP-🇯🇵JP_231
       - Relay_🇫🇷 FR-🇫🇷FR_112
-      - FR_134
-      - Relay_🇭🇰HK-🇹🇼TW_205
-      - Pool_🇳🇱 NL_255
-      - Pool_🇳🇱 NL_261
-      - Pool_🇳🇱 NL_278
-      - Pool_🇳🇱 NL_283
-      - Pool_🇳🇱 NL_287
-      - NL_290
-      - Pool_🇳🇱 NL_291
-      - Pool_🇳🇱 NL_292
-      - Pool_🇳🇱 NL_294
-      - Pool_🇳🇱 NL_295
-      - Pool_🇳🇱 NL_296
-      - Pool_🇳🇱 NL_297
-      - Pool_🇳🇱 NL_298
-      - Pool_🇳🇱 NL_300
-      - Pool_🇳🇱 NL_302
-      - Pool_🇳🇱 NL_303
-      - Pool_🇳🇱 NL_304
-      - Pool_🇳🇱 NL_306
-      - Pool_🇳🇱 NL_309
-      - Pool_🇳🇱 NL_310
-      - Pool_🇳🇱 NL_311
-      - Pool_🇳🇱 NL_312
-      - Pool_🇳🇱 NL_313
-      - Pool_🇳🇱 NL_316
-      - Pool_🇳🇱 NL_318
-      - Pool_🇳🇱NL_321
-      - US_389
-      - US_390
-      - US_392
-      - US_393
-      - US_914
-      - US_915
-      - US_916
-      - US_917
-      - US_918
-      - US_919
-      - US_920
-      - US_921
-      - US_924
-      - US_925
-      - US_926
-      - US_927
-      - US_928
-      - US_932
-      - US_933
-      - US_948
-      - US_949
-      - US_950
-      - US_952
-      - US_953
-      - US_954
-      - Relay_🇺🇸US-🇺🇸US_957
-      - Relay_🇺🇸US-🇺🇸US_958
-      - Relay_🇺🇸US-🇺🇸US_960
-      - Pool_🇺🇸US_961
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_27
-      - US_28
-      - Pool_🇳🇱 NL_289
-      - Pool_🇳🇱NL_324
-      - US_951
-      - US_26
-      - Relay_🇨🇳CN-🇭🇰HK_61
+      - Relay_🇦🇺AU-🇦🇺AU_18
+      - _US_美国->🇫🇷_FR_法国_2
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _FR_法国_4
+      - _FR_法国_3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

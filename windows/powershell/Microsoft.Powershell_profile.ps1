@@ -683,7 +683,6 @@ function flatten {
     $exclude_ext = @(".mp4", ".mkv")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     Get-ChildItem -Path $path -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Force
-    #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
        if($_.Length -eq 0){
           Write-Output "Removing Empty File $($_.FullName)"
@@ -697,3 +696,13 @@ function flatten {
         }
     }
 }
+
+
+# ultimate flatten
+<#
+flatten a directory (files with duplicate names be renamed with number suffix)
+delete empty folders
+delete empty files
+sort files according to their extensions 
+categories: Video, Pictures, Documents, Audio and Others
+#>
