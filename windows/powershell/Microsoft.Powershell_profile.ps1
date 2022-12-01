@@ -18,9 +18,6 @@ Catch {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
-
-
-
 <#
  * FileName: Microsoft.PowerShell_profile.ps1
  * Author: Wu Zhongzheng
@@ -682,7 +679,6 @@ function flatten {
         )
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
-    #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
           if((gci $_.FullName) -eq $null){
@@ -706,6 +702,7 @@ function flatten {
     }
     # delete files except for the included extensions
     # Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
+    # Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
 }
 
 
