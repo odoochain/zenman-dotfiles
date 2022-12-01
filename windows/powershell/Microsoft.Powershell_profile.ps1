@@ -18,9 +18,6 @@ Catch {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
-
-
-
 <#
  * FileName: Microsoft.PowerShell_profile.ps1
  * Author: Wu Zhongzheng
@@ -59,7 +56,8 @@ Try {
     # else{
         # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
         # }
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -679,7 +677,7 @@ function flatten {
         [Parameter(Mandatory=$false)]
         [string]$Target = (Get-Location).Path
         )
-    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".avi", ".wmv")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
@@ -705,6 +703,7 @@ function flatten {
     }
     # delete files except for the included extensions
     # Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
+    # Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
 }
 
 
