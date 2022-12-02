@@ -678,6 +678,8 @@ function flatten {
         [string]$Target = (Get-Location).Path
         )
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
+    $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
+    $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
