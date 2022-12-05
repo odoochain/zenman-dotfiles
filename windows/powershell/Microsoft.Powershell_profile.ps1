@@ -26,16 +26,6 @@ Catch {
  * Copyright: No copyright. You can use this code for anything with no warranty.
 #>
 
-#-------------------------------   Set starship BEGIN    -------------------------------
-
-<#
-$ENV:STARSHIP_CONFIG = "$HOME\.dotfiles\common\.starship\starship.toml"
-# $ENV:STARSHIP_DISTRO = " 者 x 💀 "
-Invoke-Expression (&starship init powershell)
-#>
-
-#-------------------------------   Set starship END    -------------------------------
-
 #------------------------------- Import Modules BEGIN -------------------------
 
 
@@ -148,13 +138,10 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # 设置列表历史选项, F2切换
-set-psreadlineoption -PredictionViewStyle ListView
-# set-psreadlineoption -PredictionViewStyle InlineView
+#set-psreadlineoption -PredictionViewStyle ListView
+set-psreadlineoption -PredictionViewStyle InlineView
 
 #-------------------------------  Set Hot-keys END    -------------------------------
-
-
-
 
 
 #-------------------------------    Functions BEGIN   -------------------------------
@@ -218,9 +205,6 @@ function Update-Packages {
 
 
 #-------------------------------    Functions END     -------------------------------
-
-
-
 
 
 #-------------------------------   Set Alias BEGIN    -------------------------------
@@ -341,9 +325,6 @@ Set-Alias -Name redis -Value redis-cli
 Set-Alias -Name cat -Value bat -Option AllScope # use bat whenever possible
 
 #-------------------------------    Set Alias END     -------------------------------
-
-
-
 
 
 #-------------------------------   Set Network BEGIN    -------------------------------
@@ -548,7 +529,6 @@ function PowerOff {
 }
 
 
-
 # npm i -g empty-trash
 
 function emptytrash{
@@ -617,9 +597,6 @@ else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/mast
 # -------------------------------   Set lunarvim END    -------------------------------
 
 
-
-
-
 function potplayer {
     param
     (
@@ -631,6 +608,7 @@ function potplayer {
     & "C:\Users\mino29\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
 }
 Set-Alias -Name pot -Value potplayer
+Set-Alias -Name play -Value potplayer
 
 
 function jpegview {
@@ -718,7 +696,7 @@ function rename {
     param
     (
         # 输入要打开的路径
-        # 用法示例：open C:\
+        # 用法示例：rename C:\
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
@@ -726,3 +704,19 @@ function rename {
 }
 Set-Alias -Name rn -Value rename
 
+
+function cleanTorrentTrash {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例： cleanTorrentTrash C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    Get-ChildItem -Path $Path -Include *.torrent, *.aria2  -File -Recurse | Remove-Item -Force
+}
+
+
+# The End Goal of this profile
+# Make it feature-rich
+# Make it run blazingly fast
