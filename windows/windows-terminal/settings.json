@@ -29,8 +29,16 @@
             "keys": "alt+shift+d"
         },
         {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
             "command": "unbound",
             "keys": "alt+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
         }
     ],
     "copyFormatting": "none",
