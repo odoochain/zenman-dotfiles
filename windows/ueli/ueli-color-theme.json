@@ -1,0 +1,13 @@
+{
+  "name": "Tokyo Night",
+  "userInputBackgroundColor": "#16161E",
+  "userInputTextColor": "#fefefe",
+  "searchResultsBackgroundColor": "#16161E",
+  "searchResultsItemActiveBackgroundColor": "#35353F",
+  "searchResultsItemActiveDescriptionColor": "#2AC3DE",
+  "searchResultsItemActiveTextColor": "#2AC3DE",
+  "searchResultsItemDescriptionTextColor": "#ccc",
+  "searchResultsItemNameTextcolor": "#fff",
+  "scrollbarBackgroundColor": "#16161E",
+  "scrollbarForegroundColor": "#35353F"
+}
