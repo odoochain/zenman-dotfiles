@@ -1,13 +1,13 @@
 {
   "name": "Tokyo Night",
-  "userInputBackgroundColor": "#212124",
+  "userInputBackgroundColor": "#16161E",
   "userInputTextColor": "#fefefe",
-  "searchResultsBackgroundColor": "#212124",
+  "searchResultsBackgroundColor": "#16161E",
   "searchResultsItemActiveBackgroundColor": "#35353F",
-  "searchResultsItemActiveDescriptionColor": "#ccc",
-  "searchResultsItemActiveTextColor": "#00FFD2",
+  "searchResultsItemActiveDescriptionColor": "#2AC3DE",
+  "searchResultsItemActiveTextColor": "#2AC3DE",
   "searchResultsItemDescriptionTextColor": "#ccc",
   "searchResultsItemNameTextcolor": "#fff",
-  "scrollbarBackgroundColor": "#212124",
+  "scrollbarBackgroundColor": "#16161E",
   "scrollbarForegroundColor": "#35353F"
 }
