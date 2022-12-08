@@ -173,10 +173,14 @@ Return                  IDM_FIT_TO_SCREEN
 Ctrl+Return             IDM_FILL_WITH_CROP
 [                       IDM_ROTATE_270
 ]                       IDM_ROTATE_90
-K                       IDM_PAN_UP
-J                       IDM_PAN_DOWN
 H                       IDM_PAN_LEFT
+J                       IDM_PAN_DOWN
+K                       IDM_PAN_UP
 L                       IDM_PAN_RIGHT
+Left                    IDM_PAN_LEFT
+Down                    IDM_PAN_DOWN
+Up                      IDM_PAN_UP
+Right                   IDM_PAN_RIGHT
 Ctrl+Down               IDM_ZOOM_DEC
 Ctrl+Up                 IDM_ZOOM_INC
 Ctrl+A                  IDM_EXCHANGE_PROC_PARAMS
