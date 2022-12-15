@@ -130,6 +130,14 @@ sometimes use Arch for WSL2.
 [ ] automatically set accent color, wallpaper, lock screen
 [ ] remap capslock to escape
 
+
+## End Goal
+
+[ ] majority of keybinds can be found across platforms
+[ ] most application use the same color theme
+[ ] dynamic window tiling
+[ ] open terminal window instantly 
+
 ## Special Thanks
 
 - [elenapan/dotfiles](https://github.com/elenapan/dotfiles)
