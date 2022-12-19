@@ -6,3 +6,12 @@ RGB color theme
 Red: -1 
 Green: -1
 Blue: 11
+
+
+osd message font color:
+subtitle font color:
+Red: 180
+Green: 180
+Blue: 255
+
+(lilac/light purple)
