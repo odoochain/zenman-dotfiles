@@ -3,6 +3,15 @@ sat: 63
 hue: 168
 
 RGB color theme
-Red: -17 
-Green: -19
-Blue: -11
+Red: -1 
+Green: -1
+Blue: 11
+
+
+osd message font color:
+subtitle font color:
+Red: 180
+Green: 180
+Blue: 255
+
+(lilac/light purple)

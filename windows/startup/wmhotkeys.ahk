@@ -14,6 +14,25 @@ return
 
 ;------------------------------- universal hotkeys  ---------------------------
 
+
+; 启动或切换招商证券
+launchOrSwitchTdxW()
+{
+if WinExist("ahk_class TdxW_MainFrame_Class")
+{
+WinActivateBottom, ahk_class TdxW_MainFrame_Class
+}
+Else
+{
+ Run "C:\zd_zsone\TdxW.exe"
+}
+Return
+}
+
+; win+k
+#k::launchOrSwitchTdxW()
+
+
 ; Toggle the master mute (set it to the opposite state)
 
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
@@ -25,6 +44,9 @@ return
 <#q::
 WinClose, A
 return
+
+
+<#w::send ^w ; as in ctrl+w to close tab
 
 <#Enter::
 Run, wt.exe
@@ -51,6 +73,36 @@ else if S=-1
     WinRestore,A
 return
 
+
+; 启动或切换到下载目录
+launchOrSwitchDownloads()
+{
+if WinExist("ahk_class CabinetWClass")
+{
+WinActivateBottom, ahk_class CabinetWClass
+}
+Else
+{
+Run shell:::{374DE290-123F-4565-9164-39C4925E467B}
+}
+Return
+}
+
+; win+e
+#e::launchOrSwitchDownloads()
+
+
+
+;#e:: ;open download folder
+;Run shell:::{374DE290-123F-4565-9164-39C4925E467B}
+;run Explorer "%A_StartMenu%\"
+
+; toggle file explorer navigation panel
+;#IfWinActive ahk_class CabinetWClass
+;#i::
+;Send !Right{enter}Up{enter}{enter}
+
+
 #m:: ;窗口最小化
 WinMinimize, A
 return
@@ -62,8 +114,9 @@ StringRight color,color,6
 clipboard = %color%
 return
 
-
-
+^+d:: FileRecycleEmpty ; 清空回收站
+;^+d::
+;Run ::{645ff040-5081-101b-9f08-00aa002f954e}  ; Opens the Recycle Bin.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;virtual desktop switcher ;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Globals
