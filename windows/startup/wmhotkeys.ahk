@@ -31,6 +31,7 @@ Return
 
 ; win+k
 #k::launchOrSwitchTdxW()
+Return
 
 
 ; Toggle the master mute (set it to the opposite state)
@@ -48,13 +49,44 @@ return
 
 <#w::send ^w ; as in ctrl+w to close tab
 
-<#Enter::
+
+; 启动或切换WindowsTerminal
+launchOrSwitchToWt()
+{
+if WinExist("ahk_exe WindowsTerminal.exe")
+{
+WinActivateBottom, ahk_exe WindowsTerminal.exe
+}
+Else
+{
 Run, wt.exe
+}
+Return
+}
+
+<#Enter::
+launchOrSwitchToWt()
 return
 
+;<#Enter::
+;Run, wt.exe
+;return
+
+launchOrSwitchToChrome()
+{
+if WinExist("ahk_exe chrome.exe")
+{
+WinActivateBottom, ahk_exe chrome.exe
+}
+Else
+{
+ Run, chrome.exe, , hide
+}
+Return
+}
 <#b::
-Run, chrome.exe, , hide
-return
+launchOrSwitchToChrome()
+Return
 
 
 <#+r::
