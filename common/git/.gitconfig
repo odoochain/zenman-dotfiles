@@ -97,4 +97,4 @@
 [init]
     defaultBranch = main
 [credential]
-	helper = manager
+	helper = manager-core
