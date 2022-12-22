@@ -32,24 +32,6 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#6CA35E",
-          "foreground": "#d8dee9",
-          "leading_diamond": "",
-          "style": "diamond",
-          "template": " {{ .Full }} ",
-          "trailing_diamond": "",
-          "type": "node"
-        },
-        {
-          "background": "#4c1f5e",
-          "foreground": "#d8dee9",
-          "leading_diamond": " ",
-          "style": "diamond",
-          "template": " {{ .Full }} ",
-          "trailing_diamond": "",
-          "type": "java"
-        },
-        {
           "properties": {
             "always_enabled": true
           },

@@ -141,3 +141,7 @@ New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFI
 Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
 
 
+# wmhotkeys
+# $wmhotkeysPath="$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\wmhotkeys.ahk"
+# New-Item -Path $wmhotkeysPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\startup\wmhotkeys" -Force
+# Write-host "wmhotkeys config has been linked to .dotfiles\windows\startup\wmhotkeys"
