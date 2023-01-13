@@ -655,7 +655,7 @@ function flatten {
         [Parameter(Mandatory=$false)]
         [string]$Target = (Get-Location).Path
         )
-    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
