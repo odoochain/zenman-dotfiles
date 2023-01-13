@@ -686,6 +686,12 @@ function flatten {
     # Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
 }
 
+<#
+-filter
+ image leave only images files
+ video leave only video files
+
+#>
 
 # ultimate flatten
 <#
