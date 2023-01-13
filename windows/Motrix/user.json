@@ -9,7 +9,13 @@
 	"keep-seeding": false,
 	"keep-window-state": true,
 	"last-check-update-time": 0,
+<<<<<<< HEAD
 	"last-sync-tracker-time": 1673342105113,
+||||||| eb1df5c
+	"last-sync-tracker-time": 1672015621505,
+=======
+	"last-sync-tracker-time": 1671604813835,
+>>>>>>> 20a7ec839513f9668e7426cf70c9939cdc504377
 	"locale": "en-US",
 	"log-path": "C:\\Users\\mino29\\AppData\\Roaming\\Motrix\\Motrix\\logs",
 	"new-task-show-downloading": true,
@@ -34,10 +40,22 @@
 	"use-proxy": false,
 	"window-state": {
 		"index": {
+<<<<<<< HEAD
 			"x": 3,
 			"y": 3,
 			"width": 508,
 			"height": 810
+||||||| eb1df5c
+			"x": 3,
+			"y": 3,
+			"width": 1530,
+			"height": 810
+=======
+			"x": 4,
+			"y": 4,
+			"width": 912,
+			"height": 1024
+>>>>>>> 20a7ec839513f9668e7426cf70c9939cdc504377
 		}
 	}
 }
