@@ -1,5 +1,5 @@
 HSB: color theme
-sat: 63
+sat: 63/0
 hue: 168
 
 RGB color theme
@@ -14,4 +14,8 @@ Red: 180
 Green: 180
 Blue: 255
 
+grey-ish color
+
 (lilac/light purple)
+
+(dark muted color)

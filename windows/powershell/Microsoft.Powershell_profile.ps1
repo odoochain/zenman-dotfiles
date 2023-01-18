@@ -657,7 +657,7 @@ function flatten {
         )
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
-    $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi")
+    $video_ext = @(".mp4", ".mkv", ".ts", ".wmv", ".avi")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
@@ -672,6 +672,9 @@ function flatten {
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
+    #This delete all files less than 70MB
+    gci | ?{$_.Extension -in ".ts", ".mp4"} | ?{$_.Length -lt 70MB} | rm
+    # Get-ChildItem -Path $Target -Recurse | Where-Object { $video_ext -in $_.Extension} 
        <#
        .NOTES
        This delete all files less than 70MB
