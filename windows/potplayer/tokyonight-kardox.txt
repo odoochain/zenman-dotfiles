@@ -16,6 +16,5 @@ Blue: 255
 
 grey-ish color
 
-(lilac/light purple)
-
 (dark muted color)
+(macabre)

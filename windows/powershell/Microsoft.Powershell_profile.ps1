@@ -273,9 +273,9 @@ Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
 
-# neofetch swag(but with winfetch)
-Set-Alias -Name neofetch -Value winfetch
-Set-Alias -Name ne -Value winfetch
+# neofetch swag(but with fastfetch)
+Set-Alias -Name neofetch -Value fastfetch
+Set-Alias -Name ne -Value fastfetch
 
 
 # auto ls after each cd, not replacing cd, but use cdd
@@ -584,7 +584,7 @@ $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
 # auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
 
-$lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
+$lvimPath = "$HOME\.local\bin\lvim.ps1"
 if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
@@ -605,7 +605,7 @@ function potplayer {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Users\mino29\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
+    & "$HOME\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
 }
 Set-Alias -Name pot -Value potplayer
 Set-Alias -Name play -Value potplayer
@@ -619,7 +619,7 @@ function jpegview {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Program Files (x86)\JPEGView\JPEGView.exe" $Path
+    & "$HOME\scoop\apps\jpegview\current\JPEGView.exe" $Path
 }
 Set-Alias -Name feh -Value jpegview
 
@@ -673,7 +673,7 @@ function flatten {
           $_.FullName | Remove-Item -Force
        }
     #This delete all files less than 70MB
-    gci | ?{$_.Extension -in ".ts", ".mp4"} | ?{$_.Length -lt 70MB} | rm
+    gci | ?{$_.Extension -in ".ts", ".mp4", ".flv", ".avi"} | ?{$_.Length -lt 120MB} | rm
     # Get-ChildItem -Path $Target -Recurse | Where-Object { $video_ext -in $_.Extension} 
        <#
        .NOTES
@@ -712,7 +712,7 @@ function rename {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Users\mino29\scoop\apps\advancedrenamer\current\ARen.exe" $Path
+    & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
 

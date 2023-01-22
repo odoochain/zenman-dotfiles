@@ -120,8 +120,8 @@ Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
 
 
 #nushell
-New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\nushell" -Force
-Write-host "nushell has been linked to .dotfiles\common\nushell"
+# New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\nushell" -Force
+# Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
 # yasb
