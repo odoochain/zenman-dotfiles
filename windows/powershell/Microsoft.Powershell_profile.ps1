@@ -575,7 +575,7 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
-$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = '$HOME\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
 
@@ -584,16 +584,16 @@ $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
 # auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
 
-$lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
-if (Test-Path -Path $lvimPath)
-{
-    Set-Alias lvim $lvimPath
-    Set-Alias lv $lvimPath
-    # Set-Alias v $lvimPath
-    # Set-Alias vi $lvimPath
-    # Set-Alias vim $lvimPath
-}
-else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
+# $lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
+# if (Test-Path -Path $lvimPath)
+# {
+#     Set-Alias lvim $lvimPath
+#     Set-Alias lv $lvimPath
+#     # Set-Alias v $lvimPath
+#     # Set-Alias vi $lvimPath
+#     # Set-Alias vim $lvimPath
+# }
+# else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
 # -------------------------------   Set lunarvim END    -------------------------------
 
 
@@ -605,7 +605,7 @@ function potplayer {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Users\mino29\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
+    & "$HOME\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
 }
 Set-Alias -Name pot -Value potplayer
 Set-Alias -Name play -Value potplayer
@@ -619,7 +619,7 @@ function jpegview {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Program Files (x86)\JPEGView\JPEGView.exe" $Path
+    & "$HOME\scoop\apps\jpegview\current\JPEGView.exe" $Path
 }
 Set-Alias -Name feh -Value jpegview
 
@@ -703,7 +703,7 @@ function rename {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-    & "C:\Users\mino29\scoop\apps\advancedrenamer\current\ARen.exe" $Path
+    & "$env:USERPROFILE\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
 
@@ -741,3 +741,5 @@ function Get-Temperature {
 # It will only work if your system & BIOS support it. If it doesn't work, I can't help you.
 
 # Just type get-temperature in PowerShell and it will spit back the temp in Celsius, Farenheit and Kelvin.
+
+Set-Alias lvim 'C:\Users\Wednesday\.local\bin\lvim.ps1'

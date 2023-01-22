@@ -86,11 +86,12 @@ New-Item -Path "$env:LOCALAPPDATA\lf" -ItemType SymbolicLink -Target "$env:USERP
 Write-host "~\lf has been linked to .dotfiles\windows\lf"
 
 # JPEGView
-Remove-Item -Path "$env:APPDATA\JPEGView" -Recurse -Force
-New-Item -Path "$env:APPDATA\JPEGView" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView" -Force
-Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView"
+Remove-Item -Path "$env:USERPROFILE\scoop\persist\JPEGView\JPEGView.ini" -Force
+New-Item -Path "$env:USERPROFILE\scoop\persist\JPEGView\JPEGView.ini" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView\JPEGView.ini" -Force
+Write-host "JPEGView has been linked to .dotfiles\windows\JPEGView\JPEGView.ini"
 
-New-Item -Path "C:\Program Files (x86)\JPEGView\KeyMap.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView\KeyMap.txt" -Force
+Remove-Item -Path "$env:USERPROFILE\scoop\persist\JPEGView\Keymap" -Force
+New-Item -Path "$env:USERPROFILE\scoop\persist\JPEGView\KeyMap.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\JPEGView\KeyMap.txt" -Force
 Write-host "JPEGView KeyMap.txt has been linked to .dotfiles\windows\JPEGView\KeyMap.txt"
 
 # Everything
