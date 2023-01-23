@@ -98,11 +98,25 @@ Return
 
 ;#e:: ;open download folder
 ;Run shell:::{374DE290-123F-4565-9164-39C4925E467B}
-;run Explorer "%A_StartMenu%\"
+
+elegantMinimizeWindow()
+{
+if WinActive("ahk_class Progman")
+{
+WinActivate, ahk_class Shell_TrayWnd
+WinMinimize, A
+}
+Else
+{
+WinMinimize, A
+}
+Return
+}
 
 
 #m:: ;窗口最小化
-WinMinimize, A
+;WinMinimize, A
+elegantMinimizeWindow()
 return
 
 #c:: ;mouse pick color value(RGB/CSS)

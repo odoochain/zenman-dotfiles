@@ -78,6 +78,7 @@ In the common folder are thoese programs configs that shared the same config fil
 - z.lua
 - bash
 - zsh on windows (without WSL2)
+- autohotkey (with autoreload enabled)
 
 </details>
 

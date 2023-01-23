@@ -584,29 +584,6 @@ $Env:KOMOREBI_CONFIG_HOME = '$HOME\.config\komorebi'
 # auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
 
-<<<<<<< HEAD
-# $lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
-# if (Test-Path -Path $lvimPath)
-# {
-#     Set-Alias lvim $lvimPath
-#     Set-Alias lv $lvimPath
-#     # Set-Alias v $lvimPath
-#     # Set-Alias vi $lvimPath
-#     # Set-Alias vim $lvimPath
-# }
-# else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
-||||||| 352857a
-$lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
-if (Test-Path -Path $lvimPath)
-{
-    Set-Alias lvim $lvimPath
-    Set-Alias lv $lvimPath
-    # Set-Alias v $lvimPath
-    # Set-Alias vi $lvimPath
-    # Set-Alias vim $lvimPath
-}
-else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
-=======
 $lvimPath = "$HOME\.local\bin\lvim.ps1"
 if (Test-Path -Path $lvimPath)
 {
@@ -617,7 +594,6 @@ if (Test-Path -Path $lvimPath)
     # Set-Alias vim $lvimPath
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
->>>>>>> c87863a9bbff9c32c1afa05ce983ab4fd1f9ad9a
 # -------------------------------   Set lunarvim END    -------------------------------
 
 
@@ -679,7 +655,7 @@ function flatten {
         [Parameter(Mandatory=$false)]
         [string]$Target = (Get-Location).Path
         )
-    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar", ".idx", ".sub")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
     $video_ext = @(".mp4", ".mkv", ".ts", ".wmv", ".avi")
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
@@ -736,13 +712,7 @@ function rename {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
-<<<<<<< HEAD
-    & "$env:USERPROFILE\scoop\apps\advancedrenamer\current\ARen.exe" $Path
-||||||| 352857a
-    & "C:\Users\mino29\scoop\apps\advancedrenamer\current\ARen.exe" $Path
-=======
     & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
->>>>>>> c87863a9bbff9c32c1afa05ce983ab4fd1f9ad9a
 }
 Set-Alias -Name rn -Value rename
 
