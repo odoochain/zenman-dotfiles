@@ -273,9 +273,9 @@ Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
 
-# neofetch swag(but with winfetch)
-Set-Alias -Name neofetch -Value winfetch
-Set-Alias -Name ne -Value winfetch
+# neofetch swag(but with fastfetch)
+Set-Alias -Name neofetch -Value fastfetch
+Set-Alias -Name ne -Value fastfetch
 
 
 # auto ls after each cd, not replacing cd, but use cdd
