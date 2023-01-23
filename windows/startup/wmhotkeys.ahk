@@ -1,3 +1,8 @@
+;----------------------------- autohotkey documentations ----------------------
+
+; The script is written with ahk v1
+; https://www.autohotkey.com/docs/v1/
+
 ;----------------------------- autoreload the script  -------------------------
 
 SetTimer,UPDATEDSCRIPT,1000
@@ -10,31 +15,22 @@ UPDATEDSCRIPT:
 	}
 return
 
+;-------------------------------- global variables  ---------------------------
 
+;vScoopPath := "C:\Users\%A_Username%\scoop\apps"
+;^q::
+;MsgBox, You are %vScoopPath%
+;Return
+
+;--------------------------------- Edit the script  ---------------------------
+
+#y::
+run, wt.exe "nvim.exe" "%a_startup%\wmhotkeys.ahk"
+Return
 
 ;------------------------------- universal hotkeys  ---------------------------
 
-
-; 启动或切换招商证券
-launchOrSwitchTdxW()
-{
-if WinExist("ahk_class TdxW_MainFrame_Class")
-{
-WinActivateBottom, ahk_class TdxW_MainFrame_Class
-}
-Else
-{
- Sleep 500
- Run "C:\zd_zsone\TdxW.exe"
-}
-Return
-}
-
-; win+k
-#k::launchOrSwitchTdxW()
-Return
-
-
+; Volume Controls
 ; Toggle the master mute (set it to the opposite state)
 
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
@@ -43,82 +39,34 @@ Return
 
 ; window utils
 
-<#q::
+; force quit app or shutdown pc (when all windows minimized)
+quitWindowOrShutDown()
+{
+if WinActive("ahk_class WorkerW")
+{
+WinActivate, ahk_class Shell_TrayWnd
 WinClose, A
+}
+Else
+{
+WinClose, A
+}
+Return
+}
+
+<#q::
+quitWindowOrShutDown()
 return
 
+;<#q::
+;WinClose, A
+;return
 
+; Close current window
 <#w::send ^w ; as in ctrl+w to close tab
 
 
-; 启动或切换WindowsTerminal
-launchOrSwitchToWt()
-{
-if WinExist("ahk_exe WindowsTerminal.exe")
-{
-WinActivateBottom, ahk_exe WindowsTerminal.exe
-}
-Else
-{
-Run, wt.exe
-}
-Return
-}
-
-<#Enter::
-launchOrSwitchToWt()
-return
-
-;<#Enter::
-;Run, wt.exe
-;return
-
-<#n::
-Run, nvim.exe
-return
-
-; 启动或切换欧路词典
-launchOrSwitchToEudic()
-{
-if WinExist("ahk_exe eudic.exe")
-{
-WinActivateBottom, ahk_exe eudic.exe
-}
-Else
-{
-Run, "C:\Program Files (x86)\eudic\eudic.exe"
-}
-Return
-}
-
-<#u::
-launchOrSwitchToEudic()
-return
-
-
-launchOrSwitchToChrome()
-{
-if WinExist("ahk_exe chrome.exe")
-{
-WinActivateBottom, ahk_exe chrome.exe
-}
-Else
-{
- Run, chrome.exe, , hide
-}
-Return
-}
-<#b::
-launchOrSwitchToChrome()
-Return
-
-
-<#+r::
-Run, fancywm.exe, , hide
-return
-; vim way of handling windows
-
-; manage windows
+; manage windows, maximize current window
 <#f::
 WinGet,S,MinMax,A
 if S=0
@@ -148,15 +96,9 @@ Return
 #e::launchOrSwitchDownloads()
 
 
-
 ;#e:: ;open download folder
 ;Run shell:::{374DE290-123F-4565-9164-39C4925E467B}
 ;run Explorer "%A_StartMenu%\"
-
-; toggle file explorer navigation panel
-;#IfWinActive ahk_class CabinetWClass
-;#i::
-;Send !Right{enter}Up{enter}{enter}
 
 
 #m:: ;窗口最小化
@@ -173,6 +115,215 @@ return
 ^+d:: FileRecycleEmpty ; 清空回收站
 ;^+d::
 ;Run ::{645ff040-5081-101b-9f08-00aa002f954e}  ; Opens the Recycle Bin.
+
+;------------------------ Frequently-Used Programs  ---------------------------
+
+; Quicknotes with neovim
+#n::
+run, wt.exe "nvim.exe" "%A_Desktop%\quicknote.md"
+Return
+
+; 启动或切换招商证券
+launchOrSwitchTdxW()
+{
+if WinExist("ahk_class TdxW_MainFrame_Class")
+{
+WinActivateBottom, ahk_class TdxW_MainFrame_Class
+}
+Else
+{
+Sleep 1000
+Run "C:\zd_zsone\TdxW.exe"
+}
+Return
+}
+
+; win+k
+#k::launchOrSwitchTdxW()
+Return
+
+
+; 启动或切换Qalc
+launchOrSwitchQalc()
+{
+if WinExist("ahk_exe qalculate-gtk.exe")
+{
+WinActivateBottom, ahk_exe qalculate-gtk.exe
+}
+Else
+{
+Run "C:\Users\%A_UserName%\scoop\apps\qalculate\current\qalculate-gtk.exe"
+}
+Return
+}
+
+; win+j
+#j::launchOrSwitchQalc()
+Return
+
+
+; 启动或切换Eudic
+launchOrSwitchEudic()
+{
+if WinExist("ahk_exe eudic.exe")
+{
+WinActivateBottom, ahk_exe eudic.exe
+}
+Else
+{
+Run "C:\Users\%A_Username%\scoop\apps\eudic\current\eudic.exe"
+}
+Return
+}
+
+; win+u
+#u::launchOrSwitchEudic()
+Return
+
+
+; 启动或切换AriaNgGui
+launchOrSwitchAriaNgGui()
+{
+if WinExist("ahk_exe AriaNgGUI.exe")
+{
+WinActivateBottom, ahk_exe AriaNgGUI.exe
+}
+Else
+{
+ Run "C:\Users\%A_Username%\scoop\apps\aria-ng-gui\current\AriaNgGUI.exe"
+}
+Return
+}
+
+; win+o
+#o::launchOrSwitchAriaNgGui()
+Return
+
+
+; 启动或切换WindowsTerminal
+launchOrSwitchToWt()
+{
+if WinExist("ahk_exe WindowsTerminal.exe")
+{
+WinActivateBottom, ahk_exe WindowsTerminal.exe
+}
+Else
+{
+Run, wt.exe
+}
+Return
+}
+
+<#Enter::
+launchOrSwitchToWt()
+return
+
+;<#Enter::
+;Run, wt.exe
+;return
+
+;启动或切换Chrome
+launchOrSwitchToChrome()
+{
+if WinExist("ahk_exe chrome.exe")
+{
+WinActivateBottom, ahk_exe chrome.exe
+}
+Else
+{
+ Run, chrome.exe, , hide
+}
+Return
+}
+
+<#b::
+launchOrSwitchToChrome()
+Return
+
+;启动或切换Spotify
+launchOrSwitchToSpotify()
+{
+if WinExist("ahk_exe Spotify.exe")
+{
+WinActivateBottom, ahk_exe Spotify.exe
+}
+Else
+{
+ Run "C:\Users\%A_Username%\scoop\apps\spotify\current\Spotify.exe"
+}
+Return
+}
+
+<#t::
+launchOrSwitchToSpotify()
+Return
+
+
+;启动或切换Potplayer
+launchOrSwitchToPotplayer()
+{
+if WinExist("ahk_exe PotPlayer64.exe")
+{
+WinMinimizeAll
+WinActivateBottom, ahk_exe PotPlayer64.exe
+}
+Else
+{
+WinMinimizeAll
+Run "C:\Users\%A_Username%\scoop\apps\potplayer\current\PotPlayer64.exe"
+}
+Return
+}
+
+<#p::
+launchOrSwitchToPotplayer()
+Return
+
+;启动或切换everything
+launchOrSwitchToEverything()
+{
+if WinExist("ahk_exe Everything.exe")
+{
+WinActivateBottom, ahk_exe Everything.exe
+}
+Else
+{
+ Run "C:\Users\%A_Username%\scoop\apps\everything-alpha\current\Everything.exe"
+}
+Return
+}
+
+<#s::
+launchOrSwitchToEverything()
+Return
+
+;启动或重启fancywm
+
+launchOrRelaunchFancywm()
+{
+if WinExist("ahk_exe FancyWM.exe")
+{
+process, close, FancyWM.exe ; Use the window found by WinExist.
+Sleep 1000
+Run, fancywm.exe, , hide
+}
+else
+{
+Run, fancywm.exe, , hide
+}
+Return
+}
+
+^+r::
+launchOrRelaunchFancywm()
+return
+
+;<#+r::
+;Run, fancywm.exe, , hide
+;return
+; vim way of handling windows
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;virtual desktop switcher ;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Globals
