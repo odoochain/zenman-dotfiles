@@ -121,19 +121,19 @@ Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
 
 
 #nushell
-New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\nushell" -Force
-Write-host "nushell has been linked to .dotfiles\common\nushell"
+# New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\nushell" -Force
+# Write-host "nushell has been linked to .dotfiles\common\nushell"
 
 
 # yasb
 # Remove-Item -recurse -force "$env:USERPROFILE\.yasb"
-New-Item -Path "$env:USERPROFILE\.yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\.yasb" -Force
-Write-host "~\.local\share\yasb has been linked to .dotfiles\windows\yasb"
+#New-Item -Path "$env:USERPROFILE\.yasb" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\.yasb" -Force
+#Write-host "~\.local\share\yasb has been linked to .dotfiles\windows\yasb"
 
 # komorebi
 # Remove-Item -recurse -force "$env:USERPROFILE\.config\komorebi"
-New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
-Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
+#New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
+#Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
 
 # FancyWM
 

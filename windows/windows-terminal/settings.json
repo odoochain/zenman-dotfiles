@@ -4,20 +4,20 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -29,16 +29,16 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": "closePane",
-            "keys": "ctrl+w"
-        },
-        {
             "command": "unbound",
             "keys": "alt+space"
         },
         {
             "command": "unbound",
             "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
         }
     ],
     "copyFormatting": "none",
@@ -110,6 +110,18 @@
                 "name": "git-bash",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
+            },
+            {
+                "guid": "{0b0d0d7d-0683-58f5-874e-3d88ccbe94c2}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{49d79f4d-47fa-5569-bbbe-598bdd7b5175}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },

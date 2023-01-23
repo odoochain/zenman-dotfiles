@@ -24,6 +24,7 @@ WinActivateBottom, ahk_class TdxW_MainFrame_Class
 }
 Else
 {
+ Sleep 500
  Run "C:\zd_zsone\TdxW.exe"
 }
 Return
@@ -71,6 +72,29 @@ return
 ;<#Enter::
 ;Run, wt.exe
 ;return
+
+<#n::
+Run, nvim.exe
+return
+
+; 启动或切换欧路词典
+launchOrSwitchToEudic()
+{
+if WinExist("ahk_exe eudic.exe")
+{
+WinActivateBottom, ahk_exe eudic.exe
+}
+Else
+{
+Run, "C:\Program Files (x86)\eudic\eudic.exe"
+}
+Return
+}
+
+<#u::
+launchOrSwitchToEudic()
+return
+
 
 launchOrSwitchToChrome()
 {
