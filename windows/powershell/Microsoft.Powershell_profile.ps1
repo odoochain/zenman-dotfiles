@@ -603,7 +603,7 @@ function potplayer {
         # 输入要打开的路径
         # 用法示例：open C:\
         # 默认路径：当前工作文件夹
-        $Path = '.'
+        $Path = (Get-Location).Path
     )
     & "$HOME\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
 }
@@ -617,7 +617,7 @@ function jpegview {
         # 输入要打开的路径
         # 用法示例：open C:\
         # 默认路径：当前工作文件夹
-        $Path = '.'
+        $Path = (Get-Location).Path
     )
     & "$HOME\scoop\apps\jpegview\current\JPEGView.exe" $Path
 }
