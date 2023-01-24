@@ -39,18 +39,23 @@ Return
 
 ; window utils
 
-; force quit app or shutdown pc (when all windows minimized)
+; Force quit app or shutdown pc (when all windows minimized)
 quitWindowOrShutDown()
 {
 if WinActive("ahk_class WorkerW")
-{
-WinActivate, ahk_class Shell_TrayWnd
-WinClose, A
-}
+    {
+    WinActivate, ahk_class Shell_TrayWnd
+    WinClose, A
+    }
+; Keep a terminal around
+else if WinActive("ahk_exe WindowsTerminal.exe")
+    {
+    WinMinimize, A
+    }
 Else
-{
-WinClose, A
-}
+    {
+    WinClose, A
+    }
 Return
 }
 
@@ -58,15 +63,12 @@ Return
 quitWindowOrShutDown()
 return
 
-;<#q::
-;WinClose, A
-;return
 
 ; Close current window
 <#w::send ^w ; as in ctrl+w to close tab
 
 
-; manage windows, maximize current window
+; Manage windows, maximize current window
 <#f::
 WinGet,S,MinMax,A
 if S=0
@@ -96,9 +98,7 @@ Return
 #e::launchOrSwitchDownloads()
 
 
-;#e:: ;open download folder
-;Run shell:::{374DE290-123F-4565-9164-39C4925E467B}
-
+;窗口最小化
 elegantMinimizeWindow()
 {
 if WinActive("ahk_class Progman")
@@ -114,8 +114,7 @@ Return
 }
 
 
-#m:: ;窗口最小化
-;WinMinimize, A
+#m::
 elegantMinimizeWindow()
 return
 
