@@ -25,7 +25,8 @@ return
 ;--------------------------------- Edit the script  ---------------------------
 
 #y::
-run, wt.exe "nvim.exe" "%a_startup%\wmhotkeys.ahk"
+;run, wt.exe "nvim.exe" "%a_startup%\wmhotkeys.ahk"
+run, wt.exe "nvim.exe" "C:\Users\%A_Username%\.dotfiles\windows\startup\wmhotkeys.ahk"
 Return
 
 ;------------------------------- universal hotkeys  ---------------------------
