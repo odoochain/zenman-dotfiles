@@ -673,8 +673,8 @@ function flatten {
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
-    #This delete all files less than 120MB
-    gci | ?{$_.Extension -in ".ts", ".mp4", ".flv", ".avi"} | ?{$_.Length -lt 120MB} | rm
+    #This delete all files less than 200MB
+    gci | ?{$_.Extension -in ".ts", ".mp4", ".flv", ".avi"} | ?{$_.Length -lt 200MB} | rm
     # Get-ChildItem -Path $Target -Recurse | Where-Object { $_.Extension -in $video_ext } 
        <#
        .NOTES
