@@ -3,6 +3,9 @@
 ; The script is written with ahk v1
 ; https://www.autohotkey.com/docs/v1/
 
+; The script to be re-writtern with ahk v2
+; https://www.autohotkey.com/docs/v2/
+
 ;----------------------------- autoreload the script  -------------------------
 
 SetTimer,UPDATEDSCRIPT,1000
@@ -26,7 +29,8 @@ return
 
 #y::
 ;run, wt.exe "nvim.exe" "%a_startup%\wmhotkeys.ahk"
-run, wt.exe "nvim.exe" "C:\Users\%A_Username%\.dotfiles\windows\startup\wmhotkeys.ahk"
+;run, wt.exe "nvim.exe" "C:\Users\%A_Username%\.dotfiles\windows\startup\wmhotkeys.ahk"
+run, wt.exe "nvim.exe" %A_ScriptFullPath%
 Return
 
 ;------------------------------- universal hotkeys  ---------------------------
