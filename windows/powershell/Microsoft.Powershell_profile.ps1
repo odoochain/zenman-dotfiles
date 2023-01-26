@@ -26,6 +26,12 @@ Catch {
  * Copyright: No copyright. You can use this code for anything with no warranty.
 #>
 
+#------------------------------- Scoop settings -------------------------
+
+# To replace scoop built-in search
+Invoke-Expression (&scoop-search --hook)
+
+
 #------------------------------- Import Modules BEGIN -------------------------
 
 
