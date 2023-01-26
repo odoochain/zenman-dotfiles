@@ -104,24 +104,23 @@ Return
 
 
 ;窗口最小化
-elegantMinimizeWindow()
-{
-if WinActive("ahk_class Progman")
-{
-WinActivate, ahk_class Shell_TrayWnd
-WinMinimize, A
-}
-Else
-{
-WinMinimize, A
-}
-Return
-}
-
-
-#m::
-elegantMinimizeWindow()
-return
+;elegantMinimizeWindow()
+;{
+;if WinActive("ahk_class Progman")
+;{
+;WinActivate, ahk_class Shell_TrayWnd
+;WinMinimize, A
+;}
+;Else
+;{
+;WinMinimize, A
+;}
+;Return
+;}
+;
+;#m::
+;elegantMinimizeWindow()
+;return
 
 #c:: ;mouse pick color value(RGB/CSS)
 MouseGetPos, mouseX, mouseY
