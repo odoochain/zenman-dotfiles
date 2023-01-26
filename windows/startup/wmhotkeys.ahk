@@ -102,6 +102,22 @@ Return
 ; win+e
 #e::launchOrSwitchDownloads()
 
+; 启动或切换到playnite
+launchOrSwitchPlaynite()
+{
+if WinExist("ahk_exe Playnite.DesktopApp.exe")
+{
+WinActivateBottom, ahk_exe Playnite.DesktopApp.exe
+}
+Else
+{
+Run "C:\Users\%A_UserName%\scoop\apps\playnite\current\Playnite.DesktopApp.exe"
+}
+Return
+}
+
+; win+g
+#g::launchOrSwitchPlaynite()
 
 ;窗口最小化
 ;elegantMinimizeWindow()
