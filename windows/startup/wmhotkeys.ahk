@@ -109,7 +109,11 @@ launchOrSwitchPlaynite()
 {
 if WinExist("ahk_exe Playnite.DesktopApp.exe")
 {
-WinActivateBottom, ahk_exe Playnite.DesktopApp.exe
+    ;if WinActive("ahk_exe Playnite.DesktopApp.exe")
+    ;{WinMinimize, ahk_exe Playnite.DesktopApp.exe}
+    ;else
+    ;{ WinActivateBottom, ahk_exe Playnite.DesktopApp.exe }
+    WinActivateBottom, ahk_exe Playnite.DesktopApp.exe
 }
 Else
 {
