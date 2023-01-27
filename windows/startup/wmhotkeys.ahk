@@ -102,6 +102,7 @@ Return
 ; win+e
 #e::
 launchOrSwitchDownloads()
+Return
 
 ; 启动或切换到playnite
 launchOrSwitchPlaynite()
