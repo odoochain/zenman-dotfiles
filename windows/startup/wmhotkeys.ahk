@@ -162,8 +162,9 @@ return
 
 ; Quicknotes with neovim
 #n::
-run, wt.exe "nvim.exe" "%A_Desktop%\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+;run, wt.exe "nvim.exe" "%A_Desktop%\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
 ;run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Notes\quicknote.md"
+run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Notes\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
 Return
 
 ; 启动或切换招商证券
