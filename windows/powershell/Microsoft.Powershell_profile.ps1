@@ -1,3 +1,12 @@
+#------------------------------- Notes ----------------------------------------
+
+<#
+ * FileName: Microsoft.PowerShell_profile.ps1
+ * Author: Wu Zhongzheng
+ * Email: zhongzheng.wu@outlook.com
+ * Date: 2022, Sep. 9
+ * Copyright: No copyright. You can use this code for anything with no warranty.
+#>
 
 #------------------------------- Startup settings BEGIN -----------------------
 
@@ -18,18 +27,17 @@ Catch {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
-<#
- * FileName: Microsoft.PowerShell_profile.ps1
- * Author: Wu Zhongzheng
- * Email: zhongzheng.wu@outlook.com
- * Date: 2022, Sep. 9
- * Copyright: No copyright. You can use this code for anything with no warranty.
-#>
 
 #------------------------------- Scoop settings -------------------------
 
 # To replace scoop built-in search
 Invoke-Expression (&scoop-search --hook)
+
+
+#------------------------------- Setting to run R term -------------------------
+
+# to run rterm with just 'r', otherwise it would just run the last command
+rm alias:\r
 
 
 #------------------------------- Import Modules BEGIN -------------------------
@@ -84,11 +92,6 @@ Try {
 Catch {
     Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser -Force # oh-my-posh 基础美化工具包
 }
-
-# 引入Zlocation (powerful cd)
-# full command-let is invoke-Zlocation, z for short
-# z c: will get you to c drive
-# Import-Module ZLocation
 
 
 # 引入PSWindowsUpdate
@@ -250,6 +253,7 @@ Set-Alias -Name ll -Value ShowAllItems -Option AllScope
 # ----------------------------------------------------------------------------
 # option-2
 # below requires you to install lsd to work
+
 <#
 function ListItem {
     Write-Host("")
@@ -273,6 +277,7 @@ Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
 Set-Alias -Name tree -Value TreeView -Option AllScope
 #>
+
 # ----------------------------------------------------------------------------
 
 Set-Alias -Name g -Value git
@@ -357,7 +362,6 @@ Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------   Set z.lua BEGIN    -------------------------------
 
 # Invoke-Expression (& { (lua $HOME/z.lua/z.lua --init powershell) -join "`n" })
-
 # Invoke-Expression (& { (lua $HOME/scoop/apps/current/z.lua --init powershell) -join "`n" })
 # Invoke-Expression (& { (lua $HOME/scoop/apps/1.8.15/z.lua --init powershell) -join "`n" })
 
@@ -711,6 +715,7 @@ delete empty files
 sort files according to their extensions 
 categories: Video, Pictures, Documents, Audio and Others
 #>
+
 function rename {
     param
     (
@@ -758,4 +763,4 @@ function Get-Temperature {
 
 # Just type get-temperature in PowerShell and it will spit back the temp in Celsius, Farenheit and Kelvin.
 
-Set-Alias lvim 'C:\Users\Wednesday\.local\bin\lvim.ps1'
+Set-Alias lvim '$HOME\.local\bin\lvim.ps1'
