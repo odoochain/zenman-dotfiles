@@ -206,22 +206,22 @@ Return
 Return
 
 
-; 启动或切换Eudic
-launchOrSwitchEudic()
+; 启动或切换Dict
+launchOrSwitchDict()
 {
-if WinExist("ahk_exe eudic.exe")
+if WinExist("ahk_exe GoldenDict.exe")
 {
-WinActivateBottom, ahk_exe eudic.exe
+WinActivateBottom, ahk_exe GoldenDict.exe
 }
 Else
 {
-Run "C:\Users\%A_Username%\scoop\apps\eudic\current\eudic.exe"
+Run "C:\Users\%A_Username%\scoop\apps\goldendict\current\GoldenDict.exe"
 }
 Return
 }
 
 ; win+u
-#u::launchOrSwitchEudic()
+#u::launchOrSwitchDict()
 Return
 
 
