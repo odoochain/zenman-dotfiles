@@ -225,6 +225,10 @@ Return
 Return
 
 
+; 启动或切换Task Manager
+#x::run taskmgr.exe
+
+
 ; 启动或切换AriaNgGui
 launchOrSwitchAriaNgGui()
 {
