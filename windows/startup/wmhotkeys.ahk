@@ -224,6 +224,11 @@ Return
 #u::launchOrSwitchDict()
 Return
 
+; win+i  to open sound mixer setting
+#i::
+Run ms-settings:apps-volume
+return
+
 
 ; 启动或切换Task Manager
 #x::run taskmgr.exe
