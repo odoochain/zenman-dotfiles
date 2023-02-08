@@ -224,6 +224,11 @@ Return
 #u::launchOrSwitchDict()
 Return
 
+; win+h
+#h::
+WinMinimize, A
+Return
+
 ; win+i  to open sound mixer setting
 #i::
 Run ms-settings:apps-volume
