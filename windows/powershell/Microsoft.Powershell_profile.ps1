@@ -37,7 +37,7 @@ Invoke-Expression (&scoop-search --hook)
 #------------------------------- Setting to run R term -------------------------
 
 # to run rterm with just 'r', otherwise it would just run the last command
-rm alias:\r
+#rm alias:\r
 
 
 #------------------------------- Import Modules BEGIN -------------------------
@@ -665,7 +665,7 @@ function flatten {
         [Parameter(Mandatory=$false)]
         [string]$Target = (Get-Location).Path
         )
-    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar", ".idx", ".sub")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar", ".idx", ".sub", ".png", ".jpg")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub")
     $doc_ext = @(".pdf", ".zip", ".rar", ".docx")
