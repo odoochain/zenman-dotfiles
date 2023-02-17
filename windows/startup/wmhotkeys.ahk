@@ -280,6 +280,9 @@ return
 ;Run, wt.exe
 ;return
 
+
+
+;-----------------------google chrome---------------------------
 ;启动或切换Chrome
 launchOrSwitchToChrome()
 {
@@ -294,8 +297,27 @@ Else
 Return
 }
 
-<#b::
+<#/::
 launchOrSwitchToChrome()
+Return
+
+;----------------------- microsoft edge ---------------------------
+;启动或切换Chrome
+launchOrSwitchToEdge()
+{
+if WinExist("ahk_exe msedge.exe")
+{
+WinActivateBottom, ahk_exe msedge.exe
+}
+Else
+{
+ Run, msedge
+}
+Return
+}
+
+<#b::
+launchOrSwitchToEdge()
 Return
 
 ;启动或切换Spotify
