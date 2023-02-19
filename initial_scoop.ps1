@@ -6,16 +6,22 @@ New-Item -path $profile -type file -force
 # Install windows terminal
 winget install microsoft.windowsterminal
 
-# 执行安装命令
+# 执行安装命令 (non admin)
 iwr -useb scoop.201704.xyz | iex
-iwr -useb https://gitee.com/RubyKids/scoop-cn/raw/master/install.ps1 | iex
+# iwr -useb https://gitee.com/RubyKids/scoop-cn/raw/master/install.ps1 | iex
 
 # 更换scoop的repo地址
-# scoop config SCOOP_REPO 'https://github.com/lukesampson/scoop'
+
+# cn mirror repo
 scoop config SCOOP_REPO 'https://gitee.com/glsnames/scoop-installer'
+
+# official repo
+# scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
+
+# backup repos
+# scoop config SCOOP_REPO 'https://github.com/lukesampson/scoop'
 # scoop config SCOOP_REPO 'https://gitee.com/squallliu/scoop'
 # scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
-# scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
 
 # 拉取新库地址
 scoop update
@@ -47,3 +53,5 @@ scoop bucket add scoopet "https://github.com/ivaquero/scoopet.git"
 scoop bucket add portablesoft 'https://github.com/shenbo/portablesoft'
 
 scoop bucket list
+
+# install preloaded list
