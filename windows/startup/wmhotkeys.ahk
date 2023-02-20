@@ -297,12 +297,12 @@ Else
 Return
 }
 
-<#/::
-launchOrSwitchToChrome()
-Return
+;<#/::
+;launchOrSwitchToChrome()
+;Return
 
 ;----------------------- microsoft edge ---------------------------
-;启动或切换Chrome
+;启动或切换Edge
 launchOrSwitchToEdge()
 {
 if WinExist("ahk_exe msedge.exe")
