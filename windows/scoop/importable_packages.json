@@ -303,6 +303,13 @@
         },
         {
             "Info": "",
+            "Name": "devtoys-np",
+            "Source": "apps",
+            "Updated": "2023-02-21T15:21:08.1773505+08:00",
+            "Version": "1.0.10.0"
+        },
+        {
+            "Info": "",
             "Name": "digikam",
             "Source": "apps",
             "Updated": "2023-02-20T05:42:27.7923007+08:00",
@@ -471,13 +478,6 @@
         },
         {
             "Info": "",
-            "Name": "freedownloadmanager",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:51:53.7885482+08:00",
-            "Version": "6.18.1.4920"
-        },
-        {
-            "Info": "",
             "Name": "fzf",
             "Source": "main",
             "Updated": "2023-02-20T05:51:57.1784225+08:00",
@@ -545,13 +545,6 @@
             "Source": "apps",
             "Updated": "2023-02-20T05:53:21.1835223+08:00",
             "Version": "2.23.0"
-        },
-        {
-            "Info": "",
-            "Name": "glow",
-            "Source": "main",
-            "Updated": "2023-02-20T05:53:25.0453932+08:00",
-            "Version": "1.5.0"
         },
         {
             "Info": "",
@@ -758,13 +751,6 @@
         },
         {
             "Info": "",
-            "Name": "marktext",
-            "Source": "apps",
-            "Updated": "2023-02-20T06:10:57.8053218+08:00",
-            "Version": "0.17.1"
-        },
-        {
-            "Info": "",
             "Name": "micaforeveryone",
             "Source": "apps",
             "Updated": "2023-02-20T06:11:05.7762345+08:00",
@@ -888,13 +874,6 @@
             "Source": "apps",
             "Updated": "2023-02-20T06:18:10.4337374+08:00",
             "Version": "230207"
-        },
-        {
-            "Info": "",
-            "Name": "powertoys",
-            "Source": "apps",
-            "Updated": "2023-02-20T06:18:49.9210083+08:00",
-            "Version": "0.67.1"
         },
         {
             "Info": "",
@@ -1076,8 +1055,8 @@
         {
             "Name": "apps",
             "Source": "https://proxy.201704.xyz/https://github.com/kkzzhizhou/scoop-apps",
-            "Updated": "2023-02-20T12:44:29+08:00",
-            "Manifests": 9227
+            "Updated": "2023-02-21T12:50:44+08:00",
+            "Manifests": 9229
         },
         {
             "Name": "im-select",
@@ -1088,7 +1067,7 @@
         {
             "Name": "main",
             "Source": "https://proxy.201704.xyz/https://github.com/ScoopInstaller/Main",
-            "Updated": "2023-02-20T20:42:25+08:00",
+            "Updated": "2023-02-21T12:28:23+08:00",
             "Manifests": 1167
         }
     ]
