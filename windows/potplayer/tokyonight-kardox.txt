@@ -3,9 +3,9 @@ sat: 63/0
 hue: 168
 
 RGB color theme
-Red: -1 
-Green: -1
-Blue: 11
+Red: -5 
+Green: -5
+Blue: 4
 
 
 osd message font color:
