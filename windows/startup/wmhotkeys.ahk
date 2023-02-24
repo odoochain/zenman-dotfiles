@@ -74,6 +74,7 @@ return
 
 
 ; Manage windows, maximize current window
+
 <#f::
 WinGet,S,MinMax,A
 if S=0
@@ -236,7 +237,23 @@ return
 
 
 ; 启动或切换Task Manager
-#x::run taskmgr.exe
+launchTaskManager()
+{
+if WinExist("ahk_exe Taskmgr.exe")
+{
+WinActivateBottom, ahk_exe Taskmgr.exe
+WinWait, Task Manager
+WinMaximize
+}
+Else
+{
+run taskmgr.exe
+}
+return
+}
+
+#x::launchTaskManager()
+Return
 
 
 ; 启动或切换AriaNgGui
