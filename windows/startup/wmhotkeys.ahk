@@ -39,7 +39,7 @@ Return
 ; Toggle the master mute (set it to the opposite state)
 
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
-;<#z::Send {Volume_mute} ; with gui prompt
+<#z::Send {Volume_mute} ; with gui prompt
 
 toggleDropPoint()
 {
@@ -54,9 +54,9 @@ Run droppoint.exe, , hide
 Return
 }
 
-#z::
-toggleDropPoint()
-Return
+;#z::
+;toggleDropPoint()
+;Return
 
 ; window utils
 
