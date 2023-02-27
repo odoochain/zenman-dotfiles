@@ -86,12 +86,14 @@ Catch {
 }
 
 # 引入terminal-icons
+<#
 Try {
     Import-Module -Name Terminal-Icons
 }
 Catch {
     Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser -Force # oh-my-posh 基础美化工具包
 }
+#>
 
 
 # 引入PSWindowsUpdate

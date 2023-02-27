@@ -15,7 +15,7 @@
       <S N="Copyright">(c) Brandon Olin. All rights reserved.</S>
       <DT N="PublishedDate">2022-07-07T06:46:53+08:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2022-12-16T18:39:55.3351631+08:00</DT>
+        <DT>2023-02-27T09:23:33.3793596+08:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -55,15 +55,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">Workflow</S>
+            <S N="Key">Function</S>
             <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
               <TNRef RefId="2" />
               <LST>
                 <S>Add-TerminalIconsColorTheme</S>
@@ -81,11 +74,22 @@
             </Obj>
           </En>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Ref N="Value" RefId="5" />
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
           </En>
           <En>
-            <S N="Key">Function</S>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
             <Obj N="Value" RefId="7">
               <TNRef RefId="2" />
               <LST>
@@ -104,12 +108,8 @@
             </Obj>
           </En>
           <En>
-            <S N="Key">Cmdlet</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
-            <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
         </DCT>
       </Obj>
@@ -134,15 +134,15 @@
           <S N="releaseNotes">https://raw.githubusercontent.com/devblackops/Terminal-Icons/master/CHANGELOG.md</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">54572</S>
-          <S N="downloadCount">175496</S>
+          <S N="versionDownloadCount">74985</S>
+          <S N="downloadCount">196442</S>
           <S N="packageSize">60523</S>
-          <S N="published">7/7/2022 6:46:53 AM +08:00</S>
-          <S N="created">7/7/2022 6:46:53 AM +08:00</S>
-          <S N="lastUpdated">12/16/2022 10:37:47 AM +08:00</S>
+          <S N="published">2022/7/7 6:46:53 +08:00</S>
+          <S N="created">2022/7/7 6:46:53 +08:00</S>
+          <S N="lastUpdated">2023/2/16 4:44:16 +08:00</S>
           <S N="tags">Color Terminal Console NerdFonts Icon PSModule PSFunction_Add-TerminalIconsColorTheme PSCommand_Add-TerminalIconsColorTheme PSFunction_Add-TerminalIconsIconTheme PSCommand_Add-TerminalIconsIconTheme PSFunction_Format-TerminalIcons PSCommand_Format-TerminalIcons PSFunction_Get-TerminalIconsColorTheme PSCommand_Get-TerminalIconsColorTheme PSFunction_Get-TerminalIconsGlyphs PSCommand_Get-TerminalIconsGlyphs PSFunction_Get-TerminalIconsIconTheme PSCommand_Get-TerminalIconsIconTheme PSFunction_Get-TerminalIconsTheme PSCommand_Get-TerminalIconsTheme PSFunction_Remove-TerminalIconsTheme PSCommand_Remove-TerminalIconsTheme PSFunction_Set-TerminalIconsIcon PSCommand_Set-TerminalIconsIcon PSFunction_Set-TerminalIconsTheme PSCommand_Set-TerminalIconsTheme PSFunction_Show-TerminalIconsTheme PSCommand_Show-TerminalIconsTheme PSIncludes_Function</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2022-12-16T10:37:47Z</S>
+          <S N="updated">2023-02-16T04:44:16Z</S>
           <S N="NormalizedVersion">0.10.0</S>
           <S N="Authors">Brandon Olin</S>
           <S N="IsPrerelease">false</S>
@@ -153,7 +153,7 @@
           <S N="CompanyName">Community</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\Wednesday\Documents\PowerShell\Modules\Terminal-Icons\0.10.0</S>
+      <S N="InstalledLocation">C:\Users\mino29\Documents\PowerShell\Modules\Terminal-Icons\0.10.0</S>
     </MS>
   </Obj>
 </Objs>
