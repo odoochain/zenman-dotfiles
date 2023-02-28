@@ -275,13 +275,13 @@ Return
 ; 启动或切换AriaNgGui
 launchOrSwitchAriaNgGui()
 {
-if WinExist("ahk_exe AriaNgGUI.exe")
+if WinExist("ahk_exe AriaNg Native.exe")
 {
-WinActivateBottom, ahk_exe AriaNgGUI.exe
+WinActivateBottom, ahk_exe AriaNg Native.exe
 }
 Else
 {
- Run "C:\Users\%A_Username%\scoop\apps\aria-ng-gui\current\AriaNgGUI.exe"
+ Run "C:\Users\%A_Username%\scoop\apps\ariang\current\AriaNg Native.exe"
 }
 Return
 }
