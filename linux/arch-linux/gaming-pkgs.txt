@@ -2,3 +2,4 @@ ttf-liberation
 steam
 proton
 flatpak
+itch-bin

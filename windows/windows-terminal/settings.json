@@ -4,20 +4,28 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
         },
         {
             "command": 
@@ -29,8 +37,8 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": "unbound",
-            "keys": "alt+space"
+            "command": "closePane",
+            "keys": "ctrl+w"
         }
     ],
     "copyFormatting": "none",
@@ -45,7 +53,7 @@
             "font": 
             {
                 "face": "Hack NF",
-                "size": 11
+                "size": 11.0
             },
             "opacity": 100,
             "scrollbarState": "hidden",
@@ -102,6 +110,18 @@
                 "name": "git-bash",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
+            },
+            {
+                "guid": "{39a0170e-5975-590d-b6b7-0e117cfd9383}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a89b77f0-072e-524f-8c96-9aa05a5118f2}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -384,6 +404,7 @@
             "yellow": "#EBCB8B"
         }
     ],
+    "themes": [],
     "useAcrylicInTabRow": true,
     "windowingBehavior": "useAnyExisting"
 }

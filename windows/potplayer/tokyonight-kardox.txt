@@ -1,8 +1,20 @@
 HSB: color theme
-sat: 63
+sat: 63/0
 hue: 168
 
 RGB color theme
-Red: -17 
-Green: -19
-Blue: -11
+Red: -5 
+Green: -5
+Blue: 4
+
+
+osd message font color:
+subtitle font color:
+Red: 180
+Green: 180
+Blue: 255
+
+grey-ish color
+
+(dark muted color)
+(macabre)
