@@ -13,7 +13,7 @@ alias cc="clear"
 alias :q="exit"
 
 alias g="git"
-alias ne="neofetch"
+alias ne="fastfetch"
 alias pf="pfetch"
 
 alias lv="lvim"
