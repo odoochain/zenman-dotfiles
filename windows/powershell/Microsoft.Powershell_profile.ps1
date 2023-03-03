@@ -668,7 +668,7 @@ function flatten {
         [Parameter(Mandatory=$false)]
         [string]$Target = (Get-Location).Path
         )
-    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".zip", ".rar", ".idx", ".sub", ".png", ".jpg")
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub")
     $doc_ext = @(".pdf", ".zip", ".rar", ".docx")
