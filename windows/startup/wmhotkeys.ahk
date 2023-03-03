@@ -353,7 +353,9 @@ Return
 launchOrSwitchToEdge()
 Return
 
+
 ;启动或切换Spotify
+/*
 launchOrSwitchToSpotify()
 {
 if WinExist("ahk_exe Spotify.exe")
@@ -366,9 +368,27 @@ Else
 }
 Return
 }
-
 <#t::
 launchOrSwitchToSpotify()
+Return
+*/
+
+;启动或切换listen1
+launchOrSwitchToListen1()
+{
+if WinExist("ahk_exe Listen1.exe")
+{
+WinActivateBottom, ahk_exe Listen1.exe
+}
+Else
+{
+ Run "C:\Users\%A_Username%\scoop\apps\listen1desktop\current\Listen1.exe"
+}
+Return
+}
+<#t::
+
+launchOrSwitchToListen1()
 Return
 
 

@@ -592,11 +592,11 @@ $Env:KOMOREBI_CONFIG_HOME = '$HOME\.config\komorebi'
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # -------------------------------   Set lunarvim START    -------------------------------
-<#
+#
 # auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
-
-#$lvimPath = "$HOME\.local\bin\lvim.ps1"
+<#
+$lvimPath = "$HOME\.local\bin\lvim.ps1"
 if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
