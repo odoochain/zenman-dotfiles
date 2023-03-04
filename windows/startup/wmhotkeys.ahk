@@ -391,6 +391,20 @@ Return
 launchOrSwitchToListen1()
 Return
 
+;Still a work in progress
+;启动或切换spotify(using edge)
+launchOrSwitchToSpotifyPWA()
+{
+if WinExist("ahk_exe Listen1.exe")
+{
+WinActivateBottom, ahk_exe Listen1.exe
+}
+Else
+{
+Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=pjibgclleladliembfgfagdaldikeohf --app-url=https://open.spotify.com/?utm_source=pwa_install --app-launch-source=4"
+}
+Return
+}
 
 ;启动或切换Potplayer
 launchOrSwitchToPotplayer()
