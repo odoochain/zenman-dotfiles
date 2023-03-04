@@ -664,17 +664,93 @@ function flatten {
         .NOTES
         THis currently overwrites and deletes files with the same name
         #>
-    Param(
+    Param
+    (
         [Parameter(Mandatory=$false)]
-        [string]$Target = (Get-Location).Path
-        )
+        [string]$Target = (Get-Location).Path,
+        [Parameter(Mandatory=$true)]
+        [string]$Filter
+    )
+        
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
-    $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg")
-    $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub")
+    $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg", ".psd", ".xcf")
+    $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
     $doc_ext = @(".pdf", ".zip", ".rar", ".docx")
+    $audio_ext = @(".mp3", ".m4a", ".flac")
+
+    if ($Filter -eq "Image") 
+    {
+    $opt_ext = $img_ext
+    }
+    elseif ($Filter -eq "Video") 
+    {
+    $opt_ext = $video_ext
+    }
+    elseif ($Filter -eq "Document") 
+    {
+    $opt_ext = $doc_ext
+    }
+    elseif ($Filter -eq "Audio") 
+    {
+    $opt_ext = $audio_ext
+    }
+    else
+    {
+    break
+    }
+
+<#
+    Write-host @"
+    What type of files do you want to keep:
+    1-videos
+    2-images
+    3-documents
+    4-compressed
+    5-programs
+    q-quit
+    "@
+#>
+
+<#
+    $answer = Read-Host "Choose a number"
+    if($answer -eq 1)
+    {
+        echo "You chose number 1"
+    }
+    elseif($answer -eq 2)
+    {
+        #echo "You chose number $img_ext"
+        #$img_count = (gci -s -path $source_dir | ?{$_.extension -in $img_ext}).count 
+        echo "$img_count image(s) in total."
+    }
+    elseif($answer -eq 3)
+    {
+        echo "You chose number 3"
+    }
+    elseif($answer -eq 4)
+    {
+        echo "You chose number 4"
+    }
+    elseif($answer -eq 5)
+    {
+        echo "You chose number 5"
+    }
+    elseif($answer -eq "q")
+    {
+        echo "You chose to quit"
+    }
+    elseif ([string]::IsNullorWhitespace($answer))
+    {
+        echo "You chose nothing"
+    }
+    else
+    {
+        echo "invalid option"
+    }
+#>
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
-    Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
+    Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
           if((gci $_.FullName) -eq $null){
