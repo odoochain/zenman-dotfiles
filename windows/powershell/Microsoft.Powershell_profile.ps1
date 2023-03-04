@@ -699,57 +699,6 @@ function flatten {
     break
     }
 
-<#
-    Write-host @"
-    What type of files do you want to keep:
-    1-videos
-    2-images
-    3-documents
-    4-compressed
-    5-programs
-    q-quit
-    "@
-#>
-
-<#
-    $answer = Read-Host "Choose a number"
-    if($answer -eq 1)
-    {
-        echo "You chose number 1"
-    }
-    elseif($answer -eq 2)
-    {
-        #echo "You chose number $img_ext"
-        #$img_count = (gci -s -path $source_dir | ?{$_.extension -in $img_ext}).count 
-        echo "$img_count image(s) in total."
-    }
-    elseif($answer -eq 3)
-    {
-        echo "You chose number 3"
-    }
-    elseif($answer -eq 4)
-    {
-        echo "You chose number 4"
-    }
-    elseif($answer -eq 5)
-    {
-        echo "You chose number 5"
-    }
-    elseif($answer -eq "q")
-    {
-        echo "You chose to quit"
-    }
-    elseif ([string]::IsNullorWhitespace($answer))
-    {
-        echo "You chose nothing"
-    }
-    else
-    {
-        echo "invalid option"
-    }
-#>
-    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
-    #Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
     Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
@@ -764,7 +713,6 @@ function flatten {
        }
     #This delete all files less than 200MB
     gci | ?{$_.Extension -in ".ts", ".mp4", ".flv", ".avi"} | ?{$_.Length -lt 200MB} | rm
-    # Get-ChildItem -Path $Target -Recurse | Where-Object { $_.Extension -in $video_ext } 
        <#
        .NOTES
        This delete all files less than 70MB
@@ -773,17 +721,17 @@ function flatten {
           $_.FullName | Remove-Item -Force
        }
        #>
+    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
+    #This move each file to the top parent folder
     }
     # delete files except for the included extensions
-    # Get-ChildItem -Path $Target -Recurse | Where-Object { $exclude_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
-    # Get-ChildItem -Path $Target -Recurse -Exclude *.mp4, *.mkv | Remove-Item -Force
 }
 
 <#
 -filter
  image leave only images files
  video leave only video files
-
+ document leave only document files
 #>
 
 # ultimate flatten
