@@ -699,6 +699,8 @@ function flatten {
     break
     }
 
+    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
+    #This move each file to the top parent folder
     Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
@@ -721,8 +723,6 @@ function flatten {
           $_.FullName | Remove-Item -Force
        }
        #>
-    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
-    #This move each file to the top parent folder
     }
     # delete files except for the included extensions
 }
