@@ -677,6 +677,7 @@ function flatten {
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
     $doc_ext = @(".pdf", ".zip", ".rar", ".docx")
     $audio_ext = @(".mp3", ".m4a", ".flac")
+    $app_ext = @(".exe", ".msi", ".iso")
 
     if ($Filter -eq "Image") 
     {
@@ -702,6 +703,7 @@ function flatten {
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #This move each file to the top parent folder
     Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
+    #This delete all empty files and folders 
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
           if((gci $_.FullName) -eq $null){
@@ -713,8 +715,8 @@ function flatten {
           Write-Output "Removing Empty File $($_.FullName)"
           $_.FullName | Remove-Item -Force
        }
-    #This delete all files less than 200MB
-    gci | ?{$_.Extension -in ".ts", ".mp4", ".flv", ".avi"} | ?{$_.Length -lt 200MB} | rm
+    #This delete all video files less than 200MB
+    gci | ?{$_.Extension -in $video_ext} | ?{$_.Length -lt 200MB} | rm
        <#
        .NOTES
        This delete all files less than 70MB
@@ -724,7 +726,6 @@ function flatten {
        }
        #>
     }
-    # delete files except for the included extensions
 }
 
 <#

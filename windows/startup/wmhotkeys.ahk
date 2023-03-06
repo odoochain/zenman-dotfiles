@@ -353,6 +353,26 @@ Return
 launchOrSwitchToEdge()
 Return
 
+;----------------- world wide web (work in progress)---------------------------
+/*
+launchOrSwitchToClash()
+{
+if WinExist("ahk_exe ClashWeb.exe")
+{
+launchOrSwitchToEdge()
+}
+Else
+{
+ Run "C:\Users\%A_Username%\scoop\apps\clashweb\current\ClashWeb.exe"
+}
+Return
+}
+
+<#b::
+launchOrSwitchToClash()
+Return
+*/
+
 
 ;启动或切换Spotify
 launchOrSwitchToSpotify()
