@@ -695,6 +695,10 @@ function flatten {
     {
     $opt_ext = $audio_ext
     }
+    elseif ($Filter -eq "App") 
+    {
+    $opt_ext = $app_ext
+    }
     else
     {
     break
