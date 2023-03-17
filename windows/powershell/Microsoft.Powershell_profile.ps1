@@ -719,6 +719,7 @@ function flatten {
        }
     #This delete all video files less than 200MB
     #gci | ?{$_.Extension -in $video_ext} | ?{$_.Length -lt 200MB} | rm
+    #gci | ?{$_.Extension -in $video_ext} | ?{$_.Length -lt 250MB} | rm
        <#
        .NOTES
        This delete all files less than 70MB
