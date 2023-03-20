@@ -55,3 +55,4 @@ scoop bucket add portablesoft 'https://github.com/shenbo/portablesoft'
 scoop bucket list
 
 # install preloaded list
+# scoop import importable_packages.json
