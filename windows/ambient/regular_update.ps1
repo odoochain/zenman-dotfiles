@@ -4,6 +4,6 @@ for ($i=1; $i -le $end; $i++)
     {
     Write-Host "$i out of $end try" -ForegroundColor Blue -BackgroundColor DarkGray
     scoop update --all
-    scoop cache rm *; scoop cleanup *
-    winget upgrade --all --include-unknown
+    # scoop cache rm *; scoop cleanup *
+    # winget upgrade --all --include-unknown
     }
