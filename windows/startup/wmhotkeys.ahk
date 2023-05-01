@@ -121,6 +121,7 @@ Return
 launchOrSwitchDownloads()
 Return
 
+/*
 ; 启动或切换到playnite
 launchOrSwitchPlaynite()
 {
@@ -143,6 +144,7 @@ Return
 #g::
 launchOrSwitchPlaynite()
 Return
+*/
 
 ;窗口最小化
 
@@ -222,6 +224,26 @@ Return
 ; win+j
 #j::launchOrSwitchQalc()
 Return
+
+
+; 启动或切换sumatrapdf
+launchOrSwitchSumatra()
+{
+if WinExist("ahk_exe SumatraPDF.exe")
+{
+WinActivateBottom, ahk_exe SumatraPDF.exe
+}
+Else
+{
+Run "C:\Users\%A_UserName%\scoop\apps\sumatrapdf\current\sumatrapdf"
+}
+Return
+}
+
+; win+g
+#g::launchOrSwitchSumatra()
+Return
+
 
 
 ; 启动或切换Dict
@@ -412,6 +434,7 @@ Return
 launchOrSwitchToListen1()
 Return
 */
+
 
 ;启动或切换Potplayer
 launchOrSwitchToPotplayer()
