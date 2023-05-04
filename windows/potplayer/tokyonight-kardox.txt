@@ -18,3 +18,25 @@ grey-ish color
 
 (dark muted color)
 (macabre)
+
+
+Custom shortcuts:
+
+D -> fast-forward 5s
+A -> fast-backward 5s
+
+W -> fast-forward 1min
+S -> fast-backward 1min
+
+Q -> do smth
+E -> do smth
+Space -> do smth
+
+F -> do smth
+
+R -> do smth
+6 -> do smth
+
+V -> do smth
+X -> do smth
+B -> do smth

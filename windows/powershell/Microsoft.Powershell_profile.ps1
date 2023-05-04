@@ -673,7 +673,7 @@ function flatten {
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg", ".psd", ".xcf")
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
-    $doc_ext = @(".pdf", ".zip", ".rar", ".docx")
+    $doc_ext = @(".pdf", ".zip", ".rar", ".docx", ".epub", ".mobi", ".cbr", ".cbz", ".azw3")
     $audio_ext = @(".mp3", ".m4a", ".flac")
     $app_ext = @(".exe", ".msi", ".iso")
 
