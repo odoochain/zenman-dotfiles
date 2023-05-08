@@ -21,7 +21,7 @@
 		RGB(229,233,240)
 	</CaptionTextColor>
 	<ListBoxOddRowsBG>
-		RGB(22,27,38)
+		RGB(26,27,38)
 	</ListBoxOddRowsBG>
 	<ListBoxEvenRowsBG>
 		RGB(22,22,30)
@@ -33,10 +33,10 @@
 		RGB(229,233,240)
 	</ListBoxEvenRowsText>
 	<ListBoxSelectedBG>
-		RGB(0,255,210)
+		RGB(147,184,231)
 	</ListBoxSelectedBG>
 	<ListBoxSelectedNoFocusBG>
-		RGB(0,255,210)
+		RGB(30,32,46)
 	</ListBoxSelectedNoFocusBG>
 	<ListBoxSelectedText>
 		RGB(22,22,30)

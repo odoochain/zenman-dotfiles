@@ -18,3 +18,43 @@ grey-ish color
 
 (dark muted color)
 (macabre)
+
+
+Custom shortcuts:
+
+Disable default hotkeys
+
+*Playback
+D -> fast-forward 5s
+A -> fast-backward 5s
+
+W -> fast-forward 1min
+S -> fast-backward 1min
+
+Q -> previous item
+E -> next item
+Space -> play/pause
+
+F -> full screen/windowed
+
+R -> cycle repeat
+5 -> cycle shuffle
+0 -> jump to starting point
+
+**Playlist
+X -> delete current item
+
+*Subtitles
+V -> cycle subtitles
+B -> cycle audio streams
+
+*Audio
+M -> mute/unmute
+P -> toggle/playlist
+
+
+Must-have settings:
+
+only one instance
+play same files types in the directory
+Skip error and play the next item
