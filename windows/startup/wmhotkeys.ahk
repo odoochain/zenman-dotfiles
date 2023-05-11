@@ -231,10 +231,12 @@ launchOrSwitchSumatra()
 {
 if WinExist("ahk_exe SumatraPDF.exe")
 {
+WinMinimizeAll
 WinActivateBottom, ahk_exe SumatraPDF.exe
 }
 Else
 {
+WinMinimizeAll
 Run "C:\Users\%A_UserName%\scoop\apps\sumatrapdf\current\sumatrapdf"
 }
 Return
@@ -298,16 +300,20 @@ Return
 ; 启动或切换AriaNgGui
 launchOrSwitchAriaNgGui()
 {
-if WinExist("ahk_exe AriaNg Native.exe")
-{
-WinActivateBottom, ahk_exe AriaNg Native.exe
+Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
 }
-Else
-{
- Run "C:\Users\%A_Username%\scoop\apps\ariang\current\AriaNg Native.exe"
-}
-Return
-}
+
+;{
+;;if WinExist("ahk_exe AriaNg Native.exe")
+;{
+;WinActivateBottom, ahk_exe AriaNg Native.exe
+;}
+;Else
+;{
+;; Run "C:\Users\%A_Username%\scoop\apps\ariang\current\AriaNg Native.exe"
+;}
+;Return
+;}
 
 ; win+o
 #o::launchOrSwitchAriaNgGui()

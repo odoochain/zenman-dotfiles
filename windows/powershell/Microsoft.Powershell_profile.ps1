@@ -616,6 +616,10 @@ function potplayer {
         # 默认路径：当前工作文件夹
         $Path = (Get-Location).Path
     )
+    # Minimize all windows
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
+    # Open video files using potplayer
     & "$HOME\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
 }
 Set-Alias -Name pot -Value potplayer
@@ -630,6 +634,8 @@ function jpegview {
         # 默认路径：当前工作文件夹
         $Path = (Get-Location).Path
     )
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
     & "$HOME\scoop\apps\jpegview\current\JPEGView.exe" $Path
 }
 Set-Alias -Name feh -Value jpegview
