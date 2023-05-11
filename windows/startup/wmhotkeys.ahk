@@ -299,8 +299,21 @@ Return
 
 ; 启动或切换AriaNgGui
 launchOrSwitchAriaNgGui()
+;{
+;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;}
+
+{
+SetTitleMatchMode RegEx
+if WinExist("^Download ahk_exe msedge.exe")
+{
+WinActivate
+}
+Else
 {
 Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+}
+Return
 }
 
 ;{
