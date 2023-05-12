@@ -304,6 +304,7 @@ launchOrSwitchAriaNgGui()
 ;}
 
 {
+WinMinimizeAll
 SetTitleMatchMode RegEx
 if WinExist("^Download ahk_exe msedge.exe")
 {
