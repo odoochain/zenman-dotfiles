@@ -41,6 +41,29 @@ Return
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
 <#z::Send {Volume_mute} ; with gui prompt
 
+;Persistent
+
+;toggleVolumeLevel()
+;{
+;; Get the current volume and mute state
+;CurrentVolume = SoundGet, Master
+;MuteState = SoundGetEx, Master, MUTE
+;
+;; If the volume is not 30 or muted
+;If (CurrentVolume != 30) || (MuteState = 1)
+;{
+    ;; Set the volume to 30 and unmute it
+    ;SoundSet, Master, 30
+    ;SoundSetEx, Master, 0, MUTE
+;}
+;Return
+;}
+;
+;<#z::
+;toggleVolumeLevel()
+;Return
+
+
 toggleDropPoint()
 {
 if WinExist("ahk_exe DropPoint.exe")
