@@ -54,5 +54,7 @@ scoop bucket add portablesoft 'https://github.com/shenbo/portablesoft'
 
 scoop bucket list
 
+# improve
+scoop install scoop-search scoop-completion
 # install preloaded list
 # scoop import importable_packages.json
