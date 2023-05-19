@@ -52,7 +52,7 @@
             "colorScheme": "TokyoNight",
             "font": 
             {
-                "face": "Hack NF",
+                "face": "Hack Nerd Font Propo",
                 "size": 11.0
             },
             "opacity": 100,
@@ -110,18 +110,6 @@
                 "name": "git-bash",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
-            },
-            {
-                "guid": "{39a0170e-5975-590d-b6b7-0e117cfd9383}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{a89b77f0-072e-524f-8c96-9aa05a5118f2}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
