@@ -362,10 +362,12 @@ launchOrSwitchToWt()
 {
 if WinExist("ahk_exe WindowsTerminal.exe")
 {
+WinMinimizeAll
 WinActivateBottom, ahk_exe WindowsTerminal.exe
 }
 Else
 {
+WinMinimizeAll
 Run, wt.exe
 }
 Return
