@@ -763,6 +763,8 @@ function rename {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
     & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
