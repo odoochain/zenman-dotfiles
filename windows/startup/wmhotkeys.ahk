@@ -521,29 +521,52 @@ Return
 
 ;启动或重启fancywm
 
-launchOrRelaunchFancywm()
-{
-if WinExist("ahk_exe FancyWM.exe")
-{
-process, close, FancyWM.exe ; Use the window found by WinExist.
-Sleep 1000
-Run, fancywm.exe, , hide
-}
-else
-{
-Run, fancywm.exe, , hide
-}
-Return
-}
-
-^+r::
-launchOrRelaunchFancywm()
-return
+;launchOrRelaunchFancywm()
+;{
+;if WinExist("ahk_exe FancyWM.exe")
+;{
+;process, close, FancyWM.exe ; Use the window found by WinExist.
+;Sleep 1000
+;Run, fancywm.exe, , hide
+;}
+;else
+;{
+;Run, fancywm.exe, , hide
+;}
+;Return
+;}
+;
+;^+r::
+;launchOrRelaunchFancywm()
+;return
 
 ;<#+r::
 ;Run, fancywm.exe, , hide
 ;return
 ; vim way of handling windows
+
+
+;启动或重启komorebi
+
+launchOrRelaunchkomorebi()
+{
+if WinExist("ahk_exe komorebi.exe")
+{
+Run, komorebic.exe "stop", , hide
+process, close, komorebi.exe ; Use the window found by WinExist.
+;Run, komorebic.exe "start", , hide
+}
+else
+{
+Run, komorebic.exe "start", , hide
+}
+Return
+}
+
+^+r::
+launchOrRelaunchkomorebi()
+return
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;virtual desktop switcher ;;;;;;;;;;;;;;;;;;;;;;;;
