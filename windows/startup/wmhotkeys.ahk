@@ -441,7 +441,7 @@ launchOrSwitchToClash()
 Return
 */
 
-
+/*
 ;启动或切换Spotify
 launchOrSwitchToSpotify()
 {
@@ -459,8 +459,8 @@ Return
 <#t::
 launchOrSwitchToSpotify()
 Return
+*/
 
-/*
 ;启动或切换listen1
 launchOrSwitchToListen1()
 {
@@ -478,7 +478,7 @@ Return
 
 launchOrSwitchToListen1()
 Return
-*/
+
 
 
 ;启动或切换Potplayer
