@@ -10,11 +10,11 @@ for ($i=1; $i -le $end; $i++)
 #>
 
 
-function Loop($count = 5) {
+function Loop($count = 10) {
     for ($i = 1; $i -le $count; $i++) {
         Write-Host "$i out of $count try" -ForegroundColor Blue -BackgroundColor DarkGray
         scoop update --all
-        winget upgrade --all --include-unknown
+        # winget upgrade --all --include-unknown
     }
 }
 

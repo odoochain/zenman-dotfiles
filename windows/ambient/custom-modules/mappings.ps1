@@ -140,8 +140,14 @@ Write-host "~\.p10k.zsh has been linked to .dotfiles\windows\zsh\.p10k.zsh"
 
 # komorebi
 # Remove-Item -recurse -force "$env:USERPROFILE\.config\komorebi"
-#New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
-#Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
+# New-Item -Path "$env:USERPROFILE\.config\komorebi" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi" -Force
+# Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
+
+Remove-Item -force "$env:USERPROFILE\komorebi.ps1"
+Remove-Item -force "$env:USERPROFILE\komorebi.generated.ps1"
+New-Item -Path "$env:USERPROFILE\komorebi.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi.ps1" -Force
+New-Item -Path "$env:USERPROFILE\komorebi.generated.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\komorebi.generated.ps1" -Force
+Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
 
 # FancyWM
 
