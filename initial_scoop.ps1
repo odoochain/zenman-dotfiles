@@ -1,4 +1,14 @@
+# This make sure you run as Administrator
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
+{
+  $arguments = "& '" +$myinvocation.mycommand.definition + "'"
+  Start-Process powershell -Verb runAs -ArgumentList $arguments
+  Break
+}
+
+# Make sure this can install PS modules
 Set-ExecutionPolicy RemoteSigned
+#Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 # Command to create a PowerShell profile
 New-Item -path $profile -type file -force
@@ -6,8 +16,11 @@ New-Item -path $profile -type file -force
 # Install windows terminal
 winget install microsoft.windowsterminal
 
+# 执行安装命令 (admin)
+iex "& {$(iwr -useb scoop.201704.xyz)} -RunAsAdmin"
+
 # 执行安装命令 (non admin)
-iwr -useb scoop.201704.xyz | iex
+# iwr -useb scoop.201704.xyz | iex
 # iwr -useb https://gitee.com/RubyKids/scoop-cn/raw/master/install.ps1 | iex
 
 # 更换scoop的repo地址
@@ -52,9 +65,8 @@ scoop bucket add jetbrains
 
 scoop bucket add scoopet "https://github.com/ivaquero/scoopet.git"
 scoop bucket add portablesoft 'https://github.com/shenbo/portablesoft'
-
-scoop bucket list
 #>
+
 # improve scoop usability
 scoop install scoop-search scoop-completion komorebi hack-nf
 # install preloaded list
