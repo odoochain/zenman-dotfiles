@@ -12,6 +12,13 @@
 
 Here are my dotfiles. There's no one line install, still working on it.
 
+Still a work in progress
+```
+
+git clone --recursive https://github.com/mino29/dotfiles $Env:USERPROFILE\.dotfiles
+
+```
+
 ## Common
 
 - neovim [Meovim](https://github.com/mino29/meovim)
