@@ -7,18 +7,12 @@ Red: -5
 Green: -5
 Blue: 4
 
-
 osd message font color:
 subtitle font color:
+(grey-ish color)
 Red: 180
 Green: 180
 Blue: 255
-
-grey-ish color
-
-(dark muted color)
-(macabre)
-
 
 Custom shortcuts:
 
@@ -36,6 +30,7 @@ E -> next item
 Space -> play/pause
 
 F -> full screen/windowed
+Enter -> full screen/windowed
 
 R -> cycle repeat
 5 -> cycle shuffle
@@ -52,9 +47,10 @@ B -> cycle audio streams
 M -> mute/unmute
 P -> toggle/playlist
 
-
 Must-have settings:
 
 only one instance
 play same files types in the directory
 Skip error and play the next item
+OSD messages color
+Subtitles color

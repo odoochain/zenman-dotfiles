@@ -27,7 +27,7 @@ scoop config SCOOP_REPO 'https://gitee.com/glsnames/scoop-installer'
 scoop update
 
 # must-have apps
-scoop install git aria2 dark scoop-search scoop-completion
+scoop install git aria2 dark
 
 # aria2
 scoop config aria2--enabled true
@@ -38,6 +38,7 @@ scoop bucket add main
 scoop bucket add apps "https://github.com/kkzzhizhou/scoop-apps"
 scoop bucket add im-select "https://github.com/daipeihust/im-select"
 
+<#
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add nightlies
@@ -53,8 +54,8 @@ scoop bucket add scoopet "https://github.com/ivaquero/scoopet.git"
 scoop bucket add portablesoft 'https://github.com/shenbo/portablesoft'
 
 scoop bucket list
-
-# improve
-scoop install scoop-search scoop-completion
+#>
+# improve scoop usability
+scoop install scoop-search scoop-completion komorebi hack-nf
 # install preloaded list
 # scoop import importable_packages.json
