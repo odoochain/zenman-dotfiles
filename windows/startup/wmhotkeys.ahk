@@ -555,7 +555,7 @@ if WinExist("ahk_exe komorebi.exe")
 Run, komorebic.exe "stop", , hide
 process, close, komorebi.exe ; Use the window found by WinExist.
 process, close, komorebic.exe ; Use the window found by WinExist.
-Sleep 2000
+Sleep 5000
 Run, komorebic.exe "start", , hide
 }
 else

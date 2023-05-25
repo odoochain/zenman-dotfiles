@@ -587,7 +587,7 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
-$Env:KOMOREBI_CONFIG_HOME = '$HOME\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
 
