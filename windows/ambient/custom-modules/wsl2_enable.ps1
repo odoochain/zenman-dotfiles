@@ -391,4 +391,4 @@ if ($rebootRequired) {
             Write-Host("Run 'wsl -d <distroname>' to start WSL Distro")
         }
     }
-} install a bunch of packages
+} #install a bunch of packages
