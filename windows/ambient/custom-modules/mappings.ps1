@@ -23,6 +23,10 @@ Write-host ".minttyrc has been linked to .dotfiles\windows\mintty\.minttyrc"
 New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\windows-terminal\settings.json" -Force
 Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
 
+# Window-Terminal-preview
+New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\windows-terminal\settings.json" -Force
+Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
+
 # windows powershell(5.1)
 New-Item -Path "$env:USERPROFILE\Documents\WindowsPowershell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\powershell" -Force
 Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\"
