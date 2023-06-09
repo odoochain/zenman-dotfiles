@@ -531,12 +531,12 @@ function Disable-Cfw {
 }
 
 function Reboot {
-    Disable-Cfw
+    #Disable-Cfw
     shutdown -r -t 0
 }
 
 function PowerOff {
-    Disable-Cfw
+    #Disable-Cfw
     shutdown -p
 }
 
