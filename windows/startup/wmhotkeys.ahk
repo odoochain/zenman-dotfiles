@@ -296,7 +296,8 @@ Return
 
 ; win+i  to open sound mixer setting
 #i::
-Run ms-settings:apps-volume
+;Run ms-settings:apps-volume
+Run ms-settings:bluetooth
 return
 
 
