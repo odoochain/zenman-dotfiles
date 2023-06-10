@@ -115,6 +115,11 @@ komorebic.exe identify-tray-application exe "EpicGamesLauncher.exe"
 # Flow Launcher
 komorebic.exe identify-border-overflow-application exe "Flow.Launcher.exe"
 
+
+# Geek
+komorebic.exe identify-border-overflow-application exe "Geek Uninstaller.exe"
+komorebic.exe manage-rule exe "Geek Uninstaller.exe"
+
 # GOG Galaxy
 komorebic.exe identify-border-overflow-application exe "GalaxyClient.exe"
 komorebic.exe manage-rule exe "GalaxyClient.exe"
@@ -148,6 +153,12 @@ komorebic.exe identify-object-name-change-application exe "idea64.exe"
 komorebic.exe identify-tray-application exe "idea64.exe"
 # Targets JetBrains IDE popups and floating windows
 komorebic.exe float-rule class "SunAwtDialog"
+
+# Internet Download Manger (IDM)
+komorebic.exe identify-border-overflow-application exe "Internet Download Maneger.exe"
+komorebic.exe manage-rule exe "Internet Download Maneger.exe"
+komorebic.exe manage-rule exe "IDMan.exe"
+
 
 # Itch.io
 komorebic.exe identify-border-overflow-application exe "itch.exe"
