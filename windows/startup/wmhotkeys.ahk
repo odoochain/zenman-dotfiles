@@ -219,7 +219,7 @@ WinActivateBottom, ahk_class TdxW_MainFrame_Class
 Else
 {
 Sleep 1000
-Run "C:\zd_zsone\TdxW.exe"
+Run "C:\Program Files (x86)\zd_zsone\TdxW.exe"
 ;Run "C:\new_tdx\tdxw.exe"
 }
 Return
