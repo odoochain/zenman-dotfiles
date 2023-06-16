@@ -325,21 +325,43 @@ Return
 launchOrSwitchAriaNgGui()
 ;{
 ;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, firefoxe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading"
 ;}
 
+
+; 用Edge
+
+;{
+;WinMinimizeAll
+;SetTitleMatchMode RegEx
+;if WinExist("^Download ahk_exe msedge.exe")
+;{
+;WinActivate
+;}
+;Else
+;{
+;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;}
+;Return
+;}
+
+
+; 用Firefox
 {
 WinMinimizeAll
 SetTitleMatchMode RegEx
-if WinExist("^Download ahk_exe msedge.exe")
+if WinExist("^Download ahk_exe firefox.exe")
 {
 WinActivate
 }
 Else
 {
-Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
+Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
 }
 Return
 }
+
 
 ;{
 ;;if WinExist("ahk_exe AriaNg Native.exe")
@@ -405,22 +427,44 @@ Return
 
 ;----------------------- microsoft edge ---------------------------
 ;启动或切换Edge
-launchOrSwitchToEdge()
+;launchOrSwitchToEdge()
+;{
+;if WinExist("ahk_exe msedge.exe")
+;{
+;WinActivateBottom, ahk_exe msedge.exe
+;}
+;Else
+;{
+ ;Run, msedge
+;}
+;Return
+;}
+;
+;<#b::
+;launchOrSwitchToEdge()
+;Return
+
+
+;----------------------- Mozilla Firefox ---------------------------
+;启动或切换Edge
+launchOrSwitchToFirefox()
 {
-if WinExist("ahk_exe msedge.exe")
+if WinExist("ahk_exe firefox.exe")
 {
-WinActivateBottom, ahk_exe msedge.exe
+WinActivateBottom, ahk_exe firefox.exe
 }
 Else
 {
- Run, msedge
+; Run, firefox.exe, , hide
+ Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe"
 }
 Return
 }
 
 <#b::
-launchOrSwitchToEdge()
+launchOrSwitchToFirefox()
 Return
+
 
 ;----------------- world wide web (work in progress)---------------------------
 /*
