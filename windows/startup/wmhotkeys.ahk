@@ -330,7 +330,6 @@ launchOrSwitchAriaNgGui()
 
 
 ; 用Edge
-
 ;{
 ;WinMinimizeAll
 ;SetTitleMatchMode RegEx
@@ -346,34 +345,51 @@ launchOrSwitchAriaNgGui()
 ;}
 
 
-; 用Firefox
+; 用Chrome
 {
 WinMinimizeAll
 SetTitleMatchMode RegEx
-if WinExist("^Download ahk_exe firefox.exe")
+if WinExist("^Download ahk_exe chrome.exe")
 {
 WinActivate
 }
 Else
 {
-;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
-Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
+;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+Run, "C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
 
-
+; 用Firefox
 ;{
-;;if WinExist("ahk_exe AriaNg Native.exe")
+;WinMinimizeAll
+;SetTitleMatchMode RegEx
+;if WinExist("^Download ahk_exe firefox.exe")
 ;{
-;WinActivateBottom, ahk_exe AriaNg Native.exe
+;WinActivate
 ;}
 ;Else
 ;{
-;; Run "C:\Users\%A_Username%\scoop\apps\ariang\current\AriaNg Native.exe"
+;;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
+;Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
 ;}
 ;Return
 ;}
+
+/*
+{
+if WinExist("ahk_exe Motrix.exe")
+{
+WinActivateBottom, ahk_exe Motrix.exe
+}
+Else
+{
+Run "C:\Users\%A_Username%\scoop\apps\motrix\current\motrix.exe"
+}
+Return
+}
+*/
 
 ; win+o
 #o::launchOrSwitchAriaNgGui()
@@ -421,9 +437,9 @@ Else
 Return
 }
 
-;<#/::
-;launchOrSwitchToChrome()
-;Return
+<#b::
+launchOrSwitchToChrome()
+Return
 
 ;----------------------- microsoft edge ---------------------------
 ;启动或切换Edge
@@ -447,6 +463,8 @@ Return
 
 ;----------------------- Mozilla Firefox ---------------------------
 ;启动或切换Edge
+
+/*
 launchOrSwitchToFirefox()
 {
 if WinExist("ahk_exe firefox.exe")
@@ -464,7 +482,7 @@ Return
 <#b::
 launchOrSwitchToFirefox()
 Return
-
+*/
 
 ;----------------- world wide web (work in progress)---------------------------
 /*
