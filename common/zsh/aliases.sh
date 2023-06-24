@@ -5,9 +5,10 @@ alias cls="clear"
 # alias vim="nvim"
 
 
-alias v="vim"
-alias vi="vim"
-alias vim="vim"
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+alias vim="nvim"
 alias py="python"
 
 alias ls="lsd -ra"
