@@ -35,8 +35,8 @@ DOSKEY ls=lsd -a
 DOSKEY clear=cls
 DOSKEY cc=cls
 DOSKEY cs=cowsay $*
-DOSKEY ne=winfetch
-DOSKEY neofetch=winfetch
+DOSKEY ne=fastfetch
+DOSKEY neofetch=fastfetch
 DOSKEY open=explorer
 DOSKEY :q=exit
 

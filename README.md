@@ -12,6 +12,13 @@
 
 Here are my dotfiles. There's no one line install, still working on it.
 
+Still a work in progress
+```
+
+git clone --recursive https://github.com/mino29/dotfiles $Env:USERPROFILE\.dotfiles
+
+```
+
 ## Common
 
 - neovim [Meovim](https://github.com/mino29/meovim)
@@ -78,6 +85,7 @@ In the common folder are thoese programs configs that shared the same config fil
 - z.lua
 - bash
 - zsh on windows (without WSL2)
+- autohotkey (with autoreload enabled)
 
 </details>
 
@@ -129,6 +137,14 @@ sometimes use Arch for WSL2.
 [ ] useful programs that are outside of winget/choco/scoop
 [ ] automatically set accent color, wallpaper, lock screen
 [ ] remap capslock to escape
+
+
+## End Goal
+
+[ ] majority of keybinds can be found across platforms
+[ ] most application use the same color theme
+[ ] dynamic window tiling
+[ ] open terminal window instantly 
 
 ## Special Thanks
 

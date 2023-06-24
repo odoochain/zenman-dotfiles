@@ -1,0 +1,13 @@
+{
+    "[tokyo night]":{
+        "background color":["#16161E","R22 G22 B30"],
+        "secondary background color":["#414868","RGB"],
+        "title text color":["#3D59A1","RGB"],
+        "body text color":["#","RGB"],
+        "main text color":["#ffffff","RGB"],
+        "accent color":["#3D59A1","RGB"],
+        "warning color":["#e0af68","RGB"],
+        "error color":["#f7768e","RGB"]
+    },
+    "nord":{},
+}

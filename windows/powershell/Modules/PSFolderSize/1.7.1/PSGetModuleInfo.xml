@@ -1,0 +1,144 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSFolderSize</S>
+      <Version N="Version">1.7.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This module enables you to gather folder size information, and output the results easily in various ways. GitHub Repo: https://github.com/gngrninja/PSFolderSize</S>
+      <S N="Author">Mike Roberts</S>
+      <S N="CompanyName">gngrNinja</S>
+      <S N="Copyright">(c) 2020 Mike Roberts</S>
+      <DT N="PublishedDate">2020-10-10T22:25:06+08:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-11-29T14:24:54.0662786+08:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/gngrninja/PSFolderSize/blob/master/README.md</URI>
+      <URI N="ProjectUri">https://github.com/gngrninja/PSFolderSize/</URI>
+      <URI N="IconUri">https://static1.squarespace.com/static/5644323de4b07810c0b6db7b/t/5bcc1e9e419202a53790e662/1540103847317/PSFolderSize.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>files</S>
+          <S>folder</S>
+          <S>list</S>
+          <S>PSFolderSize</S>
+          <S>file</S>
+          <S>folders</S>
+          <S>size</S>
+          <S>report</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-FileReport</S>
+                <S>Get-FolderSize</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-FileReport</S>
+                <S>Get-FolderSize</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/gngrninja/PSFolderSize/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2020 Mike Roberts</S>
+          <S N="description">This module enables you to gather folder size information, and output the results easily in various ways. GitHub Repo: https://github.com/gngrninja/PSFolderSize</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/gngrninja/PSFolderSize/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">632774</S>
+          <S N="downloadCount">683600</S>
+          <S N="packageSize">14970</S>
+          <S N="published">10/10/2020 10:25:06 pm +08:00</S>
+          <S N="created">10/10/2020 10:25:06 pm +08:00</S>
+          <S N="lastUpdated">29/11/2022 6:21:07 am +08:00</S>
+          <S N="tags">files folder list PSFolderSize file folders size report PSModule PSFunction_Get-FileReport PSCommand_Get-FileReport PSFunction_Get-FolderSize PSCommand_Get-FolderSize PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-11-29T06:21:07Z</S>
+          <S N="NormalizedVersion">1.7.1</S>
+          <S N="Authors">Mike Roberts</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSFolderSize.nuspec|PSFolderSize.Format.ps1xml|PSFolderSize.psd1|PSFolderSize.psm1|en-US\PSFolderSize-help.xml|Functions\Private\Get-FolderList.ps1|Functions\Private\Get-RoboSize.ps1|Functions\Public\Get-FileReport.ps1|Functions\Public\Get-FolderSize.ps1</S>
+          <S N="GUID">36ced1e4-028a-4687-8a7c-7ad4a4ca1df6</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">Ginger Ninja</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\mino29\Documents\PowerShell\Modules\PSFolderSize\1.7.1</S>
+    </MS>
+  </Obj>
+</Objs>

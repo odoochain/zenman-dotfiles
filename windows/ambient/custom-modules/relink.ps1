@@ -4,8 +4,8 @@
 
 
 # This make sure you run as Administrator
-if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
-{  
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
+{
   $arguments = "& '" +$myinvocation.mycommand.definition + "'"
   Start-Process powershell -Verb runAs -ArgumentList $arguments
   Break
@@ -19,7 +19,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ################################################################################
-#####################  colorful console message 
+#####################  colorful console message
 ################################################################################
 
 function remindMsg ($word){
@@ -35,7 +35,7 @@ function successMsg ($word){
     }
 
 ################################################################################
-#####################  set environment/global variable  
+#####################  set environment/global variable
 ################################################################################
 
 $tempDir="$env:USERPROFILE\temp"
@@ -50,7 +50,7 @@ else {New-Item -Path $tempDir -ItemType Directory}
 remindMsg("Backup files goes --> $migrationDir")
 
 ################################################################################
-#####################   backup and relink 
+#####################   backup and relink
 ################################################################################
 
 function Link-to-Dotfiles ($x, $y){
@@ -79,10 +79,10 @@ else {
 
 # --------------------------->
 # SumatraPDf
-$SumatraPDFOGConfigPath="$env:LOCALAPPDATA\SumatraPDF\SumatraPDF-settings.txt"
-$dotSumatraPDFConfigPath="$env:USERPROFILE\.dotfiles\windows\SumatraPDF\SumatraPDF-settings.txt"
-
-Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
+#$SumatraPDFOGConfigPath="$env:LOCALAPPDATA\SumatraPDF\SumatraPDF-settings.txt"
+#$dotSumatraPDFConfigPath="$env:USERPROFILE\.dotfiles\windows\SumatraPDF\SumatraPDF-settings.txt"
+#
+#Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
 
 
 # --------------------------->
@@ -94,20 +94,29 @@ Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
 
 # --------------------------->
 # Ditto themes
-$DittoOGConfigPath="C:\Program Files\Ditto\Themes"
-$dotDittoConfigPath="$env:USERPROFILE\.dotfiles\windows\Ditto\Themes"
-
-Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath 
+#$DittoOGConfigPath="C:\Program Files\Ditto\Themes"
+#$dotDittoConfigPath="$env:USERPROFILE\.dotfiles\windows\Ditto\Themes"
+#
+#Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath
 
 # --------------------------->
 # Motrix settings
-$MotrixOGSysConfigPath="$env:APPDATA\Motrix\system.json"
-$dotMotrixSysConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\system.json"
+#$MotrixOGSysConfigPath="$env:APPDATA\Motrix\system.json"
+#$dotMotrixSysConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\system.json"
+#
+#Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath
+#
+#$MotrixOGUserConfigPath="$env:APPDATA\Motrix\user.json"
+#$dotMotrixUserConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\user.json"
+#
+#Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath
 
-Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath 
 
-$MotrixOGUserConfigPath="$env:APPDATA\Motrix\user.json"
-$dotMotrixUserConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\user.json"
+# Window-Terminal-preview
 
-Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath 
+$WindowsTerminalPreviewOGUserConfigPath="$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json"
+$dotWindowsTerminalPreviewOGUserConfigPath="$env:USERPROFILE\.dotfiles\windows\windows-terminal\settings.json"
+
+
+Link-to-Dotfiles $WindowsTerminalPreviewOGUserConfigPath $dotWindowsTerminalPreviewOGUserConfigPath
 

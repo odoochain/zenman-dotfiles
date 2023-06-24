@@ -1,8 +1,56 @@
 HSB: color theme
-sat: 63
+sat: 63/0
 hue: 168
 
 RGB color theme
-Red: -17 
-Green: -19
-Blue: -11
+Red: -5 
+Green: -5
+Blue: 4
+
+osd message font color:
+subtitle font color:
+(grey-ish color)
+Red: 180
+Green: 180
+Blue: 255
+
+Custom shortcuts:
+
+Disable default hotkeys
+
+*Playback
+D -> fast-forward 5s
+A -> fast-backward 5s
+
+W -> fast-forward 1min
+S -> fast-backward 1min
+
+Q -> previous item
+E -> next item
+Space -> play/pause
+
+F -> full screen/windowed
+Enter -> full screen/windowed
+
+R -> cycle repeat
+5 -> cycle shuffle
+0 -> jump to starting point
+
+**Playlist
+X -> delete current item
+
+*Subtitles
+V -> cycle subtitles
+B -> cycle audio streams
+
+*Audio
+M -> mute/unmute
+P -> toggle/playlist
+
+Must-have settings:
+
+only one instance
+play same files types in the directory
+Skip error and play the next item
+OSD messages color
+Subtitles color

@@ -1,3 +1,12 @@
+#------------------------------- Notes ----------------------------------------
+
+<#
+ * FileName: Microsoft.PowerShell_profile.ps1
+ * Author: Wu Zhongzheng
+ * Email: zhongzheng.wu@outlook.com
+ * Date: 2022, Sep. 9
+ * Copyright: No copyright. You can use this code for anything with no warranty.
+#>
 
 #------------------------------- Startup settings BEGIN -----------------------
 
@@ -19,25 +28,17 @@ Catch {
 }
 
 
+#------------------------------- Scoop settings -------------------------
+
+# To replace scoop built-in search
+Invoke-Expression (&scoop-search --hook)
 
 
-<#
- * FileName: Microsoft.PowerShell_profile.ps1
- * Author: Wu Zhongzheng
- * Email: zhongzheng.wu@outlook.com
- * Date: 2022, Sep. 9
- * Copyright: No copyright. You can use this code for anything with no warranty.
-#>
+#------------------------------- Setting to run R term -------------------------
 
-#-------------------------------   Set starship BEGIN    -------------------------------
+# to run rterm with just 'r', otherwise it would just run the last command
+#rm alias:\r
 
-<#
-$ENV:STARSHIP_CONFIG = "$HOME\.dotfiles\common\.starship\starship.toml"
-# $ENV:STARSHIP_DISTRO = " 者 x 💀 "
-Invoke-Expression (&starship init powershell)
-#>
-
-#-------------------------------   Set starship END    -------------------------------
 
 #------------------------------- Import Modules BEGIN -------------------------
 
@@ -59,7 +60,8 @@ Try {
     # else{
         # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
         # }
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -90,11 +92,6 @@ Try {
 Catch {
     Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser -Force # oh-my-posh 基础美化工具包
 }
-
-# 引入Zlocation (powerful cd)
-# full command-let is invoke-Zlocation, z for short
-# z c: will get you to c drive
-# Import-Module ZLocation
 
 
 # 引入PSWindowsUpdate
@@ -150,13 +147,10 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # 设置列表历史选项, F2切换
-set-psreadlineoption -PredictionViewStyle ListView
-# set-psreadlineoption -PredictionViewStyle InlineView
+#set-psreadlineoption -PredictionViewStyle ListView
+set-psreadlineoption -PredictionViewStyle InlineView
 
 #-------------------------------  Set Hot-keys END    -------------------------------
-
-
-
 
 
 #-------------------------------    Functions BEGIN   -------------------------------
@@ -170,6 +164,7 @@ function Update-Packages {
     Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
     conda update --all
 
+<#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
     # $a = pip list --outdated
@@ -179,7 +174,7 @@ function Update-Packages {
     # 	pip install -U $tmp
     # }
     pip freeze | % { $_.split('==')[0] } | % { pip install --upgrade $_ }
-
+#>
     # update TeX Live
     $CurrentYear = Get-Date -Format yyyy
     Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
@@ -221,9 +216,6 @@ function Update-Packages {
 #-------------------------------    Functions END     -------------------------------
 
 
-
-
-
 #-------------------------------   Set Alias BEGIN    -------------------------------
 # 1. 编译函数 make
 function MakeThings {
@@ -240,20 +232,29 @@ Set-Alias -Name os-update -Value Update-Packages
 
 # option-1
 # native to powershell
-<#
-function ListDirectory {
-     Write-Host("")
+
+function ListItemName {
+    Write-Host("")
  	(Get-ChildItem).Name
- 	Write-Host("")
+    Write-Host("")
 }
 
-Set-Alias -Name ls -Value ListDirectory -Option AllScope
-Set-Alias -Name ll -Value Get-ChildItem -Option AllScope
-#>
+function ShowAllItems {
+    Write-Host("")
+ 	Get-ChildItem -force
+    Write-Host("")
+}
+
+# if it's directory then grey, else it's just cyan
+
+Set-Alias -Name ls -Value ListItemName -Option AllScope
+Set-Alias -Name ll -Value ShowAllItems -Option AllScope
 
 # ----------------------------------------------------------------------------
 # option-2
 # below requires you to install lsd to work
+
+<#
 function ListItem {
     Write-Host("")
     lsd -a
@@ -275,6 +276,7 @@ function TreeView {
 Set-Alias -Name ls -Value ListItem -Option AllScope
 Set-Alias -Name ll -Value ListDirectory -Option AllScope
 Set-Alias -Name tree -Value TreeView -Option AllScope
+#>
 
 # ----------------------------------------------------------------------------
 
@@ -282,9 +284,9 @@ Set-Alias -Name g -Value git
 Set-Alias -Name grep -Value findstr
 Set-Alias -Name py -Value python
 
-# neofetch swag(but with winfetch)
-Set-Alias -Name neofetch -Value winfetch
-Set-Alias -Name ne -Value winfetch
+# neofetch swag(but with fastfetch)
+Set-Alias -Name neofetch -Value fastfetch
+Set-Alias -Name ne -Value fastfetch
 
 
 # auto ls after each cd, not replacing cd, but use cdd
@@ -312,6 +314,8 @@ function OpenCurrentFolder {
         # 默认路径：当前工作文件夹
         $Path = '.'
     )
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
     Invoke-Item $Path
 }
 Set-Alias -Name open -Value OpenCurrentFolder
@@ -334,9 +338,6 @@ Set-Alias -Name redis -Value redis-cli
 Set-Alias -Name cat -Value bat -Option AllScope # use bat whenever possible
 
 #-------------------------------    Set Alias END     -------------------------------
-
-
-
 
 
 #-------------------------------   Set Network BEGIN    -------------------------------
@@ -363,7 +364,6 @@ Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------   Set z.lua BEGIN    -------------------------------
 
 # Invoke-Expression (& { (lua $HOME/z.lua/z.lua --init powershell) -join "`n" })
-
 # Invoke-Expression (& { (lua $HOME/scoop/apps/current/z.lua --init powershell) -join "`n" })
 # Invoke-Expression (& { (lua $HOME/scoop/apps/1.8.15/z.lua --init powershell) -join "`n" })
 
@@ -531,15 +531,14 @@ function Disable-Cfw {
 }
 
 function Reboot {
-    Disable-Cfw
+    #Disable-Cfw
     shutdown -r -t 0
 }
 
 function PowerOff {
-    Disable-Cfw
+    #Disable-Cfw
     shutdown -p
 }
-
 
 
 # npm i -g empty-trash
@@ -588,16 +587,16 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
-$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\mino29\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
 
 # -------------------------------   Set lunarvim START    -------------------------------
-
+#
 # auto setup lunarvim
 # Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
-
-$lvimPath = "C:\Users\mino29\.local\bin\lvim.ps1"
+<#
+$lvimPath = "$HOME\.local\bin\lvim.ps1"
 if (Test-Path -Path $lvimPath)
 {
     Set-Alias lvim $lvimPath
@@ -607,5 +606,202 @@ if (Test-Path -Path $lvimPath)
     # Set-Alias vim $lvimPath
 }
 else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
+#>
 # -------------------------------   Set lunarvim END    -------------------------------
 
+
+function potplayer {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = (Get-Location).Path
+    )
+    # Minimize all windows
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
+    # Open video files using potplayer
+    & "$HOME\scoop\apps\potplayer\current\PotPlayer64.exe" $Path
+}
+Set-Alias -Name pot -Value potplayer
+Set-Alias -Name play -Value potplayer
+
+
+function jpegview {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：open C:\
+        # 默认路径：当前工作文件夹
+        $Path = (Get-Location).Path
+    )
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
+    & "$HOME\scoop\apps\jpegview\current\JPEGView.exe" $Path
+}
+Set-Alias -Name feh -Value jpegview
+
+
+function rmrf {
+     <#
+        .DESCRIPTION
+        Deletes the specified file or directory.
+        .PARAMETER target
+        Target file or directory to be deleted.
+        .NOTES
+        This is an equivalent command of "rm -rf" in Unix-like systems.
+        #>
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$Target
+    )
+    Remove-Item -Recurse -Force $Target
+}
+
+function flatten {
+
+     <#
+        .DESCRIPTION
+        Move all files in the subfolder(s) into parent folder
+        Deletes the specified file or directory.
+        .PARAMETER target
+        Target Directory to be flattened
+        .NOTES
+        THis currently overwrites and deletes files with the same name
+        #>
+    Param
+    (
+        [Parameter(Mandatory=$false)]
+        [string]$Target = (Get-Location).Path,
+        [Parameter(Mandatory=$true)]
+        [string]$Filter
+    )
+        
+    $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
+    $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg", ".psd", ".xcf")
+    $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
+    $doc_ext = @(".pdf", ".zip", ".rar", ".docx", ".epub", ".mobi", ".cbr", ".cbz", ".azw3")
+    $audio_ext = @(".mp3", ".m4a", ".flac")
+    $app_ext = @(".exe", ".msi", ".iso")
+
+    if ($Filter -eq "Image") 
+    {
+    $opt_ext = $img_ext
+    }
+    elseif ($Filter -eq "Video") 
+    {
+    $opt_ext = $video_ext
+    }
+    elseif ($Filter -eq "Document") 
+    {
+    $opt_ext = $doc_ext
+    }
+    elseif ($Filter -eq "Audio") 
+    {
+    $opt_ext = $audio_ext
+    }
+    elseif ($Filter -eq "App") 
+    {
+    $opt_ext = $app_ext
+    }
+    else
+    {
+    break
+    }
+
+    Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
+    #This move each file to the top parent folder
+    Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
+    #This delete all empty files and folders 
+    Get-ChildItem -Path $Target -Recurse | foreach {
+       if( $_.psiscontainer -eq $true){
+          if((gci $_.FullName) -eq $null){
+             Write-Output "Removing Empty folder $($_.FullName)"
+             $_.FullName | Remove-Item -Recurse -Force
+          }
+        }
+       if($_.Length -eq 0){
+          Write-Output "Removing Empty File $($_.FullName)"
+          $_.FullName | Remove-Item -Force
+       }
+    #This delete all video files less than 200MB
+    #gci | ?{$_.Extension -in $video_ext} | ?{$_.Length -lt 200MB} | rm
+    #gci | ?{$_.Extension -in $video_ext} | ?{$_.Length -lt 250MB} | rm
+       <#
+       .NOTES
+       This delete all files less than 70MB
+       if($_.Length -lt 70000000){
+          Write-Output "Removing small File $($_.FullName)"
+          $_.FullName | Remove-Item -Force
+       }
+       #>
+    }
+}
+
+<#
+-filter
+ image leave only images files
+ video leave only video files
+ document leave only document files
+#>
+
+# ultimate flatten
+<#
+flatten a directory (files with duplicate names be renamed with number suffix)
+delete empty folders
+delete empty files
+sort files according to their extensions 
+categories: Video, Pictures, Documents, Audio and Others
+#>
+
+function rename {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例：rename C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    $wins = New-Object -ComObject  Shell.Application
+    $wins.MinimizeAll()
+    & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
+}
+Set-Alias -Name rn -Value rename
+
+
+function cleanTorrentTrash {
+    param
+    (
+        # 输入要打开的路径
+        # 用法示例： cleanTorrentTrash C:\
+        # 默认路径：当前工作文件夹
+        $Path = '.'
+    )
+    Get-ChildItem -Path $Path -Include *.torrent, *.aria2  -File -Recurse | Remove-Item -Force
+}
+
+
+# The End Goal of this profile
+# Make it feature-rich
+# Make it run blazingly fast
+
+function Get-Temperature {
+    $t = Get-WmiObject MSAcpi_ThermalZoneTemperature -Namespace "root/wmi"
+
+    $currentTempKelvin = $t.CurrentTemperature / 10
+    $currentTempCelsius = $currentTempKelvin - 273.15
+
+    $currentTempFahrenheit = (9/5) * $currentTempCelsius + 32
+
+    return $currentTempCelsius.ToString() + " C : " + $currentTempFahrenheit.ToString() + " F : " + $currentTempKelvin + "K"  
+}
+
+# Save in your c:\users\yourName\Documents\WindowsPowerShell\modules\ directory
+# in sub directory get-temperature as get-temperature.psm1
+# You **must** run as Administrator.
+# It will only work if your system & BIOS support it. If it doesn't work, I can't help you.
+
+# Just type get-temperature in PowerShell and it will spit back the temp in Celsius, Farenheit and Kelvin.
+
+Set-Alias lvim '$HOME\.local\bin\lvim.ps1'
