@@ -49,7 +49,7 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 # symlink
 
 ln -s ~/.dotfiles/common/zsh ~/.zshrc
-ln -s ~/.dotfiles//linux/git/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/linux/git/.gitconfig ~/.gitconfig
 
 
 # enable bluetooth
