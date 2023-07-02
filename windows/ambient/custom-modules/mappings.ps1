@@ -28,16 +28,18 @@ New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wek
 Write-host "windows terminal settings has been linked to .dotfiles\windows\windows-terminal\settings.json"
 
 # windows powershell(5.1)
+Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowershell" -Force
 New-Item -Path "$env:USERPROFILE\Documents\WindowsPowershell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\powershell" -Force
 Write-host "WindowsPowershell profile config has been linked to .dotfiles\windows\powershell\"
 
 # powershell7
+Remove-Item -Path "$env:USERPROFILE\Documents\Powershell" -Force
 New-Item -Path "$env:USERPROFILE\Documents\Powershell" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\powershell" -Force
 Write-host "powershell7 profile config has been linked to .dotfiles\windows\powershell\"
 
 # starship
-New-Item -Path "$env:USERPROFILE\.starship" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\.starship" -Force
-Write-host "~\.starship has been linked to .dotfiles\common\.starship"
+# New-Item -Path "$env:USERPROFILE\.starship" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\.starship" -Force
+# Write-host "~\.starship has been linked to .dotfiles\common\.starship"
 
 # Python/pip
 New-Item -Path "$env:USERPROFILE\pip" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\pip" -Force
@@ -65,8 +67,8 @@ New-Item -Path "$env:USERPROFILE\.ideavimrc\" -ItemType SymbolicLink -Target "$e
 Write-host "~\.ideavimrc has been linked to .dotfiles\common\ideavim\.ideavimrc"
 
 # Winfetch
-New-Item -Path "$env:USERPROFILE\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\winfetch\config.ps1" -Force
-Write-host "winfetch config has been linked to .dotfiles\windows\winfetch\config.ps1"
+# New-Item -Path "$env:USERPROFILE\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\winfetch\config.ps1" -Force
+# Write-host "winfetch config has been linked to .dotfiles\windows\winfetch\config.ps1"
 
 # cmd/clink
 New-Item -Path "$env:USERPROFILE\alias.cmd" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\cmd\alias.cmd" -Force
@@ -152,9 +154,9 @@ Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
 
 # FancyWM
 
-$fancywmConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
-New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
-Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
+# $fancywmConfigPath="$env:LOCALAPPDATA\Packages\2203VeselinKaraganev.FancyWM_9x2ndwrcmyd2c\LocalCache\Roaming\FancyWM"
+# New-Item -Path $fancywmConfigPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\fancyWM" -Force
+# Write-host "fancyWM config has been linked to .dotfiles\windows\fancyWM"
 
 
 # wmhotkeys

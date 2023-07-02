@@ -432,7 +432,8 @@ WinActivateBottom, ahk_exe chrome.exe
 }
 Else
 {
- Run, chrome.exe, , hide
+; Run, chrome.exe, , hide
+ Run, "C:\Users\mino29\scoop\apps\ungoogled-chromium\current\chrome.exe"
 }
 Return
 }
