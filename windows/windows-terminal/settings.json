@@ -72,21 +72,21 @@
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\commandprompt.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
                 "name": "Command Prompt"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\powershell-old.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell-old.png",
                 "name": "Windows PowerShell"
             },
             {
                 "commandline": "\"C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe\" -NoLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\powershell.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
@@ -99,7 +99,7 @@
                 "guid": "{46228035-ad46-45ca-b401-2aba95fc50e7}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\commandprompt.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
                 "name": "MSYS2",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
@@ -108,7 +108,7 @@
                 "commandline": "C:\\Windows\\system32\\wsl.exe -d Arch",
                 "guid": "{d763f1ed-83b8-4566-a1aa-47faf15aaa48}",
                 "hidden": false,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\arch-linux.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\arch-linux.png",
                 "name": "Arch"
             },
             {
@@ -126,7 +126,7 @@
                 "guid": "{95d92901-6e04-4e12-9774-8dc7005f6af0}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Users\\mino29\\.dotfiles\\utils\\os_icons\\git-bash-white.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\git-bash-white.png",
                 "name": "git-bash",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
