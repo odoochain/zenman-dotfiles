@@ -30,8 +30,9 @@ Catch {
 
 #------------------------------- Scoop settings -------------------------
 
-# To replace scoop built-in search
-Invoke-Expression (&scoop-search --hook)
+# Invoke-Expression
+Invoke-Expression (&scoop-search-multisource.exe --hook)
+# Invoke-Expression (&scoop-search --hook)
 
 
 #------------------------------- Setting to run R term -------------------------

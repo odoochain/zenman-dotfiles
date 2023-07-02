@@ -43,20 +43,6 @@
             "Version": null
         },
         {
-            "Name": "autodeletefileonpcwechat",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:38:46.1316539+08:00",
-            "Info": "",
-            "Version": "2.0"
-        },
-        {
-            "Name": "autohotkey-portable",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:38:49.4596814+08:00",
-            "Info": "",
-            "Version": "2.0.2"
-        },
-        {
             "Name": "baidudisk",
             "Source": "apps",
             "Updated": "2023-05-27T14:08:14.7213798+08:00",
@@ -69,20 +55,6 @@
             "Updated": "2023-04-02T16:28:52.4729803+08:00",
             "Info": "",
             "Version": "0.23.0"
-        },
-        {
-            "Name": "betterjoy",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:39:01.2249566+08:00",
-            "Info": "",
-            "Version": "v7.1"
-        },
-        {
-            "Name": "borderless-gaming-portapps",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:39:11.8344098+08:00",
-            "Info": "",
-            "Version": "9.5.6-3"
         },
         {
             "Name": "broot",
@@ -111,13 +83,6 @@
             "Updated": "2023-05-30T16:13:11.8691386+08:00",
             "Info": "",
             "Version": "2023-05-30"
-        },
-        {
-            "Name": "capslockindicator",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:39:38.1829693+08:00",
-            "Info": "",
-            "Version": "3.16.1.2"
         },
         {
             "Name": "captura",
@@ -162,32 +127,11 @@
             "Version": "2.0.2"
         },
         {
-            "Name": "cleanmywechat",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:41:19.2686083+08:00",
-            "Info": "",
-            "Version": "2.0"
-        },
-        {
             "Name": "clink",
             "Source": "main",
             "Updated": "2023-05-24T15:25:19.8497059+08:00",
             "Info": "",
             "Version": "1.4.25"
-        },
-        {
-            "Name": "codeblocks",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:41:34.8346273+08:00",
-            "Info": "",
-            "Version": "20.03"
-        },
-        {
-            "Name": "ContextMenuManager",
-            "Source": "apps",
-            "Updated": "2023-02-20T21:02:37.3627319+08:00",
-            "Info": "",
-            "Version": "3.3.3.1"
         },
         {
             "Name": "coretemp",
@@ -260,13 +204,6 @@
             "Version": "1.0.12.0"
         },
         {
-            "Name": "digikam",
-            "Source": "apps",
-            "Updated": "2023-04-17T20:17:50.2292526+08:00",
-            "Info": "",
-            "Version": "8.0.0"
-        },
-        {
             "Name": "discord",
             "Source": "apps",
             "Updated": "2023-02-20T05:42:42.8856085+08:00",
@@ -286,13 +223,6 @@
             "Updated": "2023-04-17T20:23:03.5439785+08:00",
             "Info": "",
             "Version": "3.24.246.0"
-        },
-        {
-            "Name": "douyin",
-            "Source": "apps",
-            "Updated": "2023-05-24T15:25:35.316837+08:00",
-            "Info": "",
-            "Version": "2.3.1"
         },
         {
             "Name": "dropit",
@@ -328,13 +258,6 @@
             "Updated": "2023-02-20T05:44:36.5279944+08:00",
             "Info": "",
             "Version": "1.2.3.0"
-        },
-        {
-            "Name": "edgedriver",
-            "Source": "main",
-            "Updated": "2023-05-28T18:01:21.0337964+08:00",
-            "Info": "",
-            "Version": "113.0.1774.57"
         },
         {
             "Name": "espanso",
@@ -393,25 +316,11 @@
             "Version": "6.0"
         },
         {
-            "Name": "fiddler",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:51:10.8473994+08:00",
-            "Info": "",
-            "Version": "5.0.20211.51073"
-        },
-        {
             "Name": "figlet",
             "Source": "main",
             "Updated": "2023-02-20T05:51:13.9098078+08:00",
             "Info": "",
             "Version": "1.0-go"
-        },
-        {
-            "Name": "figma",
-            "Source": "apps",
-            "Updated": "2023-05-07T12:59:14.7018744+08:00",
-            "Info": "",
-            "Version": "116.9.5"
         },
         {
             "Name": "fnm",
@@ -454,13 +363,6 @@
             "Updated": "2023-04-17T20:24:09.6430141+08:00",
             "Info": "",
             "Version": "5.23.0"
-        },
-        {
-            "Name": "geckodriver",
-            "Source": "main",
-            "Updated": "2023-04-08T12:34:45.7322518+08:00",
-            "Info": "",
-            "Version": "0.33.0"
         },
         {
             "Name": "geekuninstaller",
@@ -517,13 +419,6 @@
             "Updated": "2023-05-20T11:16:49.5638659+08:00",
             "Info": "",
             "Version": "23.05.03-alpha.230514.237832f5"
-        },
-        {
-            "Name": "gping",
-            "Source": "main",
-            "Updated": "2023-05-25T16:32:10.7150566+08:00",
-            "Info": "",
-            "Version": "1.12.0"
         },
         {
             "Name": "graphviz",
@@ -624,13 +519,6 @@
             "Version": "0.1.16"
         },
         {
-            "Name": "krita",
-            "Source": "apps",
-            "Updated": "2023-02-20T05:59:50.082954+08:00",
-            "Info": "",
-            "Version": "5.1.5"
-        },
-        {
             "Name": "lazygit",
             "Source": "apps",
             "Updated": "2023-05-07T13:05:10.8303693+08:00",
@@ -720,13 +608,6 @@
             "Updated": "2023-05-27T03:13:22.0942756+08:00",
             "Info": "",
             "Version": "4.6.5"
-        },
-        {
-            "Name": "msys2",
-            "Source": "main",
-            "Updated": "2023-05-27T01:33:37.5224954+08:00",
-            "Info": "",
-            "Version": "2023-05-26"
         },
         {
             "Name": "neovim",
@@ -979,13 +860,6 @@
             "Updated": "2023-04-17T21:09:14.490881+08:00",
             "Info": "",
             "Version": "4.5.2"
-        },
-        {
-            "Name": "trafficmonitor-lite",
-            "Source": "apps",
-            "Updated": "2023-05-27T15:45:55.7048838+08:00",
-            "Info": "",
-            "Version": "1.84.1"
         },
         {
             "Name": "twinkle-tray",

@@ -77,6 +77,26 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
+		FilePath = C:\Users\mino29\Downloads\Documents\12 Rules for Life - An Antidote to Chaos by Jordan B. Peterson.azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
 		FilePath = C:\Users\mino29\Downloads\Inbox\Maps of Meaning The Architecture of Belief-Peterson (lnw Adam).pdf
 		Favorites [
 		]
@@ -91,46 +111,6 @@ FileStates [
 		Rotation = 0
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Jordan B. Peterson - Maps of Meaning - The Architecture of Belief (1999, Routledge).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\12 Rules for Life - An Antidote to Chaos by Jordan B. Peterson.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 20
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 958 10 959 1007
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
@@ -232,247 +212,6 @@ FileStates [
 		WindowState = 1
 		WindowPos = -4 4 1796 1020
 		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\毛泽东私人医生回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 537.675
-		PageNo = 142
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1800 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\20210505_20210505_0345_李志绥回忆录.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 30
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1804 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\毛泽东的私人医生回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\高文谦：晚年周恩来.pdf\高文谦：晚年周恩来.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\mzdsryshyl\mzdsrys回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 74
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\An introduction to international criminal law and procedure (2010) [blackatk].pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 7
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\University of Berkshire Hathaway by Daniel Pecaut.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Moby Dick.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 20
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 1
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Gadsby.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Mutant Race (Marvel) (2002) (AquilaLorelei TRWBD).cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.90447
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\Political-Science-master\Political-Science-master\乔治·奥威尔：动物农场 (傅惟慈译 扫描版).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\And Then There Were None - Agatha Christie.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = true
 		SidebarDx = 331
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -4056,6 +3795,267 @@ FileStates [
 		Rotation = 0
 		WindowState = 1
 		WindowPos = -4 4 1788 1020
+		ShowToc = true
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Jordan B. Peterson - Maps of Meaning - The Architecture of Belief (1999, Routledge).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 10
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\毛泽东私人医生回忆录.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 537.675
+		PageNo = 142
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1800 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\20210505_20210505_0345_李志绥回忆录.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 30
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1804 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\毛泽东的私人医生回忆录.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1928 1020
+		ShowToc = true
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\高文谦：晚年周恩来.pdf\高文谦：晚年周恩来.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\mzdsryshyl\mzdsrys回忆录.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 74
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1928 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\An introduction to international criminal law and procedure (2010) [blackatk].pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 7
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 970 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\University of Berkshire Hathaway by Daniel Pecaut.azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1928 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Moby Dick.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 20
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1928 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 1
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Gadsby.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\The Mutant Race (Marvel) (2002) (AquilaLorelei TRWBD).cbr
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -0.90447
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -3 4 968 1031
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\Political-Science-master\Political-Science-master\乔治·奥威尔：动物农场 (傅惟慈译 扫描版).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -3 4 1926 1031
+		ShowToc = false
+		SidebarDx = 331
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\And Then There Were None - Agatha Christie.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -3 4 968 1031
 		ShowToc = true
 		SidebarDx = 331
 		DisplayR2L = false
