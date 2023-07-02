@@ -86,7 +86,7 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 1
+		PageNo = 20
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
