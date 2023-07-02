@@ -70,12 +70,32 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 1
-WindowPos = 3 10 1914 1007
+WindowPos = 958 10 959 1007
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\12 Rules for Life - An Antidote to Chaos by Jordan B. Peterson.azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 958 10 959 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 	[
 		FilePath = C:\Users\mino29\Downloads\Documents\The Only Investment Guide You'll Ever Need by Andrew Tobias.azw
 		Favorites [
@@ -117,306 +137,6 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\aa73322862db0122744fc294fa03e38b.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\common_stocks_and_uncommon_profits_and_other_writings.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 12
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Common Stocks and Uncommon Profits and Other Writings, by P.Fisher, (Wiley Investment Classics, 2003).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 14
-		Zoom = 100
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Education of a Value Investor by Guy Spier.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 152
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\历史的真实.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 916 4 1007 1031
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao Ze Dong Si Ren Yi Sheng Hui Yi Lu - Li Zhi Sui.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 192
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Common Stocks and Uncommon Profits and Other Writings ( PDFDrive ).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 60
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Moby Dick - Herman Melville (Penguin Classics)\Moby-Dick or, The Whale (Enriched Classi - Herman Melville.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 16
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Five Books by Neil Postman\Amusing Ourselves to Death_ Public Discourse in the Age of Show Business (20th Anniversary Edition) - Neil Postman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui - The Private Life of Chairman Mao-Random House (1996).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 190
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao, Zedong_Nathan, Andrew J._Tai, Hung-chao_Thurston, Anne F._Li, Zhisui - The private life of Chairman Mao_ the memoirs of Mao's personal physician-Random House Publishing Group (2011).mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 916 4 1007 1031
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Raj Patel_ Jason W. Moore - A History of the World in Seven Cheap Things_ A Guide to Capitalism, Nature, and the Future of the Planet-Black Inc. (2018).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous facing
-		ScrollPos = -1 -1
-		PageNo = 51
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Nassim Nicholas Taleb - The Black Swan - 2007.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 36
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Fooled by Randomness by Nassim Nicholas Taleb.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 62
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui-The Private Life of Chairman Mao-Random House (1996).mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\mino29\Downloads\Documents\李志绥：毛泽东私人医生回忆录.pdf
 		Favorites [
 		]
@@ -431,26 +151,6 @@ FileStates [
 		Rotation = 0
 		WindowState = 1
 		WindowPos = -4 4 1780 1020
-		ShowToc = true
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\李志绥：毛泽东私人医生回忆录_2.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 8
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1788 1020
 		ShowToc = true
 		SidebarDx = 331
 		DisplayR2L = false
@@ -3998,6 +3698,326 @@ FileStates [
 		WindowPos = -3 4 1926 1031
 		ShowToc = true
 		SidebarDx = 238
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\aa73322862db0122744fc294fa03e38b.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -3 4 968 1031
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\common_stocks_and_uncommon_profits_and_other_writings.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 12
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -3 4 1926 1031
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Common Stocks and Uncommon Profits and Other Writings, by P.Fisher, (Wiley Investment Classics, 2003).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = 100
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -3 4 1926 1031
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\The Education of a Value Investor by Guy Spier.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 152
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -3 4 1926 1031
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\历史的真实.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 916 4 1007 1031
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao Ze Dong Si Ren Yi Sheng Hui Yi Lu - Li Zhi Sui.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 192
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Common Stocks and Uncommon Profits and Other Writings ( PDFDrive ).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 60
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Moby Dick - Herman Melville (Penguin Classics)\Moby-Dick or, The Whale (Enriched Classi - Herman Melville.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 16
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Five Books by Neil Postman\Amusing Ourselves to Death_ Public Discourse in the Age of Show Business (20th Anniversary Edition) - Neil Postman.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui - The Private Life of Chairman Mao-Random House (1996).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 190
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao, Zedong_Nathan, Andrew J._Tai, Hung-chao_Thurston, Anne F._Li, Zhisui - The private life of Chairman Mao_ the memoirs of Mao's personal physician-Random House Publishing Group (2011).mobi
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 916 4 1007 1031
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Raj Patel_ Jason W. Moore - A History of the World in Seven Cheap Things_ A Guide to Capitalism, Nature, and the Future of the Planet-Black Inc. (2018).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous facing
+		ScrollPos = -1 -1
+		PageNo = 51
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = D:\Documents\Nassim Nicholas Taleb - The Black Swan - 2007.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 36
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Fooled by Randomness by Nassim Nicholas Taleb.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 62
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 954 4 970 1020
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui-The Private Life of Chairman Mao-Random House (1996).mobi
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1928 1020
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\李志绥：毛泽东私人医生回忆录_2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -4 4 1788 1020
+		ShowToc = true
+		SidebarDx = 331
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
