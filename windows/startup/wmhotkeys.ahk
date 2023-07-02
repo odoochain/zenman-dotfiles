@@ -357,7 +357,7 @@ Else
 {
 ;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
 ;Run, "C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
- Run, "C:\Users\mino29\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+ Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
@@ -434,7 +434,7 @@ WinActivateBottom, ahk_exe chrome.exe
 Else
 {
 ; Run, chrome.exe, , hide
- Run, "C:\Users\mino29\scoop\apps\ungoogled-chromium\current\chrome.exe"
+ Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe"
 }
 Return
 }
