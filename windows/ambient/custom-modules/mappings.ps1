@@ -114,6 +114,15 @@ New-Item -Path "$env:ProgramFiles\Everything 1.5a\Everything-1.5a.ini" -ItemType
 Write-host "Everything has been linked to .dotfiles\windows\Everything"
 
 
+# SumatraPDF
+Remove-Item -Path "$env:USERPROFILE\scoop\persist\Sumatrapdf\SumatraPDF-settings.txt" -Force
+New-Item -Path "$env:USERPROFILE\scoop\persist\sumatrapdf\SumatraPDF-settings.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\sumatrapdf\SumatraPDF-settings.txt" -Force
+Write-host "sumatrapdf has been linked to .dotfiles\windows\sumatrapdf\SumatraPDF-settings.txt"
+
+Remove-Item -Path "$env:USERPROFILE\scoop\apps\Sumatrapdf\current\SumatraPDF-settings.txt" -Force
+New-Item -Path "$env:USERPROFILE\scoop\apps\sumatrapdf\current\SumatraPDF-settings.txt" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\sumatrapdf\SumatraPDF-settings.txt" -Force
+Write-host "sumatrapdf has been linked to .dotfiles\windows\sumatrapdf\SumatraPDF-settings.txt"
+
 # git-bash, zsh and p10k
 New-Item -Path "$env:USERPROFILE\.bashrc" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\bash\.bashrc" -Force
 Write-host "~\.bashrc has been linked to .dotfiles\windows\bash\.bashrc"

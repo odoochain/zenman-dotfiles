@@ -356,7 +356,8 @@ WinActivate
 Else
 {
 ;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-Run, "C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, "C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+ Run, "C:\Users\mino29\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
