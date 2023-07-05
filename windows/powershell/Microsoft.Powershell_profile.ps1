@@ -96,12 +96,12 @@ Catch {
 
 
 # 引入PSWindowsUpdate
-Try {
-    Import-Module PSWindowsUpdate
-}
-Catch {
-    Install-Module PSWindowsUpdate -Scope CurrentUser -Force  ## PSwindowsUpdates
-}
+# Try {
+#     Import-Module PSWindowsUpdate
+# }
+# Catch {
+#     Install-Module PSWindowsUpdate -Scope CurrentUser -Force  ## PSwindowsUpdates
+# }
 
 # 引入git-aliases
 Try{
