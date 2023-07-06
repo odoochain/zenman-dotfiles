@@ -410,7 +410,7 @@ Symbols\UsageCount=@Variant(\0\0\0\b\0\0\0\0)
 Symbols\FavoriteIDs=@Invalid()
 Symbols\hiddenlists=
 
-[formatsDark]
+[formats]
 version=1.0
 data\normal\priority=-1
 data\normal\bold=false
@@ -1405,14 +1405,3 @@ data\preedit\background=#6272a4
 data\preedit\fontFamily=
 data\preedit\pointSize=0
 data\preedit\wrapAround=false
-data\math-text\priority=2
-data\math-text\bold=false
-data\math-text\italic=false
-data\math-text\overline=false
-data\math-text\underline=false
-data\math-text\strikeout=false
-data\math-text\waveUnderline=false
-data\math-text\foreground=#b0f218
-data\math-text\fontFamily=
-data\math-text\pointSize=0
-data\math-text\wrapAround=false
