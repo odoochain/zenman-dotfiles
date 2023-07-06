@@ -1,0 +1,5 @@
+Style: Orion Dark
+Color Scheme: Modern -dark
+Icon Theme: Colibre
+Font: Segoe UI
+Font Size: 9

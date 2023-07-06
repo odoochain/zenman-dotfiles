@@ -38,7 +38,7 @@ Invoke-Expression (&scoop-search-multisource.exe --hook)
 #------------------------------- Setting to run R term -------------------------
 
 # to run rterm with just 'r', otherwise it would just run the last command
-#rm alias:\r
+rm alias:\r
 
 
 #------------------------------- Import Modules BEGIN -------------------------
