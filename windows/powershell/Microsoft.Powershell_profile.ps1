@@ -38,7 +38,7 @@ Invoke-Expression (&scoop-search-multisource.exe --hook)
 #------------------------------- Setting to run R term -------------------------
 
 # to run rterm with just 'r', otherwise it would just run the last command
-rm alias:\r
+#rm alias:\r
 
 
 #------------------------------- Import Modules BEGIN -------------------------
@@ -327,7 +327,11 @@ Set-Alias -Name v -Value nvim
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
 
-# 6. more "aliases"
+# 6. vscodium aliases/ comment out this part if you use code
+
+Set-Alias -Name code -Value codium
+
+# 7. more "aliases"
 
 function exitConsole(){
         exit
