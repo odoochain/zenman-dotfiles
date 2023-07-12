@@ -1,4 +1,4 @@
-$PotPlayerConfig="$env:USERPROFILE\scoop\apps\potplayer\PotPlayer64.ini"
+$PotPlayerConfig="$env:USERPROFILE\scoop\apps\potplayer\current\PotPlayer64.ini"
 $dotPotPlayerConfig="$env:USERPROFILE\.dotfiles\windows\potplayer\PotPlayer64.ini"
 
 $PotPlayerSkin="$env:USERPROFILE\scoop\apps\current\potplayer\Skins\Kardox.dsf"
