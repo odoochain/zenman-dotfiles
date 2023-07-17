@@ -614,6 +614,7 @@ Return
 
 ;启动或重启komorebi
 
+/*
 launchOrRelaunchkomorebi()
 {
 if WinExist("ahk_exe komorebi.exe") 
@@ -634,7 +635,7 @@ Return
 ^+r::
 launchOrRelaunchkomorebi()
 return
-
+*/
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;virtual desktop switcher ;;;;;;;;;;;;;;;;;;;;;;;;
