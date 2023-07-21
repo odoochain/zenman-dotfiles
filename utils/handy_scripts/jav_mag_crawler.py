@@ -18,7 +18,7 @@ pattern = r"\b[A-Za-z]{2,5}-\d{3,8}\b"
 text_content = pyperclip.paste()
 
 # find valid codes
-original_list = re.findall(pattern, text_content)
+original_list = re.findall(pattern, text_content.upper())
 unique_list = remove_duplicates(original_list)
 
 #loop the result list

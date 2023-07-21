@@ -330,37 +330,37 @@ launchOrSwitchAriaNgGui()
 
 
 ; 用Edge
-;{
-;WinMinimizeAll
-;SetTitleMatchMode RegEx
-;if WinExist("^Download ahk_exe msedge.exe")
-;{
-;WinActivate
-;}
-;Else
-;{
-;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
-;}
-;Return
-;}
-
-
-; 用Chrome
 {
 WinMinimizeAll
 SetTitleMatchMode RegEx
-if WinExist("^Download ahk_exe chrome.exe")
+if WinExist("^Download ahk_exe msedge.exe")
 {
 WinActivate
 }
 Else
 {
-;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-; Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
+
+
+; 用Chrome
+;{
+;WinMinimizeAll
+;SetTitleMatchMode RegEx
+;if WinExist("^Download ahk_exe chrome.exe")
+;{
+;WinActivate
+;}
+;Else
+;{
+;;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+;; Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+;}
+;Return
+;}
 
 ; 用Firefox
 ;{
@@ -425,6 +425,7 @@ return
 
 ;-----------------------google chrome---------------------------
 ;启动或切换Chrome
+/*
 launchOrSwitchToChrome()
 {
 if WinExist("ahk_exe chrome.exe")
@@ -443,26 +444,26 @@ Return
 <#b::
 launchOrSwitchToChrome()
 Return
+*/
 
 ;----------------------- microsoft edge ---------------------------
 ;启动或切换Edge
-;launchOrSwitchToEdge()
-;{
-;if WinExist("ahk_exe msedge.exe")
-;{
-;WinActivateBottom, ahk_exe msedge.exe
-;}
-;Else
-;{
- ;Run, msedge
-;}
-;Return
-;}
-;
-;<#b::
-;launchOrSwitchToEdge()
-;Return
+launchOrSwitchToEdge()
+{
+if WinExist("ahk_exe msedge.exe")
+{
+WinActivateBottom, ahk_exe msedge.exe
+}
+Else
+{
+ Run, msedge
+}
+Return
+}
 
+<#b::
+launchOrSwitchToEdge()
+Return
 
 ;----------------------- Mozilla Firefox ---------------------------
 ;启动或切换Edge
