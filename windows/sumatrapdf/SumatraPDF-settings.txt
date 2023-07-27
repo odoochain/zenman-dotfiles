@@ -46,7 +46,7 @@ RememberOpenedFiles = true
 RememberStatePerDocument = true
 RestoreSession = true
 UiLanguage = en
-EnableTeXEnhancements = false
+EnableTeXEnhancements = true
 DefaultDisplayMode = book view
 DefaultZoom = fit page
 Shortcuts [
@@ -77,7 +77,47 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Subtle Art of Not Giving a Fck by Mark Manson.epub
+		FilePath = C:\Users\mino29\Downloads\Documents\fakingscience-20141214.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230726_02.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230726_01.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -86,12 +126,253 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 66
+		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
 		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Videos\Courses\[ FreeCourseWeb.com ] The Python Book - 15th Edition, 2023\~Get Your Files Here !\.ThePythonBook-5thEdition,2023.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 58
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Markdowns\doc.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 5
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 15.2505
+		PageNo = 1
+		Zoom = 150
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 1
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\naturallanguageprocessingwithpython.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\introducingpython.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\elegantscipy.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\The Rules Of Programming\The Rules Of Programming.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\lshort2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230725_01.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Pete Etchells - Lost in a Good Game_ Why We Play Video Games and what They Can Do for Us-Icon Books Ltd (2019).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 94
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Subtle Art of Not Giving a Fck by Mark Manson.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 98
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Non-Fiction Books Collection - April 11, 2022 PDF EPUB [MBB]\Accounting for Financial Decision Making (QuickStudy Business).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Non-Fiction Books Collection - April 11, 2022 PDF EPUB [MBB]\500 GRE Math Questions to Know by Test Day, 2nd Edition.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 54
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -177,26 +458,6 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\8902965.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 530
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\mino29\Downloads\Documents\A Dish Best Served Cold by Chris Kinsey.epub
 		Favorites [
 		]
@@ -212,26 +473,6 @@ FileStates [
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Pete Etchells - Lost in a Good Game_ Why We Play Video Games and what They Can Do for Us-Icon Books Ltd (2019).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 42
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -496,8 +737,150 @@ FileStates [
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\[ CourseWikia.com ] The Art of Prompt Engineering with chatGPT - A Hands-On Guide\~Get Your Files Here !\TheArtofPromptEngineeringwithchatGPT.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Chat GPT for Dummies. A Quick Introduction to Prompt Engineering 2023\Chat GPT for Dummies. A Quick Introduction to Prompt Engineering 2023.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 10
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Coleman D. ChatGPT Empowers Your Prompt Engineering with AI Tools. GPT-4...2023\Coleman D. ChatGPT Empowers Your Prompt Engineering with AI Tools. GPT-4...2023.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 62
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\8902965.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 530
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\Pete Etchells - Lost in a Good Game_ Why We Play Video Games and what They Can Do for Us-Icon Books Ltd (2019).epub
+				DisplayMode = book view
+				PageNo = 94
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\The Rules Of Programming\The Rules Of Programming.epub
+				DisplayMode = book view
+				PageNo = 14
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\introducingpython.epub
+				DisplayMode = book view
+				PageNo = 6
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\naturallanguageprocessingwithpython.epub
+				DisplayMode = book view
+				PageNo = 2
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Videos\Courses\[ FreeCourseWeb.com ] The Python Book - 15th Edition, 2023\~Get Your Files Here !\.ThePythonBook-5thEdition,2023.pdf
+				DisplayMode = book view
+				PageNo = 58
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\fakingscience-20141214.pdf
+				DisplayMode = book view
+				PageNo = 6
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 1
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		SidebarDx = 327
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
 OpenCountWeek = 655

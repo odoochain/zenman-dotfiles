@@ -206,7 +206,7 @@ return
 #n::
 ;run, wt.exe "nvim.exe" "%A_Desktop%\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
 ;run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Notes\quicknote.md"
-run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Misc\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Quicknotes\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
 Return
 
 ; 启动或切换招商证券
@@ -339,7 +339,8 @@ WinActivate
 }
 Else
 {
-Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+Run, msedge.exe "extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
