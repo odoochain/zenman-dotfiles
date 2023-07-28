@@ -46,7 +46,7 @@ RememberOpenedFiles = true
 RememberStatePerDocument = true
 RestoreSession = true
 UiLanguage = en
-EnableTeXEnhancements = false
+EnableTeXEnhancements = true
 DefaultDisplayMode = book view
 DefaultZoom = fit page
 Shortcuts [
@@ -77,47 +77,7 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\12 Rules for Life - An Antidote to Chaos by Jordan B. Peterson.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 2
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Maps of Meaning The Architecture of Belief-Peterson (lnw Adam).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 2
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 12
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Only Investment Guide You'll Ever Need by Andrew Tobias.azw
+		FilePath = C:\Users\mino29\Downloads\Documents\fakingscience-20141214.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -137,16 +97,16 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Postman, Neil - Amusing ourselves to death_ public discourse in the age of show business-Penguin Books (2006).pdf
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230726_02.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 2
 		UseDefaultState = false
-		DisplayMode = continuous book view
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 20
+		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
@@ -157,3651 +117,648 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\李志绥：毛泽东私人医生回忆录.pdf
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230726_01.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 3
 		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -4 4 1780 1020
-		ShowToc = true
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\李志绥-毛泽东私人医生回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 138
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1792 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
-		SidebarDx = 331
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\李志绥回忆录.pdf
+		FilePath = C:\Users\mino29\Videos\Courses\[ FreeCourseWeb.com ] The Python Book - 15th Edition, 2023\~Get Your Files Here !\.ThePythonBook-5thEdition,2023.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
 		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 162
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1796 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Tan Le - The NeuroGeneration_ The new era in brain enhancement revolutionising the way we think, work and heal-BenBella Books, Inc. (2019).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 28
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\毛批三国演义.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\To Kill a Mockingbird by Harper Lee (epub, mobi)\To Kill A Mockingbird - Harper Lee.mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 14
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 2
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\To Kill A Mockingbird - Harper Lee.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\绣像版古典名著丛书：三国演义-(明)罗贯中.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\三国演义(上下)， V：shuyou099（补发）.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\《金瓶梅（崇祯本）》精心校对·排版简洁（单册本+双册本两版本）[Epub.Mobi.PDF]\金瓶梅（崇祯本）单册版.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 7
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Mammoth Book of Dirty, Sick, X-Rated & Politically Incorrect Jokes\The Mammoth Book of Dirty, Sick, X-Rated & Politically Incorrect Jokes.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 22
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Mammoth Book of Best New Erotica By Maxim Jakubowski\The Mammoth Book of Best New Erotica By Maxim Jakubowski.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Feynman, Richard (37 books)\Cargo Cult Science\Feynman, Richard - Cargo Cult Science (Caltech Graduation Address, 1974).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\e-books\greek philosophy\TAYLOR, C. C. W. () The Atomists - Leucippus and Democritus Fragments.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\e-books\greek philosophy\DIELS, K. (1960), Die Fragmente der Vorsokratiker.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 9
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Food Politics by Marion Nestle.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 352
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Classic Books\Dracula.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 46.0404
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 1
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Classic Books\Alices Adventures in Wonderland.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Classic Books\George Orwell\1984.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 16
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Classic Books\George Orwell\Animal Farm.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 8
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1808 1020
-		ShowToc = true
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 2
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\1000 Books To Read Before You Die - A Life Changing List\1000 Books To Read Before You Die - A Life Changing List.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Annie Duke - Thinking in bets _ making smarter decisions when you don’t have all the facts.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 8
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Most Important Thing by Howard Marks.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 42
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Poor Charlie's Almanack_ The Wit and Wisdom of Charles T. Munger, Expanded Third Edition - Charles T. Munger.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 4.33938
-		PageNo = 90
-		Zoom = fit width
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Black Holes are White Hot (1975).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Milo Manara - Borgia 1-4\Borgia 3 - The Flames of the Pyre.cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.868417
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Milo Manara - Borgia 1-4\Borgia 2 - The Power and The Incest.cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.868939
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Milo Manara - Borgia 1-4\Borgia 1 - Blood for the Pope.cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.886182
-		PageNo = 53
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Milo Manara - Borgia 1-4\Borgia 4 - The Price of Vanity.cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.832363
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\No Logo - Naomi Klein (epub) [Qwerty80]\No Logo - Naomi Klein (epub) [Qwerty80].epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 9
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Day the World Stops Shopping by J. B. MacKinnon.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 264
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Ghost in the Shell - Global Neural Network (2019) (Digital) (LuCaZ).cbz
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -1.8828
-		PageNo = 17
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\BOC_list_SC.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 14
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\How To Win Friends And Influence People - Dale Carnegie - Yasser.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 385.322
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Trial of Henry Kissinger - Christopher Hitchens.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Reminiscences of a Stock Operator (A Marke - Edwin Lefevre.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 46
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Innovators\The Innovators - Walter Isaacson.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 88
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Kevin Kelly - New Rules for the New Economy - 1998.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 20
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Nineteen Eighty-Four (1984) by George Orwell.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 48
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Leonardo da Vinci by Walter Isaacson.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 64
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Toxic Parents- Overcoming Their Hurtful Legacy & Reclaiming Your Life.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 30
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Einstein-His Life and Universe- Walter Isaacson.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 42
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Women Who Love Too Much - Robin Norwood.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 110.857
-		PageNo = 10
-		Zoom = fit width
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Susan Forward, Joan Torres - Men Who Hate Women and the Women Who Love Them _ When Loving Hurts and You Don’t Know Why-Random House (2011).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 69.9962
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = true
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\02. IT'S OK TO BE ANGRY ABOUT CAPITALISM by Bernie Sanders with John Nichols.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 30
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\George Orwell - Animal Farm [1945] [EPUB-MOBI-PDF]\Animal Farm.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 192.469
-		PageNo = 75
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Animal Farm by George Orwell epub RtR\Animal Farm - George Orwell.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 70
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 380
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\And There Was Light_ Abraham Lincoln and the American Struggle by Jon Meacham EPUB\And There Was Light_ Abraham Lincoln and the American Struggle by Jon Meacham.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1808 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Thinking, Fast and Slow - Daniel Kahneman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 429.36
-		PageNo = 22
-		Zoom = 125
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Thinking, Fast and Slow.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -0.390254
-		PageNo = 22
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Women Our History.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 774.659
-		PageNo = 12
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = 954 4 970 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Thinking, Fast and Slow By Daniel Kahneman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 54.9525
-		PageNo = 23
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\DK Guides\Alaska (DK Eyewitness Travel Guides) (Dorling Kindersley 2017).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 284.971
-		PageNo = 12
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Playboy USA - Charlize Theron Nude Edition Magazine\Playboy (USA) - May 1999.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 58
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -3 4 1926 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
-		SidebarDx = 238
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Playboy's 100 Beautiful Women - An Incomparable Collection\Playboy's 100 Beautiful Women - An Incomparable Collection.pdf
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Markdowns\doc.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 5
 		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 102
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1925 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Playboy Special Digital Edition - Bond Girls - Exclusive 007 Edition\Playboy Special Digital Edition - Bond Girls - Exclusive 007 Edition.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 69
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\9f13eb419294bb7cfe_abm6bc76e.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1001 4 921 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\the_rich_get_richer_and_the_poor_get_poorer_-_robert_reich.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 628.226
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1001 4 921 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Huey, Sam Walton - John - Sam Walton_ Made In America-DoubleDay (1992) (1).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
+		DisplayMode = book view
+		ScrollPos = -1 15.2505
 		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Sexopedia - Everything You Wanted to Know... By DK\Sexopedia - Everything You Wanted to Know... By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 280.25
-		PageNo = 31
 		Zoom = 150
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -3 4 1926 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 238
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
-		TocState = 6 85 94
+		TocState = 1
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\40 Adult Magazines Collection Pack 90\Magazines\18 Eighteen Magazine 2010 03.pdf
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\naturallanguageprocessingwithpython.epub
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
 		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 99
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\40 Adult Magazines Collection Pack 84\Magazines\Playboy Magazine 07 81.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 537.29
-		PageNo = 263
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\40 Adult Magazines Collection Pack 84\Magazines\SHOW Issue 08 September 2007.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 648.062
-		PageNo = 146
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\40 Adult Magazines Collection Pack 84\Magazines\Cats Magazine Poland 1994 09.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 2326.54
-		PageNo = 34
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\A Game of Thrones_ Illustrated Edition - George R.R. Martin.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 403.237
-		PageNo = 253
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 964 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Barely Legal - May 2023\Barely Legal - May 2023.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 45
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\[topshelfbook] Malcolm Gladwell - Outliers- The Story of Success.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 205
-		Zoom = 150
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Normandy (DK Eyewitness Top 10 Travel Guides) (Dorling Kindersley 2017).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Phuket (DK Eyewitness Top 10 Travel Guides) (Dorling Kindersley 2017).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\What to Watch When 1,000 TV Shows.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 74
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Blood, Sweat, and Pixels - Jason Schreier.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 63.5226
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Press reset\Shreyier_D._Legendarnyieko._Najmi_Reset_Kak_Igrovaya_.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 25.8296
-		PageNo = 45
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\132610.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 8
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Sam Walton.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 421
-		PageNo = 154
-		Zoom = 150
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Steve Jobs - Isaacson, Walter.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 573.614
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Westover, Tara - Educated_ a memoir-Random House Publishing Group (2018).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 126.696
-		PageNo = 14
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Sam Walton - Made In America (EPUB).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 266
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Press Reset_ Ruin and Recovery in the Video Game Industry by Jason Schreier.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 218
-		Zoom = 150
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Think Again_ The Power of Knowing What You Don't Know by Adam Grant.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Klara and the Sun by Kazuo Ishiguro.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 84.3757
-		PageNo = 43
-		Zoom = 100
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Atomic Habits - James Clear.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 63.9379
-		PageNo = 38
-		Zoom = 200
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Black Swan, The Impact of the Highly Improbable - Nassim Nicholas Taleb.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 110.626
-		PageNo = 41
-		Zoom = 100
-		Rotation = 0
-		WindowState = 3
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Million Dollar Habits_ Proven Power Practices to Double and Triple Your Income by Brian Tracy.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Exit Strategy (Murderbot Diaries, Book 4) by Martha Wells.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Money, and the Law of Attraction_ Learning to Attract Wealth, Health, and Happiness by Esther Hicks.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 730.778
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Everything Is Fucked (F-cked) by Mark Manson.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Trading in the Zone_ Master the Market with Confidence, Discipline, and a Winning Attitude by Mark Douglas.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Angela Merkel The Authorized Biography  by Stefan Kornelius.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Rabbi Jesus_ An Intimate Biography by Bruce Chilton.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Antarctica_ A Biography by David Day.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Stalin - A Biography By Robert Service ABEE.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 97.1323
 		PageNo = 2
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The World's Banker by Sebastian Mallaby.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 567.328
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Thinking, Fast and Slow.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 11
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 236
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Personal MBA by Josh Kaufman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\How to Lie with Statistics by Darrell Huff.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Sell or Be Sold by Grant Cardone.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Secrets of the Millionaire Mind by T. Harv Eker.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Be Obsessed or Be Average by Grant Cardone.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Influence, New and Expanded_ The Psychology of Persuasion by Robert B. Cialdini.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Surrounded by Idiots by Thomas Erikson.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Magic of Thinking Big - David Schwartz.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Charlie Munger The Complete Investor.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 181.221
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Wealth of Nations (Illustra - Adam Smith.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Great Fortune_ The Epic of Rockefeller Center by Daniel Okrent.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Secret Race_ Inside the Hidden World.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Becoming by Michelle Obama.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Everything Store - Jeff Bezos.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\I'd Like to Play Alone, Please_ Essays by Tom Segura.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 41.7006
-		PageNo = 37
-		Zoom = 100
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Ballet The Definitive Illustrated Story.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 844.846
-		PageNo = 28
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 966 1020
-		ShowToc = true
-		SidebarDx = 284
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Complete Photo Guide To Great Sex\The Complete Photo Guide To Great Sex.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 514.758
-		PageNo = 144
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 284
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Learn to Earn by Peter Lynch, John Rothchild.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 41.5205
-		PageNo = 10
-		Zoom = 125
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Moneyball - The Art of Winning an Unfair Game [Michael Lewis].epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 3.61124
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Moneyball The Art of Winning an Unfair Game.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 403.743
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 970 1020
-		ShowToc = false
-		SidebarDx = 284
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Art of Thinking Clearly by Rolf Dobelli EPUB\The Art of Thinking Clearly by Rolf Dobelli.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 61.0004
-		PageNo = 42
-		Zoom = 150
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 206
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Goodreads Most Popular Books - March, 2023\A_House_With_Good_Bones.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 645.467
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Ron Chernow - Titan, The Life of John D. Rockefeller, Sr. (epub).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 577.636
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Poor Economics by Abhijit V. Banerjee, Esther Duflo.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 2.77598
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Rudolf Steiner, A Biography - Christoph Lindenberg.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Reacher Guy_ A Biography of Lee Child by Heather Martin.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 567.642
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\E mc2_ A Biography of the World's Most Famous Equation by David Bodanis.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 343.727
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Goodreads Most Popular Books - January, 2023\Spare_-_Prince_Harry_The_Duke_of_Sus_.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 681.247
-		PageNo = 9
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 422
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Joy of Game Theory - An Introduction to Strategic Thinking By Presh Talwalkar.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Dwight D. Eisenhower_ An Associated Press Biography by Relman Morin.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\John le Carré_ The Biography by Adam Sisman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Worall F. - Lewis Hamilton. The Biography - 2015.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Ultimate Guide To Anal Sex For Women.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 120.127
-		PageNo = 16
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Sex Positions - The Ultimate Guide To Sex - Inspired By Tantra And Kamasutra.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 74.9308
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Jim Henson_ The Biography by Brian Jay Jones.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Aleister Crowley, The Biography - Tobias Churton.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Stalin_ New Biography of a Dictator by Oleg V. Khlevniuk.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Ibn Khaldun_ An Intellectual Biography by Robert Irwin.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Smith, Adam - La mano invisible [30943] (r1.0).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 410.425
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Paris Like a Local.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 9
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\365 Things to Do With LEGO Bricks By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 213.821
-		PageNo = 21
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = false
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Drawing and Painting the Nude - A Course of 50 Lessons.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 713.122
-		PageNo = 294
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\TalentCode.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 496.935
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Little Book of Talent_ 52 Tips for Improving Your Skills by Daniel Coyle.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 413.873
-		PageNo = 9
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Simply Astronomy By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 162
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\How Money Works - The Facts Visually Explained (2017) (DK Publishing).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 104.064
-		PageNo = 16
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\8-2.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 47.2137
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = false
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Ultimate Visual Dictionary By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 446.326
-		PageNo = 7
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\15 Minute Stretching Workout By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 611.576
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Simply Math By DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 207.451
-		PageNo = 26
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Weapon - A Visual History of Arms and Armor (DK) [2006 US].pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 505.671
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Russian-English Bilingual Visual Dictionary - DK.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 313.152
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Business Book.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 88.1026
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Talent Code by Daniel Coyle.mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 716.124
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Anatomy A Photographic Atlas\Anatomy A Photographic Atlas (Color Atlas of Anatomy a Photographic Study of the Human Body) by Johannes W. Rohen, Chihiro Yokochi, Elke Lutjen-Drecoll.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 117.843
-		PageNo = 120
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Human Anatomy The Definitive Visual Guide\Human Anatomy The Definitive Visual Guide.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 150
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 286
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Talent Code - Daniel Coyle.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 193.507
-		PageNo = 10
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 960 4 963 1031
-		ShowToc = true
-		SidebarDx = 224
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Psychology of Money - Timeless Lessons on Wealth, Greed, and Happiness.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 553.501
-		PageNo = 242
-		Zoom = 125
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 224
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\006 Accidentals.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\005 Scale Degrees.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 627.629
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\004 Circle of Fifths.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\003 How a scale is built.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\002 Octaves.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Udemy.The.Complete.Piano.Course.Master.The.Piano\The Complete Piano Course - Master The Piano\03 Music Theory\001 Note Names.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 648 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\sanet.st_1510767363.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 224.733
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1270 4 653 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\告别_PDA_-____Freestyle___-_掌上百科_-_PDAWIKI_-_Powered_by_Discuz!.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 545.904
-		PageNo = 3
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1270 4 653 1031
-		ShowToc = false
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Healthy Gut Cookbook By DK.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 259.336
-		PageNo = 367
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Beginning Beekeeping - Everything You Need To Make Your Hive Thrive! By DK.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 538.379
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Grow Compost By DK.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 341.297
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Naples & the Amalfi Coast (DK Eyewitness Top 10 Travel Guides) (Dorling Kindersley 2017).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Hong Kong (DK Eyewitness Top 10 Travel Guides) (Dorling Kindersley 2016).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 352
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Huey, Sam Walton - John - Sam Walton_ Made In America-DoubleDay (1992).epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 368.2
-		PageNo = 4
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 955 4 968 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\DK Guides\Rome (DK Eyewitness Top 10 Travel Guides) (Dorling Kindersley 2016).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 308.864
-		PageNo = 192
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = true
-		SidebarDx = 238
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\aa73322862db0122744fc294fa03e38b.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 968 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\common_stocks_and_uncommon_profits_and_other_writings.pdf
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\introducingpython.epub
 		Favorites [
 		]
 		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
+		IsMissing = false
+		OpenCount = 1
 		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\elegantscipy.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\The Rules Of Programming\The Rules Of Programming.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\lshort2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\Latex\20230725_01.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Pete Etchells - Lost in a Good Game_ Why We Play Video Games and what They Can Do for Us-Icon Books Ltd (2019).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 94
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Subtle Art of Not Giving a Fck by Mark Manson.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 98
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Non-Fiction Books Collection - April 11, 2022 PDF EPUB [MBB]\Accounting for Financial Decision Making (QuickStudy Business).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Non-Fiction Books Collection - April 11, 2022 PDF EPUB [MBB]\500 GRE Math Questions to Know by Test Day, 2nd Edition.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 54
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The ChatGPT Millionaire Handbook_ Make Money Online With the Power of AI Technology by TJ Books.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 12
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -3 4 1926 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Common Stocks and Uncommon Profits and Other Writings, by P.Fisher, (Wiley Investment Classics, 2003).pdf
+		FilePath = C:\Users\mino29\Downloads\Documents\Pageboy A Memoir by Elliot Page.epub
 		Favorites [
 		]
 		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
+		IsMissing = false
+		OpenCount = 1
 		UseDefaultState = false
-		DisplayMode = continuous book view
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 14
-		Zoom = 100
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Education of a Value Investor by Guy Spier.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 152
+		PageNo = 10
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -3 4 1926 1031
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\86─エイティシックス─Ep.1.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 72
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\历史的真实.epub
+		FilePath = C:\Users\mino29\Downloads\Documents\Seth A. Klarman - Margin of Safety_ Risk-Averse Value Investing Strategies for the Thoughtful Investor-HarperCollins (1991).epub
 		Favorites [
 		]
 		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
+		IsMissing = false
+		OpenCount = 2
 		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 26
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\A Dish Best Served Cold by Chris Kinsey.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 916 4 1007 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao Ze Dong Si Ren Yi Sheng Hui Yi Lu - Li Zhi Sui.epub
+		FilePath = C:\Users\mino29\Downloads\McCullough, Brian - How the Internet happened from Netscape to the iPhone-Liveright Publishing Corporation (2018).epub
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous book view
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 192
+		PageNo = 274
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 954 4 970 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Common Stocks and Uncommon Profits and Other Writings ( PDFDrive ).pdf
+		FilePath = C:\Users\mino29\Downloads\Seth A. Klarman - Margin of Safety_ Risk-Averse Value Investing Strategies for the Thoughtful Investor-HarperCollins (1991).mobi
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous book view
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 60
+		PageNo = 20
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 954 4 970 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Moby Dick - Herman Melville (Penguin Classics)\Moby-Dick or, The Whale (Enriched Classi - Herman Melville.epub
+		FilePath = C:\Users\mino29\Downloads\Janet Lowe - Damn Right_ Behind the Scenes with Berkshire Hathaway Billionaire Charlie Munger-Wiley (2003).mobi
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous book view
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 16
+		PageNo = 12
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Five Books by Neil Postman\Amusing Ourselves to Death_ Public Discourse in the Age of Show Business (20th Anniversary Edition) - Neil Postman.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui - The Private Life of Chairman Mao-Random House (1996).epub
+		FilePath = C:\Users\mino29\Downloads\Munger, Charles T._ Lowe, Janet_ Munger, Charles T - Damn Right_ Behind the Scenes With Berkshire Hathaway Billionaire Charlie Munger-John Wiley (2003).epub
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 190
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Mao, Zedong_Nathan, Andrew J._Tai, Hung-chao_Thurston, Anne F._Li, Zhisui - The private life of Chairman Mao_ the memoirs of Mao's personal physician-Random House Publishing Group (2011).mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 916 4 1007 1031
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Raj Patel_ Jason W. Moore - A History of the World in Seven Cheap Things_ A Guide to Capitalism, Nature, and the Future of the Planet-Black Inc. (2018).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous facing
-		ScrollPos = -1 -1
-		PageNo = 51
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = D:\Documents\Nassim Nicholas Taleb - The Black Swan - 2007.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 36
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Fooled by Randomness by Nassim Nicholas Taleb.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 62
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Li Zhi-Sui, Li Zhisui-The Private Life of Chairman Mao-Random House (1996).mobi
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\李志绥：毛泽东私人医生回忆录_2.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 8
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -4 4 1788 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 331
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Jordan B. Peterson - Maps of Meaning - The Architecture of Belief (1999, Routledge).pdf
+		FilePath = C:\Users\mino29\Downloads\Camila Russo - The Infinite Machine_ How an Army of Crypto-hackers Is Building the Next Internet with Ethereum-HarperCollins (2020).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 26
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Goodreads Most Popular Books - June, 2023\Love__Theoretically.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Goodreads May 2023\Goodreads May 2023\Goodreads May 2023\The_Soulmate_-_Sally_Hepworth_US.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Churchill_ A Biography by Roy Jenkins EPUB\Churchill_ A Biography by Roy Jenkins.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\The Beatles The Biography.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Poor Charlie's Almanack by Charles T. Munger.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 12
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Leonardo Da Vinci, The Biography - Walter Isaacson.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Charlie Munger The Complete Investor.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Money, The Unauthorized Biography - Felix Martin.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\[ CourseWikia.com ] The Art of Prompt Engineering with chatGPT - A Hands-On Guide\~Get Your Files Here !\TheArtofPromptEngineeringwithchatGPT.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Chat GPT for Dummies. A Quick Introduction to Prompt Engineering 2023\Chat GPT for Dummies. A Quick Introduction to Prompt Engineering 2023.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -3815,256 +772,117 @@ FileStates [
 		Rotation = 0
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
-		ShowToc = false
+		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\毛泽东私人医生回忆录.pdf
+		FilePath = C:\Users\mino29\Downloads\Inbox\Coleman D. ChatGPT Empowers Your Prompt Engineering with AI Tools. GPT-4...2023\Coleman D. ChatGPT Empowers Your Prompt Engineering with AI Tools. GPT-4...2023.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 537.675
-		PageNo = 142
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1800 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\20210505_20210505_0345_李志绥回忆录.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 30
+		PageNo = 62
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = -4 4 1804 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\毛泽东的私人医生回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 331
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\高文谦：晚年周恩来.pdf\高文谦：晚年周恩来.pdf
+		FilePath = C:\Users\mino29\Downloads\Documents\8902965.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = true
 		OpenCount = 0
 		UseDefaultState = false
-		DisplayMode = continuous
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 5
+		PageNo = 530
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\mzdsryshyl\mzdsrys回忆录.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 74
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\An introduction to international criminal law and procedure (2010) [blackatk].pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 7
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\University of Berkshire Hathaway by Daniel Pecaut.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Moby Dick.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 20
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -4 4 1928 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 1
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\Gadsby.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 954 4 970 1020
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Notes\books\The Mutant Race (Marvel) (2002) (AquilaLorelei TRWBD).cbr
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = -1 -0.90447
-		PageNo = 5
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Compressed\Political-Science-master\Political-Science-master\乔治·奥威尔：动物农场 (傅惟慈译 扫描版).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous book view
-		ScrollPos = -1 -1
-		PageNo = 24
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = -3 4 1926 1031
-		ShowToc = false
-		SidebarDx = 331
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\And Then There Were None - Agatha Christie.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = true
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = -1 -1
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -3 4 968 1031
+		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 331
+		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\Pete Etchells - Lost in a Good Game_ Why We Play Video Games and what They Can Do for Us-Icon Books Ltd (2019).epub
+				DisplayMode = book view
+				PageNo = 94
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\The Rules Of Programming\The Rules Of Programming.epub
+				DisplayMode = book view
+				PageNo = 14
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\introducingpython.epub
+				DisplayMode = book view
+				PageNo = 6
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\THE HUMBLE BOOK BUNDLE PYTHON BY O'REILLY\EPUB\naturallanguageprocessingwithpython.epub
+				DisplayMode = book view
+				PageNo = 2
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = true
+			]
+			[
+				FilePath = C:\Users\mino29\Videos\Courses\[ FreeCourseWeb.com ] The Python Book - 15th Edition, 2023\~Get Your Files Here !\.ThePythonBook-5thEdition,2023.pdf
+				DisplayMode = book view
+				PageNo = 58
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\fakingscience-20141214.pdf
+				DisplayMode = book view
+				PageNo = 6
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 1
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		SidebarDx = 327
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 652
+OpenCountWeek = 655
 
 # Settings below are not recognized by the current version

@@ -123,6 +123,9 @@ Set-PSReadLineKeyHandler -Key Tab -Function Complete
 # Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionSource History
 
+# 设置列表历史选项, F2切换
+#set-psreadlineoption -PredictionViewStyle ListView
+set-psreadlineoption -PredictionViewStyle InlineView
 
 # vim binding to powershell, uncoment one or the other
 Set-PSReadlineOption -EditMode vi
@@ -147,9 +150,6 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 # 设置向下键为前向搜索历史记录
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
-# 设置列表历史选项, F2切换
-#set-psreadlineoption -PredictionViewStyle ListView
-set-psreadlineoption -PredictionViewStyle InlineView
 
 #-------------------------------  Set Hot-keys END    -------------------------------
 

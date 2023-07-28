@@ -339,7 +339,8 @@ WinActivate
 }
 Else
 {
-Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
+Run, msedge.exe "extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
 }
 Return
 }
