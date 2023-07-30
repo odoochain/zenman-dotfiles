@@ -801,3 +801,40 @@ function Get-Temperature {
 # Just type get-temperature in PowerShell and it will spit back the temp in Celsius, Farenheit and Kelvin.
 
 Set-Alias lvim '$HOME\.local\bin\lvim.ps1'
+
+
+
+#calculate video files' total length
+function Get-VideoLength {
+    param(
+        [string]$Path = (Get-Location).Path
+    )
+
+    # Get all video files in the directory
+    $videoFiles = Get-ChildItem -Path $Path -Include *.mp4,*.mov,*.avi,*.mkv -Recurse | Where-Object {!$_.PSIsContainer}
+
+    if ($videoFiles.Count -eq 0) {
+        Write-Host "No video file found"
+        return
+    }
+
+    # Initialize total length variable
+    $totalSeconds = 0
+
+    foreach ($file in $videoFiles) {
+        # Use ffprobe to get video duration
+        $ffprobeOutput = & ffprobe.exe -i "$($file.FullName)" -show_entries format=duration -v quiet -of csv="p=0"
+
+        if ([int]$ffprobeOutput -gt 0) {
+            $totalSeconds += [int]$ffprobeOutput
+        }
+    }
+
+    # Convert total seconds to hh:mm:ss format
+    $timespan = New-Object -TypeName System.TimeSpan -ArgumentList 0,0,$totalSeconds
+    $totalLength = $timespan.ToString("hh\:mm\:ss")
+
+    return $totalLength
+}
+
+
