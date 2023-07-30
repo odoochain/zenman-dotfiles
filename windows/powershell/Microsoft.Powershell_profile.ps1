@@ -62,7 +62,8 @@ Try {
         # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
         # }
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
+        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
+        oh-my-posh init pwsh --config 'C:\Users\mino29\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
@@ -544,16 +545,6 @@ function PowerOff {
     #Disable-Cfw
     shutdown -p
 }
-
-
-# npm i -g empty-trash
-
-function emptytrash{
-        empty-trash.cmd
-        # you need to --> "npm i -g empty-trash-cli"
-        Write-Host "Yay, everything is shiny now!"
-        duf
-    }
 
 
 # Clear-Host

@@ -91,20 +91,6 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
-                "commandline": "%USERPROFILE%\\scoop\\shims\\msys2.cmd",
-                "cursorShape": "bar",
-                "guid": "{46228035-ad46-45ca-b401-2aba95fc50e7}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
-                "name": "MSYS2",
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true
-            },
-            {
                 "commandline": "C:\\Windows\\system32\\wsl.exe -d Arch",
                 "guid": "{d763f1ed-83b8-4566-a1aa-47faf15aaa48}",
                 "hidden": false,
