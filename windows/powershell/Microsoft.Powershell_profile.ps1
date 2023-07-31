@@ -85,18 +85,6 @@ function Setup-Scoop {
 }
 
 
-# Check if Scoop is installed
-if (!(Get-Command -Name scoop -ErrorAction SilentlyContinue)) {
-    # Check internet connection
-    $connected = Test-NetConnection -ComputerName 8.8.8.8 -InformationLevel Quiet
-
-    # Install Scoop if connected
-    if ($connected) {
-        Write-Host "Scoop is not installed on your system."
-        Setup-Scoop
-    }
-}
-
 
 #------------------------------- Scoop settings -------------------------
 
@@ -133,7 +121,8 @@ Try {
         # }
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-        oh-my-posh init pwsh --config 'C:\Users\mino29\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
+        oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
+        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
