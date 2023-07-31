@@ -15,22 +15,92 @@
 
 #------------------------------- Startup settings END -------------------------
 
-# Chocolatey profile
-Try {
-    $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-    if (Test-Path($ChocolateyProfile)) {
-        Import-Module "$ChocolateyProfile"
+# Check if Winget is installed
+if (!(Get-Command -Name winget -ErrorAction SilentlyContinue)) {
+    # Check internet connection
+    $connected = Test-NetConnection -ComputerName 8.8.8.8 -InformationLevel Quiet
+
+    # Install Winget if connected
+    if ($connected) {
+        Write-Host "Winget is not installed on your system."
+        iex "& {$(irm -useb 'https://aka.ms/getwinget')}"
     }
 }
-Catch {
-    # install chocolatey
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# scoop setup, a minimal setup
+function Setup-Scoop {
+    # Enable LongPaths support
+    sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+
+    # Install Scoop if not already installed
+    iex "& {$(iwr -useb scoop.201704.xyz)} -RunAsAdmin" | Out-Null
+
+    # Add main bucket
+    scoop bucket add main
+
+    # Install essential programs using Scoop
+    scoop install 7zip git vim dark aria2 innounp lessmsi # Define the list of software to install
+
+    $startSoftwareList = @(
+        '7zip',
+        'git',
+        'aria2',
+        'dark',
+        'innounp'
+        'lessmi'
+        # Add more software names here...
+    )
+
+    # Install software using Scoop
+    foreach ($software in $startSoftwareList) {
+        scoop install $software
+    }
+
+    # aria2
+    scoop config aria2--enabled true
+    scoop config aria2-warning-enabled false
+
+    # must-have buckets
+    scoop bucket add main
+    scoop bucket add apps "https://github.com/kkzzhizhou/scoop-apps"
+    scoop bucket add im-select "https://github.com/daipeihust/im-select"
+
+    $fullSoftwareList = @(
+        'scoop-search-multisource'
+        'im-select'
+        'oh-my-posh'
+        'posh-git'
+        'sumatrapdf'
+        'jpegview'
+        'potplayer'
+        'geekuninstaller'
+        # Add more software names here...
+    )
+
+    foreach ($software in $fullSoftwareList) {
+        scoop install $software
+    }
+
+    Write-Host "Scoop setup completed!"
+}
+
+
+# Check if Scoop is installed
+if (!(Get-Command -Name scoop -ErrorAction SilentlyContinue)) {
+    # Check internet connection
+    $connected = Test-NetConnection -ComputerName 8.8.8.8 -InformationLevel Quiet
+
+    # Install Scoop if connected
+    if ($connected) {
+        Write-Host "Scoop is not installed on your system."
+        Setup-Scoop
+    }
 }
 
 
 #------------------------------- Scoop settings -------------------------
 
-# Invoke-Expression
+# Speedier scoop search
 Invoke-Expression (&scoop-search-multisource.exe --hook)
 # Invoke-Expression (&scoop-search --hook)
 
@@ -59,7 +129,7 @@ Try {
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
         # }
     # else{
-        # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
+        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
         # }
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
@@ -84,7 +154,7 @@ Try {
     Import-Module PSReadLine
 }
 Catch {
-    Install-Module PSReadLine -Scope CurrentUser -AllowPrerelease - SkipPublisherChecke -Force  ## posh-git git美化管理包
+    Install-Module PSReadLine -Scope CurrentUser -Force  ## posh-git git美化管理包
 }
 
 # 引入terminal-icons
@@ -96,14 +166,6 @@ Catch {
 }
 
 
-# 引入PSWindowsUpdate
-# Try {
-#     Import-Module PSWindowsUpdate
-# }
-# Catch {
-#     Install-Module PSWindowsUpdate -Scope CurrentUser -Force  ## PSwindowsUpdates
-# }
-
 # 引入git-aliases
 Try{
     Import-Module git-aliases -DisableNameChecking
@@ -112,8 +174,6 @@ Catch{
     scoop install git-aliases
 }
 
-# 设置 bash style tab completion
-Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
 
 #------------------------------- Import Modules END   -------------------------------
@@ -125,8 +185,8 @@ Set-PSReadLineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineOption -PredictionSource History
 
 # 设置列表历史选项, F2切换
-#set-psreadlineoption -PredictionViewStyle ListView
 set-psreadlineoption -PredictionViewStyle InlineView
+#set-psreadlineoption -PredictionViewStyle ListView
 
 # vim binding to powershell, uncoment one or the other
 Set-PSReadlineOption -EditMode vi
@@ -151,7 +211,31 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 # 设置向下键为前向搜索历史记录
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+# 设置 bash style tab completion
+# Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
+# Autopair (might slow a bit)
+Set-PSReadLineKeyHandler -Chord '"',"'" `
+                         -BriefDescription SmartInsertQuote `
+                         -LongDescription "Insert paired quotes if not already on a quote" `
+                         -ScriptBlock {
+    param($key, $arg)
+
+    $line = $null
+    $cursor = $null
+    [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+
+    if ($line.Length -gt $cursor -and $line[$cursor] -eq $key.KeyChar) {
+        # Just move the cursor
+        [Microsoft.PowerShell.PSConsoleReadLine]::SetCursorPosition($cursor + 1)
+    }
+    else {
+        # Insert matching quotes, move cursor to be in between the quotes
+        [Microsoft.PowerShell.PSConsoleReadLine]::Insert("$($key.KeyChar)" * 2)
+        [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+        [Microsoft.PowerShell.PSConsoleReadLine]::SetCursorPosition($cursor - 1)
+    }
+}
 #-------------------------------  Set Hot-keys END    -------------------------------
 
 
@@ -231,7 +315,7 @@ Set-Alias -Name os-update -Value Update-Packages
 # 3. 查看目录 ls & ll
 #
 # ----------------------------------------------------------------------------
-
+<#
 # option-1
 # native to powershell
 
@@ -251,6 +335,7 @@ function ShowAllItems {
 
 Set-Alias -Name ls -Value ListItemName -Option AllScope
 Set-Alias -Name ll -Value ShowAllItems -Option AllScope
+#>
 
 # ----------------------------------------------------------------------------
 # option-2
@@ -836,5 +921,4 @@ function Get-VideoLength {
 
     return $totalLength
 }
-
 

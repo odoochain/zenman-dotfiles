@@ -14,7 +14,8 @@ Set-ExecutionPolicy RemoteSigned
 New-Item -path $profile -type file -force
 
 # Install windows terminal
-winget install microsoft.windowsterminal
+winget install microsoft.windowsterminal.preview
+winget uninstall microsoft.windowsterminal
 
 # 执行安装命令 (admin)
 iex "& {$(iwr -useb scoop.201704.xyz)} -RunAsAdmin"
