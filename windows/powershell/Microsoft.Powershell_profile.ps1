@@ -121,7 +121,8 @@ Try {
         # }
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-        oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
+        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
+        # oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
         # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
 }
 Catch {
