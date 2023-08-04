@@ -110,7 +110,6 @@ Invoke-Expression (&scoop-search-multisource.exe --hook)
 
 $hostname = hostname
 Try {
-<<<<<<< HEAD
     # if ($hostname -eq "HILDA") {
         # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
         # }
@@ -125,24 +124,6 @@ Try {
         oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
         # oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
         # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
-||||||| 7aff7cd
-    # if ($hostname -eq "HILDA") {
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        # }
-    # elseif ($hostname -eq "MARCY"){
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-        # }
-    # else{
-        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
-        # }
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-        oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
-        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
-=======
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
->>>>>>> 2deef6bb8728482ceb7ba8b8528b021cf2032f02
 }
 Catch {
     winget install JanDeDobbeleer.OhMyPosh
