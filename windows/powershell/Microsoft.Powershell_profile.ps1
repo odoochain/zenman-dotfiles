@@ -33,7 +33,7 @@ function Setup-Scoop {
     sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
     # Install Scoop if not already installed
-    iex "& {$(iwr -useb scoop.201704.xyz)} -RunAsAdmin" | Out-Null
+    iex "& {$(iwr -useb scoop.201704.xyz)} -RunAsAdmin"
 
     # Add main bucket
     scoop bucket add main
@@ -841,40 +841,10 @@ function rename {
 Set-Alias -Name rn -Value rename
 
 
-function cleanTorrentTrash {
-    param
-    (
-        # 输入要打开的路径
-        # 用法示例： cleanTorrentTrash C:\
-        # 默认路径：当前工作文件夹
-        $Path = '.'
-    )
-    Get-ChildItem -Path $Path -Include *.torrent, *.aria2  -File -Recurse | Remove-Item -Force
-}
-
-
 # The End Goal of this profile
 # Make it feature-rich
 # Make it run blazingly fast
-
-function Get-Temperature {
-    $t = Get-WmiObject MSAcpi_ThermalZoneTemperature -Namespace "root/wmi"
-
-    $currentTempKelvin = $t.CurrentTemperature / 10
-    $currentTempCelsius = $currentTempKelvin - 273.15
-
-    $currentTempFahrenheit = (9/5) * $currentTempCelsius + 32
-
-    return $currentTempCelsius.ToString() + " C : " + $currentTempFahrenheit.ToString() + " F : " + $currentTempKelvin + "K"  
-}
-
-# Save in your c:\users\yourName\Documents\WindowsPowerShell\modules\ directory
-# in sub directory get-temperature as get-temperature.psm1
-# You **must** run as Administrator.
-# It will only work if your system & BIOS support it. If it doesn't work, I can't help you.
-
-# Just type get-temperature in PowerShell and it will spit back the temp in Celsius, Farenheit and Kelvin.
-
+#
 # Set-Alias lvim '$HOME\.local\bin\lvim.ps1'
 
 
