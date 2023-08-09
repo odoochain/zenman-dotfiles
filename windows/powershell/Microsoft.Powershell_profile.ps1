@@ -110,23 +110,15 @@ Invoke-Expression (&scoop-search-multisource.exe --hook)
 
 $hostname = hostname
 Try {
-    # if ($hostname -eq "HILDA") {
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        # }
-    # elseif ($hostname -eq "MARCY"){
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\pwsh10k_norse.omp.json" | Invoke-Expression
-        # }
-    # else{
-        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
-        # }
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\polarnord.omp.json" | Invoke-Expression
-        # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-        oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
-        # oh-my-posh init pwsh --config '$home\scoop\apps\oh-my-posh\current\themes\tokyonight_storm.omp.json' | Invoke-Expression
-        # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
+    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
+    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\zash.omp.json' | Invoke-Expression
+    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\negligible.omp.json' | Invoke-Expression
 }
 Catch {
-    winget install JanDeDobbeleer.OhMyPosh
+    # winget install JanDeDobbeleer.OhMyPosh
+    scoop install oh-my-posh
 }
 
 
@@ -257,33 +249,22 @@ function Update-Packages {
     tlmgr update --self
     tlmgr update --all
 
-    # update Chocolotey
-    Write-Host "Step 4: Update Chocolatey" -ForegroundColor White -BackgroundColor Cyan
-    choco outdated
-    choco upgrade all
-
     # update Scoop
-    Write-Host "Step 5: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
+    Write-Host "Step 4: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
     scoop update
     scoop update --all
 
     # update winget
-    Write-Host "Step 6: Update Winget" -ForegroundColor White -BackgroundColor Cyan
+    Write-Host "Step 5: Update Winget" -ForegroundColor White -BackgroundColor Cyan
     winget upgrade
     winget upgrade --all
 
-
     # update Powershell Modules
-    Write-Host "Step 7: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
+    Write-Host "Step 6: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
     Update-Module -Force
 
     # update Windows
-    Write-Host "Step 8: Update Windows" -ForegroundColor White -BackgroundColor Cyan
-    Install-WindowsUpdate -AcceptAll -Install -AutoReboot
-
-
-    # update Windows
-    Write-Host "Step 9: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
+    Write-Host "Step 7: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
     nvim +PackerSync +qa!
 
 }
@@ -625,7 +606,7 @@ function PowerOff {
 # Clear-Host
 # set PowerShell to UTF-8
 # [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
-
+#$OutputEncoding = [System.Text.Encoding]::UTF8
 
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
@@ -748,7 +729,7 @@ function flatten {
         [Parameter(Mandatory=$true)]
         [string]$Filter
     )
-        
+
     $exclude_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
     $img_ext = @(".png", ".jpg", ".jpge", ".webp", ".gif", ".svg", ".psd", ".xcf")
     $video_ext = @(".mp4", ".mkv", ".srt", ".ts", ".wmv", ".avi", ".idx", ".sub", ".ass")
@@ -756,23 +737,23 @@ function flatten {
     $audio_ext = @(".mp3", ".m4a", ".flac")
     $app_ext = @(".exe", ".msi", ".iso")
 
-    if ($Filter -eq "Image") 
+    if ($Filter -eq "Image")
     {
     $opt_ext = $img_ext
     }
-    elseif ($Filter -eq "Video") 
+    elseif ($Filter -eq "Video")
     {
     $opt_ext = $video_ext
     }
-    elseif ($Filter -eq "Document") 
+    elseif ($Filter -eq "Document")
     {
     $opt_ext = $doc_ext
     }
-    elseif ($Filter -eq "Audio") 
+    elseif ($Filter -eq "Audio")
     {
     $opt_ext = $audio_ext
     }
-    elseif ($Filter -eq "App") 
+    elseif ($Filter -eq "App")
     {
     $opt_ext = $app_ext
     }
@@ -784,7 +765,7 @@ function flatten {
     Get-ChildItem -Path $Target -Recurse -File | Move-Item -Destination $Target -Force
     #This move each file to the top parent folder
     Get-ChildItem -Path $Target -Recurse | Where-Object { $opt_ext -notcontains $_.Extension } | Remove-Item -Recurse -Force
-    #This delete all empty files and folders 
+    #This delete all empty files and folders
     Get-ChildItem -Path $Target -Recurse | foreach {
        if( $_.psiscontainer -eq $true){
           if((gci $_.FullName) -eq $null){
@@ -822,7 +803,7 @@ function flatten {
 flatten a directory (files with duplicate names be renamed with number suffix)
 delete empty folders
 delete empty files
-sort files according to their extensions 
+sort files according to their extensions
 categories: Video, Pictures, Documents, Audio and Others
 #>
 
@@ -882,3 +863,4 @@ function Get-VideoLength {
     return $totalLength
 }
 
+Import-Module scoop-tab-completion

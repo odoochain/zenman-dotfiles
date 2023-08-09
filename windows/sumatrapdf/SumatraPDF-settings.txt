@@ -82,11 +82,171 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 3
+		OpenCount = 4
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 92
+		PageNo = 94
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\mpdf_2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2024-a4-l-1-en.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2023-a4-l-1-en.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\mpdf.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Music\Japanese Language Learning Pack - Learn Japanese!\06 Other\Essential Japanese Vocabulary - Learn to Avoid Common (and Embarrassing) Mistakes (1st Edition) [Digital].epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 194
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Music\Japanese Language Learning Pack - Learn Japanese!\05 Children Stories\Japanese Children Stories (in Hiragana)\01 Issun Boushi.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Videos\Courses\Byte C. Chat GPT Bible. 10 Books in 1 2023\Byte C. Chat GPT Bible. 10 Books in 1 2023.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 22
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\2023年-2024年月历\calendar-10-2023-l-a4-7calendar.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1

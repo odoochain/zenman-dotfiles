@@ -16,10 +16,6 @@
             "keys": "ctrl+v"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -27,6 +23,10 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "unbound",
@@ -116,6 +116,20 @@
                 "name": "git-bash",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true
+            },
+            {
+                "guid": "{3c20a16d-4beb-53d8-bf70-b310db1f4748}",
+                "hidden": false,
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{53191297-8aca-5d14-b41e-54ecc560fc12}",
+                "hidden": false,
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell-old.png",
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
