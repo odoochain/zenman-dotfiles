@@ -37,11 +37,11 @@
   "python.terminal.executeInFileDir": true,
   "terminal.integrated.defaultProfile.windows": "Powershell 7 Preview",
   "explorer.confirmDelete": false,
-  "python.defaultInterpreterPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Users\\mino29\\scoop\\apps\\python\\current\\python.exe",
   "python.formatting.provider": "black",
   "bracketPairColorizer.depreciation-notice": false,
   "workbench.startupEditor": "none",
-  "terminal.integrated.fontFamily": "hack nf",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "vsicons.dontShowNewVersionMessage": true,
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
@@ -211,7 +211,7 @@
     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "sml": "cd $dir && sml $fileName"
   },
-  "editor.fontFamily": "hack nf",
+  "editor.fontFamily": "Hack Nerd Font",
   "workbench.colorTheme": "Tokyo Night",
   "editor.fontSize": 12,
   "scm.inputFontSize": 12,
@@ -219,7 +219,8 @@
   "markdown.preview.fontSize": 12,
   "terminal.integrated.fontSize": 12,
   "editor.formatOnType": true,
-  "debug.console.fontFamily": "hack nf",
+  "debug.console.fontFamily": "Hack Nerd Font",
   "liveServer.settings.donotShowInfoMsg": true,
-  "jupyter.interactiveWindow.creationMode": "perFile"
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "git.openRepositoryInParentFolders": "always"
 }

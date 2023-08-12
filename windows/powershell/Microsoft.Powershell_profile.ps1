@@ -48,6 +48,7 @@ function Setup-Scoop {
         'dark',
         'innounp'
         'lessmi'
+        'winget'
         # Add more software names here...
     )
 
@@ -110,8 +111,8 @@ Invoke-Expression (&scoop-search-multisource.exe --hook)
 
 $hostname = hostname
 Try {
-    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
-    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
+    # oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\minimal.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\zash.omp.json' | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\negligible.omp.json' | Invoke-Expression

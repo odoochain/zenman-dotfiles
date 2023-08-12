@@ -77,12 +77,72 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
+		FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\AGUZ080E2123B001491V.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\BGUZ080E2123B017816N.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\PDZA202244010001017530.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
 		FilePath = C:\Users\mino29\Downloads\Documents\University of Berkshire Hathaway by Daniel Pecaut.azw3
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 4
+		OpenCount = 2
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -102,7 +162,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -122,7 +182,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -142,7 +202,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -162,7 +222,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -182,7 +242,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -202,7 +262,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -222,7 +282,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -242,7 +302,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 2
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -262,7 +322,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -282,7 +342,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -302,7 +362,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -362,7 +422,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -382,7 +442,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -402,7 +462,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -462,7 +522,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -502,7 +562,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -1119,8 +1179,43 @@ FileStates [
 	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\PDZA202244010001017530.pdf
+				DisplayMode = book view
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\BGUZ080E2123B017816N.pdf
+				DisplayMode = book view
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\AGUZ080E2123B001491V.pdf
+				DisplayMode = book view
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 3
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		SidebarDx = 327
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 657
+OpenCountWeek = 658
 
 # Settings below are not recognized by the current version
