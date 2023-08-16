@@ -28,8 +28,6 @@ return
 ;--------------------------------- Edit the script  ---------------------------
 
 #y::
-;run, wt.exe "nvim.exe" "%a_startup%\wmhotkeys.ahk"
-;run, wt.exe "nvim.exe" "C:\Users\%A_Username%\.dotfiles\windows\startup\wmhotkeys.ahk"
 run, wt.exe "nvim.exe" %A_ScriptFullPath%
 Return
 
@@ -41,27 +39,6 @@ Return
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
 <#z::Send {Volume_mute} ; with gui prompt
 
-;Persistent
-
-;toggleVolumeLevel()
-;{
-;; Get the current volume and mute state
-;CurrentVolume = SoundGet, Master
-;MuteState = SoundGetEx, Master, MUTE
-;
-;; If the volume is not 30 or muted
-;If (CurrentVolume != 30) || (MuteState = 1)
-;{
-    ;; Set the volume to 30 and unmute it
-    ;SoundSet, Master, 30
-    ;SoundSetEx, Master, 0, MUTE
-;}
-;Return
-;}
-;
-;<#z::
-;toggleVolumeLevel()
-;Return
 
 
 toggleDropPoint()
@@ -76,10 +53,6 @@ Run droppoint.exe, , hide
 }
 Return
 }
-
-;#z::
-;toggleDropPoint()
-;Return
 
 ; window utils
 
@@ -399,28 +372,39 @@ Return
 
 
 ; 启动或切换WindowsTerminal
-launchOrSwitchToWt()
-{
-if WinExist("ahk_exe WindowsTerminal.exe")
-{
-WinMinimizeAll
-WinActivateBottom, ahk_exe WindowsTerminal.exe
-}
-Else
-{
-WinMinimizeAll
-Run, wt.exe
-}
-Return
-}
-
-<#Enter::
-launchOrSwitchToWt()
-return
+;launchOrSwitchToWt()
+;{
+;if WinExist("ahk_exe WindowsTerminal.exe")
+;{
+;WinMinimizeAll
+;WinActivateBottom, ahk_exe WindowsTerminal.exe
+;}
+;Else
+;{
+;WinMinimizeAll
+;Run, wt.exe
+;}
+;Return
+;}
+;
+;<#Enter::
+;launchOrSwitchToWt()
+;return
 
 ;<#Enter::
 ;Run, wt.exe
 ;return
+
+<#Enter::
+    If WinExist("ahk_exe WindowsTerminal.exe")
+    {
+        WinActivate, ahk_exe WindowsTerminal.exe
+    }
+    Else
+    {
+        Run, wt.exe
+    }
+return
 
 
 
