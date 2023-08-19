@@ -44,7 +44,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialRows": 55,
     "launchMode": "default",
     "newTabMenu": 
@@ -92,6 +92,20 @@
                 "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "\"%USERPROFILE%\\scoop\\shims\\cygwin.exe\"",
+                "cursorShape": "bar",
+                "guid": "{e22368e7-1f1e-4746-b32c-8a4a6967c602}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\cygwin.png",
+                "name": "Cygwin",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true
             },
             {
                 "altGrAliasing": true,
