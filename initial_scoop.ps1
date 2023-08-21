@@ -1,3 +1,12 @@
+# Install everything you need for scoop
+
+
+
+
+
+
+
+
 # This make sure you run as Administrator
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
 {
@@ -13,7 +22,7 @@ Set-ExecutionPolicy RemoteSigned
 # Command to create a PowerShell profile
 New-Item -path $profile -type file -force
 
-# Install windows terminal
+# Install windows terminal preview
 winget install microsoft.windowsterminal.preview
 winget uninstall microsoft.windowsterminal
 

@@ -1,17 +1,3 @@
-#------------------------------- Notes ----------------------------------------
-
-<#
- * FileName: Microsoft.PowerShell_profile.ps1
- * Author: Wu Zhongzheng
- * Email: zhongzheng.wu@outlook.com
- * Date: 2022, Sep. 9
- * Copyright: No copyright. You can use this code for anything with no warranty.
-#>
-
-#------------------------------- Startup settings BEGIN -----------------------
-
-# Remove those annoying startup powershell info when possible
-# Clear-Host
 
 #------------------------------- Startup settings END -------------------------
 
@@ -438,14 +424,6 @@ Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------    Set Network END     -------------------------------
 
 
-#-------------------------------   Set z.lua BEGIN    -------------------------------
-
-# Invoke-Expression (& { (lua $HOME/z.lua/z.lua --init powershell) -join "`n" })
-# Invoke-Expression (& { (lua $HOME/scoop/apps/current/z.lua --init powershell) -join "`n" })
-# Invoke-Expression (& { (lua $HOME/scoop/apps/1.8.15/z.lua --init powershell) -join "`n" })
-
-#-------------------------------    Set z.lua END     -------------------------------
-
 #-------------------------------   Set zoxide BEGIN    -------------------------------
 
 # For zoxide v0.8.0+
@@ -566,7 +544,6 @@ function Disable-NetProxy {
 
 # more advanced functions based on the functions above
 
-
 function Cfw {
     # open "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
     # & "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
@@ -577,35 +554,9 @@ function Cfw {
     git config --global https.proxy 'http://127.0.0.1:7890'
     echo "git proxy set"
     git config --global --get http.proxy
-    start "https://www.youtube.com"
-    start "https://www.google.com"
-    start "https://web.telegram.org/z/"
     cp ~/pip/pip.ini.old ~/pip/pip.ini
 }
 
-
-function Disable-Cfw {
-    # $ClashApp = "Clash for Windows"
-    $ClashApp = "Clash Verge"
-
-    Disable-NetProxy
-    git config --global --unset http.proxy
-    git config --global --unset https.proxy
-    rm ~/pip/pip.ini
-
-    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) {
-        Write-Host "Not Running"
-    }
-
-    else {
-        Write-Host "$ClashApp is Running"
-        Stop-Process -processname $ClashApp
-        Write-Host "$ClashApp has been closed"
-        git config --global --unset http.proxy
-        git config --global --unset https.proxy
-        Write-Host "git proxy unset"
-    }
-}
 
 function Reboot {
     #Disable-Cfw
@@ -618,18 +569,8 @@ function PowerOff {
 }
 
 
-# Clear-Host
-# set PowerShell to UTF-8
-# [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
-#$OutputEncoding = [System.Text.Encoding]::UTF8
-
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
-# Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
-
-# Fzf
-# Import-Module PSFzf
-# Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
@@ -657,24 +598,6 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
-
-# -------------------------------   Set lunarvim START    -------------------------------
-#
-# auto setup lunarvim
-# Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
-<#
-$lvimPath = "$HOME\.local\bin\lvim.ps1"
-if (Test-Path -Path $lvimPath)
-{
-    Set-Alias lvim $lvimPath
-    Set-Alias lv $lvimPath
-    # Set-Alias v $lvimPath
-    # Set-Alias vi $lvimPath
-    # Set-Alias vim $lvimPath
-}
-else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
-#>
-# -------------------------------   Set lunarvim END    -------------------------------
 
 
 function potplayer {
@@ -806,22 +729,6 @@ function flatten {
     }
 }
 
-<#
--filter
- image leave only images files
- video leave only video files
- document leave only document files
-#>
-
-# ultimate flatten
-<#
-flatten a directory (files with duplicate names be renamed with number suffix)
-delete empty folders
-delete empty files
-sort files according to their extensions
-categories: Video, Pictures, Documents, Audio and Others
-#>
-
 function rename {
     param
     (
@@ -835,7 +742,6 @@ function rename {
     & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
-
 
 #calculate video files' total length
 function Get-VideoLength {

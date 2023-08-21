@@ -77,7 +77,67 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Document_20230816_0001.pdf
+		FilePath = C:\Users\mino29\Downloads\Documents\1692090382_788031.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Benjamin Franklin - The Way to Wealth (Illustrated) (1800).azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 18
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\2023年-2024年月历\calendar-11-2023-l-a4-7calendar.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Quicknotes\2023年-2024年月历\calendar-10-2023-l-a4-7calendar.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -102,7 +162,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 4
+		OpenCount = 3
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -111,7 +171,7 @@ FileStates [
 		Rotation = 0
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
-		ShowToc = true
+		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -123,7 +183,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 4
+		OpenCount = 2
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -143,7 +203,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 4
+		OpenCount = 2
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -163,7 +223,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 4
+		OpenCount = 2
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -183,7 +243,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -203,7 +263,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 2
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -259,6 +319,26 @@ FileStates [
 	]
 	[
 		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2023-a4-l-1-en.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Document_20230816_0001.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -368,26 +448,6 @@ FileStates [
 		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 22
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Quicknotes\2023年-2024年月历\calendar-10-2023-l-a4-7calendar.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
@@ -1260,35 +1320,8 @@ FileStates [
 	]
 ]
 SessionData [
-	[
-		TabStates [
-			[
-				FilePath = C:\Users\mino29\Downloads\Documents\How to Read a Book MortimerJ.AdlerTouchstone.pdf
-				DisplayMode = book view
-				PageNo = 56
-				Zoom = fit page
-				Rotation = 0
-				ScrollPos = -1 -1
-				ShowToc = true
-				TocState = 1
-			]
-			[
-				FilePath = C:\Users\mino29\Downloads\Document_20230816_0001.pdf
-				DisplayMode = book view
-				PageNo = 1
-				Zoom = fit page
-				Rotation = 0
-				ScrollPos = -1 -1
-				ShowToc = false
-			]
-		]
-		TabIndex = 2
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		SidebarDx = 327
-	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 658
+OpenCountWeek = 659
 
 # Settings below are not recognized by the current version
