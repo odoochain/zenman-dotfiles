@@ -296,12 +296,7 @@ Return
 
 ; 启动或切换AriaNgGui
 launchOrSwitchAriaNgGui()
-;{
-;Run, msedge.exe "chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.html#!/downloading" " --new-window"
-;Run, firefoxe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading"
-;}
-
-
+/*
 ; 用Edge
 {
 WinMinimizeAll
@@ -317,24 +312,25 @@ Run, msedge.exe "extension://jjfgljkjddpcpfapejfkelkbjbehagbh/ui/ariang/index.ht
 }
 Return
 }
-
+*/
 
 ; 用Chrome
-;{
-;WinMinimizeAll
-;SetTitleMatchMode RegEx
-;if WinExist("^Download ahk_exe chrome.exe")
-;{
-;WinActivate
-;}
-;Else
-;{
-;;Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-;Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-;; Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
-;}
-;Return
-;}
+{
+WinMinimizeAll
+SetTitleMatchMode RegEx
+if WinExist("^Download ahk_exe chrome.exe")
+{
+WinActivate
+}
+Else
+{
+Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+; Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+; Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+;Run, "C:\Users\%A_Username%\AppData\Local\Chromium\Application\chrome.exe" "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/downloading" " --new-window"
+}
+Return
+}
 
 ; 用Firefox
 ;{
@@ -410,7 +406,6 @@ return
 
 ;-----------------------google chrome---------------------------
 ;启动或切换Chrome
-/*
 launchOrSwitchToChrome()
 {
 if WinExist("ahk_exe chrome.exe")
@@ -419,9 +414,12 @@ WinActivateBottom, ahk_exe chrome.exe
 }
 Else
 {
-; Run, chrome.exe, , hide
-; Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe"
- Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe"
+Run, chrome.exe, , hide
+;Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe"
+;Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe"
+;Run, "C:\Users\%A_Username%\AppData\Local\Chromium\Application\chrome.exe"
+;Run, chrome.exe, --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data", hide
+;Run, C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data"
 }
 Return
 }
@@ -429,9 +427,9 @@ Return
 <#b::
 launchOrSwitchToChrome()
 Return
-*/
 
 ;----------------------- microsoft edge ---------------------------
+/*
 ;启动或切换Edge
 launchOrSwitchToEdge()
 {
@@ -449,9 +447,9 @@ Return
 <#b::
 launchOrSwitchToEdge()
 Return
-
+*/
 ;----------------------- Mozilla Firefox ---------------------------
-;启动或切换Edge
+;启动或切换Firefox
 
 /*
 launchOrSwitchToFirefox()
