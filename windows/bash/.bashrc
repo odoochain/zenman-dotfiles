@@ -141,5 +141,6 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 alias ne="fastfetch"
 alias py="python"
+alias cls="clear"
 # zoxide
 eval "$(zoxide init bash)"
