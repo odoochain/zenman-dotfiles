@@ -69,15 +69,15 @@ TreeFontSize = 0
 SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
-WindowState = 1
-WindowPos = 3 10 1914 1007
+WindowState = 2
+WindowPos = -7 0 974 1032
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\The Pandas Workshop.pdf
+		FilePath = C:\Users\mino29\Downloads\Inbox\Dad is Fat by Jim Gaffigan EPUB\Dad is Fat by Jim Gaffigan.epub
 		Favorites [
 		]
 		IsPinned = false
@@ -86,12 +86,32 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 1
+		PageNo = 12
 		Zoom = fit page
 		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = true
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Videos\Courses\The Pandas Workshop.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 67
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -1521,6 +1541,32 @@ FileStates [
 	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\mino29\Videos\Courses\The Pandas Workshop.pdf
+				DisplayMode = single page
+				PageNo = 67
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Inbox\Dad is Fat by Jim Gaffigan EPUB\Dad is Fat by Jim Gaffigan.epub
+				DisplayMode = book view
+				PageNo = 12
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 2
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		SidebarDx = 327
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
 OpenCountWeek = 660
