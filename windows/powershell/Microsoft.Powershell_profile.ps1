@@ -870,4 +870,3 @@ function Get-VideoLength {
     return $totalLength
 }
 
-Import-Module scoop-tab-completion
