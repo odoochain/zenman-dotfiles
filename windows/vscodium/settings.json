@@ -222,5 +222,6 @@
   "debug.console.fontFamily": "Hack Nerd Font",
   "liveServer.settings.donotShowInfoMsg": true,
   "jupyter.interactiveWindow.creationMode": "perFile",
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "jupyter.askForKernelRestart": false
 }

@@ -97,20 +97,6 @@
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "automatic",
-                "commandline": "\"%USERPROFILE%\\scoop\\shims\\msys2.cmd\"",
-                "cursorShape": "bar",
-                "guid": "{037b1ef2-b015-4b4c-a448-d8e0c644972d}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\msys2.png",
-                "name": "MSYS2",
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
                 "commandline": "\"%USERPROFILE%\\scoop\\apps\\git\\current\\bin\\bash.exe\"",
                 "cursorShape": "bar",
                 "guid": "{95d92901-6e04-4e12-9774-8dc7005f6af0}",
@@ -133,20 +119,6 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{3c20a16d-4beb-53d8-bf70-b310db1f4748}",
-                "hidden": true,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{53191297-8aca-5d14-b41e-54ecc560fc12}",
-                "hidden": true,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell-old.png",
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },

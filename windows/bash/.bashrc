@@ -142,5 +142,7 @@ source "$OSH"/oh-my-bash.sh
 alias ne="fastfetch"
 alias py="python"
 alias cls="clear"
+alias code="codium"
+alias ll="ls -la"
 # zoxide
 eval "$(zoxide init bash)"

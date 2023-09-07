@@ -129,7 +129,6 @@ Try {
     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\zash.omp.json' | Invoke-Expression
-    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\negligible.omp.json' | Invoke-Expression
 }
 Catch {
     # winget install JanDeDobbeleer.OhMyPosh
@@ -211,7 +210,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 # 设置 bash style tab completion
 # Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
-# Autopair (might slow a bit)
+# Autopair (might be a bit slow)
 Set-PSReadLineKeyHandler -Chord '"',"'" `
                          -BriefDescription SmartInsertQuote `
                          -LongDescription "Insert paired quotes if not already on a quote" `
@@ -297,59 +296,6 @@ Set-Alias -Name make -Value MakeThings
 
 # 2. 更新系统 os-update
 Set-Alias -Name os-update -Value Update-Packages
-
-# 3. 查看目录 ls & ll
-#
-# ----------------------------------------------------------------------------
-<#
-# option-1
-# native to powershell
-
-function ListItemName {
-    Write-Host("")
- 	(Get-ChildItem).Name
-    Write-Host("")
-}
-
-function ShowAllItems {
-    Write-Host("")
- 	Get-ChildItem -force
-    Write-Host("")
-}
-
-# if it's directory then grey, else it's just cyan
-
-Set-Alias -Name ls -Value ListItemName -Option AllScope
-Set-Alias -Name ll -Value ShowAllItems -Option AllScope
-#>
-
-# ----------------------------------------------------------------------------
-# option-2
-# below requires you to install lsd to work
-
-<#
-function ListItem {
-    Write-Host("")
-    lsd -a
-    Write-Host("")
-}
-
-function ListDirectory {
-    Write-Host("")
-    lsd -la
-    Write-Host("")
-}
-
-function TreeView {
-    Write-Host("")
-    lsd --tree
-    Write-Host("")
-}
-
-Set-Alias -Name ls -Value ListItem -Option AllScope
-Set-Alias -Name ll -Value ListDirectory -Option AllScope
-Set-Alias -Name tree -Value TreeView -Option AllScope
-#>
 
 # ----------------------------------------------------------------------------
 
@@ -437,14 +383,6 @@ function Get-IPv6Routes {
 Set-Alias -Name getip6 -Value Get-IPv6Routes
 #-------------------------------    Set Network END     -------------------------------
 
-
-#-------------------------------   Set z.lua BEGIN    -------------------------------
-
-# Invoke-Expression (& { (lua $HOME/z.lua/z.lua --init powershell) -join "`n" })
-# Invoke-Expression (& { (lua $HOME/scoop/apps/current/z.lua --init powershell) -join "`n" })
-# Invoke-Expression (& { (lua $HOME/scoop/apps/1.8.15/z.lua --init powershell) -join "`n" })
-
-#-------------------------------    Set z.lua END     -------------------------------
 
 #-------------------------------   Set zoxide BEGIN    -------------------------------
 
@@ -566,47 +504,6 @@ function Disable-NetProxy {
 
 # more advanced functions based on the functions above
 
-
-function Cfw {
-    # open "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-    # & "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-    & "$HOME\scoop\apps\clash-verge\current\Clash Verge.exe"
-    Set-NetProxy -proxy "127.0.0.1:7890"
-    Start-Sleep 2
-    git config --global http.proxy 'http://127.0.0.1:7890'
-    git config --global https.proxy 'http://127.0.0.1:7890'
-    echo "git proxy set"
-    git config --global --get http.proxy
-    start "https://www.youtube.com"
-    start "https://www.google.com"
-    start "https://web.telegram.org/z/"
-    cp ~/pip/pip.ini.old ~/pip/pip.ini
-}
-
-
-function Disable-Cfw {
-    # $ClashApp = "Clash for Windows"
-    $ClashApp = "Clash Verge"
-
-    Disable-NetProxy
-    git config --global --unset http.proxy
-    git config --global --unset https.proxy
-    rm ~/pip/pip.ini
-
-    if ((get-process $ClashApp -ea SilentlyContinue) -eq $Null) {
-        Write-Host "Not Running"
-    }
-
-    else {
-        Write-Host "$ClashApp is Running"
-        Stop-Process -processname $ClashApp
-        Write-Host "$ClashApp has been closed"
-        git config --global --unset http.proxy
-        git config --global --unset https.proxy
-        Write-Host "git proxy unset"
-    }
-}
-
 function Reboot {
     #Disable-Cfw
     shutdown -r -t 0
@@ -618,11 +515,6 @@ function PowerOff {
 }
 
 
-# Clear-Host
-# set PowerShell to UTF-8
-# [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
-#$OutputEncoding = [System.Text.Encoding]::UTF8
-
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
 # Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
@@ -631,15 +523,6 @@ Set-PSReadLineOption -BellStyle None
 # Import-Module PSFzf
 # Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
-# Env
-$env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
-
-
-# Utilities
-function which ($command) {
-    Get-Command -Name $command -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-}
 # -------------------------------   Set clash END    -------------------------------
 
 
@@ -657,24 +540,6 @@ fnm env --use-on-cd | Out-String | Invoke-Expression
 $Env:KOMOREBI_CONFIG_HOME = '$env:userprofile\.config\komorebi'
 
 # -------------------------------   Set Komorebi END    -------------------------------
-
-# -------------------------------   Set lunarvim START    -------------------------------
-#
-# auto setup lunarvim
-# Set-Alias lvim C:\Users\mino29\.local\bin\lvim.ps1
-<#
-$lvimPath = "$HOME\.local\bin\lvim.ps1"
-if (Test-Path -Path $lvimPath)
-{
-    Set-Alias lvim $lvimPath
-    Set-Alias lv $lvimPath
-    # Set-Alias v $lvimPath
-    # Set-Alias vi $lvimPath
-    # Set-Alias vim $lvimPath
-}
-else {Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression}
-#>
-# -------------------------------   Set lunarvim END    -------------------------------
 
 
 function potplayer {
@@ -835,38 +700,3 @@ function rename {
     & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
-
-
-#calculate video files' total length
-function Get-VideoLength {
-    param(
-        [string]$Path = (Get-Location).Path
-    )
-
-    # Get all video files in the directory
-    $videoFiles = Get-ChildItem -Path $Path -Include *.mp4,*.mov,*.avi,*.mkv -Recurse | Where-Object {!$_.PSIsContainer}
-
-    if ($videoFiles.Count -eq 0) {
-        Write-Host "No video file found"
-        return
-    }
-
-    # Initialize total length variable
-    $totalSeconds = 0
-
-    foreach ($file in $videoFiles) {
-        # Use ffprobe to get video duration
-        $ffprobeOutput = & ffprobe.exe -i "$($file.FullName)" -show_entries format=duration -v quiet -of csv="p=0"
-
-        if ([int]$ffprobeOutput -gt 0) {
-            $totalSeconds += [int]$ffprobeOutput
-        }
-    }
-
-    # Convert total seconds to hh:mm:ss format
-    $timespan = New-Object -TypeName System.TimeSpan -ArgumentList 0,0,$totalSeconds
-    $totalLength = $timespan.ToString("hh\:mm\:ss")
-
-    return $totalLength
-}
-
