@@ -119,13 +119,6 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "commandline": "%USERPROFILE%\\scoop\\apps\\docker\\24.0.5\\docker.exe  exec -it ff0e6511b433f0dfdb6e3d00c4257b0ca5898e4731699669bd8ab76a0021019b bin/zsh",
-                "guid": "{540b1d97-2eed-4ea4-b17f-475631bd26e8}",
-                "hidden": false,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\docker.png",
-                "name": "Docker-Archlinux"
             }
         ]
     },
