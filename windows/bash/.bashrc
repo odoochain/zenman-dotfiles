@@ -144,5 +144,10 @@ alias py="python"
 alias cls="clear"
 alias code="codium"
 alias ll="ls -la"
+alias rn="~/scoop/apps/advancedrenamer/current/Aren.exe"
+alias pot="~/scoop/apps/potplayer/current/PotPlayer64.exe"
 # zoxide
 eval "$(zoxide init bash)"
+
+# resolve unwanted characters
+/c/Windows/System32/chcp.com 65001 > /dev/null 2>&1
