@@ -8,13 +8,6 @@
  * Copyright: No copyright. You can use this code for anything with no warranty.
 #>
 
-#------------------------------- Startup settings BEGIN -----------------------
-
-# Remove those annoying startup powershell info when possible
-# Clear-Host
-
-#------------------------------- Startup settings END -------------------------
-
 # Check if Winget is installed
 if (!(Get-Command -Name winget -ErrorAction SilentlyContinue)) {
     # Check internet connection
@@ -242,10 +235,6 @@ $env:PATHEXT += ";.py"
 
 # 更新系统组件
 function Update-Packages {
-    # update conda packages (avoid conflit)
-    Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
-    conda update --all
-
 <#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
@@ -262,24 +251,6 @@ function Update-Packages {
     Write-Host "Step 3: Update TeX Live" $CurrentYear -ForegroundColor White -BackgroundColor Cyan
     tlmgr update --self
     tlmgr update --all
-
-    # update Scoop
-    Write-Host "Step 4: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
-    scoop update
-    scoop update --all
-
-    # update winget
-    Write-Host "Step 5: Update Winget" -ForegroundColor White -BackgroundColor Cyan
-    winget upgrade
-    winget upgrade --all
-
-    # update Powershell Modules
-    Write-Host "Step 6: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
-    Update-Module -Force
-
-    # update Windows
-    Write-Host "Step 7: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
-    nvim +PackerSync +qa!
 
 }
 
@@ -398,108 +369,6 @@ Catch {
 }
 
 #-------------------------------    Set zoxide END     -------------------------------
-
-
-
-
-
-#-------------------------------   Set clash BEGIN    -------------------------------
-
-
-<#
- #.Synopsis
- #This function will set the proxy settings provided as input to the cmdlet.
- #.Description
- #This function will set the proxy server and (optional) Automatic configuration script.
- #.Parameter Proxy Server
- #This parameter is set as the proxy for the system.
- #Data from. This parameter is Mandatory.
- #.Example
- #Setting proxy information.
- #Set-NetProxy -proxy "proxy:7890"
- #.Example
- #Setting proxy information and (optional) Automatic Configuration Script.
- #Set-NetProxy -proxy "proxy:7890" -acs "http://proxy Jump :7892"
-#>
-
-
-function Set-NetProxy {
-    [CmdletBinding()]
-    Param(
-
-        [Parameter(Mandatory = $True, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
-        [String[]]$Proxy,
-
-        [Parameter(Mandatory = $False, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
-        [AllowEmptyString()]
-        [String[]]$acs
-
-    )
-
-    Begin {
-
-        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-
-    }
-
-    Process {
-
-        Set-ItemProperty -path $regKey ProxyEnable -value 1
-
-        Set-ItemProperty -path $regKey ProxyServer -value $proxy
-
-        if ($acs) {
-
-            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs
-        }
-
-    }
-
-    End {
-
-        Write-Output "Proxy is now enabled"
-
-        Write-Output "Proxy Server : $proxy"
-
-        if ($acs) {
-
-            Write-Output "Automatic Configuration Script : $acs"
-
-        }
-        else {
-
-            Write-Output "Automatic Configuration Script : Not Defined"
-
-        }
-    }
-}
-
-
-function Disable-NetProxy {
-    Begin {
-
-        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-
-    }
-
-    Process {
-
-        Set-ItemProperty -path $regKey ProxyEnable -value 0 -ErrorAction Stop
-
-        Set-ItemProperty -path $regKey ProxyServer -value "" -ErrorAction Stop
-
-        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop
-
-    }
-
-    End {
-
-        Write-Output "Proxy is now Disabled"
-
-
-    }
-
-}
 
 
 # more advanced functions based on the functions above
@@ -670,22 +539,6 @@ function flatten {
        #>
     }
 }
-
-<#
--filter
- image leave only images files
- video leave only video files
- document leave only document files
-#>
-
-# ultimate flatten
-<#
-flatten a directory (files with duplicate names be renamed with number suffix)
-delete empty folders
-delete empty files
-sort files according to their extensions
-categories: Video, Pictures, Documents, Audio and Others
-#>
 
 function rename {
     param
