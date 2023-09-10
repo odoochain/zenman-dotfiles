@@ -147,6 +147,8 @@ alias ll="ls -la"
 alias rn="~/scoop/apps/advancedrenamer/current/Aren.exe"
 alias pot="~/scoop/apps/potplayer/current/PotPlayer64.exe"
 alias feh="~/scoop/apps/jpegview/current/jpegview.exe"
+alias renamer="~/scoop/apps/advancedrenamer/current/Aren.exe"
+alias potplayer="~/scoop/apps/potplayer/current/PotPlayer64.exe"
 # zoxide
 eval "$(zoxide init bash)"
 
@@ -154,3 +156,30 @@ eval "$(zoxide init bash)"
 /c/Windows/System32/chcp.com 65001 > /dev/null 2>&1
 
 export LANG=en_US.UTF-8
+
+
+# Custom Functions
+
+open() {
+    if [ $# -eq 0 ]; then
+         explorer .
+    else
+        explorer "$1"
+    fi
+}
+
+pot() {
+    if [ $# -eq 0 ]; then
+         potplayer .
+    else
+        potplayer "$1"
+    fi
+}
+
+rn() {
+    if [ $# -eq 0 ]; then
+         renamer .
+    else
+        renamer "$1"
+    fi
+}
