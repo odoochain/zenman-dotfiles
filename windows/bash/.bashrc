@@ -146,6 +146,7 @@ alias code="codium"
 alias ll="ls -la"
 alias rn="~/scoop/apps/advancedrenamer/current/Aren.exe"
 alias pot="~/scoop/apps/potplayer/current/PotPlayer64.exe"
+alias feh="~/scoop/apps/jpegview/current/jpegview.exe"
 # zoxide
 eval "$(zoxide init bash)"
 

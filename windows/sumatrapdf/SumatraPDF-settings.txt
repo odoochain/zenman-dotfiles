@@ -77,36 +77,16 @@ CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\个人信用报告.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1039
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\mino29\Downloads\Documents\Chip War_ The Fight for the World's Most Critical Technology by Chris Miller.epub
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 2
+		OpenCount = 3
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 10
+		PageNo = 26
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
@@ -122,7 +102,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 6
+		OpenCount = 5
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = -1 -1
@@ -143,11 +123,31 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 8
+		OpenCount = 6
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 44
+		PageNo = 202
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\个人信用报告.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
@@ -163,7 +163,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -183,7 +183,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 1
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -1645,15 +1645,6 @@ SessionData [
 	[
 		TabStates [
 			[
-				FilePath = C:\Users\mino29\Downloads\Documents\Nintendō Kabushiki Kaisha._Ryan, Jeff - Super Mario_ How Nintendo Conquered America-Penguin Publishing Group_Penguin Group US (2011).azw3
-				DisplayMode = book view
-				PageNo = 44
-				Zoom = fit page
-				Rotation = 0
-				ScrollPos = -1 -1
-				ShowToc = false
-			]
-			[
 				FilePath = C:\Users\mino29\Downloads\Documents\The Pandas Workshop.pdf
 				DisplayMode = single page
 				PageNo = 80
@@ -1666,7 +1657,7 @@ SessionData [
 			[
 				FilePath = C:\Users\mino29\Downloads\Documents\Chip War_ The Fight for the World's Most Critical Technology by Chris Miller.epub
 				DisplayMode = book view
-				PageNo = 10
+				PageNo = 26
 				Zoom = fit page
 				Rotation = 0
 				ScrollPos = -1 -1
@@ -1680,6 +1671,6 @@ SessionData [
 	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 661
+OpenCountWeek = 662
 
 # Settings below are not recognized by the current version
