@@ -70,55 +70,54 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 2
-WindowPos = -7 0 974 1039
+WindowPos = -7 0 974 1032
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Chip War_ The Fight for the World's Most Critical Technology by Chris Miller.epub
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 3
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 26
+		PageNo = 1
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
-		WindowPos = -7 0 974 1039
+		WindowPos = -7 0 974 1032
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Pandas Workshop.pdf
+		FilePath = C:\Users\mino29\Downloads\Inbox\736d480e0f084a3a9d9ed2a06bd4475e.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 5
+		OpenCount = 1
 		UseDefaultState = false
-		DisplayMode = single page
+		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 80
+		PageNo = 6
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
-		WindowPos = -7 0 974 1039
-		ShowToc = false
+		WindowPos = -7 0 974 1032
+		ShowToc = true
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
-		TocState = 31
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Nintendō Kabushiki Kaisha._Ryan, Jeff - Super Mario_ How Nintendo Conquered America-Penguin Publishing Group_Penguin Group US (2011).azw3
+		FilePath = C:\Users\mino29\Downloads\Documents\Chip War_ The Fight for the World's Most Critical Technology by Chris Miller.epub
 		Favorites [
 		]
 		IsPinned = false
@@ -127,91 +126,11 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 202
+		PageNo = 266
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
-		WindowPos = -7 0 974 1039
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\个人信用报告.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1039
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\Super Mario_ How Nintendo Conquered America by Jeff Ryan EPUB\Super Mario_ How Nintendo Conquered America by Jeff Ryan.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = 302 -19 974 1032
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\2019041120540853338306.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 6
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = 302 -19 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\pandas-cheat-sheet.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
+		WindowPos = -7 0 974 1032
 		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
@@ -258,26 +177,6 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\The Sentence by Louise Erdrich.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\mino29\Downloads\Quicknotes\2023年-2024年月历\calendar-9-2023-l-a4-7calendar.pdf
 		Favorites [
 		]
@@ -308,46 +207,6 @@ FileStates [
 		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\American Prometheus_ The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird EPUB\American Prometheus_ The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 12
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = 302 -19 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\1692090382_788031.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 6
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
@@ -396,27 +255,6 @@ FileStates [
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\How to Read a Book MortimerJ.AdlerTouchstone.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 56
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-		TocState = 1
 	]
 	[
 		FilePath = C:\Users\mino29\Documents\WeChat Files\benjamin-o\FileStorage\File\2023-08\AGUZ080E2123B001491V.pdf
@@ -479,126 +317,6 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Francis Su, Christopher Jackson - Mathematics For Human Flourishing-Yale University Press (2020).pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 16
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\University of Berkshire Hathaway by Daniel Pecaut.azw3
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 94
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\mpdf_2.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2024-a4-l-1-en.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2023-a4-l-1-en.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\mpdf.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\mino29\Music\Japanese Language Learning Pack - Learn Japanese!\06 Other\Essential Japanese Vocabulary - Learn to Avoid Common (and Embarrassing) Mistakes (1st Edition) [Digital].epub
 		Favorites [
 		]
@@ -634,26 +352,6 @@ FileStates [
 		WindowState = 1
 		WindowPos = 3 10 1914 1007
 		ShowToc = true
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Videos\Courses\Byte C. Chat GPT Bible. 10 Books in 1 2023\Byte C. Chat GPT Bible. 10 Books in 1 2023.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 22
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
 		SidebarDx = 327
 		DisplayR2L = false
 		ReparseIdx = 0
@@ -1640,35 +1338,370 @@ FileStates [
 		ReparseIdx = 0
 		TocState = 2
 	]
-]
-SessionData [
 	[
-		TabStates [
-			[
-				FilePath = C:\Users\mino29\Downloads\Documents\The Pandas Workshop.pdf
-				DisplayMode = single page
-				PageNo = 80
-				Zoom = fit page
-				Rotation = 0
-				ScrollPos = -1 -1
-				ShowToc = false
-				TocState = 31
-			]
-			[
-				FilePath = C:\Users\mino29\Downloads\Documents\Chip War_ The Fight for the World's Most Critical Technology by Chris Miller.epub
-				DisplayMode = book view
-				PageNo = 26
-				Zoom = fit page
-				Rotation = 0
-				ScrollPos = -1 -1
-				ShowToc = false
-			]
+		FilePath = C:\Users\mino29\Downloads\Grove, Andrew S - Only the paranoid survive_ how to exploit the crisis points that challenge every company-The Crown Publishing Group_Crown Business (2013_2010).epub
+		Favorites [
 		]
-		TabIndex = 2
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Nintendō Kabushiki Kaisha._Ryan, Jeff - Super Mario_ How Nintendo Conquered America-Penguin Publishing Group_Penguin Group US (2011).azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 202
+		Zoom = fit page
+		Rotation = 0
 		WindowState = 2
 		WindowPos = -7 0 974 1039
+		ShowToc = false
 		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
 	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\个人信用报告.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\Super Mario_ How Nintendo Conquered America by Jeff Ryan EPUB\Super Mario_ How Nintendo Conquered America by Jeff Ryan.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 302 -19 974 1032
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\2019041120540853338306.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 302 -19 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\pandas-cheat-sheet.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Sentence by Louise Erdrich.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Pandas Workshop.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 80
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 31
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\American Prometheus_ The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird EPUB\American Prometheus_ The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 12
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 302 -19 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\1692090382_788031.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\How to Read a Book MortimerJ.AdlerTouchstone.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 56
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 1
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Francis Su, Christopher Jackson - Mathematics For Human Flourishing-Yale University Press (2020).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 16
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\University of Berkshire Hathaway by Daniel Pecaut.azw3
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 94
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\mpdf_2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2024-a4-l-1-en.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\yearly-2023-a4-l-1-en.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\mpdf.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Videos\Courses\Byte C. Chat GPT Bible. 10 Books in 1 2023\Byte C. Chat GPT Bible. 10 Books in 1 2023.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 22
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+]
+SessionData [
 ]
 TimeOfLastUpdateCheck = 0 0
 OpenCountWeek = 662
