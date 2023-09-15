@@ -101,6 +101,8 @@ aliases=(
 plugins=(
   git
   bashmarks
+  pyenv
+  npm
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -125,6 +127,10 @@ source "$OSH"/oh-my-bash.sh
 #   export EDITOR='mvim'
 # fi
 
+# Auto completion
+bind 'TAB:menu-complete'
+
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -143,6 +149,8 @@ alias ne="fastfetch"
 alias py="python"
 alias cls="clear"
 alias code="codium"
+#alias ls="lsd -a"
+#alias ll="lsd -la"
 alias ll="ls -la"
 alias rn="~/scoop/apps/advancedrenamer/current/Aren.exe"
 alias pot="~/scoop/apps/potplayer/current/PotPlayer64.exe"
