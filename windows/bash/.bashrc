@@ -209,3 +209,7 @@ flatten() {
     find "$source_directory" -type f -size -200M -exec rm -rf {} \;
 }
 
+# Launch zsh instead
+if [ -t 1 ]; then
+  exec zsh
+fi
