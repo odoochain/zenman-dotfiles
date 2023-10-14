@@ -70,14 +70,14 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 2
-WindowPos = -7 0 974 1032
+WindowPos = 953 0 974 1039
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\mino29\Downloads\Documents\Elon Musk by Walter Isaacson.epub
+		FilePath = C:\Users\mino29\Downloads\Inbox\midv-390\solji.kim.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -86,7 +86,147 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 10
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = D:\Downloads\Inbox\Vanderbilt_ The Rise and Fall of an American Dynasty by Katherine Howe, Anderson Cooper EPUB\Vanderbilt_ The Rise and Fall of an American Dynasty by Katherine Howe, Anderson Cooper.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 76
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\American Prometheus, The Triumph and Tragedy of J Robert Oppenheimer - Bird & Sherwin.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Delusions of Crowds_ Why People Go Mad in Groups by William J. Bernstein.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\The Art Thief_ A True Story of Love, Crime, and a Dangerous Obsession by Michael Finkel.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 18
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Huxley, Aldous - Brave New World [5481] (r2.2) [EN].epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Compressed\Masters of Doom%3A David Kushner.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 240
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Carmack, John_Romero, John_Kushner, David - Masters of Doom_ how two guys created an empire and transformed pop culture-Random House Publishing Group (2003).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 30
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
@@ -97,207 +237,7 @@ FileStates [
 		ReparseIdx = 0
 	]
 	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_10.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_9.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_8.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_7.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_6.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_5.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_4.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_3.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 2
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_2.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 1
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 2
-		WindowPos = -7 0 974 1032
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Inbox\736d480e0f084a3a9d9ed2a06bd4475e.pdf
+		FilePath = C:\Users\mino29\Downloads\Compressed\TYSQL5_MySQL\README.pdf
 		Favorites [
 		]
 		IsPinned = false
@@ -306,7 +246,107 @@ FileStates [
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
-		PageNo = 6
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\2024年日历 中文版 横向排版 周一开始 带农历 带节假日调休 - 模板[DF005].pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\The First Tycoon_ The Epic Life of Cornelius Vanderbilt by T. J. Stiles EPUB\The First Tycoon_ The Epic Life of Cornelius Vanderbilt by T. J. Stiles.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 18
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = D:\Downloads\Inbox\Astor_ The Rise and Fall of an American by Anderson Cooper EPUB\Astor_ The Rise and Fall of an American by Anderson Cooper.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 26
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\2023年日历 中文版 横向排版 周一开始 带农历 - 模板[DF005].pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\Elon Musk by Walter Isaacson.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 10
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 2
@@ -322,7 +362,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 3
+		OpenCount = 0
 		UseDefaultState = false
 		DisplayMode = book view
 		ScrollPos = -1 -1
@@ -567,46 +607,6 @@ FileStates [
 		DisplayMode = book view
 		ScrollPos = -1 -1
 		PageNo = 8
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Videos\Courses\ChatGPT Masterclass The Guide to AI & Prompt Engineering\[TutsNode.net] - ChatGPT Masterclass The Guide to AI & Prompt Engineering\02 - Understanding & Mastering ChatGPT\002 Modes.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 3 10 1914 1007
-		ShowToc = false
-		SidebarDx = 327
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\mino29\Downloads\Documents\21 Lessons for the 21st Century by Yuval Noah Harari.epub
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = book view
-		ScrollPos = -1 -1
-		PageNo = 14
 		Zoom = fit page
 		Rotation = 0
 		WindowState = 1
@@ -1900,10 +1900,403 @@ FileStates [
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\2023年日历 由Excel生成，A4横向，无农历，无周数，周一开始 .pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_10.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_9.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_8.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_7.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_6.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_5.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_4.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_3.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载_2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\点击下载.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Inbox\736d480e0f084a3a9d9ed2a06bd4475e.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Masters of Doom_9780812972153.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\_OceanofPDF.com_Masters_of_Doom__How_Two_Guys_Created_an_E_-_David_Kushner.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 24
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = true
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = D:\Downloads\Inbox\Masters of Doom - How Two Guys Created an Empire and Transformed Pop Culture - David Kushner.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 102
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1032
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Videos\Courses\ChatGPT Masterclass The Guide to AI & Prompt Engineering\[TutsNode.net] - ChatGPT Masterclass The Guide to AI & Prompt Engineering\02 - Understanding & Mastering ChatGPT\002 Modes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\mino29\Downloads\Documents\21 Lessons for the 21st Century by Yuval Noah Harari.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 3 10 1914 1007
+		ShowToc = false
+		SidebarDx = 327
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\Huxley, Aldous - Brave New World [5481] (r2.2) [EN].epub
+				DisplayMode = book view
+				PageNo = 6
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\The Art Thief_ A True Story of Love, Crime, and a Dangerous Obsession by Michael Finkel.epub
+				DisplayMode = book view
+				PageNo = 18
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\The Delusions of Crowds_ Why People Go Mad in Groups by William J. Bernstein.epub
+				DisplayMode = book view
+				PageNo = 24
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\mino29\Downloads\Documents\American Prometheus, The Triumph and Tragedy of J Robert Oppenheimer - Bird & Sherwin.epub
+				DisplayMode = book view
+				PageNo = 8
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = D:\Downloads\Inbox\Vanderbilt_ The Rise and Fall of an American Dynasty by Katherine Howe, Anderson Cooper EPUB\Vanderbilt_ The Rise and Fall of an American Dynasty by Katherine Howe, Anderson Cooper.epub
+				DisplayMode = book view
+				PageNo = 76
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 5
+		WindowState = 2
+		WindowPos = 953 0 974 1039
+		SidebarDx = 327
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 663
+OpenCountWeek = 667
 
 # Settings below are not recognized by the current version

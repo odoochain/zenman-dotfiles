@@ -35,7 +35,7 @@
   "vscode-edge-devtools.mirrorEdits": true,
   "editor.cursorBlinking": "solid",
   "python.terminal.executeInFileDir": true,
-  "terminal.integrated.defaultProfile.windows": "Powershell 7 Preview",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "explorer.confirmDelete": false,
   "python.defaultInterpreterPath": "C:\\Users\\mino29\\scoop\\apps\\python\\current\\python.exe",
   "python.formatting.provider": "black",
@@ -223,5 +223,6 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "jupyter.interactiveWindow.creationMode": "perFile",
   "git.openRepositoryInParentFolders": "always",
-  "jupyter.askForKernelRestart": false
+  "jupyter.askForKernelRestart": false,
+  "sqltools.autoConnectTo": ""
 }

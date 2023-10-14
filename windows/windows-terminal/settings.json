@@ -1,8 +1,16 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": 
     [
+        {
+            "command": "unbound",
+            "keys": "alt+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
+        },
         {
             "command": 
             {
@@ -16,6 +24,10 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -23,18 +35,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+w"
         },
         {
             "command": "closePane",
@@ -45,7 +45,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{95d92901-6e04-4e12-9774-8dc7005f6af0}",
-    "initialRows": 57,
+    "initialRows": 50,
     "launchMode": "default",
     "newTabMenu": 
     [
@@ -82,14 +82,14 @@
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell-old.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
                 "name": "Windows PowerShell"
             },
             {
                 "commandline": "\"C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe\" -NoLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell-old.png",
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
@@ -119,6 +119,20 @@
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{016a7a31-db08-5ce2-9972-14c5df69b7ce}",
+                "hidden": false,
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{c062106f-bef5-5544-9aaf-bd62b25dc7c3}",
+                "hidden": false,
+                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
