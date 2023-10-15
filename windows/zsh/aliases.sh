@@ -17,7 +17,7 @@ alias :q="exit"
 # This is for zsh on windows
 
 alias ne="fastfetch"
-alias code="codium"
+#alias code="codium"
 #alias ls="lsd -a"
 #alias ll="lsd -la"
 #alias rn="~/scoop/apps/advancedrenamer/current/Aren.exe"
