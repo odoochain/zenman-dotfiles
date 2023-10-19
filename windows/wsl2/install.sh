@@ -1,4 +1,5 @@
 #REMOTE=https://gitee.com/mirrors/oh-my-zsh.git sh -c "$(wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)" "" --unattended
 
 $ZSH_CUSTOM="$home/.oh-my-zsh/custom"
 echo $ZSH_CUSTOM
