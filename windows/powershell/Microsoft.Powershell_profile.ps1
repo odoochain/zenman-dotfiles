@@ -317,8 +317,7 @@ Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
 
 # 6. vscodium aliases/ comment out this part if you use code
-
-Set-Alias -Name code -Value codium
+# Set-Alias -Name code -Value codium
 
 # 7. more "aliases"
 

@@ -4,14 +4,6 @@
     "actions": 
     [
         {
-            "command": "unbound",
-            "keys": "alt+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+w"
-        },
-        {
             "command": 
             {
                 "action": "copy",
@@ -20,12 +12,16 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": "unbound",
+            "keys": "alt+space"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -35,6 +31,10 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "closePane",
@@ -121,16 +121,26 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{016a7a31-db08-5ce2-9972-14c5df69b7ce}",
+                "guid": "{477f16c2-48b5-556c-a358-da260d640a77}",
                 "hidden": false,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\commandprompt.png",
+                "name": "Developer Command Prompt for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{bbe94618-a7a3-5cd0-96c6-9eef55d6890a}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a2080d32-b90d-59dc-b481-c881a265d71b}",
+                "hidden": true,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{c062106f-bef5-5544-9aaf-bd62b25dc7c3}",
-                "hidden": false,
-                "icon": "%USERPROFILE%\\.dotfiles\\utils\\os_icons\\powershell.png",
+                "guid": "{4b85b728-87c3-5232-8188-b9496a59b8c1}",
+                "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             }
