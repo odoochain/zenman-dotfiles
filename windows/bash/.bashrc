@@ -148,7 +148,7 @@ bind 'TAB:menu-complete'
 alias ne="fastfetch"
 alias py="python"
 alias cls="clear"
-alias code="codium"
+#alias code="codium"
 #alias ls="lsd -a"
 #alias ll="lsd -la"
 alias ll="ls -la"
@@ -158,7 +158,7 @@ alias feh="~/scoop/apps/jpegview/current/jpegview.exe"
 alias renamer="~/scoop/apps/advancedrenamer/current/Aren.exe"
 alias potplayer="~/scoop/apps/potplayer/current/PotPlayer64.exe"
 # zoxide
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 
 # resolve unwanted characters
 /c/Windows/System32/chcp.com 65001 > /dev/null 2>&1

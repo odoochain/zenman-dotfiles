@@ -2,7 +2,7 @@
     "buckets": [
         {
             "Name": "apps",
-            "Source": "https://proxy.201704.xyz/https://github.com/kkzzhizhou/scoop-apps",
+            "Source": "https://github.com/kkzzhizhou/scoop-apps",
             "Updated": {
                 "value": "\/Date(1697690932000)\/",
                 "DisplayHint": 2,
@@ -12,7 +12,7 @@
         },
         {
             "Name": "im-select",
-            "Source": "https://proxy.201704.xyz/https://github.com/daipeihust/im-select",
+            "Source": "https://github.com/daipeihust/im-select",
             "Updated": {
                 "value": "\/Date(1688943475000)\/",
                 "DisplayHint": 2,
@@ -22,53 +22,13 @@
         },
         {
             "Name": "main",
-            "Source": "https://proxy.201704.xyz/https://github.com/ScoopInstaller/Main",
+            "Source": "https://github.com/ScoopInstaller/Main",
             "Updated": {
-                "value": "\/Date(1697718657000)\/",
+                "value": "\/Date(1697747106000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Thursday, October 19, 2023 8:30:57 PM"
+                "DateTime": "Friday, October 20, 2023 4:25:06 AM"
             },
             "Manifests": 1260
-        },
-        {
-            "Name": "scoop",
-            "Source": "https://scoop.201704.xyz/https://github.com/yzlc/scoop",
-            "Updated": {
-                "value": "\/Date(1697718272000)\/",
-                "DisplayHint": 2,
-                "DateTime": "Thursday, October 19, 2023 8:24:32 PM"
-            },
-            "Manifests": 18
-        },
-        {
-            "Name": "scoop-it",
-            "Source": "https://scoop.201704.xyz/https://github.com/younger-1/scoop-it",
-            "Updated": {
-                "value": "\/Date(1697695297000)\/",
-                "DisplayHint": 2,
-                "DateTime": "Thursday, October 19, 2023 2:01:37 PM"
-            },
-            "Manifests": 27
-        },
-        {
-            "Name": "scoop-raresoft",
-            "Source": "https://scoop.201704.xyz/https://github.com/L-Trump/scoop-raresoft",
-            "Updated": {
-                "value": "\/Date(1598954243000)\/",
-                "DisplayHint": 2,
-                "DateTime": "Tuesday, September 1, 2020 5:57:23 PM"
-            },
-            "Manifests": 87
-        },
-        {
-            "Name": "scoopbucket",
-            "Source": "https://scoop.201704.xyz/https://github.com/VinDeville/ScoopBucket",
-            "Updated": {
-                "value": "\/Date(1692633618000)\/",
-                "DisplayHint": 2,
-                "DateTime": "Tuesday, August 22, 2023 12:00:18 AM"
-            },
-            "Manifests": 3
         }
     ],
     "apps": [
@@ -77,1344 +37,1624 @@
             "Source": "main",
             "Name": "7zip",
             "Version": "23.01",
-            "Updated": "\/Date(1689897587904)\/"
+            "Updated": "\/Date(1697740021141)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "7zip-zstd",
             "Version": "v22.01-v1.5.5-R3",
-            "Updated": "\/Date(1695237362625)\/"
+            "Updated": "\/Date(1695236156942)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ack",
             "Version": "3.7.0",
-            "Updated": "\/Date(1689897743826)\/"
+            "Updated": "\/Date(1677695127030)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "advancedrenamer",
             "Version": "3.91",
-            "Updated": "\/Date(1694145106650)\/"
+            "Updated": "\/Date(1694008780876)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "aegisub",
+            "Version": "3.2.2",
+            "Updated": "\/Date(1688613255218)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ag",
             "Version": "2.2.5",
-            "Updated": "\/Date(1689897757857)\/"
+            "Updated": "\/Date(1663867711444)\/"
         },
         {
-            "Info": "",
-            "Source": "apps",
+            "Info": "Install failed",
+            "Source": null,
             "Name": "anaconda3",
-            "Version": "2023.09-0",
-            "Updated": "\/Date(1697682663515)\/"
+            "Version": null,
+            "Updated": "\/Date(1697740263072)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "android-clt",
             "Version": "10406996",
-            "Updated": "\/Date(1696949779486)\/"
+            "Updated": "\/Date(1697740988851)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "android-studio",
             "Version": "2022.3.1.20",
-            "Updated": "\/Date(1696949720240)\/"
+            "Updated": "\/Date(1697741217915)\/"
         },
         {
-            "Info": "",
-            "Source": "apps",
+            "Info": "Install failed",
+            "Source": null,
             "Name": "appium",
-            "Version": "1.22.3",
-            "Updated": "\/Date(1695989772386)\/"
+            "Version": null,
+            "Updated": "\/Date(1697741304683)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "archwsl",
             "Version": "22.10.16.0",
-            "Updated": "\/Date(1691644255307)\/"
+            "Updated": "\/Date(1666500625848)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "arduino",
             "Version": "2.2.1",
-            "Updated": "\/Date(1697730218300)\/"
+            "Updated": "\/Date(1697742141909)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "aria2",
             "Version": "1.36.0-1",
-            "Updated": "\/Date(1689897571751)\/"
+            "Updated": "\/Date(1663867416415)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "audacity",
             "Version": "3.3.3",
-            "Updated": "\/Date(1690691382698)\/"
+            "Updated": "\/Date(1697742426358)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "autodeletefileonpcwechat",
+            "Version": "2.1",
+            "Updated": "\/Date(1686240328161)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "autohotkeyv1",
             "Version": "1.1.36.02",
-            "Updated": "\/Date(1689925072507)\/"
+            "Updated": "\/Date(1687499731464)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "baidudisk",
             "Version": "7.33.0.7",
-            "Updated": "\/Date(1695218557420)\/"
+            "Updated": "\/Date(1697742824380)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "bat",
             "Version": "0.24.0",
-            "Updated": "\/Date(1697120047395)\/"
+            "Updated": "\/Date(1697201873023)\/"
         },
         {
             "Info": "",
-            "Source": "scoop",
-            "Name": "battle",
-            "Version": "nightly-20231006",
-            "Updated": "\/Date(1696560333481)\/"
+            "Source": "apps",
+            "Name": "betterjoy",
+            "Version": "v7.1",
+            "Updated": "\/Date(1663867789528)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "blender",
             "Version": "3.6.4",
-            "Updated": "\/Date(1695885456042)\/"
+            "Updated": "\/Date(1697009514385)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "bloatynosy",
+            "Version": "0.85.0",
+            "Updated": "\/Date(1690557662686)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "borderless-gaming-portapps",
+            "Version": "9.5.6-3",
+            "Updated": "\/Date(1663867824627)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "bottom",
+            "Version": "0.9.6",
+            "Updated": "\/Date(1693544763648)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "broot",
             "Version": "1.26.1",
-            "Updated": "\/Date(1696177475755)\/"
+            "Updated": "\/Date(1696181067942)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "btop",
             "Version": "1.0.4",
-            "Updated": "\/Date(1689897823981)\/"
+            "Updated": "\/Date(1665179419970)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "busybox",
             "Version": "5181-g5c1a3b00e",
-            "Updated": "\/Date(1694318292682)\/"
+            "Updated": "\/Date(1692944649019)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "cacert",
             "Version": "2023-08-22",
-            "Updated": "\/Date(1692762203420)\/"
+            "Updated": "\/Date(1692944656257)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "capslock-plus",
+            "Version": "3.1.0",
+            "Updated": "\/Date(1663867845983)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "capslockindicator",
+            "Version": "3.16.1.2",
+            "Updated": "\/Date(1663867848984)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "captura",
             "Version": "8.0.0",
-            "Updated": "\/Date(1689897838434)\/"
+            "Updated": "\/Date(1663867850968)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "carnac",
             "Version": "2.3.13",
-            "Updated": "\/Date(1689897843746)\/"
+            "Updated": "\/Date(1663867852959)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "chezmoi",
+            "Version": "2.40.3",
+            "Updated": "\/Date(1697267205933)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "chfs",
             "Version": "3.0",
-            "Updated": "\/Date(1697033955208)\/"
+            "Updated": "\/Date(1697006909324)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "clash",
+            "Version": "1.18.0",
+            "Updated": "\/Date(1692944701020)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "clashweb",
             "Version": "2.0.2",
-            "Updated": "\/Date(1689897904590)\/"
+            "Updated": "\/Date(1674214964688)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "clink",
             "Version": "1.5.10",
-            "Updated": "\/Date(1697544578284)\/"
+            "Updated": "\/Date(1697473024732)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "clink-completions",
+            "Version": "0.4.11",
+            "Updated": "\/Date(1696684252806)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "cmake",
             "Version": "3.27.7",
-            "Updated": "\/Date(1696637310919)\/"
+            "Updated": "\/Date(1697743843618)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "codeblocks",
             "Version": "20.03",
-            "Updated": "\/Date(1696342697268)\/"
+            "Updated": "\/Date(1663868072397)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "coretemp",
             "Version": "1.18.1",
-            "Updated": "\/Date(1695634589886)\/"
+            "Updated": "\/Date(1696181103381)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "cowsay",
             "Version": "0.2013.07.19",
-            "Updated": "\/Date(1689897915231)\/"
+            "Updated": "\/Date(1663868079131)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "cpod",
             "Version": "1.28.0",
-            "Updated": "\/Date(1689897931144)\/"
+            "Updated": "\/Date(1663868089956)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "cpptools",
             "Version": "3.4.9",
-            "Updated": "\/Date(1696325262428)\/"
+            "Updated": "\/Date(1697744060660)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "cpu-z",
             "Version": "2.08",
-            "Updated": "\/Date(1695885496053)\/"
+            "Updated": "\/Date(1696181123266)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "crystaldiskmark",
             "Version": "8.0.4c",
-            "Updated": "\/Date(1689897946805)\/"
+            "Updated": "\/Date(1697744288653)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ctags",
             "Version": "5.8",
-            "Updated": "\/Date(1689897949399)\/"
+            "Updated": "\/Date(1663871620830)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "cuda",
+            "Version": "12.2.2_537.13",
+            "Updated": "\/Date(1693546418708)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "curl",
+            "Version": "8.4.0_3",
+            "Updated": "\/Date(1697473085882)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "curlie",
             "Version": "1.7.1",
-            "Updated": "\/Date(1689897953746)\/"
+            "Updated": "\/Date(1683738439872)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "cygwin",
             "Version": "2.927",
-            "Updated": "\/Date(1697245949169)\/"
+            "Updated": "\/Date(1697181035522)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "dark",
             "Version": "3.11.2",
-            "Updated": "\/Date(1689897580656)\/"
+            "Updated": "\/Date(1663867420822)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "dart",
-            "Version": "3.1.3",
-            "Updated": "\/Date(1697169624018)\/"
+            "Version": "3.1.4",
+            "Updated": "\/Date(1697744797169)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "delta",
             "Version": "0.16.5",
-            "Updated": "\/Date(1689897955986)\/"
+            "Updated": "\/Date(1685812092184)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "devtoys-np",
             "Version": "1.0.13.0",
-            "Updated": "\/Date(1697169610085)\/"
+            "Updated": "\/Date(1697745083663)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "discord",
+            "Version": "1.0.9010-15",
+            "Updated": "\/Date(1676336789727)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "ditto",
             "Version": "3.24.246.0",
-            "Updated": "\/Date(1689898023571)\/"
+            "Updated": "\/Date(1681734169839)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "docker",
+            "Version": "24.0.6",
+            "Updated": "\/Date(1694245932487)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "douyin",
+            "Version": "2.9.2",
+            "Updated": "\/Date(1696181140614)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "dropit",
             "Version": "8.5.1",
-            "Updated": "\/Date(1689898026824)\/"
+            "Updated": "\/Date(1697745242326)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "droppoint",
+            "Version": "1.2.1",
+            "Updated": "\/Date(1677907840701)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "duf",
             "Version": "0.8.1",
-            "Updated": "\/Date(1689898031326)\/"
+            "Updated": "\/Date(1663868185736)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "duplicatecleanerfree",
+            "Version": "4.1.2",
+            "Updated": "\/Date(1663868195619)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "dust",
             "Version": "0.8.6",
-            "Updated": "\/Date(1689898040024)\/"
+            "Updated": "\/Date(1683561992350)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "eclipse-java",
             "Version": "2023-09",
-            "Updated": "\/Date(1697709623032)\/"
+            "Updated": "\/Date(1697745543728)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "EdgeDeflector-Portable",
             "Version": "1.2.3.0",
-            "Updated": "\/Date(1689898042217)\/"
+            "Updated": "\/Date(1663868210050)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "espanso",
             "Version": "2.1.8",
-            "Updated": "\/Date(1689898054907)\/"
+            "Updated": "\/Date(1673191902974)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "eudic",
             "Version": "2023-09-27",
-            "Updated": "\/Date(1696943027865)\/"
+            "Updated": "\/Date(1696673880055)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "everything-alpha",
             "Version": "1.5.0.1357a",
-            "Updated": "\/Date(1696637319484)\/"
+            "Updated": "\/Date(1696684274586)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "exiftool",
             "Version": "12.68",
-            "Updated": "\/Date(1697544607530)\/"
+            "Updated": "\/Date(1697522317232)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "extractnow",
             "Version": "4.8.3.0",
-            "Updated": "\/Date(1689898323231)\/"
+            "Updated": "\/Date(1674402284397)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "fastfetch",
             "Version": "2.1.2",
-            "Updated": "\/Date(1697392427352)\/"
+            "Updated": "\/Date(1697473097535)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "fd",
             "Version": "8.7.0",
-            "Updated": "\/Date(1689898333382)\/"
+            "Updated": "\/Date(1677695178669)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ffmpeg",
             "Version": "6.0",
-            "Updated": "\/Date(1689898349410)\/"
+            "Updated": "\/Date(1677695199502)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "fiddler",
             "Version": "5.0.20211.51073",
-            "Updated": "\/Date(1691771102762)\/"
+            "Updated": "\/Date(1663871925231)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "figlet",
             "Version": "1.0-go",
-            "Updated": "\/Date(1689898351444)\/"
+            "Updated": "\/Date(1663890804595)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "firacode",
             "Version": "6.2",
-            "Updated": "\/Date(1696249174203)\/"
+            "Updated": "\/Date(1697745626569)\/"
         },
         {
             "Info": "",
             "Source": null,
             "Name": "firefox-nightly",
-            "Version": "120.0a1.20231013093747",
-            "Updated": "\/Date(1697736847371)\/"
+            "Version": "120.0a1.20231015093331",
+            "Updated": "\/Date(1697762441243)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "fnm",
             "Version": "1.35.1",
-            "Updated": "\/Date(1692182351644)\/"
+            "Updated": "\/Date(1692945092990)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "foobar2000",
             "Version": "2.0",
-            "Updated": "\/Date(1689898361704)\/"
+            "Updated": "\/Date(1682767537012)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "foobar2000-encoders",
             "Version": "2023-07-05",
-            "Updated": "\/Date(1689898367741)\/"
+            "Updated": "\/Date(1688730925492)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "fzf",
             "Version": "0.43.0",
-            "Updated": "\/Date(1697327706198)\/"
+            "Updated": "\/Date(1697473475903)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "gcc",
             "Version": "11.2.0",
-            "Updated": "\/Date(1689898402301)\/"
+            "Updated": "\/Date(1663873788169)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "gdu",
             "Version": "5.25.0",
-            "Updated": "\/Date(1689898413000)\/"
+            "Updated": "\/Date(1686240730287)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "geckodriver",
+            "Version": "0.33.0",
+            "Updated": "\/Date(1681027525906)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "geekuninstaller",
             "Version": "1.5.2.165",
-            "Updated": "\/Date(1694317691091)\/"
+            "Updated": "\/Date(1694246004025)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "genact",
             "Version": "1.2.2",
-            "Updated": "\/Date(1689898420383)\/"
+            "Updated": "\/Date(1674748074690)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "git",
             "Version": "2.42.0.2",
-            "Updated": "\/Date(1695237437903)\/"
+            "Updated": "\/Date(1693546991935)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "git-aliases",
             "Version": "0.3.5",
-            "Updated": "\/Date(1689898422579)\/"
+            "Updated": "\/Date(1663868412013)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "github",
             "Version": "3.3.4",
-            "Updated": "\/Date(1697544784742)\/"
+            "Updated": "\/Date(1697523194131)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "github-cli",
+            "Version": "2.35.0",
+            "Updated": "\/Date(1696183087837)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "glow",
             "Version": "1.5.1",
-            "Updated": "\/Date(1691305870784)\/"
+            "Updated": "\/Date(1685387770929)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "gmkvextractgui",
             "Version": "2.6.4",
-            "Updated": "\/Date(1692110203062)\/"
+            "Updated": "\/Date(1697745725478)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "godot",
             "Version": "4.1.2",
-            "Updated": "\/Date(1696512205427)\/"
+            "Updated": "\/Date(1697745799346)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "golang",
             "Version": "1.21.3",
-            "Updated": "\/Date(1697035379085)\/"
+            "Updated": "\/Date(1697007083400)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "goldendict",
             "Version": "alpha.224d3278",
-            "Updated": "\/Date(1689898522993)\/"
+            "Updated": "\/Date(1689439866417)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "googlechrome",
             "Version": "118.0.5993.71",
-            "Updated": "\/Date(1697121668486)\/"
+            "Updated": "\/Date(1697202285777)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gping",
+            "Version": "1.14.0",
+            "Updated": "\/Date(1691766806758)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "graphviz",
             "Version": "9.0.0",
-            "Updated": "\/Date(1694466651625)\/"
+            "Updated": "\/Date(1694682745010)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "grep",
             "Version": "3.11",
-            "Updated": "\/Date(1689898537220)\/"
+            "Updated": "\/Date(1697746132174)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "gzip",
             "Version": "1.3.12",
-            "Updated": "\/Date(1689898542880)\/"
+            "Updated": "\/Date(1672162248320)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "hack-nf",
             "Version": "3.0.2",
-            "Updated": "\/Date(1689897675167)\/"
+            "Updated": "\/Date(1697746246804)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "hmcl",
             "Version": "3.5.5",
-            "Updated": "\/Date(1689898550059)\/"
+            "Updated": "\/Date(1688313608599)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "hourglass",
             "Version": "1.15.0",
-            "Updated": "\/Date(1689898554162)\/"
+            "Updated": "\/Date(1663873923264)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "hwmonitor",
             "Version": "1.52",
-            "Updated": "\/Date(1693761847877)\/"
+            "Updated": "\/Date(1693901282566)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "idm",
             "Version": "641build21",
-            "Updated": "\/Date(1697544834407)\/"
+            "Updated": "\/Date(1697746305656)\/"
         },
         {
             "Info": "",
             "Source": "im-select",
             "Name": "im-select",
             "Version": "1.0.1",
-            "Updated": "\/Date(1689898560354)\/"
+            "Updated": "\/Date(1663904559375)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "imageglass",
+            "Version": "8.10.9.27",
+            "Updated": "\/Date(1696183138184)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ImageMagick",
             "Version": "7.1.1-20",
-            "Updated": "\/Date(1696819223825)\/"
+            "Updated": "\/Date(1697007149389)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "innounp",
             "Version": "0.50",
-            "Updated": "\/Date(1689898049078)\/"
+            "Updated": "\/Date(1663867456509)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "itch",
+            "Version": "25.6.2",
+            "Updated": "\/Date(1683132683349)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "jadx",
             "Version": "1.4.7",
-            "Updated": "\/Date(1695989476109)\/"
+            "Updated": "\/Date(1697746335938)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "jd",
             "Version": "1.7.1",
-            "Updated": "\/Date(1689898623803)\/"
+            "Updated": "\/Date(1681637433990)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "jianyingpro",
             "Version": "4.6.1.10576",
-            "Updated": "\/Date(1696036830231)\/"
+            "Updated": "\/Date(1696183389904)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "jjdown",
+            "Version": "1.234.0",
+            "Updated": "\/Date(1668493041827)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "jpegview",
             "Version": "1.2.45",
-            "Updated": "\/Date(1689898725409)\/"
+            "Updated": "\/Date(1678590406597)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "jq",
             "Version": "1.7",
-            "Updated": "\/Date(1694145235014)\/"
+            "Updated": "\/Date(1694246227685)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "julia",
             "Version": "1.9.3",
-            "Updated": "\/Date(1696635916623)\/"
+            "Updated": "\/Date(1696665031352)\/"
         },
         {
-            "Info": "",
-            "Source": "apps",
+            "Info": "Install failed",
+            "Source": null,
             "Name": "kdeconnect-nightly",
-            "Version": "1675",
-            "Updated": "\/Date(1697369989910)\/"
+            "Version": null,
+            "Updated": "\/Date(1697746371204)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "komorebi",
             "Version": "0.1.18",
-            "Updated": "\/Date(1695221459455)\/"
+            "Updated": "\/Date(1691766676333)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "kotlin",
             "Version": "1.9.10",
-            "Updated": "\/Date(1696955126062)\/"
+            "Updated": "\/Date(1697746396258)\/"
+        },
+        {
+            "Info": "Install failed",
+            "Source": null,
+            "Name": "kwmusic-cvp",
+            "Version": null,
+            "Updated": "\/Date(1697214195257)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "lazygit",
+            "Version": "0.40.2",
+            "Updated": "\/Date(1691767261809)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "less",
             "Version": "643",
-            "Updated": "\/Date(1692116411712)\/"
+            "Updated": "\/Date(1692946106018)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "lessmsi",
             "Version": "1.10.0",
-            "Updated": "\/Date(1689898756538)\/"
+            "Updated": "\/Date(1663867458194)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "listen1desktop",
             "Version": "2.31.0",
-            "Updated": "\/Date(1690668244286)\/"
+            "Updated": "\/Date(1690848422711)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "logitech-omm",
             "Version": "1.1.6805",
-            "Updated": "\/Date(1689898803333)\/"
+            "Updated": "\/Date(1674748579680)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "logitechoptions-install",
+            "Version": "10.10.58.0",
+            "Updated": "\/Date(1688563222611)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "love",
             "Version": "11.4",
-            "Updated": "\/Date(1696317556900)\/"
+            "Updated": "\/Date(1697746433058)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "lsd",
             "Version": "1.0.0",
-            "Updated": "\/Date(1695237772544)\/"
+            "Updated": "\/Date(1694548838068)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "lua",
             "Version": "5.4.2",
-            "Updated": "\/Date(1689898823361)\/"
+            "Updated": "\/Date(1663872766603)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "luarocks",
             "Version": "3.9.2",
-            "Updated": "\/Date(1689898830366)\/"
+            "Updated": "\/Date(1671299904721)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mariadb",
             "Version": "11.1.2",
-            "Updated": "\/Date(1695678411212)\/"
+            "Updated": "\/Date(1697746507095)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "marp",
             "Version": "3.3.1",
-            "Updated": "\/Date(1697443336987)\/"
+            "Updated": "\/Date(1697746525186)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mediainfo",
             "Version": "23.10",
-            "Updated": "\/Date(1696475949258)\/"
+            "Updated": "\/Date(1697746533951)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "MicrosoftVisualStudioCommunity2022-Install",
             "Version": "17.7.5",
-            "Updated": "\/Date(1697503414597)\/"
+            "Updated": "\/Date(1697746592272)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "miktex",
             "Version": "23.10",
-            "Updated": "\/Date(1696637590370)\/"
+            "Updated": "\/Date(1696687487537)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mingw",
             "Version": "13.2.0-rt_v11-rev0",
-            "Updated": "\/Date(1696324969331)\/"
+            "Updated": "\/Date(1697746719016)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "mkvtoolnix",
             "Version": "79.0",
-            "Updated": "\/Date(1692762315597)\/"
+            "Updated": "\/Date(1697745722955)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mongodb",
             "Version": "7.1.0",
-            "Updated": "\/Date(1696476066195)\/"
+            "Updated": "\/Date(1697746777641)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "mongosh",
             "Version": "2.0.2",
-            "Updated": "\/Date(1697544898379)\/"
+            "Updated": "\/Date(1697746792354)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "motrix",
             "Version": "1.8.19",
-            "Updated": "\/Date(1696908263478)\/"
+            "Updated": "\/Date(1696875947521)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "mpv",
             "Version": "0.36.0",
-            "Updated": "\/Date(1695220714158)\/"
+            "Updated": "\/Date(1695235561421)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "msiafterburner",
             "Version": "4.6.5",
-            "Updated": "\/Date(1689899065789)\/"
+            "Updated": "\/Date(1697746820889)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "msys2",
             "Version": "2023-07-18",
-            "Updated": "\/Date(1696324842763)\/"
+            "Updated": "\/Date(1697218412411)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "mysql",
+            "Version": "8.1.0",
+            "Updated": "\/Date(1696075346935)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mysql-lts",
             "Version": "8.0.34",
-            "Updated": "\/Date(1696127186087)\/"
+            "Updated": "\/Date(1697746890373)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "mysql-workbench",
             "Version": "8.0.34",
-            "Updated": "\/Date(1695678845764)\/"
+            "Updated": "\/Date(1696075504111)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "NAPS2",
             "Version": "6.1.2",
-            "Updated": "\/Date(1690345126721)\/"
+            "Updated": "\/Date(1697746903567)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "neovim",
             "Version": "0.9.4",
-            "Updated": "\/Date(1696908534370)\/"
+            "Updated": "\/Date(1697007305499)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "nexusfont",
             "Version": "2.7.1",
-            "Updated": "\/Date(1691858795966)\/"
+            "Updated": "\/Date(1697746920874)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "nssm",
             "Version": "2.24-103",
-            "Updated": "\/Date(1689899091891)\/"
+            "Updated": "\/Date(1674748683743)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "nvm",
             "Version": "1.1.11",
-            "Updated": "\/Date(1689899102163)\/"
+            "Updated": "\/Date(1681617938168)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "obs-studio",
             "Version": "29.1.3",
-            "Updated": "\/Date(1689899125162)\/"
+            "Updated": "\/Date(1697746951359)\/"
         },
         {
             "Info": "Held package",
             "Source": "apps",
             "Name": "obsidian",
             "Version": "1.4.13",
-            "Updated": "\/Date(1697127193022)\/"
+            "Updated": "\/Date(1697746956810)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "officetoolplus",
             "Version": "10.3.1.2",
-            "Updated": "\/Date(1697448617542)\/"
+            "Updated": "\/Date(1697746969580)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "oh-my-posh",
             "Version": "18.14.0",
-            "Updated": "\/Date(1697544971048)\/"
+            "Updated": "\/Date(1697596020437)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "openjdk17",
             "Version": "17.0.2-8",
-            "Updated": "\/Date(1691808622127)\/"
+            "Updated": "\/Date(1697747005048)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "openrgb",
+            "Version": "0.9",
+            "Updated": "\/Date(1689440151535)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "oraclejdk8",
             "Version": "8u371",
-            "Updated": "\/Date(1689899205574)\/"
+            "Updated": "\/Date(1683764799919)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "oraclejre8",
             "Version": "8u381",
-            "Updated": "\/Date(1689932025227)\/"
+            "Updated": "\/Date(1690132643367)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "pandoc",
             "Version": "3.1.8",
-            "Updated": "\/Date(1694317785678)\/"
+            "Updated": "\/Date(1694417910137)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "pdm",
+            "Version": "2.9.3",
+            "Updated": "\/Date(1696664888377)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "perl",
             "Version": "5.32.1.1",
-            "Updated": "\/Date(1689897740638)\/"
+            "Updated": "\/Date(1663867682852)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "php",
             "Version": "8.2.11",
-            "Updated": "\/Date(1697178369317)\/"
+            "Updated": "\/Date(1697747039751)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "playnite",
-            "Version": "10.19",
-            "Updated": "\/Date(1697543547101)\/"
+            "Version": "10.20",
+            "Updated": "\/Date(1697747063111)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "poetry",
             "Version": "1.6.1",
-            "Updated": "\/Date(1692762399570)\/"
+            "Updated": "\/Date(1692946297800)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "pointofix",
             "Version": "1.8.0",
-            "Updated": "\/Date(1689899224399)\/"
+            "Updated": "\/Date(1676552358847)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "posh-git",
             "Version": "1.1.0",
-            "Updated": "\/Date(1689899226557)\/"
+            "Updated": "\/Date(1664209946311)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "potplayer",
             "Version": "230830",
-            "Updated": "\/Date(1693626965037)\/"
+            "Updated": "\/Date(1693502001441)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "psutils",
             "Version": "0.2023.06.28",
-            "Updated": "\/Date(1689899234446)\/"
+            "Updated": "\/Date(1688314020931)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "PSWindowsUpdate-PSMOdule",
             "Version": "2.2.0.3",
-            "Updated": "\/Date(1689899237167)\/"
+            "Updated": "\/Date(1697747155825)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "pycharm",
+            "Version": "2023.2.3-232.10072.31",
+            "Updated": "\/Date(1697762660801)\/"
         },
         {
             "Info": "Held package",
-            "Source": "<auto-generated>",
+            "Source": "main",
             "Name": "python",
             "Version": "3.11.5",
-            "Updated": "\/Date(1696331895322)\/"
+            "Updated": "\/Date(1696855460767)\/"
         },
         {
             "Info": "Held package",
             "Source": null,
             "Name": "qalculate",
             "Version": "4.8.1",
-            "Updated": "\/Date(1695384326854)\/"
+            "Updated": "\/Date(1697747221245)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "quarto",
+            "Version": "1.3.450",
+            "Updated": "\/Date(1697221332150)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "quicklook",
             "Version": "3.7.3",
-            "Updated": "\/Date(1689899369219)\/"
+            "Updated": "\/Date(1697747295657)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "r",
             "Version": "4.3.1",
-            "Updated": "\/Date(1697160657565)\/"
+            "Updated": "\/Date(1697168940834)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "redis",
-            "Version": "7.0.13",
-            "Updated": "\/Date(1696169249163)\/"
+            "Version": "7.0.14",
+            "Updated": "\/Date(1697747413420)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "registry-finder",
             "Version": "2.58.0.0",
-            "Updated": "\/Date(1697127242484)\/"
+            "Updated": "\/Date(1697007322626)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ripgrep",
             "Version": "13.0.0",
-            "Updated": "\/Date(1691701208584)\/"
+            "Updated": "\/Date(1697747596656)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "rstudio",
             "Version": "2023.09.0-463",
-            "Updated": "\/Date(1697160753636)\/"
+            "Updated": "\/Date(1697169024020)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "ruby",
             "Version": "3.2.2-1",
-            "Updated": "\/Date(1697178458166)\/"
+            "Updated": "\/Date(1697747675255)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "rust",
             "Version": "1.73.0",
-            "Updated": "\/Date(1696637638550)\/"
+            "Updated": "\/Date(1697747927065)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "rustup",
             "Version": "1.26.0",
-            "Updated": "\/Date(1696637711956)\/"
+            "Updated": "\/Date(1697748096117)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "scoop-completion",
             "Version": "0.2.4",
-            "Updated": "\/Date(1689897685901)\/"
+            "Updated": "\/Date(1697748164762)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "scoop-search",
+            "Version": "1.3.1",
+            "Updated": "\/Date(1674747613780)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "scoop-search-multisource",
             "Version": "0.1.20230520",
-            "Updated": "\/Date(1689911854019)\/"
+            "Updated": "\/Date(1688328539021)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "scoop-tab-completion",
+            "Version": "1.2.5",
+            "Updated": "\/Date(1693546780448)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "selenium",
             "Version": "4.14.0",
-            "Updated": "\/Date(1696943086616)\/"
+            "Updated": "\/Date(1697007083782)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "sharex",
             "Version": "15.0.0",
-            "Updated": "\/Date(1689899636363)\/"
+            "Updated": "\/Date(1674972428046)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "sharpkeys",
             "Version": "3.9.4",
-            "Updated": "\/Date(1689899639084)\/"
+            "Updated": "\/Date(1663889332589)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "spacesniffer",
             "Version": "1.3.0.2",
-            "Updated": "\/Date(1689899645307)\/"
+            "Updated": "\/Date(1674748904270)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "spotify",
             "Version": "1.2.22.982.g794acc0a",
-            "Updated": "\/Date(1697128563506)\/"
+            "Updated": "\/Date(1697202854883)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "spyder",
             "Version": "5.4.5",
-            "Updated": "\/Date(1694353479404)\/"
+            "Updated": "\/Date(1697748727730)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "sqlite",
             "Version": "3.43.2",
-            "Updated": "\/Date(1697128585241)\/"
+            "Updated": "\/Date(1697007330812)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "sqlitebrowser",
             "Version": "3.12.2",
-            "Updated": "\/Date(1690415464458)\/"
+            "Updated": "\/Date(1694538000201)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "steam",
-            "Version": "nightly-20231010",
-            "Updated": "\/Date(1696942912380)\/"
+            "Version": "nightly-20221023",
+            "Updated": "\/Date(1666500330899)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "stylua",
             "Version": "0.18.2",
-            "Updated": "\/Date(1694466693447)\/"
+            "Updated": "\/Date(1697748752944)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "sudo",
             "Version": "0.2020.01.26",
-            "Updated": "\/Date(1689899653548)\/"
+            "Updated": "\/Date(1663867477595)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "sumatrapdf",
             "Version": "3.4.6",
-            "Updated": "\/Date(1689897795996)\/"
+            "Updated": "\/Date(1674748961389)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "swift",
-            "Version": "5.9",
-            "Updated": "\/Date(1696773439324)\/"
+            "Version": "5.9.1",
+            "Updated": "\/Date(1697748895460)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "synctrayzor",
             "Version": "1.1.29",
-            "Updated": "\/Date(1689899677425)\/"
+            "Updated": "\/Date(1665179299980)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "tagscanner",
             "Version": "6.1.15",
-            "Updated": "\/Date(1695212733957)\/"
+            "Updated": "\/Date(1697748908961)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "tealdeer",
             "Version": "1.6.1",
-            "Updated": "\/Date(1689899685946)\/"
+            "Updated": "\/Date(1697748916756)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "telegram",
+            "Version": "4.10.2",
+            "Updated": "\/Date(1696665191878)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "terminal-icons",
             "Version": "0.11.0",
-            "Updated": "\/Date(1689899709246)\/"
+            "Updated": "\/Date(1688732658980)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "tesseract",
             "Version": "5.3.3.20231005",
-            "Updated": "\/Date(1696560446295)\/"
+            "Updated": "\/Date(1697748935152)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "tesseract-languages",
             "Version": "4.1.0",
-            "Updated": "\/Date(1693022368218)\/"
+            "Updated": "\/Date(1697749008407)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "texlive-full",
+            "Version": "2023",
+            "Updated": "\/Date(1679393101211)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "texstudio",
             "Version": "4.6.3",
-            "Updated": "\/Date(1692120899867)\/"
+            "Updated": "\/Date(1692946611444)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "thunderbird",
             "Version": "115.3.2",
-            "Updated": "\/Date(1697130826437)\/"
+            "Updated": "\/Date(1697007451844)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "tim",
             "Version": "3.4.8.22092",
-            "Updated": "\/Date(1692763007904)\/"
+            "Updated": "\/Date(1692946851825)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "tinynvidiaupdatechecker",
+            "Version": "1.17.0",
+            "Updated": "\/Date(1692946871046)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "tldr",
+            "Version": "0.6.1",
+            "Updated": "\/Date(1669665767625)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "tre-command",
             "Version": "0.4.0",
-            "Updated": "\/Date(1691726883521)\/"
+            "Updated": "\/Date(1697749030449)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "twinkle-tray",
             "Version": "1.15.4",
-            "Updated": "\/Date(1689905163510)\/"
+            "Updated": "\/Date(1687277899698)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "umi-ocr",
+            "Version": "1.3.7",
+            "Updated": "\/Date(1697007564692)\/"
+        },
+        {
+            "Info": "",
+            "Source": "apps",
+            "Name": "ventoy",
+            "Version": "1.0.96",
+            "Updated": "\/Date(1696855662105)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "virtualbox",
             "Version": "6.1.22",
-            "Updated": "\/Date(1697392173925)\/"
+            "Updated": "\/Date(1697749076053)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "vscode",
             "Version": "1.83.1",
-            "Updated": "\/Date(1697160400988)\/"
+            "Updated": "\/Date(1697203422335)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "wechat",
             "Version": "3.9.7.29",
-            "Updated": "\/Date(1696909440867)\/"
+            "Updated": "\/Date(1697007582805)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "wget",
+            "Version": "1.21.4",
+            "Updated": "\/Date(1683994774673)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "winaero-tweaker",
             "Version": "1.55.0.0",
-            "Updated": "\/Date(1689908012699)\/"
+            "Updated": "\/Date(1697749122602)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "winget",
             "Version": "1.6.2771",
-            "Updated": "\/Date(1696560667843)\/"
+            "Updated": "\/Date(1697749200634)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "winsw",
             "Version": "2.12.0",
-            "Updated": "\/Date(1689905416862)\/"
+            "Updated": "\/Date(1697749270481)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "yt-dlp",
             "Version": "2023.10.13",
-            "Updated": "\/Date(1697257739352)\/"
+            "Updated": "\/Date(1697595849311)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "z.lua",
             "Version": "1.8.16",
-            "Updated": "\/Date(1691424645846)\/"
+            "Updated": "\/Date(1663872767857)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "zig",
             "Version": "0.11.0",
-            "Updated": "\/Date(1696773059070)\/"
+            "Updated": "\/Date(1697749341569)\/"
         },
         {
             "Info": "",
             "Source": "apps",
             "Name": "zotero",
             "Version": "6.0.27",
-            "Updated": "\/Date(1694881934224)\/"
+            "Updated": "\/Date(1697749365033)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "zoxide",
             "Version": "0.9.2",
-            "Updated": "\/Date(1691127746956)\/"
+            "Updated": "\/Date(1691770492057)\/"
         },
         {
             "Info": "",
             "Source": "main",
             "Name": "zstd",
             "Version": "1.5.5",
-            "Updated": "\/Date(1694198127600)\/"
+            "Updated": "\/Date(1697749378563)\/"
         },
         {
             "Info": "Global install",
             "Source": "apps",
             "Name": "hack-nf",
             "Version": "3.0.2",
-            "Updated": "\/Date(1689910523185)\/"
+            "Updated": "\/Date(1688294874631)\/"
         }
     ]
 }

@@ -315,6 +315,7 @@ Return
 */
 
 ; 用Chrome
+/*
 {
 WinMinimizeAll
 SetTitleMatchMode RegEx
@@ -331,22 +332,24 @@ Run, chrome.exe, ,hide "chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/a
 }
 Return
 }
+*/
 
 ; 用Firefox
-;{
-;WinMinimizeAll
-;SetTitleMatchMode RegEx
-;if WinExist("^Download ahk_exe firefox.exe")
-;{
-;WinActivate
-;}
-;Else
-;{
-;;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
+{
+WinMinimizeAll
+SetTitleMatchMode RegEx
+if WinExist("^Download ahk_exe firefox.exe")
+{
+WinActivate
+}
+Else
+{
+;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
 ;Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
-;}
-;Return
-;}
+Run, "C:\Users\%A_Username%\scoop\apps\firefox-nightly\current\firefox.exe" "moz-extension://217c8db7-f3e0-4860-a8e8-0223d82c35e9/ui/ariang/index.html#!/downloading"
+}
+Return
+}
 
 /*
 {
@@ -406,27 +409,27 @@ return
 
 ;-----------------------google chrome---------------------------
 ;启动或切换Chrome
-launchOrSwitchToChrome()
-{
-if WinExist("ahk_exe chrome.exe")
-{
-WinActivateBottom, ahk_exe chrome.exe
-}
-Else
-{
-Run, chrome.exe, , hide
+;launchOrSwitchToChrome()
+;{
+;if WinExist("ahk_exe chrome.exe")
+;{
+;WinActivateBottom, ahk_exe chrome.exe
+;}
+;Else
+;{
+;Run, chrome.exe, , hide
 ;Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe"
 ;Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe"
 ;Run, "C:\Users\%A_Username%\AppData\Local\Chromium\Application\chrome.exe"
 ;Run, chrome.exe, --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data", hide
 ;Run, C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data"
-}
-Return
-}
-
-<#b::
-launchOrSwitchToChrome()
-Return
+;}
+;Return
+;}
+;
+;<#b::
+;launchOrSwitchToChrome()
+;Return
 
 ;----------------------- microsoft edge ---------------------------
 /*
@@ -451,7 +454,7 @@ Return
 ;----------------------- Mozilla Firefox ---------------------------
 ;启动或切换Firefox
 
-/*
+
 launchOrSwitchToFirefox()
 {
 if WinExist("ahk_exe firefox.exe")
@@ -461,7 +464,8 @@ WinActivateBottom, ahk_exe firefox.exe
 Else
 {
 ; Run, firefox.exe, , hide
- Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe"
+ ;Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe"
+ Run "C:\Users\mino29\scoop\apps\firefox-nightly\current\firefox.exe"
 }
 Return
 }
@@ -469,7 +473,7 @@ Return
 <#b::
 launchOrSwitchToFirefox()
 Return
-*/
+
 
 ;----------------- world wide web (work in progress)---------------------------
 /*
