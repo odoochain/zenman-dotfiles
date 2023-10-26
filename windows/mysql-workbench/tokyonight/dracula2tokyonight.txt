@@ -1,0 +1,10 @@
+background-color: #282A36 , #1A1B26
+sql-keyword: #FF79C6, #BB9AF7 
+user-define-word: #F8F8F2, #B0B9E2
+quoted-string: #F1FA71, #84AA60
+comment: #6272A4, #565F89
+line-number: #f8f8f2,#313654
+default: #f8f8f2,#A9B1D6
+sql-number: #bd93f9, #CF845B
+majorkeyword: #ff79c6, #B494EE
+keyword: #ff79c6, #2AC3DE
