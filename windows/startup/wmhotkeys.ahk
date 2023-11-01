@@ -20,15 +20,15 @@ return
 
 ;-------------------------------- global variables  ---------------------------
 
-;vScoopPath := "C:\Users\%A_Username%\scoop\apps"
-;^q::
-;MsgBox, You are %vScoopPath%
-;Return
+;global vimpath := "C:\Users\" . A_UserName . "\scoop\apps\git\current\usr\bin\vim.exe"
 
 ;--------------------------------- Edit the script  ---------------------------
 
 #y::
-run, wt.exe "nvim.exe" %A_ScriptFullPath%
+;run, wt.exe "nvim.exe" %A_ScriptFullPath%
+; vimpath := "C:\Users\" . A_UserName . "\scoop\apps\git\current\usr\bin\vim.exe"
+vimpath := "C:\Users\" . A_UserName . "\scoop\apps\git\current\usr\bin\vim.exe"
+run, wt.exe %vimpath% %A_ScriptFullPath%
 Return
 
 ;------------------------------- universal hotkeys  ---------------------------
@@ -38,8 +38,6 @@ Return
 
 ;<#z::SoundSet, +1, , mute  ; silent w/o prompt
 <#z::Send {Volume_mute} ; with gui prompt
-
-
 
 toggleDropPoint()
 {
@@ -175,11 +173,29 @@ return
 
 ;------------------------ Frequently-Used Programs  ---------------------------
 
-; Quicknotes with neovim
+; Quicknotes with (neo)vim
+
+; 启动或切换招商证券
+launchOrSwitchQuicknotes()
+{
+If WinExist("^Hilda ahk_exe WindowsTerminal.exe")
+{
+    WinActivate, ahk_exe WindowsTerminal.exe
+}
+Else
+{
+    vimpath := "C:\Users\" . A_UserName . "\scoop\apps\git\current\usr\bin\vim.exe"
+    run, wt.exe %vimpath% "C:\Users\%A_UserName%\Downloads\Quicknotes\Raw\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+}
+Return
+}
+
+
 #n::
-;run, wt.exe "nvim.exe" "%A_Desktop%\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
-;run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Notes\quicknote.md"
-run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Quicknotes\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+;run, wt.exe "nvim.exe" "C:\Users\%A_UserName%\Downloads\Quicknotes\Raw\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+;vimpath := "C:\Users\" . A_UserName . "\scoop\apps\git\current\usr\bin\vim.exe"
+;run, wt.exe %vimpath% "C:\Users\%A_UserName%\Downloads\Quicknotes\Raw\%A_YYYY%-%A_MM%-%A_DD%_quicknotes.md"
+launchOrSwitchQuicknotes()
 Return
 
 ; 启动或切换招商证券
@@ -212,7 +228,7 @@ WinActivateBottom, ahk_exe qalculate-gtk.exe
 }
 Else
 {
-Run "C:\Users\%A_UserName%\scoop\apps\qalculate\current\qalculate-gtk.exe"
+Run "C:\Users\%A_UserName%\scoop\apps\qalculate\current\qalculate.exe"
 }
 Return
 }
@@ -605,7 +621,7 @@ Return
 /*
 launchOrRelaunchkomorebi()
 {
-if WinExist("ahk_exe komorebi.exe") 
+if WinExist("ahk_exe komorebi.exe")
 {
 Run, komorebic.exe "stop", , hide
 process, close, komorebi.exe ; Use the window found by WinExist.
