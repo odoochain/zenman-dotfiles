@@ -345,8 +345,8 @@ WinActivate
 Else
 {
 ;Run, firefox.exe "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
-;Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
-Run, "C:\Users\%A_Username%\scoop\apps\firefox-nightly\current\firefox.exe" "moz-extension://217c8db7-f3e0-4860-a8e8-0223d82c35e9/ui/ariang/index.html#!/downloading"
+;Run "C:\Users\%A_Username%\scoop\apps\firefox\current\firefox.exe" "moz-extension://227fd6b9-9233-48e3-8bcd-48795038e85f/ui/ariang/index.html#!/downloading" "--new-window"
+Run, "C:\Users\%A_Username%\scoop\apps\firefox-nightly\current\firefox.exe" "moz-extension://4aa281a0-6e35-4121-8b0a-72936e5e19b1/ui/ariang/index.html#!/downloading"
 }
 Return
 }
@@ -421,8 +421,8 @@ return
 ;Run, "C:\Users\%A_Username%\scoop\apps\ungoogled-chromium\current\chrome.exe"
 ;Run, "C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe"
 ;Run, "C:\Users\%A_Username%\AppData\Local\Chromium\Application\chrome.exe"
-;Run, chrome.exe, --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data", hide
-;Run, C:\Users\mino29\scoop\apps\googlechrome\current\chrome.exe --user-data-dir="C:\Users\mino29\scoop\apps\googlechrome\current\User Data"
+;Run, chrome.exe, --user-data-dir="C:\Users\%A_Username%\scoop\apps\googlechrome\current\User Data", hide
+;Run, C:\Users\%A_Username%\scoop\apps\googlechrome\current\chrome.exe --user-data-dir="C:\Users\%A_Username%\scoop\apps\googlechrome\current\User Data"
 ;}
 ;Return
 ;}
@@ -464,8 +464,8 @@ WinActivateBottom, ahk_exe firefox.exe
 Else
 {
 ; Run, firefox.exe, , hide
- ;Run "C:\Users\mino29\scoop\apps\firefox\current\firefox.exe"
- Run "C:\Users\mino29\scoop\apps\firefox-nightly\current\firefox.exe"
+ ;Run "C:\Users\%A_Username%\scoop\apps\firefox\current\firefox.exe"
+ Run "C:\Users\%A_Username%\scoop\apps\firefox-nightly\current\firefox.exe"
 }
 Return
 }

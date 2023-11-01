@@ -102,3 +102,7 @@
 	directory = C:/Users/mino29/scoop/apps/scoop/current
 [credential "helperselector"]
 	selected = manager
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = https://127.0.0.1:7890
