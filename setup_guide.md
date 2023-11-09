@@ -1,8 +1,8 @@
 Install Tiny 11 (format old system)
 0-set up windows terminal
-1-winget (git, anaconda)
-2-git clone dotfiles (include submodules)
-3-scoop
+1-scoop
+2-winget (git, anaconda)
+3-git clone dotfiles (include submodules)
 4-autohotkey
 5-potplayer
 6-sharex
@@ -17,4 +17,5 @@ Install Tiny 11 (format old system)
 15-windows terminal preview (uninstall standard & install preview)
 16-ditto
 17-quicklook
+18-twinkle-tray
 

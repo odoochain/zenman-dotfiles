@@ -8,7 +8,7 @@
 
 ## Overview
 
-🔺 NOTICE: I'm primarily a Windows user, I've used Mac for about 10 years then moved to windows and occasionally used linux(arch and fedora). 
+🔺 NOTICE: I'm primarily a Windows user, I've used Mac for about 10 years then moved to windows and occasionally used linux(arch and fedora).
 
 Here are my dotfiles. There's no one line install, still working on it.
 
@@ -36,7 +36,7 @@ The wallpaper included is what I made using Photoshop for like 5 minutes. Feel f
 ### Cross-platform programs
 
 I use cross-platform programs whenever possible, so I don't get locked up in a specific ecosystem.
-In the common folder are thoese programs configs that shared the same config files across different OSes. 
+In the common folder are thoese programs configs that shared the same config files across different OSes.
 
 - nushell (blazing fast shell, not supporting conda ATM is a bummer though)
 - font: Hack NF
@@ -144,7 +144,7 @@ sometimes use Arch for WSL2.
 [ ] majority of keybinds can be found across platforms
 [ ] most application use the same color theme
 [ ] dynamic window tiling
-[ ] open terminal window instantly 
+[ ] open terminal window instantly
 
 ## Special Thanks
 
