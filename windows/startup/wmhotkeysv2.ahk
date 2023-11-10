@@ -40,7 +40,6 @@ MinimizeActiveWindow() {
 
 #h::WinMinimize("A")
 
-; #f::WinMaximize("A")
 
 #f::ToggleWindowSize()
 
@@ -62,10 +61,12 @@ ToggleWindowSize() {
 ToggleWindowsTerminal() {
     if WinExist("ahk_exe WindowsTerminal.exe") {
         WinActivate
+        WinMaximize
+        ;ToggleWindowSize()
     } else {
         Run("wt")
-        Sleep 1000
-        ; WinActivate("ahk_class CASCADIA_HOSTING_WINDOW_CLASS", "", "bottom")
+        WinWait("Administrator: PowerShell")
+        WinMaximize
     }
 }
 
@@ -89,11 +90,14 @@ ToggleFireFoxAria2() {
     firefoxPath := "C:\Users\" A_UserName "\scoop\apps\firefox-nightly\current\firefox.exe"
     aria2ManPath := "moz-extension://d1b0427c-3c20-44fd-a490-cc12ffd7a04f/ui/ariang/index.html#!/downloading"
 
-    if WinExist("ahk_exe firefox.exe") {
-        WinActivate
-    } else {
-        Run(firefoxPath " " aria2ManPath)
-    }
+    Run(firefoxPath " " aria2ManPath)
+    ;if WinExist("ahk_exe firefox.exe") {
+        ;WinActivate
+    ;} else {
+        ;Run(firefoxPath " " aria2ManPath)
+    ;}
+    ; title := WinGetTitle("A")
+    ; MsgBox(RegexMatch(title, "AriaNg"))
 }
 
 
@@ -113,16 +117,17 @@ EditTodayNotes() {
 }
 
 
-
-
 #p::TogglePotplayer()
 
 TogglePotplayer() {
     potplayerPath := "C:\Users\" A_UserName "\scoop\apps\potplayer\current\PotPlayer64.exe"
-    if WinExist("ahk_exe potplayer.exe") {
+    if WinExist("ahk_exe PotPlayer64.exe") {
         WinActivate
+        WinMaximize
     } else {
         Run(potplayerPath)
+        WinWait("PotPlayer", ,3) ;Wait max 3s for potplayer to show up
+        WinMaximize
     }
 }
 
@@ -137,6 +142,20 @@ ToggleSumatrapdf() {
     }
 }
 
+#t::ToggleFoobar2K()
+
+ToggleFoobar2K() {
+    ; Define the path to foobar2000 using the A_UserName variable
+    foobar2000Path := "C:\Users\" A_UserName "\scoop\apps\foobar2000\current\foobar2000.exe"
+
+    if WinExist("ahk_exe foobar2000.exe") {
+        WinActivate
+    } else {
+        Run(foobar2000Path)
+    }
+}
+
+/*
 #t::ToggleSpotify()
 
 ToggleSpotify() {
@@ -149,6 +168,7 @@ ToggleSpotify() {
         Run(spotifyPath)
     }
 }
+*/
 
 #s::ToggleEverything()
 
@@ -199,6 +219,9 @@ launchOrSwitchDownloads() {
         WinActivate("ahk_class CabinetWClass", "", "bottom")
     } else {
         Run("explorer shell:::{374DE290-123F-4565-9164-39C4925E467B}")
+        WinWait("Downloads")
+        WinActivate
+        WinMaxiMize
     }
 }
 
@@ -209,11 +232,14 @@ launchOrSwitchDownloads() {
 ; Function to launch or switch to Task Manager
 toggleTaskMan() {
     if WinExist("ahk_exe Taskmgr.exe") {
-        WinActivate("ahk_exe Taskmgr.exe")
-        WinWait("Task Manager")
-        WinMaximize("A") ; Assumes the "A" last found window is the Task Manager
+        ; WinActivate("ahk_exe Taskmgr.exe")
+        ;WinWait("TaskManager", ,2)
+        WinActivate
+        WinMaximize
     } else {
         Run("taskmgr.exe")
+        WinWait("Task Manager", ,2)
+        WinMaximize
     }
 }
 
