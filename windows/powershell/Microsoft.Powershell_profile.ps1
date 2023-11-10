@@ -20,6 +20,9 @@
 # starship ($HOME\.config\starship.toml)
 Invoke-Expression (&starship init powershell)
 
+# ----------------------------    terminal icons    ---------------------------------
+Import-Module Terminal-Icons
+
 # ----------------------------    scoop    ------------------------------------
 
 Invoke-Expression (&scoop-search-multisource --hook)

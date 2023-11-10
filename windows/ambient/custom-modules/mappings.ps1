@@ -172,3 +172,6 @@ Write-host "~\.config\komorebi has been linked to .dotfiles\windows\komorebi"
 # $wmhotkeysPath="$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\wmhotkeys.ahk"
 # New-Item -Path $wmhotkeysPath -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\windows\startup\wmhotkeys" -Force
 # Write-host "wmhotkeys config has been linked to .dotfiles\windows\startup\wmhotkeys"
+
+New-Item -Path "$env:USERPROFILE\.config\starship.toml" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\common\starship\starship.toml" -Force
+Write-host "starship.toml has been linked to .dotfiles\common\starship\starship.toml"
