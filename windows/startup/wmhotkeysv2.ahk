@@ -65,7 +65,7 @@ ToggleWindowsTerminal() {
     } else {
         Run("wt")
         Sleep 1000
-        WinActivate("ahk_class CASCADIA_HOSTING_WINDOW_CLASS", "", "bottom")
+        ; WinActivate("ahk_class CASCADIA_HOSTING_WINDOW_CLASS", "", "bottom")
     }
 }
 

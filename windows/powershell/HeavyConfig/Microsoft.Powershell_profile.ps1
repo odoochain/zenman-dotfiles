@@ -1,5 +1,12 @@
+#------------------------------- Notes ----------------------------------------
 
-#------------------------------- Startup settings END -------------------------
+<#
+ * FileName: Microsoft.PowerShell_profile.ps1
+ * Author: Wu Zhongzheng
+ * Email: zhongzheng.wu@outlook.com
+ * Date: 2022, Sep. 9
+ * Copyright: No copyright. You can use this code for anything with no warranty.
+#>
 
 # Check if Winget is installed
 if (!(Get-Command -Name winget -ErrorAction SilentlyContinue)) {
@@ -115,7 +122,6 @@ Try {
     oh-my-posh init pwsh --config "$home\.dotfiles\windows\oh-my-posh\themes\tokyonight_storm.omp.json" | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\tokyonight_storm.omp.json' | Invoke-Expression
     # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\zash.omp.json' | Invoke-Expression
-    # oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\negligible.omp.json' | Invoke-Expression
 }
 Catch {
     # winget install JanDeDobbeleer.OhMyPosh
@@ -197,7 +203,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 # 设置 bash style tab completion
 # Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
-# Autopair (might slow a bit)
+# Autopair (might be a bit slow)
 Set-PSReadLineKeyHandler -Chord '"',"'" `
                          -BriefDescription SmartInsertQuote `
                          -LongDescription "Insert paired quotes if not already on a quote" `
@@ -229,10 +235,6 @@ $env:PATHEXT += ";.py"
 
 # 更新系统组件
 function Update-Packages {
-    # update conda packages (avoid conflit)
-    Write-Host "Step 1: Update conda " -ForegroundColor White -BackgroundColor Cyan
-    conda update --all
-
 <#
     # update pip (comment out this if you use conda)
     Write-Host "Step 2: Update pip" -ForegroundColor White -BackgroundColor Cyan
@@ -250,24 +252,6 @@ function Update-Packages {
     tlmgr update --self
     tlmgr update --all
 
-    # update Scoop
-    Write-Host "Step 4: Update Scoop" -ForegroundColor White -BackgroundColor Cyan
-    scoop update
-    scoop update --all
-
-    # update winget
-    Write-Host "Step 5: Update Winget" -ForegroundColor White -BackgroundColor Cyan
-    winget upgrade
-    winget upgrade --all
-
-    # update Powershell Modules
-    Write-Host "Step 6: Update Powsherll Modules" -ForegroundColor White -BackgroundColor Cyan
-    Update-Module -Force
-
-    # update Windows
-    Write-Host "Step 7: Update (neo)vim" -ForegroundColor White -BackgroundColor Cyan
-    nvim +PackerSync +qa!
-
 }
 
 
@@ -283,59 +267,6 @@ Set-Alias -Name make -Value MakeThings
 
 # 2. 更新系统 os-update
 Set-Alias -Name os-update -Value Update-Packages
-
-# 3. 查看目录 ls & ll
-#
-# ----------------------------------------------------------------------------
-<#
-# option-1
-# native to powershell
-
-function ListItemName {
-    Write-Host("")
- 	(Get-ChildItem).Name
-    Write-Host("")
-}
-
-function ShowAllItems {
-    Write-Host("")
- 	Get-ChildItem -force
-    Write-Host("")
-}
-
-# if it's directory then grey, else it's just cyan
-
-Set-Alias -Name ls -Value ListItemName -Option AllScope
-Set-Alias -Name ll -Value ShowAllItems -Option AllScope
-#>
-
-# ----------------------------------------------------------------------------
-# option-2
-# below requires you to install lsd to work
-
-<#
-function ListItem {
-    Write-Host("")
-    lsd -a
-    Write-Host("")
-}
-
-function ListDirectory {
-    Write-Host("")
-    lsd -la
-    Write-Host("")
-}
-
-function TreeView {
-    Write-Host("")
-    lsd --tree
-    Write-Host("")
-}
-
-Set-Alias -Name ls -Value ListItem -Option AllScope
-Set-Alias -Name ll -Value ListDirectory -Option AllScope
-Set-Alias -Name tree -Value TreeView -Option AllScope
-#>
 
 # ----------------------------------------------------------------------------
 
@@ -386,8 +317,7 @@ Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
 
 # 6. vscodium aliases/ comment out this part if you use code
-
-Set-Alias -Name code -Value codium
+# Set-Alias -Name code -Value codium
 
 # 7. more "aliases"
 
@@ -440,123 +370,7 @@ Catch {
 #-------------------------------    Set zoxide END     -------------------------------
 
 
-
-
-
-#-------------------------------   Set clash BEGIN    -------------------------------
-
-
-<#
- #.Synopsis
- #This function will set the proxy settings provided as input to the cmdlet.
- #.Description
- #This function will set the proxy server and (optional) Automatic configuration script.
- #.Parameter Proxy Server
- #This parameter is set as the proxy for the system.
- #Data from. This parameter is Mandatory.
- #.Example
- #Setting proxy information.
- #Set-NetProxy -proxy "proxy:7890"
- #.Example
- #Setting proxy information and (optional) Automatic Configuration Script.
- #Set-NetProxy -proxy "proxy:7890" -acs "http://proxy Jump :7892"
-#>
-
-
-function Set-NetProxy {
-    [CmdletBinding()]
-    Param(
-
-        [Parameter(Mandatory = $True, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
-        [String[]]$Proxy,
-
-        [Parameter(Mandatory = $False, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
-        [AllowEmptyString()]
-        [String[]]$acs
-
-    )
-
-    Begin {
-
-        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-
-    }
-
-    Process {
-
-        Set-ItemProperty -path $regKey ProxyEnable -value 1
-
-        Set-ItemProperty -path $regKey ProxyServer -value $proxy
-
-        if ($acs) {
-
-            Set-ItemProperty -path $regKey AutoConfigURL -Value $acs
-        }
-
-    }
-
-    End {
-
-        Write-Output "Proxy is now enabled"
-
-        Write-Output "Proxy Server : $proxy"
-
-        if ($acs) {
-
-            Write-Output "Automatic Configuration Script : $acs"
-
-        }
-        else {
-
-            Write-Output "Automatic Configuration Script : Not Defined"
-
-        }
-    }
-}
-
-
-function Disable-NetProxy {
-    Begin {
-
-        $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
-
-    }
-
-    Process {
-
-        Set-ItemProperty -path $regKey ProxyEnable -value 0 -ErrorAction Stop
-
-        Set-ItemProperty -path $regKey ProxyServer -value "" -ErrorAction Stop
-
-        Set-ItemProperty -path $regKey AutoConfigURL -Value "" -ErrorAction Stop
-
-    }
-
-    End {
-
-        Write-Output "Proxy is now Disabled"
-
-
-    }
-
-}
-
-
 # more advanced functions based on the functions above
-
-function Cfw {
-    # open "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-    # & "$HOME\scoop\apps\clash-for-windows\current\Clash for Windows.exe"
-    & "$HOME\scoop\apps\clash-verge\current\Clash Verge.exe"
-    Set-NetProxy -proxy "127.0.0.1:7890"
-    Start-Sleep 2
-    git config --global http.proxy 'http://127.0.0.1:7890'
-    git config --global https.proxy 'http://127.0.0.1:7890'
-    echo "git proxy set"
-    git config --global --get http.proxy
-    cp ~/pip/pip.ini.old ~/pip/pip.ini
-}
-
 
 function Reboot {
     #Disable-Cfw
@@ -571,16 +385,12 @@ function PowerOff {
 
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
+# Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 
-# Env
-$env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
+# Fzf
+# Import-Module PSFzf
+# Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
-
-# Utilities
-function which ($command) {
-    Get-Command -Name $command -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-}
 # -------------------------------   Set clash END    -------------------------------
 
 
@@ -742,38 +552,3 @@ function rename {
     & "$HOME\scoop\apps\advancedrenamer\current\ARen.exe" $Path
 }
 Set-Alias -Name rn -Value rename
-
-#calculate video files' total length
-function Get-VideoLength {
-    param(
-        [string]$Path = (Get-Location).Path
-    )
-
-    # Get all video files in the directory
-    $videoFiles = Get-ChildItem -Path $Path -Include *.mp4,*.mov,*.avi,*.mkv -Recurse | Where-Object {!$_.PSIsContainer}
-
-    if ($videoFiles.Count -eq 0) {
-        Write-Host "No video file found"
-        return
-    }
-
-    # Initialize total length variable
-    $totalSeconds = 0
-
-    foreach ($file in $videoFiles) {
-        # Use ffprobe to get video duration
-        $ffprobeOutput = & ffprobe.exe -i "$($file.FullName)" -show_entries format=duration -v quiet -of csv="p=0"
-
-        if ([int]$ffprobeOutput -gt 0) {
-            $totalSeconds += [int]$ffprobeOutput
-        }
-    }
-
-    # Convert total seconds to hh:mm:ss format
-    $timespan = New-Object -TypeName System.TimeSpan -ArgumentList 0,0,$totalSeconds
-    $totalLength = $timespan.ToString("hh\:mm\:ss")
-
-    return $totalLength
-}
-
-Import-Module scoop-tab-completion
