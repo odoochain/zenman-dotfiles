@@ -40,7 +40,20 @@ MinimizeActiveWindow() {
 
 #h::WinMinimize("A")
 
-#f::WinMaximize("A")
+; #f::WinMaximize("A")
+
+#f::ToggleWindowSize()
+
+ToggleWindowSize() {
+    ;size := WinGetMinMax("A")
+    ;MsgBox(size)
+    if (WinGetMinMax("A")=0) {
+        WinMaximize("A")
+    } else {
+        WinRestore("A")
+    }
+}
+
 
 ; ----------------------------------------------------------------------------
 
