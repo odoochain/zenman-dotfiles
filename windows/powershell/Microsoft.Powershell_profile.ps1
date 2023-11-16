@@ -71,6 +71,24 @@ function Start-SQLite3 {
 Set-Alias -Name sqlite3 -Value start-sqlite3
 Set-Alias -Name sqlite -Value start-sqlite3
 
+# ----------------------------    phpmyadmin    ----------------------------------
+
+function phpmyadmin {
+    param(
+        [string]$action
+    )
+
+    if ($action -eq "start") {
+        # Run the start-php-server.ps1 script
+        & "$ENV:USERPROFILE\.config\.phpmyadmin\start-php-server.ps1"
+    } elseif ($action -eq "stop") {
+        # Run the stop-php-server.ps1 script
+        & "$ENV:USERPROFILE\.config\.phpmyadmin\stop-php-server.ps1"
+    } else {
+        Write-Host "Invalid action. Please use 'start' or 'stop'."
+    }
+}
+
 # ------------------------    custom functions    -----------------------------
 # explorer
 # 打开当前工作目录
