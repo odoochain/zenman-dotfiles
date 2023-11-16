@@ -64,7 +64,7 @@ function Start-SQLite3 {
         [string]$DatabasePath
     )
 
-    & "$ENV:USERPROFILE\.sqlite3\wrapper.ps1" $DatabasePath
+    & "$ENV:USERPROFILE\.config\.sqlite3\wrapper.ps1" $DatabasePath
 }
 
 # sqlite3 table with headers
