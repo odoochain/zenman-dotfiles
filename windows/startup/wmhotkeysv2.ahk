@@ -32,13 +32,18 @@ EditCurrentScript() {
 ^+d:: FileRecycleEmpty ; 清空回收站
 <#z::Send("{Volume_mute}") ; with gui prompt
 
-#m::MinimizeActiveWindow()
+#h::MinimizeActiveWindow()
+
+#m::MinimizeActiveWindow() ; A more elegant way to minimize window
 
 MinimizeActiveWindow() {
-    WinMinimize("A") ; "A" stands for the active window
+    if WinActive("ahk_class WorkerW") { 
+        WinActivate("ahk_class Shell_TrayWnd")
+    } else {
+        WinMinimize("A")
+    } ; "A" stands for the active window
 }
 
-#h::WinMinimize("A")
 
 
 #f::ToggleWindowSize()
@@ -61,12 +66,13 @@ ToggleWindowSize() {
 ToggleWindowsTerminal() {
     if WinExist("ahk_exe WindowsTerminal.exe") {
         WinActivate
-        WinMaximize
+        ;WinMaximize
         ;ToggleWindowSize()
     } else {
         Run("wt")
         WinWait("Administrator: PowerShell")
-        WinMaximize
+        ;WinActivate
+        ;WinMaximize
     }
 }
 
@@ -142,6 +148,7 @@ ToggleSumatrapdf() {
     }
 }
 
+/*
 #t::ToggleFoobar2K()
 
 ToggleFoobar2K() {
@@ -154,8 +161,8 @@ ToggleFoobar2K() {
         Run(foobar2000Path)
     }
 }
+*/
 
-/*
 #t::ToggleSpotify()
 
 ToggleSpotify() {
@@ -168,7 +175,6 @@ ToggleSpotify() {
         Run(spotifyPath)
     }
 }
-*/
 
 #s::ToggleEverything()
 
@@ -215,14 +221,20 @@ launchOrSwitchTdxW(){
 
 ; Start or switch to Downloads directory
 launchOrSwitchDownloads() {
+    /*
+    Run("explorer shell:::{374DE290-123F-4565-9164-39C4925E467B}")
+    WinWait("Downloads")
+    WinActivate
+    WinMaxiMize
+    */
     if WinExist("ahk_class CabinetWClass") {
-        WinActivate("ahk_class CabinetWClass", "", "bottom")
-    } else {
-        Run("explorer shell:::{374DE290-123F-4565-9164-39C4925E467B}")
-        WinWait("Downloads")
-        WinActivate
-        WinMaxiMize
-    }
+            WinActivate("ahk_class CabinetWClass")
+        } else {
+            Run("explorer shell:::{374DE290-123F-4565-9164-39C4925E467B}")
+            WinWait("Downloads")
+            WinActivate
+            WinMaxiMize
+        }
 }
 
 
