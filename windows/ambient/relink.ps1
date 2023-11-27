@@ -77,46 +77,12 @@ else {
 ################################################################################
 
 
-# --------------------------->
-# SumatraPDf
-#$SumatraPDFOGConfigPath="$env:LOCALAPPDATA\SumatraPDF\SumatraPDF-settings.txt"
-#$dotSumatraPDFConfigPath="$env:USERPROFILE\.dotfiles\windows\SumatraPDF\SumatraPDF-settings.txt"
-#
-#Link-to-Dotfiles $SumatraPDFOGConfigPath $dotSumatraPDFConfigPath
-
-
-# --------------------------->
-# SumatraPDF dracula
-# git clone https://github.com/dracula/sumatra-pdf.git "$tempdir\sumatra-pdf-dracula"
-#
-# Try{Copy-Item "$tempdir\sumatra-pdf-dracula\Dracula.txt" "$migrationDir\SumatraPDF-settings.txt"}
-# Catch{"Download sumatrapdf-dracula theme failed, please try again later"}
-
-# --------------------------->
-# Ditto themes
-#$DittoOGConfigPath="C:\Program Files\Ditto\Themes"
-#$dotDittoConfigPath="$env:USERPROFILE\.dotfiles\windows\Ditto\Themes"
-#
-#Link-to-Dotfiles $DittoOGConfigPath $dotDittoConfigPath
-
-# --------------------------->
-# Motrix settings
-#$MotrixOGSysConfigPath="$env:APPDATA\Motrix\system.json"
-#$dotMotrixSysConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\system.json"
-#
-#Link-to-Dotfiles $MotrixOGSysConfigPath $dotMotrixSysConfigPath
-#
-#$MotrixOGUserConfigPath="$env:APPDATA\Motrix\user.json"
-#$dotMotrixUserConfigPath="$env:USERPROFILE\.dotfiles\windows\Motrix\user.json"
-#
-#Link-to-Dotfiles $MotrixOGUserConfigPath $dotMotrixUserConfigPath
-
 
 # Window-Terminal-preview
 
-$WindowsTerminalPreviewOGUserConfigPath="$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json"
-$dotWindowsTerminalPreviewOGUserConfigPath="$env:USERPROFILE\.dotfiles\windows\windows-terminal\settings.json"
-
-
-Link-to-Dotfiles $WindowsTerminalPreviewOGUserConfigPath $dotWindowsTerminalPreviewOGUserConfigPath
+# $WindowsTerminalPreviewOGUserConfigPath="$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json"
+# $dotWindowsTerminalPreviewOGUserConfigPath="$env:USERPROFILE\.dotfiles\windows\windows-terminal\settings.json"
+#
+#
+# Link-to-Dotfiles $WindowsTerminalPreviewOGUserConfigPath $dotWindowsTerminalPreviewOGUserConfigPath
 

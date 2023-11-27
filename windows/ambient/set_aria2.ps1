@@ -30,6 +30,7 @@ Set-SymbolicLink -sourceFile "$env:USERPROFILE\.dotfiles\windows\aria2\Status.ba
 Set-SymbolicLink -sourceFile "$env:USERPROFILE\.dotfiles\windows\aria2\Restart.bat" -targetFile "$env:USERPROFILE\scoop\apps\aria2\current\Restart.bat"
 Set-SymbolicLink -sourceFile "$env:USERPROFILE\.dotfiles\windows\aria2\StopRun.bat" -targetFile "$env:USERPROFILE\scoop\apps\aria2\current\StopRun.bat"
 
+Set-SymbolicLink "$env:USERPROFILE\.dotfiles\windows\advanced-renamer\lic.ini" "$env:USERPROFILE\scoop\persist\advancedrenamer\Data\lic.ini"
 
 # Create a startup shortcut
 $shortcutName = "HideRun.lnk"

@@ -46,7 +46,6 @@ Set-Alias -Name neofetch -Value fastfetch
 # zoxide
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
-
 # ----------------------------    ls-interactive    ---------------------------
 
 # scoop install ls-interactive
@@ -162,7 +161,7 @@ function rename {
         # 输入要打开的路径
         # 用法示例：rename C:\
         # 默认路径：当前工作文件夹
-        $Path = '.'
+        $Path = (Get-Location).Path
     )
     $wins = New-Object -ComObject  Shell.Application
     $wins.MinimizeAll()

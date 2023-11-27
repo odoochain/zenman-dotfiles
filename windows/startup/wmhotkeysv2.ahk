@@ -89,6 +89,7 @@ ToggleFireFox() {
     }
 }
 
+/*
 #o::ToggleFireFoxAria2()
 
 ToggleFireFoxAria2() {
@@ -97,15 +98,32 @@ ToggleFireFoxAria2() {
     aria2ManPath := "moz-extension://d1b0427c-3c20-44fd-a490-cc12ffd7a04f/ui/ariang/index.html#!/downloading"
 
     Run(firefoxPath " " aria2ManPath)
-    ;if WinExist("ahk_exe firefox.exe") {
-        ;WinActivate
-    ;} else {
-        ;Run(firefoxPath " " aria2ManPath)
-    ;}
-    ; title := WinGetTitle("A")
-    ; MsgBox(RegexMatch(title, "AriaNg"))
+}
+*/
+
+#o::ToggleAriaGui()
+
+ToggleAriaGui(){
+    ariaGuiPath := "C:\Users\" A_UserName "\scoop\apps\ariang-native\current\AriaNg Native.exe"
+
+    if WinExist("ahk_exe AriaNg Native.exe") {
+        WinActivate
+    } else {
+        Run(ariaGuiPath)
+    }
 }
 
+
+/*
+ToggleNeatDM(){
+    neatDMPath := "C:\Users\" A_UserName "\scoop\apps\neatdownloadmanager\current\NeatDM.exe"
+    if WinExist("ahk_exe NeatDM.exe") {
+            WinActivate
+    } else {
+        Run(neatDMPath)
+    }
+
+*/
 
 #n::EditTodayNotes()
 
@@ -132,10 +150,11 @@ TogglePotplayer() {
         WinMaximize
     } else {
         Run(potplayerPath)
-        WinWait("PotPlayer", ,3) ;Wait max 3s for potplayer to show up
+        WinWait("PotPlayer", ,5) ;Wait max 5s for potplayer to show up
         WinMaximize
     }
 }
+
 
 #g::ToggleSumatrapdf()
 
@@ -147,6 +166,19 @@ ToggleSumatrapdf() {
         Run(sumatrapdfPath)
     }
 }
+
+/*
+#g::ToggleCalibre()
+
+ToggleCalibre() {
+    calibrePath := "C:\Users\" A_UserName "\scoop\apps\calibre\current\calibre-portable.exe"
+    if WinExist("ahk_exe calibre.exe") {
+        WinActivate("ahk_class Qt653QWindowIcon", "", "bottom")
+    } else {
+        Run(calibrePath)
+    }
+}
+*/
 
 /*
 #t::ToggleFoobar2K()
@@ -201,6 +233,8 @@ ToggleQalculate() {
         Run(qalculatePath)
     }
 }
+
+; using python + pandas instead
 
 ; 启动或切换到招商证券
 #k::launchOrSwitchTdxW()
